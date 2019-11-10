@@ -1,0 +1,37 @@
+package Analizadores;
+import java_cup.runtime.*;
+import java_cup.runtime.Symbol;
+import java.util.LinkedList;
+import java.util.ArrayList;
+
+parser code {:
+
+public void syntax_error (Symbol s){
+	System.err.println("Error de sintaxis (lexema <" + 	s.value.toString() + ">) en la linea " + s.left + " 	y en la columna " + s.right);
+	System.err.println("Error recuperado");
+}
+
+public void unrecovered_syntax_error(Symbol s){
+	System.err.println("Error de sintaxis no 			recuperable");
+}
+:};
+//------> Codigo parentesis_abierto las acciones semanticas, asocidado a las distintas producciones gramticales
+action code
+{::}
+
+
+//Zona de declaraciones
+terminal String acronimo;
+
+non terminal Resultado RES;
+non terminal String lambda;
+
+//Reglas semanticas
+
+	//Por el arbol sintactico le asigna el valor de la variable (a traves de result) a la cabeza de la regla o simbolo no terminal asociado.
+
+RES ::= acronimo:ac{:
+	Resultado resultado=new Resultado(ac);
+	RESULT=resultado;
+		:}| lambda;
+lambda::= {:RESULT="";:};

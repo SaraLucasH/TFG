@@ -1,3 +1,4 @@
+package Diccionarios;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -50,5 +51,10 @@ public class CargaDiccionario {
 		}
 		return diccionario;
 	}
+
+	public HashMap<String, HashSet<String>> getDiccionario() {
+		return diccionario;
+	}
+	
 	
 }
