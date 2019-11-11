@@ -23,17 +23,18 @@ public class Resultado {
 			cd.cargaDiccionario(this.archivoDiccionario);
 			this.diccionario=cd.getDiccionario();
 		}
+		System.out.println("Acronimo identificado: "+acronimo);
 		HashSet<String> respuesta=this.diccionario.get(acronimo);
 		if(respuesta==null){
 			System.out.println(acronimo);
 			System.out.println("No hay formas largas");
 			
-		}else {
-			System.out.println("Acronimo identificado: "+acronimo);
-		
+		}else {		
 			Iterator<String> it=respuesta.iterator();
+			int i=1;
 			while(it.hasNext()){
-				System.out.println(it.next());
+				System.out.println("Forma larga "+i+": "+it.next());
+				i++;
 			}
 		}		
 	}

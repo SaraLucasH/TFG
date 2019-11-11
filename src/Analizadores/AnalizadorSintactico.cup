@@ -21,7 +21,7 @@ action code
 
 
 //Zona de declaraciones
-terminal String acronimo,parentesisAbierto,parentesisCerrado;
+terminal String acronimo;
 
 non terminal Resultado RES;
 
@@ -31,11 +31,6 @@ non terminal Resultado RES;
 
 RES ::= acronimo:ac RES {:Resultado resultado=new Resultado(ac);
 		RESULT=resultado;:}
-	|parentesisAbierto acronimo:ac parentesisCerrado RES{:
-		Resultado resultado=new Resultado(ac);
-		RESULT=resultado;:}
-	| acronimo:ac {:Resultado resultado=new Resultado(ac);
-		RESULT=resultado;:}
-	|parentesisAbierto acronimo:ac parentesisCerrado{:
-		Resultado resultado=new Resultado(ac);
+	|acronimo:ac {:Resultado resultado=new Resultado(ac);
 		RESULT=resultado;:};
+	
