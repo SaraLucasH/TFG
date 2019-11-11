@@ -34,8 +34,8 @@ public class parser extends java_cup.runtime.lr_parser {
   /** Production table. */
   protected static final short _production_table[][] = 
     unpackFromStrings(new String[] {
-    "\000\004\000\002\002\003\000\002\002\004\000\002\002" +
-    "\003\000\002\003\002" });
+    "\000\005\000\002\002\004\000\002\002\004\000\002\002" +
+    "\006\000\002\002\003\000\002\002\005" });
 
   /** Access to production table. */
   public short[][] production_table() {return _production_table;}
@@ -43,9 +43,12 @@ public class parser extends java_cup.runtime.lr_parser {
   /** Parse-action table. */
   protected static final short[][] _action_table = 
     unpackFromStrings(new String[] {
-    "\000\005\000\006\002\ufffe\004\004\001\002\000\004\002" +
-    "\001\001\002\000\004\002\007\001\002\000\004\002\uffff" +
-    "\001\002\000\004\002\000\001\002" });
+    "\000\011\000\006\004\004\005\006\001\002\000\010\002" +
+    "\ufffe\004\004\005\006\001\002\000\004\002\012\001\002" +
+    "\000\004\004\007\001\002\000\004\006\010\001\002\000" +
+    "\010\002\ufffd\004\004\005\006\001\002\000\004\002\uffff" +
+    "\001\002\000\004\002\000\001\002\000\004\002\001\001" +
+    "\002" });
 
   /** Access to parse-action table. */
   public short[][] action_table() {return _action_table;}
@@ -53,9 +56,10 @@ public class parser extends java_cup.runtime.lr_parser {
   /** <code>reduce_goto</code> table. */
   protected static final short[][] _reduce_table = 
     unpackFromStrings(new String[] {
-    "\000\005\000\006\002\004\003\005\001\001\000\002\001" +
+    "\000\011\000\004\002\004\001\001\000\004\002\012\001" +
     "\001\000\002\001\001\000\002\001\001\000\002\001\001" +
-    "" });
+    "\000\004\002\010\001\001\000\002\001\001\000\002\001" +
+    "\001\000\002\001\001" });
 
   /** Access to <code>reduce_goto</code> table. */
   public short[][] reduce_table() {return _reduce_table;}
@@ -132,17 +136,15 @@ class CUP$parser$actions {
       switch (CUP$parser$act_num)
         {
           /*. . . . . . . . . . . . . . . . . . . .*/
-          case 0: // RES ::= acronimo 
+          case 0: // RES ::= acronimo RES 
             {
               Resultado RESULT =null;
-		int acleft = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).left;
-		int acright = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).right;
-		String ac = (String)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
-		
-	Resultado resultado=new Resultado(ac);
-	RESULT=resultado;
-		
-              CUP$parser$result = parser.getSymbolFactory().newSymbol("RES",0, ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
+		int acleft = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-1)).left;
+		int acright = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-1)).right;
+		String ac = (String)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-1)).value;
+		Resultado resultado=new Resultado(ac);
+		RESULT=resultado;
+              CUP$parser$result = parser.getSymbolFactory().newSymbol("RES",0, ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-1)), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
             }
           return CUP$parser$result;
 
@@ -161,20 +163,43 @@ class CUP$parser$actions {
           return CUP$parser$result;
 
           /*. . . . . . . . . . . . . . . . . . . .*/
-          case 2: // RES ::= lambda 
+          case 2: // RES ::= parentesisAbierto acronimo parentesisCerrado RES 
             {
               Resultado RESULT =null;
+		int acleft = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)).left;
+		int acright = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)).right;
+		String ac = (String)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-2)).value;
 		
+		Resultado resultado=new Resultado(ac);
+		RESULT=resultado;
+              CUP$parser$result = parser.getSymbolFactory().newSymbol("RES",0, ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-3)), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
+            }
+          return CUP$parser$result;
+
+          /*. . . . . . . . . . . . . . . . . . . .*/
+          case 3: // RES ::= acronimo 
+            {
+              Resultado RESULT =null;
+		int acleft = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).left;
+		int acright = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).right;
+		String ac = (String)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
+		Resultado resultado=new Resultado(ac);
+		RESULT=resultado;
               CUP$parser$result = parser.getSymbolFactory().newSymbol("RES",0, ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
             }
           return CUP$parser$result;
 
           /*. . . . . . . . . . . . . . . . . . . .*/
-          case 3: // lambda ::= 
+          case 4: // RES ::= parentesisAbierto acronimo parentesisCerrado 
             {
-              String RESULT =null;
-		RESULT="";
-              CUP$parser$result = parser.getSymbolFactory().newSymbol("lambda",1, ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
+              Resultado RESULT =null;
+		int acleft = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-1)).left;
+		int acright = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-1)).right;
+		String ac = (String)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-1)).value;
+		
+		Resultado resultado=new Resultado(ac);
+		RESULT=resultado;
+              CUP$parser$result = parser.getSymbolFactory().newSymbol("RES",0, ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
             }
           return CUP$parser$result;
 

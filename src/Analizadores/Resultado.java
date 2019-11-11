@@ -10,7 +10,7 @@ import Diccionarios.CargaDiccionario;
 
 public class Resultado {	
 	String significado;
-	File archivoDiccionario=new File("C:/Users/saral/OneDrive/Documentos/GitHub/TFG/DiccionarioTest001.txt");
+	File archivoDiccionario=new File("DiccionarioTest001.txt");
 	HashMap<String,HashSet<String>> diccionario;
 	
 	public Resultado(String acronimo){		
@@ -25,15 +25,16 @@ public class Resultado {
 		}
 		HashSet<String> respuesta=this.diccionario.get(acronimo);
 		if(respuesta==null){
+			System.out.println(acronimo);
 			System.out.println("No hay formas largas");
-		}
-		System.out.println("Acronimo identificado: "+acronimo);
+			
+		}else {
+			System.out.println("Acronimo identificado: "+acronimo);
 		
-		Iterator<String> it=respuesta.iterator();
-		while(it.hasNext()){
-			System.out.println(it.next());
-		}
-		
+			Iterator<String> it=respuesta.iterator();
+			while(it.hasNext()){
+				System.out.println(it.next());
+			}
+		}		
 	}
-
 }

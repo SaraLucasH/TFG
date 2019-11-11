@@ -21,17 +21,21 @@ action code
 
 
 //Zona de declaraciones
-terminal String acronimo;
+terminal String acronimo,parentesisAbierto,parentesisCerrado;
 
 non terminal Resultado RES;
-non terminal String lambda;
 
 //Reglas semanticas
 
 	//Por el arbol sintactico le asigna el valor de la variable (a traves de result) a la cabeza de la regla o simbolo no terminal asociado.
 
-RES ::= acronimo:ac{:
-	Resultado resultado=new Resultado(ac);
-	RESULT=resultado;
-		:}| lambda;
-lambda::= {:RESULT="";:};
+RES ::= acronimo:ac RES {:Resultado resultado=new Resultado(ac);
+		RESULT=resultado;:}
+	|parentesisAbierto acronimo:ac parentesisCerrado RES{:
+		Resultado resultado=new Resultado(ac);
+		RESULT=resultado;:}
+	| acronimo:ac {:Resultado resultado=new Resultado(ac);
+		RESULT=resultado;:}
+	|parentesisAbierto acronimo:ac parentesisCerrado{:
+		Resultado resultado=new Resultado(ac);
+		RESULT=resultado;:};
