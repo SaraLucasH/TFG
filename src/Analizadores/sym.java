@@ -10,11 +10,13 @@ public class sym {
   /* terminals */
   public static final int acronimo = 2;
   public static final int error = 1;
+  public static final int formaLarga = 3;
   public static final int EOF = 0;
   public static final String[] terminalNames = new String[] {
   "EOF",
   "error",
-  "acronimo"
+  "acronimo",
+  "formaLarga"
   };
 }
 

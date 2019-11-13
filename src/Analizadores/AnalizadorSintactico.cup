@@ -21,9 +21,12 @@ action code
 
 
 //Zona de declaraciones
-terminal String acronimo;
+terminal String acronimo,formaLarga;
 
 non terminal Resultado RES;
+non terminal String lambda;
+
+
 
 //Reglas semanticas
 
@@ -32,5 +35,11 @@ non terminal Resultado RES;
 RES ::= acronimo:ac RES {:Resultado resultado=new Resultado(ac);
 		RESULT=resultado;:}
 	|acronimo:ac {:Resultado resultado=new Resultado(ac);
-		RESULT=resultado;:};
+		RESULT=resultado;:}
+	|acronimo:ac formaLarga:lf {:Resultado resultado= new Resultado(ac,lf);
+		RESULT=resultado;:}
+	|acronimo:ac formaLarga:lf RES {:Resultado resultado= new Resultado(ac,lf);
+		RESULT=resultado;:}
+	;
+	
 	

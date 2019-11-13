@@ -13,8 +13,23 @@ public class Resultado {
 	File archivoDiccionario=new File("DiccionarioTest001.txt");
 	HashMap<String,HashSet<String>> diccionario;
 	
-	public Resultado(String acronimo){		
-		consultaDiccionario(acronimo);
+	String posibleFormaLarga;
+	
+	public Resultado(String acronimo){
+		if(acronimo!=null) {
+			consultaDiccionario(acronimo);
+		}else {
+			//Lambda
+			nadaDetectado();
+		}
+	}
+	private void nadaDetectado() {
+		System.out.println("No se han encontrado acronimos");
+		
+	}
+	public Resultado(String ac,String lf) {
+		this.posibleFormaLarga=lf;
+		consultaDiccionario(ac);
 	}
 	
 	private void consultaDiccionario(String acronimo) {
@@ -25,9 +40,8 @@ public class Resultado {
 		}
 		System.out.println("Acronimo identificado: "+acronimo);
 		HashSet<String> respuesta=this.diccionario.get(acronimo);
-		if(respuesta==null){
-			System.out.println(acronimo);
-			System.out.println("No hay formas largas");
+		if(respuesta==null){			
+			System.out.println("No hay formas largas en el diccionario para este acronimo");
 			
 		}else {		
 			Iterator<String> it=respuesta.iterator();
@@ -36,6 +50,9 @@ public class Resultado {
 				System.out.println("Forma larga "+i+": "+it.next());
 				i++;
 			}
-		}		
+		}
+		if(posibleFormaLarga!=null) {
+			System.out.println("Forma larga detectada en el texto: "+posibleFormaLarga);
+		}
 	}
 }
