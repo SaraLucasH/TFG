@@ -5,6 +5,7 @@ import java.util.LinkedList;
 import java.util.ArrayList;
 
 parser code {:
+Resultado resultado= new Resultado();
 
 public void syntax_error (Symbol s){
 	System.err.println("Error de sintaxis (lexema <" + 	s.value.toString() + ">) en la linea " + s.left + " 	y en la columna " + s.right);
@@ -23,23 +24,22 @@ action code
 //Zona de declaraciones
 terminal String acronimo,formaLarga;
 
+non terminal String INICIO;
 non terminal Resultado RES;
 non terminal String lambda;
-
 
 
 //Reglas semanticas
 
 	//Por el arbol sintactico le asigna el valor de la variable (a traves de result) a la cabeza de la regla o simbolo no terminal asociado.
-
-RES ::= acronimo:ac RES {:Resultado resultado=new Resultado(ac);
-		RESULT=resultado;:}
-	|acronimo:ac {:Resultado resultado=new Resultado(ac);
-		RESULT=resultado;:}
-	|acronimo:ac formaLarga:lf {:Resultado resultado= new Resultado(ac,lf);
-		RESULT=resultado;:}
-	|acronimo:ac formaLarga:lf RES {:Resultado resultado= new Resultado(ac,lf);
-		RESULT=resultado;:}
-	;
+INICIO::= RES {:System.out.println(resultado.toString());:};
+RES ::= acronimo:ac RES{: 	
+		resultado.addDupla(ac,null);
+		:}
+	|acronimo:ac {:resultado.addDupla(ac,null);:}
+	|acronimo:ac formaLarga:lf {:resultado.addDupla(ac,lf);
+		:}
+	|acronimo:ac formaLarga:lf RES
+		{:resultado.addDupla(ac,lf);:};
 	
 	
