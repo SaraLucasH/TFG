@@ -29,7 +29,8 @@ public class Analizador {
 							parser sintactico = new parser(lexico);
 							sintactico.parse();
 						}
-					}				
+					}
+					br.close();
 					
 				} catch (java.io.FileNotFoundException e) {
 					System.out.println("Archivo \"" + argv[i]

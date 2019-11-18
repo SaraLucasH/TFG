@@ -26,33 +26,29 @@ import java_cup.runtime.*;
 
 %}
 
-Frase=([0-9]*|([A-ZÑÁÉÍÓÚ]?[a-zñáéíóú]+))(" "[a-zñáéíóú]*)*"\."?
+Frase=([0-9]*|([A-ZÑÁÉÍÓÚ][a-zñáéíóú]+))(' '([a-zñáéíóú]*|[0-9]*))*('\.')?
 Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |[a-z]{1,4}"-"[A-Z]{2,4}| (([a-z]|[A-Z])"\."){1,5} | [0-9]"-"[A-Z]{2,4} | [a-z]"\." |[A-Z]{1,4}[0-9]{1,3} |([A-Z]"\.")*[A-Z]
 %xstate estado1,estado2,estado3
 
 
 %%	
-	<YYINITIAL> {Frase} {posibleLF=yytext();
+	{Frase} {posibleLF=yytext();
 				yybegin(estado1);
-				return new Symbol(sym.formaLarga,yyline +1, yycolumn +1,posibleLF);
-	<YYINITIAL> {Acronimo} {return new Symbol(sym.acronimo,yyline +1, yycolumn +1,yytext());}	
-		
-	<YYINITIAL> '/'|\t| \n |\r| \r\n | ' '| '\.'|',' {acronimo=""; posibleLF="";}	
-	<YYINITIAL> . {System.err.println("Error lexico: caracter no reconocido <" + yytext() + "> en la linea " + (yyline+1) 
+				return new Symbol(sym.formaLarga,yyline +1, yycolumn +1,posibleLF);}	
+	 {Acronimo} {return new Symbol(sym.acronimo,yyline +1, yycolumn +1,yytext());}
+	 '/'|\t| \n |\r| \r\n | ' '| '\.'|','|'%' {acronimo=""; posibleLF="";}	
+	 . {System.err.println("Error lexico: caracter no reconocido <" + yytext() + "> en la linea " + (yyline+1) 
 	+ " y columna " + (yycolumn +1));}
 
 <estado1> "(" {yybegin(estado2);
 		return new Symbol(sym.parentesisAbierto,yyline +1, yycolumn +1,yytext());}
-<estado1> [^(] {posibleLF="";
-		yybegin(YYINITIAL);}
 
 <estado2> {Acronimo} {acronimo=yytext();
 			yybegin(estado3);
 			return new Symbol(sym.acronimo,yyline +1, yycolumn +1,acronimo);}
-
 <estado3> ")" {yybegin(YYINITIAL);
 		return new Symbol(sym.parentesisCerrado,yyline +1, yycolumn +1,yytext());}	
-<estado3> [^)] {yybegin(YYINITIAL);}
+
 
 
 		
