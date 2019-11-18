@@ -22,24 +22,23 @@ action code
 
 
 //Zona de declaraciones
-terminal String acronimo,formaLarga;
 
+terminal String acronimo,formaLarga,parentesisAbierto,parentesisCerrado;
 non terminal String INICIO;
-non terminal Resultado RES;
-non terminal String lambda;
+non terminal String RES;
 
 
 //Reglas semanticas
 
 	//Por el arbol sintactico le asigna el valor de la variable (a traves de result) a la cabeza de la regla o simbolo no terminal asociado.
-INICIO::= RES {:System.out.println(resultado.toString());:};
-RES ::= acronimo:ac RES{: 	
+INICIO::= RES:res {:System.out.println(resultado.toString()); 
+		RESULT=res;:};
+RES ::= formaLarga:lf parentesisAbierto acronimo:ac parentesisCerrado RES{:resultado.addDupla(ac,lf); RESULT=lf+" "+ac;:}
+	|formaLarga:lf parentesisAbierto acronimo:ac parentesisCerrado {:resultado.addDupla(ac,lf); RESULT=lf+" "+ac;:}
+	|acronimo:ac RES{: 	
 		resultado.addDupla(ac,null);
-		:}
-	|acronimo:ac {:resultado.addDupla(ac,null);:}
-	|acronimo:ac formaLarga:lf {:resultado.addDupla(ac,lf);
-		:}
-	|acronimo:ac formaLarga:lf RES
-		{:resultado.addDupla(ac,lf);:};
+		RESULT=ac;:}
+	|acronimo:ac {:resultado.addDupla(ac,null);RESULT=ac;:};
+
 	
 	

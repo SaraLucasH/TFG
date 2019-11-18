@@ -12,6 +12,10 @@ import java_cup.runtime.*;
 %cup 
 %full
 
+%eofval{
+ 
+%eofval}
+
 %{
 	StringBuffer aux = new StringBuffer();
      	int auxLinea = 0;
@@ -19,33 +23,36 @@ import java_cup.runtime.*;
 	String varAux="";
 	String posibleLF="";
 	String acronimo="";
+
 %}
-Frase=[A-Z]?[a-z]*(" "[a-z]*)*"\."?
-FormaLarga={Frase}"("
 
-Acronimo= [A-Z]+| [A-Z]+[a-z]{1} |[a-z]{1,4}"-"[A-Z]{2,4}| (([a-z]|[A-Z])"\."){1,5} | [0-9]"-"[A-Z]{2,4} | [a-z]"\." |[A-Z]{1,4}[0-9]{1,3} |([A-Z]"\.")*[A-Z]
-
-
-%xstate estado1,estado2,estado3,estado4
-%%		
-	<YYINITIAL> {FormaLarga} {posibleLF=yytext();
-					yybegin(estado1);}	
-	<YYINITIAL> \t| \n |\r| \r\n | ' '| '\.'|',' {acronimo=""; posibleLF="";}
-	<YYINITIAL> {Acronimo} {return new Symbol(sym.acronimo,yyline +1, yycolumn +1,yytext());}
-	<YYINITIAL> . {;}
-	
-<estado1> {Acronimo} {acronimo=yytext();
-			yybegin(estado2);
-			return new Symbol(sym.acronimo,yyline +1, yycolumn +1,varAux);
-						
-			}
-<estado1> {Frase} {yybegin(YYINITIAL);}
-<estado1> . {yybegin(YYINITIAL);}
+Frase=([0-9]*|([A-ZÑÁÉÍÓÚ]?[a-zñáéíóú]+))(" "[a-zñáéíóú]*)*"\."?
+Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |[a-z]{1,4}"-"[A-Z]{2,4}| (([a-z]|[A-Z])"\."){1,5} | [0-9]"-"[A-Z]{2,4} | [a-z]"\." |[A-Z]{1,4}[0-9]{1,3} |([A-Z]"\.")*[A-Z]
+%xstate estado1,estado2,estado3
 
 
-<estado2> ")" {yybegin(YYINITIAL);
-		return new Symbol(sym.formaLarga,yyline +1, yycolumn +1,posibleLF);}	
-<estado2> [^)] {yybegin(YYINITIAL);}
+%%	
+	<YYINITIAL> {Frase} {posibleLF=yytext();
+				yybegin(estado1);
+				return new Symbol(sym.formaLarga,yyline +1, yycolumn +1,posibleLF);
+	<YYINITIAL> {Acronimo} {return new Symbol(sym.acronimo,yyline +1, yycolumn +1,yytext());}	
+		
+	<YYINITIAL> '/'|\t| \n |\r| \r\n | ' '| '\.'|',' {acronimo=""; posibleLF="";}	
+	<YYINITIAL> . {System.err.println("Error lexico: caracter no reconocido <" + yytext() + "> en la linea " + (yyline+1) 
+	+ " y columna " + (yycolumn +1));}
+
+<estado1> "(" {yybegin(estado2);
+		return new Symbol(sym.parentesisAbierto,yyline +1, yycolumn +1,yytext());}
+<estado1> [^(] {posibleLF="";
+		yybegin(YYINITIAL);}
+
+<estado2> {Acronimo} {acronimo=yytext();
+			yybegin(estado3);
+			return new Symbol(sym.acronimo,yyline +1, yycolumn +1,acronimo);}
+
+<estado3> ")" {yybegin(YYINITIAL);
+		return new Symbol(sym.parentesisCerrado,yyline +1, yycolumn +1,yytext());}	
+<estado3> [^)] {yybegin(YYINITIAL);}
 
 
 		
