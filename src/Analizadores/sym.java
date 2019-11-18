@@ -8,7 +8,9 @@ package Analizadores;
 /** CUP generated class containing symbol constants. */
 public class sym {
   /* terminals */
+  public static final int parentesisCerrado = 5;
   public static final int acronimo = 2;
+  public static final int parentesisAbierto = 4;
   public static final int error = 1;
   public static final int formaLarga = 3;
   public static final int EOF = 0;
@@ -16,7 +18,9 @@ public class sym {
   "EOF",
   "error",
   "acronimo",
-  "formaLarga"
+  "formaLarga",
+  "parentesisAbierto",
+  "parentesisCerrado"
   };
 }
 
