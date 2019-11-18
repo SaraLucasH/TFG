@@ -1,0 +1,7 @@
+
+bin/Analizadores/AnalizadorLexico.class
+bin/Analizadores/Analizador.class
+bin/Analizadores/AnalizadorLexico.java~
+*.class
+*.java~
+
