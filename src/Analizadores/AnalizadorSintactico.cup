@@ -34,7 +34,8 @@ non terminal String RES;
 INICIO::= RES:res {:System.out.println(resultado.toString()); 
 		RESULT=res;:};
 RES ::= formaLarga:lf parentesisAbierto acronimo:ac parentesisCerrado RES{:resultado.addDupla(ac,lf); RESULT=lf+" "+ac;:}
-	|formaLarga:lf parentesisAbierto acronimo:ac parentesisCerrado {:resultado.addDupla(ac,lf); RESULT=lf+" "+ac;:}
+	|formaLarga:lf parentesisAbierto acronimo:ac parentesisCerrado {:
+System.out.println("Ha pasado");resultado.addDupla(ac,lf); RESULT=lf+" "+ac;:}
 	|acronimo:ac RES{: 	
 		resultado.addDupla(ac,null);
 		RESULT=ac;:}

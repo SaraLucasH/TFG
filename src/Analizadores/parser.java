@@ -191,7 +191,8 @@ class CUP$parser$actions {
 		int acleft = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-1)).left;
 		int acright = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-1)).right;
 		String ac = (String)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-1)).value;
-		resultado.addDupla(ac,lf); RESULT=lf+" "+ac;
+		
+System.out.println("Ha pasado");resultado.addDupla(ac,lf); RESULT=lf+" "+ac;
               CUP$parser$result = parser.getSymbolFactory().newSymbol("RES",1, ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-3)), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
             }
           return CUP$parser$result;

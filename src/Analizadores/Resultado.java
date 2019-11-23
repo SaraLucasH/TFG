@@ -30,6 +30,10 @@ public class Resultado {
 			HashSet<String> longForm = new HashSet<>();
 			this.diccionarioTextoActual.put(ac, longForm);
 		}
+		if(lf!=null) {
+			String lfChecked=checkLongForm(lf,ac);
+			this.diccionarioTextoActual.get(ac).add(lfChecked);
+		}
 		if(lf!=null && (ac==null || ac=="")){
 			String acAux=this.diccionarioFormaLarga.get(lf);
 			if(acAux!=null){
@@ -39,9 +43,15 @@ public class Resultado {
 				this.diccionarioTextoActual.put(acAux,longForm);				
 			}				
 		}
+		
 	}
+	private String checkLongForm(String lf,String ac) {
+		
+	}
+
+
 	public String toString(){
-		String result="Resultado del texto actual:\n ";
+		String result="Resultado del texto actual:\n";
 		Iterator<Entry<String,HashSet<String>>> it=this.diccionarioTextoActual.entrySet().iterator();
 		while(it.hasNext()){
 			Entry<String,HashSet<String>> e=it.next();

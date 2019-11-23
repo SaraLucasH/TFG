@@ -9,8 +9,19 @@ import java.io.PrintWriter;
 public class Analizador {
 	public static void main(String argv[]) {
 		if (argv.length == 0) {
-			/*System.out.println("Inserta nombre de archivo\n"
-					+ "( Usage : java Analizador <inputfile> )");*/
+			try {
+				AnalizadorLexico lexico = new AnalizadorLexico(new java.io.FileReader("ArchivoPrueba1.txt"));
+				parser sintactico = new parser(lexico);
+				sintactico.parse();
+			} catch (java.io.FileNotFoundException e) {
+				System.out.println("Archivo \"" + "prueba1" + "\" no encontrado.");
+			} catch (java.io.IOException e) {
+				System.out.println("Error durante la lectura del" + " archivo \"" +  "prueba1" + "\".");
+				e.printStackTrace();
+			} catch (Exception e) {
+				System.out.println("Excepcion:");
+				e.printStackTrace();
+			}
 		} else {
 			for (int i = 0; i < argv.length; i++) {
 				AnalizadorLexico lexico = null;
