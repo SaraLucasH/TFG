@@ -9,10 +9,13 @@ import java.io.PrintWriter;
 public class Analizador {
 	public static void main(String argv[]) {
 		if (argv.length == 0) {
+			FileReader file;
 			try {
-				AnalizadorLexico lexico = new AnalizadorLexico(new java.io.FileReader("ArchivoPrueba1.txt"));
+				file=new java.io.FileReader("ArchivoPrueba1.txt");
+				AnalizadorLexico lexico = new AnalizadorLexico(file);
 				parser sintactico = new parser(lexico);
 				sintactico.parse();
+				file.close();
 			} catch (java.io.FileNotFoundException e) {
 				System.out.println("Archivo \"" + "prueba1" + "\" no encontrado.");
 			} catch (java.io.IOException e) {
@@ -42,7 +45,7 @@ public class Analizador {
 						}
 					}
 					br.close();
-					
+					file.close();
 				} catch (java.io.FileNotFoundException e) {
 					System.out.println("Archivo \"" + argv[i]
 							+ "\" no encontrado.");
