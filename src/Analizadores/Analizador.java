@@ -7,6 +7,7 @@ import java.io.PrintWriter;
 /**
 */
 public class Analizador {
+	
 	public static void main(String argv[]) {
 		if (argv.length == 0) {
 			FileReader file;
@@ -37,9 +38,11 @@ public class Analizador {
 						String[] cadena=linea.split("\t");						
 						if(cadena.length>1 && cadena[1].equalsIgnoreCase("es")) {
 							System.out.println(linea.split("\t")[0]);
+							String cad=new String(linea.split("\t")[2].getBytes("ISO_8859_1"),"UTF-8");
+							
 							lexico = new AnalizadorLexico(
-									new java.io.StringReader(
-											linea.split("\t")[2]));
+									new java.io.StringReader(cad
+											));
 							parser sintactico = new parser(lexico);
 							sintactico.parse();
 						}

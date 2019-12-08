@@ -22,8 +22,8 @@ action code
 
 
 //Zona de declaraciones
-
-terminal String acronimo,formaLarga,parentesisAbierto,parentesisCerrado;
+terminal FormaLargaWithAc acWithLf;
+terminal String acronimo;
 non terminal String INICIO;
 non terminal String RES;
 
@@ -35,9 +35,8 @@ non terminal String RES;
 start with INICIO;
 INICIO::= RES:res {:System.out.println(resultado);
 	RESULT=resultado.toString();:};
-RES ::= formaLarga:lf parentesisAbierto acronimo:ac parentesisCerrado 
-	{:resultado.addDupla(ac,lf); RESULT=lf+" "+ac;:}
-	|formaLarga:lf parentesisAbierto acronimo:ac parentesisCerrado RES{:resultado.addDupla(ac,lf);RESULT=lf+" "+ac; :}
+RES ::= acWithLf:a{:resultado.addDupla(a.getAcronimo(),a.getFormaLarga());RESULT=a.getFormaLarga()+" "+a.getAcronimo(); :}
+	|acWithLf:a RES{:resultado.addDupla(a.getAcronimo(),a.getFormaLarga());RESULT=a.getFormaLarga()+" "+a.getAcronimo();:}
 	|acronimo:ac 
 	{:resultado.addDupla(ac,null);RESULT=ac;:}
 	|acronimo:ac RES

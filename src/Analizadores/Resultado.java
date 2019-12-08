@@ -8,6 +8,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map.Entry;
 
+
 import Diccionarios.CargaDiccionario;
 
 public class Resultado {	
@@ -15,10 +16,7 @@ public class Resultado {
 	HashMap<String,String> diccionarioFormaLarga;
 	CargaDiccionario cd= new CargaDiccionario();	
 	HashMap<String,HashSet<String>> diccionarioTextoActual;
-	
-	
-	HashSet<String> palabrasConectoras;
-	
+	HashSet<String> palabrasConectoras;	
 	
 	public Resultado(){		
 		this.diccionarioTextoActual=new HashMap<>();
@@ -30,8 +28,7 @@ public class Resultado {
 		palabrasConectoras= new HashSet<>(Arrays.asList("a", "ante", "bajo", "cabe", "con", "contra"
 				, "de", "desde", "durante", "en", "entre", "hacia", "hasta", "mediante", "para", "por", "según"
 				, "sin", "so", "sobre", "tras", "versus" , "vía","el","la","los","las","le","les"));
-	}
-	
+	}	
 
 	public void addDupla(String ac, String lf) {
 		System.out.println(ac + " --- " + lf);
@@ -54,8 +51,35 @@ public class Resultado {
 		}
 		
 	}
-	private String checkLongForm(String lf,String ac) {
-		
+	
+	//Metodo Soto, al menos no funciona con los primeros casos
+	public static String findBestLongForm( String longForm,String shortForm) {
+		int sIndex;
+		int lIndex;
+		char currChar;
+
+		sIndex = shortForm.length() - 1;
+		lIndex = longForm.length() - 1;
+		for (; sIndex >= 0; sIndex--) {
+			currChar = Character.toLowerCase(shortForm.charAt(sIndex));
+			if (!Character.isLetterOrDigit(currChar))
+				continue;
+			while (((lIndex >= 0) && (CharacterUtil.clean(Character.toLowerCase(longForm.charAt(lIndex))) != currChar))
+					|| ((sIndex == 0) && (lIndex > 0) && (Character.isLetterOrDigit(longForm.charAt(lIndex - 1)))))
+			//while (((lIndex >= 0) && (Character.toLowerCase(longForm.charAt(lIndex)) != currChar))
+				//	|| ((sIndex == 0) && (lIndex > 0) && (Character.isLetterOrDigit(longForm.charAt(lIndex - 1)))))
+				lIndex--;
+			if (lIndex < 0)
+				return null;
+			lIndex--;
+		}
+		lIndex = longForm.lastIndexOf(" ", lIndex) + 1;
+		return longForm.substring(lIndex);
+	}
+	
+	
+	//Si el acronimo tiene longitud>2 entonces busco las otras coincidencias(indice i)
+	private String checkLongForm(String lf,String ac) {		
 		String res= lf;
 		//Por si hubiese algun error
 		res.replaceAll("/t"," ");
@@ -64,33 +88,56 @@ public class Resultado {
 			//Solo hay una palabra
 			//System.out.println("Check long form... "+res);
 			return res;
-		}
-		
+		}		
 		int indiceAcronimo=0;
-		int i=cadena.length-1;
-		res="";
-		
+		int i=cadena.length-2;
+		int j=cadena.length-1;
+		res="";		
 		boolean tope=false;
 		
-		while(i>=0 && !tope){
-			Character c1=Character.toLowerCase(cadena[i].charAt(0));
-			Character c2=Character.toLowerCase(ac.charAt(indiceAcronimo));
-			//System.out.println(c1+" equals "+c2);
-			if(!this.palabrasConectoras.contains(cadena[i]) && c1.equals(c2)){
-				tope=true;
-			}else{
-				i--;
+		while(i>0 && !tope){
+			if(ac.length()>2) {
+				//uso i
+				Character c1=Character.toLowerCase(cadena[i].charAt(0));
+				Character c2=Character.toLowerCase(ac.charAt(indiceAcronimo));
+				Character c3=Character.toLowerCase(cadena[i+1].charAt(0));
+				Character c4=Character.toLowerCase(ac.charAt(indiceAcronimo+1));
+				//System.out.println(c1+" equals "+c2);
+				if(!this.palabrasConectoras.contains(cadena[i]) && !this.palabrasConectoras.contains(cadena[i+1]) && c1.equals(c2) && c3.equals(c4)){
+					tope=true;				
+				}else{
+					i--;
+				}
+			}else {
+				//Uso j
+				Character c1=Character.toLowerCase(cadena[j].charAt(0));
+				Character c2=Character.toLowerCase(ac.charAt(indiceAcronimo));
+				if(!this.palabrasConectoras.contains(cadena[j]) && c1.equals(c2)){
+					tope=true;				
+				}else{
+					j--;
+				}
 			}
-		}
-		
-		boolean completo=false;
-		res=cadena[i]+" ";
-		i++;
-		while(i<cadena.length){
-			res=res+" "+cadena[i];
+		}		
+		if(ac.length()>2) {
+			//Uso i
+			res=cadena[i]+" ";
 			i++;
-		}
-		//System.out.println("Check long form... "+res);
+			
+			while(i<cadena.length ){			
+				res=res+" "+cadena[i];
+				i++;
+			}
+		}else {
+			//Uso j
+			res=cadena[j]+" ";
+			j++;
+			
+			while(j<cadena.length ){			
+				res=res+" "+cadena[j];
+				j++;
+			}
+		}		
 		return res;
 	}
 
@@ -100,9 +147,18 @@ public class Resultado {
 		while(it.hasNext()){
 			Entry<String,HashSet<String>> e=it.next();
 			result+=e.getKey()+"\n";
-			for(String s:e.getValue()){
-				result+=s+" // ";
+			
+			//Para no mostrar // si solo hay una
+			Iterator<String> indice=e.getValue().iterator();
+			
+			//Evito que si es null se lance una excepcion
+			if(indice.hasNext()) {
+				result+=indice.next();
 			}
+			while(indice.hasNext()) {
+				result+=indice.next()+" // ";
+			}
+			
 			result+="\n";
 			consultaDiccionario(e.getKey());
 		}
