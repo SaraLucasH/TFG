@@ -35,15 +35,34 @@ public class Analizador {
 					BufferedReader br = new BufferedReader(file);
 					String linea;
 					while ((linea = br.readLine()) != null) {
-						String[] cadena=linea.split("\t");						
+						String[] cadena=linea.split("\t");
+						
+						//Es posible que haya algun error en el texto proporcionado, y que contenga alguna tabulacion. Por ello,
+						//para su correcta separacion, se inspecciona
+						if(cadena.length>3){
+							int longitudInnecesaria=cadena.length-1;
+							String aux=cadena[longitudInnecesaria];
+							longitudInnecesaria--;
+							while(longitudInnecesaria>2){
+								aux=cadena[longitudInnecesaria]+" "+aux;
+							}
+							cadena[2]+=aux;
+						}
+						
+						//Solo textos en castellano
 						if(cadena.length>1 && cadena[1].equalsIgnoreCase("es")) {
-							System.out.println(linea.split("\t")[0]);
-							String cad=new String(linea.split("\t")[2].getBytes("ISO_8859_1"),"UTF-8");
+							//Identificador del texto
+							System.out.println(cadena[0]);
+							cadena[2].replaceAll("\t", " ");
+							
+							//Si no las tildes no las saca de forma correcta.
+							String cad=new String(cadena[2].getBytes("ISO_8859_1"),"UTF-8");
 							
 							lexico = new AnalizadorLexico(
 									new java.io.StringReader(cad
 											));
 							parser sintactico = new parser(lexico);
+			
 							sintactico.parse();
 						}
 					}

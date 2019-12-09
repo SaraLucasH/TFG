@@ -31,25 +31,26 @@ public class Resultado {
 	}	
 
 	public void addDupla(String ac, String lf) {
-		System.out.println(ac + " --- " + lf);
-		if (this.diccionarioTextoActual.get(ac) == null) {			
-			this.diccionarioTextoActual.put(ac, new HashSet<String>());
+		if (ac != null && ac != " " && ac!="") {
+			System.out.println(ac + " --- " + lf);
+			if (this.diccionarioTextoActual.get(ac) == null) {
+				this.diccionarioTextoActual.put(ac, new HashSet<String>());
+			}
+			if (lf != null) {
+				System.out.println("Checkeo palabra");
+				String lfChecked = checkLongForm(lf, ac);
+				this.diccionarioTextoActual.get(ac).add(lfChecked);
+			}
+			if (lf != null && (ac == null || ac == "")) {
+				String acAux = this.diccionarioFormaLarga.get(lf);
+				if (acAux != null) {
+					System.out.println("*********Accedo a dic lf*********");
+					HashSet<String> longForm = new HashSet<>();
+					longForm.add(lf);
+					this.diccionarioTextoActual.put(acAux, longForm);
+				}
+			}
 		}
-		if(lf!=null) {
-			System.out.println("Checkeo palabra");
-			String lfChecked=checkLongForm(lf,ac);
-			this.diccionarioTextoActual.get(ac).add(lfChecked);
-		}
-		if(lf!=null && (ac==null || ac=="")){
-			String acAux=this.diccionarioFormaLarga.get(lf);
-			if(acAux!=null){
-				System.out.println("*********Accedo a dic lf*********");
-				HashSet<String> longForm = new HashSet<>();
-				longForm.add(lf);
-				this.diccionarioTextoActual.put(acAux,longForm);				
-			}				
-		}
-		
 	}
 	
 	//Metodo Soto, al menos no funciona con los primeros casos

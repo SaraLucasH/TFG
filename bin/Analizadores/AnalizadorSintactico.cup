@@ -36,7 +36,8 @@ start with INICIO;
 INICIO::= RES:res {:System.out.println(resultado);
 	RESULT=resultado.toString();:};
 RES ::= acWithLf:a{:resultado.addDupla(a.getAcronimo(),a.getFormaLarga());RESULT=a.getFormaLarga()+" "+a.getAcronimo(); :}
-	|acWithLf:a RES{:resultado.addDupla(a.getAcronimo(),a.getFormaLarga());RESULT=a.getFormaLarga()+" "+a.getAcronimo();:}
+	|acWithLf:a RES{:resultado.addDupla(a.getAcronimo(),
+			a.getFormaLarga());RESULT=a.getFormaLarga()+" 				"+a.getAcronimo();:}
 	|acronimo:ac 
 	{:resultado.addDupla(ac,null);RESULT=ac;:}
 	|acronimo:ac RES

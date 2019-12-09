@@ -6,6 +6,10 @@ public class FormaLargaWithAc {
 	String acronimo;
 	public FormaLargaWithAc() {		
 	}
+	public FormaLargaWithAc(String ac, String lf) {
+		this.acronimo=ac;
+		this.formaLarga=lf;
+	}
 	
 	public void clean() {
 		this.acronimo="";
