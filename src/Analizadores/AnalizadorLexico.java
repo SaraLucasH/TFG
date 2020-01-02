@@ -2,6 +2,7 @@
 
 package Analizadores;
 import java.util.LinkedList;
+
 import java_cup.runtime.*;
 
 
@@ -331,6 +332,8 @@ public class AnalizadorLexico implements java_cup.runtime.Scanner {
 	String acronimo="";
 	FormaLargaWithAc acWLf=new FormaLargaWithAc ();
 
+	
+
 
 
   /**
@@ -340,6 +343,7 @@ public class AnalizadorLexico implements java_cup.runtime.Scanner {
    */
   public AnalizadorLexico(java.io.Reader in) {
     this.zzReader = in;
+    
   }
 
 

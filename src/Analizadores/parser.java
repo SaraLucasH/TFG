@@ -6,9 +6,10 @@
 package Analizadores;
 
 import java_cup.runtime.*;
-import java_cup.runtime.Symbol;
+
 import java.util.LinkedList;
 import java.util.ArrayList;
+
 import java_cup.runtime.XMLElement;
 
 /** CUP v0.11b 20160615 (GIT 4ac7450) generated parser.
@@ -16,20 +17,35 @@ import java_cup.runtime.XMLElement;
 @SuppressWarnings({"rawtypes"})
 public class parser extends java_cup.runtime.lr_parser {
 
- public final Class getSymbolContainer() {
+ private String nombreFicheroEntrada;
+
+public final Class getSymbolContainer() {
     return sym.class;
 }
 
   /** Default constructor. */
   @Deprecated
-  public parser() {super();}
+  public parser(String nombreFichero) {
+	  super();
+	  this.nombreFicheroEntrada=nombreFichero;
+	  this.resultado= new Resultado(nombreFicheroEntrada);
+  }
 
-  /** Constructor which sets the default scanner. */
+  /** Constructor which sets the default scanner. 
+ * @param nombreFciheroEntrada */
   @Deprecated
-  public parser(java_cup.runtime.Scanner s) {super(s);}
+  public parser(java_cup.runtime.Scanner s, String nombreFichero) {	  
+	  super(s);
+	  this.nombreFicheroEntrada=nombreFichero;
+	  this.resultado= new Resultado(nombreFicheroEntrada);
+	  }
 
   /** Constructor which sets the default scanner. */
-  public parser(java_cup.runtime.Scanner s, java_cup.runtime.SymbolFactory sf) {super(s,sf);}
+  public parser(java_cup.runtime.Scanner s, java_cup.runtime.SymbolFactory sf,String nombreFichero) {
+	  super(s,sf);
+	  this.nombreFicheroEntrada=nombreFichero;
+	  this.resultado= new Resultado(nombreFicheroEntrada);
+	  }
 
   /** Production table. */
   protected static final short _production_table[][] = 
@@ -98,7 +114,7 @@ public class parser extends java_cup.runtime.lr_parser {
 
 
 
-Resultado resultado= new Resultado();
+Resultado resultado;
 
 public void syntax_error (Symbol s){
 	System.err.println("Error de sintaxis (lexema <" + 	s.value.toString() + ">) en la linea " + s.left + " 	y en la columna " + s.right);

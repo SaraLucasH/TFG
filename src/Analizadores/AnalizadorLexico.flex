@@ -1,4 +1,4 @@
-package Analizadores;
+ package Analizadores;
 import java.util.LinkedList;
 import java_cup.runtime.*;
 
@@ -24,7 +24,7 @@ import java_cup.runtime.*;
 	String posibleLF="";
 	String acronimo="";
 	FormaLargaWithAc acWLf=new FormaLargaWithAc ();
-
+	
 %}
 Minuscula=[\u00F1\u00E1\u00E9\u00ED\u00F3\u00FA]|[a-z]
 Mayuscula=[A-Z]|[\u00D1\u00C1\u00C9\u00CD\u00D3\u00DA]
