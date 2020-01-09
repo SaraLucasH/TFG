@@ -6,10 +6,9 @@
 package Analizadores;
 
 import java_cup.runtime.*;
-
+import java_cup.runtime.Symbol;
 import java.util.LinkedList;
 import java.util.ArrayList;
-
 import java_cup.runtime.XMLElement;
 
 /** CUP v0.11b 20160615 (GIT 4ac7450) generated parser.
@@ -17,42 +16,28 @@ import java_cup.runtime.XMLElement;
 @SuppressWarnings({"rawtypes"})
 public class parser extends java_cup.runtime.lr_parser {
 
- private String nombreFicheroEntrada;
-
-public final Class getSymbolContainer() {
+ public final Class getSymbolContainer() {
     return sym.class;
 }
 
   /** Default constructor. */
   @Deprecated
-  public parser(String nombreFichero) {
-	  super();
-	  this.nombreFicheroEntrada=nombreFichero;
-	  this.resultado= new Resultado(nombreFicheroEntrada);
-  }
-
-  /** Constructor which sets the default scanner. 
- * @param nombreFciheroEntrada */
-  @Deprecated
-  public parser(java_cup.runtime.Scanner s, String nombreFichero) {	  
-	  super(s);
-	  this.nombreFicheroEntrada=nombreFichero;
-	  this.resultado= new Resultado(nombreFicheroEntrada);
-	  }
+  public parser(String nombreFichero) {super(); this.nombreFicheroEntrada=nombreFichero;}
 
   /** Constructor which sets the default scanner. */
-  public parser(java_cup.runtime.Scanner s, java_cup.runtime.SymbolFactory sf,String nombreFichero) {
-	  super(s,sf);
-	  this.nombreFicheroEntrada=nombreFichero;
-	  this.resultado= new Resultado(nombreFicheroEntrada);
-	  }
+  @Deprecated
+  public parser(java_cup.runtime.Scanner s,String nombreFichero) {super(s);
+  this.nombreFicheroEntrada=nombreFichero;}
+
+  /** Constructor which sets the default scanner. */
+  public parser(java_cup.runtime.Scanner s,String nombreFichero, java_cup.runtime.SymbolFactory sf) {super(s,sf); this.nombreFicheroEntrada=nombreFichero;}
 
   /** Production table. */
   protected static final short _production_table[][] = 
     unpackFromStrings(new String[] {
-    "\000\006\000\002\002\004\000\002\002\003\000\002\003" +
-    "\003\000\002\003\004\000\002\003\003\000\002\003\004" +
-    "" });
+    "\000\010\000\002\002\004\000\002\002\003\000\002\002" +
+    "\003\000\002\003\003\000\002\003\004\000\002\003\003" +
+    "\000\002\003\004\000\002\004\002" });
 
   /** Access to production table. */
   public short[][] production_table() {return _production_table;}
@@ -60,11 +45,12 @@ public final Class getSymbolContainer() {
   /** Parse-action table. */
   protected static final short[][] _action_table = 
     unpackFromStrings(new String[] {
-    "\000\010\000\006\004\006\005\004\001\002\000\010\002" +
-    "\ufffd\004\006\005\004\001\002\000\004\002\000\001\002" +
-    "\000\010\002\uffff\004\006\005\004\001\002\000\004\002" +
-    "\010\001\002\000\004\002\001\001\002\000\004\002\ufffe" +
-    "\001\002\000\004\002\ufffc\001\002" });
+    "\000\011\000\010\002\ufffa\004\007\005\004\001\002\000" +
+    "\010\002\ufffc\004\007\005\004\001\002\000\004\002\000" +
+    "\001\002\000\004\002\uffff\001\002\000\010\002\ufffe\004" +
+    "\007\005\004\001\002\000\004\002\011\001\002\000\004" +
+    "\002\001\001\002\000\004\002\ufffd\001\002\000\004\002" +
+    "\ufffb\001\002" });
 
   /** Access to parse-action table. */
   public short[][] action_table() {return _action_table;}
@@ -72,10 +58,10 @@ public final Class getSymbolContainer() {
   /** <code>reduce_goto</code> table. */
   protected static final short[][] _reduce_table = 
     unpackFromStrings(new String[] {
-    "\000\010\000\006\002\006\003\004\001\001\000\004\003" +
-    "\011\001\001\000\002\001\001\000\004\003\010\001\001" +
-    "\000\002\001\001\000\002\001\001\000\002\001\001\000" +
-    "\002\001\001" });
+    "\000\011\000\010\002\007\003\004\004\005\001\001\000" +
+    "\004\003\012\001\001\000\002\001\001\000\002\001\001" +
+    "\000\004\003\011\001\001\000\002\001\001\000\002\001" +
+    "\001\000\002\001\001\000\002\001\001" });
 
   /** Access to <code>reduce_goto</code> table. */
   public short[][] reduce_table() {return _reduce_table;}
@@ -114,7 +100,8 @@ public final Class getSymbolContainer() {
 
 
 
-Resultado resultado;
+String nombreFicheroEntrada="";
+Resultado resultado= new Resultado(nombreFicheroEntrada);
 
 public void syntax_error (Symbol s){
 	System.err.println("Error de sintaxis (lexema <" + 	s.value.toString() + ">) en la linea " + s.left + " 	y en la columna " + s.right);
@@ -173,14 +160,23 @@ class CUP$parser$actions {
 		int resleft = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).left;
 		int resright = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).right;
 		String res = (String)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
-		System.out.println(resultado);
+		
 	RESULT=resultado.toString();
               CUP$parser$result = parser.getSymbolFactory().newSymbol("INICIO",0, ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
             }
           return CUP$parser$result;
 
           /*. . . . . . . . . . . . . . . . . . . .*/
-          case 2: // RES ::= acWithLf 
+          case 2: // INICIO ::= lambda 
+            {
+              String RESULT =null;
+
+              CUP$parser$result = parser.getSymbolFactory().newSymbol("INICIO",0, ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
+            }
+          return CUP$parser$result;
+
+          /*. . . . . . . . . . . . . . . . . . . .*/
+          case 3: // RES ::= acWithLf 
             {
               String RESULT =null;
 		int aleft = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).left;
@@ -192,19 +188,20 @@ class CUP$parser$actions {
           return CUP$parser$result;
 
           /*. . . . . . . . . . . . . . . . . . . .*/
-          case 3: // RES ::= acWithLf RES 
+          case 4: // RES ::= acWithLf RES 
             {
               String RESULT =null;
 		int aleft = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-1)).left;
 		int aright = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-1)).right;
 		FormaLargaWithAc a = (FormaLargaWithAc)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-1)).value;
-		resultado.addDupla(a.getAcronimo(),a.getFormaLarga());RESULT=a.getFormaLarga()+" "+a.getAcronimo();
+		resultado.addDupla(a.getAcronimo(),
+			a.getFormaLarga());RESULT=a.getFormaLarga()+" 				"+a.getAcronimo();
               CUP$parser$result = parser.getSymbolFactory().newSymbol("RES",1, ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-1)), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
             }
           return CUP$parser$result;
 
           /*. . . . . . . . . . . . . . . . . . . .*/
-          case 4: // RES ::= acronimo 
+          case 5: // RES ::= acronimo 
             {
               String RESULT =null;
 		int acleft = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).left;
@@ -216,7 +213,7 @@ class CUP$parser$actions {
           return CUP$parser$result;
 
           /*. . . . . . . . . . . . . . . . . . . .*/
-          case 5: // RES ::= acronimo RES 
+          case 6: // RES ::= acronimo RES 
             {
               String RESULT =null;
 		int acleft = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-1)).left;
@@ -225,6 +222,15 @@ class CUP$parser$actions {
 		resultado.addDupla(ac,null);
 		RESULT=ac;
               CUP$parser$result = parser.getSymbolFactory().newSymbol("RES",1, ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-1)), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
+            }
+          return CUP$parser$result;
+
+          /*. . . . . . . . . . . . . . . . . . . .*/
+          case 7: // lambda ::= 
+            {
+              String RESULT =null;
+		RESULT="";
+              CUP$parser$result = parser.getSymbolFactory().newSymbol("lambda",2, ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
             }
           return CUP$parser$result;
 

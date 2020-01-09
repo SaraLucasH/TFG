@@ -50,7 +50,7 @@ public class Analizador {
 					
 					lexico = new AnalizadorLexico(new java.io.StringReader(
 							cadenaCompleta));
-			
+					System.out.println(argv[i]);
 					parser sintactico = new parser(lexico,argv[i]);
 
 					sintactico.parse();

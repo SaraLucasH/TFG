@@ -19,6 +19,7 @@ import java.util.Map.Entry;
 
 
 
+
 import Diccionarios.CargaDiccionario;
 
 public class Resultado {	
@@ -74,12 +75,13 @@ public class Resultado {
 			if (lf != null && lf!="" && lf!=" ") {
 				
 				System.out.println("Checkeo palabra");
+				String acAux=checkDoubleAcronym(ac);
 				String lfChecked;
 				//HashSet<String> consulta=consultaDiccionario(ac);
 				
 				//Empiezo por la primera forma
-				String lfCheckedStart = checkLongFromStart(lf, ac);			
-				String lfCheckedEnd = checkLongFromEnd(lf, ac);
+				String lfCheckedStart = checkLongFromStart(lf, acAux);			
+				String lfCheckedEnd = checkLongFromEnd(lf, acAux);
 				if(lfCheckedStart.length()>lfCheckedEnd.length()){
 					lfChecked=lfCheckedEnd;
 				}else{
@@ -100,6 +102,17 @@ public class Resultado {
 		}
 	}
 	
+	private String checkDoubleAcronym(String ac) {
+		if(ac.length()==4){
+			Character aux0=ac.charAt(0);
+			Character aux2=ac.charAt(2);
+			if(aux0.equals(ac.charAt(1)) && aux2.equals(ac.charAt(3))){
+				return ""+aux0+aux2;
+			}
+		}
+		return ac;
+	}
+
 	/*
 	 *  _ _ _ _ X Busco desde el final las siglas en la frase obtenida del lexico
 	 *  PCR Reaccion en cadena de la polimerasa (ignorando las palabras del conjunto que tiene esta clase
@@ -118,7 +131,7 @@ public class Resultado {
 		
 		if(frase.length!=1){		
 			// ----------- Acronimo long 2 -----------------
-			if (ac.length() == 2) {
+			/*if (ac.length() == 2) {
 				// No consideramos acronimos de longitud 1
 				while (i >= 0 && !tope) {					
 						Character ac1 = Character.toUpperCase(ac
@@ -154,7 +167,7 @@ public class Resultado {
 					
 				}
 			//----------- Acronimo > long 2 -----------------
-			}else{
+			}else{*/
 				while(i>=0 && !tope){
 					Character ac1=Character.toUpperCase(ac.charAt(indiceAcronimo)); 
 					if(!this.palabrasConectoras.contains(frase[i])&& frase[i]!=""){
@@ -169,8 +182,11 @@ public class Resultado {
 									s.equals(Character.toUpperCase(frase[i].charAt(correccionEspacio))) ){
 								if(i+1==frase.length){
 									return lf;
-								}
+								}								
 								tope=checkRestAcFromEnd(i+1,frase,ac);
+								if(!tope){
+									i-=1;
+								}
 							}else{
 								i-=1;
 							}
@@ -182,6 +198,9 @@ public class Resultado {
 									return lf;
 								}
 								tope = checkRestAcFromEnd(i + 1, frase, ac);
+								if(!tope){
+									i-=1;
+								}
 							} else {
 								i -= 1;
 							}
@@ -190,7 +209,7 @@ public class Resultado {
 						i-=1;
 					}
 				}
-			}
+			//}
 		}else{
 			return lf;
 		}
@@ -291,7 +310,7 @@ public class Resultado {
 		
 		if(frase.length!=1){		
 			//----------- Acronimo long 2 -----------------
-			if(ac.length()==2){
+			/*if(ac.length()==2){
 				//No consideramos acronimos de longitud 1				
 				while(i>=0 && !tope){
 					Character ac1=Character.toUpperCase(ac.charAt(indiceAcronimo)); 
@@ -322,7 +341,7 @@ public class Resultado {
 					}
 				}
 			//----------- Acronimo > long 2 -----------------
-			}else{
+			}else{*/
 				while(i>=0 && !tope){
 					Character ac1=Character.toUpperCase(ac.charAt(indiceAcronimo)); 
 					if(!this.palabrasConectoras.contains(frase[i])&& frase[i]!=""){
@@ -352,7 +371,7 @@ public class Resultado {
 						i-=1;
 					}
 				}
-			}
+			//}
 		}else{
 			return lf;
 		}

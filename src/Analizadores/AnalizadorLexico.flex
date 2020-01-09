@@ -40,7 +40,10 @@ Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |[a-z]{1,4}"-"[A-Z]{2,4}| (([a-z]|[A-Z])"\.
 	<YYINITIAL> "(" {//Si hay acronimos en una frase no detectara el parentesis, pues al principio estaba en el estado 1
 				yypushback(yytext().length());
 				yybegin(estado1);}				
-
+	<YYINITIAL> [\u002D] {//barra -
+				;}
+	<YYINITIAL> [\u003C] {//Simbolo menor que
+				;}
 	<YYINITIAL> [\u0025] {//Porcentaje
 				;}
 	<YYINITIAL> [\u0022] {//Comilla "
@@ -63,8 +66,12 @@ Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |[a-z]{1,4}"-"[A-Z]{2,4}| (([a-z]|[A-Z])"\.
 
 <estado1> "(" {yybegin(estado2);
 		System.out.println("pa");}
-<estado1> [^(] {yypushback(yytext().length());
-			acWLf.clean();
+
+<estado1> [^(] {String b=yytext();
+			if(b!=null){
+				yypushback(b.length());
+				acWLf.clean();
+			}
 			yybegin(YYINITIAL);}
 
 <estado2> {Acronimo} {acronimo=yytext();
@@ -73,8 +80,9 @@ Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |[a-z]{1,4}"-"[A-Z]{2,4}| (([a-z]|[A-Z])"\.
 			System.out.println("ac");}
 <estado2> {Frase}")" {yybegin(YYINITIAL); acWLf.clean();}
 <estado2> {Frase}" )" {yybegin(YYINITIAL); acWLf.clean();}
-<estado2> [^] {yypushback(yytext().length());
-			acWLf.clean();
+<estado2> [^] {	if(yytext()!=null){
+			yypushback(yytext().length());
+			acWLf.clean();}
 			yybegin(YYINITIAL);}
 
 <estado3> ")" {yybegin(YYINITIAL);
@@ -83,8 +91,9 @@ Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |[a-z]{1,4}"-"[A-Z]{2,4}| (([a-z]|[A-Z])"\.
 		return new Symbol(sym.acWithLf,yyline+1,yycolumn+1,new FormaLargaWithAc(acWLf.getAcronimo(),acWLf.getFormaLarga()));
 		
 		}	
-<estado3> [^)] {yypushback(yytext().length());
-			acWLf.clean();
+<estado3> [^)] {if(yytext()!=null){
+			yypushback(yytext().length());
+			acWLf.clean();}
 			yybegin(YYINITIAL);}
 
 	
