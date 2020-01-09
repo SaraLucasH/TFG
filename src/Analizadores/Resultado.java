@@ -430,7 +430,7 @@ public class Resultado {
 	public String toString(){
 		String result="";
 		try {
-			File file= new File("Sample_set_results.tsv");
+			File file= new File("Training_set_results.tsv");
 			if(!file.exists()){
 				result="#DocumentID\tMention_A_type\tMention_A_StartOffset\tMention_A_EndOffsetMention_A\tRelation_type\t"
 						+ "Mention_B_type\tMention_B_StartOffset\tMention_B_EndOffset\tMention_B\n";

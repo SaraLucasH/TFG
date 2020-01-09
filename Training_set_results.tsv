@@ -1,0 +1,30 @@
+#DocumentID	Mention_A_type	Mention_A_StartOffset	Mention_A_EndOffsetMention_A	Relation_type	Mention_B_type	Mention_B_StartOffset	Mention_B_EndOffset	Mention_B
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0004-06142005001000011-1.txt	SHORT_FORM	EEII	SHORT-LONG	LONG_FORM	extremidades inferiores
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0004-06142005001000011-1.txt	SHORT_FORM	TSP	SHORT-LONG	LONG_FORM	paraparesia espástica tropical
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0004-06142005001000011-1.txt	SHORT_FORM	RMN	SHORT-LONG	LONG_FORM	resonancia magnética nuclear
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0004-06142005001000011-1.txt	SHORT_FORM	ROT	SHORT-LONG	LONG_FORM	reflejos osteotendinosos
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0004-06142005001000011-1.txt	SHORT_FORM	LCR	SHORT-LONG	LONG_FORM	líquido cefalorraquídeo
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0004-06142005001000011-1.txt	SHORT_FORM	PCR	SHORT-LONG	LONG_FORM	reacción en cadena de la polimerasa
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0004-06142005001000011-1.txt	SHORT_FORM	RCP	SHORT-LONG	LONG_FORM	reflejo cutaneoplantar
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0004-06142005001000011-3.txt	SHORT_FORM	ELISA	SHORT-LONG	LONG_FORM	Determinación sanguínea de anticuerpos 
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0213-12852003000500002-1.txt	SHORT_FORM	ECG	SHORT-LONG	LONG_FORM	 En el electrocardiograma 
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0213-12852003000500002-1.txt	SHORT_FORM	DTM	SHORT-LONG	LONG_FORM	desórdenes temporomandibulares
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1130-05582009000600006-1.txt	SHORT_FORM	TAC	SHORT-LONG	LONG_FORM	tomografía computerizada
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1130-05582010000200003-1.txt	SHORT_FORM	TC	SHORT-LONG	LONG_FORM	tomografía computarizada
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1130-05582012000300005-1.txt	SHORT_FORM	PAAF	SHORT-LONG	LONG_FORM	aspiración con aguja fina 
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1130-05582012000300005-1.txt	SHORT_FORM	RM	SHORT-LONG	LONG_FORM	resonancia magnética
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1130-05582013000400005-1.txt	SHORT_FORM	TAC	SHORT-LONG	LONG_FORM	 No se palpaban adenomegalias en el cuello y se descartó patología regional y alejada mediante estudios de imágenes  // tomografía axial computarizada // 
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0004-06142006000600015-1.txt	SHORT_FORM	FAV	SHORT-LONG	LONG_FORM	fístula arteriovenosa
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912004001000008-1.txt	SHORT_FORM	OD	SHORT-LONG	LONG_FORM	ojo derecho
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912004001000008-1.txt	SHORT_FORM	TAC	SHORT-LONG	LONG_FORM	Tomografia Axial Computarizada
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912004001000008-1.txt	SHORT_FORM	CA	SHORT-LONG	LONG_FORM	cámara anterior
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912005000600011-1.txt	SHORT_FORM	BPA	SHORT-LONG	LONG_FORM	la biomicroscopía 
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912005000600011-1.txt	SHORT_FORM	OD	SHORT-LONG	LONG_FORM	ojo derecho
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912005000600011-1.txt	SHORT_FORM	AV	SHORT-LONG	LONG_FORM	agudeza visual
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912005000600011-1.txt	SHORT_FORM	OI	SHORT-LONG	LONG_FORM	ojo izquierdo
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912005001000011-1.txt	SHORT_FORM	AV	SHORT-LONG	LONG_FORM	agudeza visual
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912005001000011-1.txt	SHORT_FORM	OI	SHORT-LONG	LONG_FORM	ojo izquierdo
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0004-06142006000700014-1.txt	SHORT_FORM	TAC	SHORT-LONG	LONG_FORM	 que se correspondió con la aparición en las pruebas de imagen 
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0004-06142006000700014-1.txt	SHORT_FORM	CEA	SHORT-LONG	LONG_FORM	Carcino Embrionario
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912005001100009-1.txt	SHORT_FORM	PIO	SHORT-LONG	LONG_FORM	presión intraocular
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912006000100008-1.txt	SHORT_FORM	RMN	SHORT-LONG	LONG_FORM	resonancia magnética nuclear

@@ -22,15 +22,17 @@ public class parser extends java_cup.runtime.lr_parser {
 
   /** Default constructor. */
   @Deprecated
-  public parser(String nombreFichero) {super(); this.nombreFicheroEntrada=nombreFichero;}
+  public parser(String nombreFichero) {super(); this.nombreFicheroEntrada=nombreFichero;this.resultado= new Resultado(nombreFicheroEntrada);}
 
   /** Constructor which sets the default scanner. */
   @Deprecated
   public parser(java_cup.runtime.Scanner s,String nombreFichero) {super(s);
-  this.nombreFicheroEntrada=nombreFichero;}
+  this.nombreFicheroEntrada=nombreFichero;
+  this.resultado= new Resultado(nombreFicheroEntrada);}
 
   /** Constructor which sets the default scanner. */
-  public parser(java_cup.runtime.Scanner s,String nombreFichero, java_cup.runtime.SymbolFactory sf) {super(s,sf); this.nombreFicheroEntrada=nombreFichero;}
+  public parser(java_cup.runtime.Scanner s,String nombreFichero, java_cup.runtime.SymbolFactory sf) {super(s,sf); this.nombreFicheroEntrada=nombreFichero;
+  this.resultado= new Resultado(nombreFicheroEntrada);}
 
   /** Production table. */
   protected static final short _production_table[][] = 
@@ -101,7 +103,7 @@ public class parser extends java_cup.runtime.lr_parser {
 
 
 String nombreFicheroEntrada="";
-Resultado resultado= new Resultado(nombreFicheroEntrada);
+Resultado resultado;
 
 public void syntax_error (Symbol s){
 	System.err.println("Error de sintaxis (lexema <" + 	s.value.toString() + ">) en la linea " + s.left + " 	y en la columna " + s.right);
