@@ -28,3 +28,47 @@ C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0
 C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0004-06142006000700014-1.txt	SHORT_FORM	CEA	SHORT-LONG	LONG_FORM	Carcino Embrionario
 C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912005001100009-1.txt	SHORT_FORM	PIO	SHORT-LONG	LONG_FORM	presión intraocular
 C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912006000100008-1.txt	SHORT_FORM	RMN	SHORT-LONG	LONG_FORM	resonancia magnética nuclear
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912006000200012-1.txt	SHORT_FORM	NOT	SHORT-LONG	LONG_FORM	neuropatía óptica traumática
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912006000200012-1.txt	SHORT_FORM	RMN	SHORT-LONG	LONG_FORM	resonancia magnética nuclear
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912006000200012-1.txt	SHORT_FORM	OD	SHORT-LONG	LONG_FORM	ojo derecho
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912006000200012-1.txt	SHORT_FORM	AV	SHORT-LONG	LONG_FORM	agudeza visual
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912006000200012-1.txt	SHORT_FORM	DPAR	SHORT-LONG	LONG_FORM	defecto pupilar aferente relativo
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912006000200012-1.txt	SHORT_FORM	TC	SHORT-LONG	LONG_FORM	tomografía computarizada
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0004-06142007000500011-1.txt	SHORT_FORM	VSG	SHORT-LONG	LONG_FORM	lt y una eritosedimentación 
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912006000500008-1.txt	SHORT_FORM	OD	SHORT-LONG	LONG_FORM	ojo derecho
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912006000500008-1.txt	SHORT_FORM	AV	SHORT-LONG	LONG_FORM	agudeza visual
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912006000500008-1.txt	SHORT_FORM	OI	SHORT-LONG	LONG_FORM	ojo izquierdo
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912006000500008-1.txt	SHORT_FORM	AO	SHORT-LONG	LONG_FORM	ambos ojos
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1130-05582017000200119-1.txt	SHORT_FORM	PAAF	SHORT-LONG	LONG_FORM	punción-aspiración con aguja fina
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1130-05582017000200119-1.txt	SHORT_FORM	TC	SHORT-LONG	LONG_FORM	tomografía computarizada
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912006000900010-1.txt	SHORT_FORM	RNM	SHORT-LONG	LONG_FORM	Resonancia Nuclear Magnética
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912006001200008-1.txt	SHORT_FORM	OD	SHORT-LONG	LONG_FORM	ojo derecho
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912006001200008-1.txt	SHORT_FORM	AV	SHORT-LONG	LONG_FORM	agudeza visual
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912006001200008-1.txt	SHORT_FORM	OI	SHORT-LONG	LONG_FORM	ojo izquierdo
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912007001200011-1.txt	SHORT_FORM	MA	SHORT-LONG	LONG_FORM	membrana amniótica
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912007001200011-1.txt	SHORT_FORM	AV	SHORT-LONG	LONG_FORM	agudeza visual
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912007001200011-1.txt	SHORT_FORM	OD	SHORT-LONG	LONG_FORM	ojo derecho
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912007001200011-1.txt	SHORT_FORM	OI	SHORT-LONG	LONG_FORM	ojo izquierdo
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1130-63432014000200011-1.txt	SHORT_FORM	EVA	SHORT-LONG	LONG_FORM	escala visual analógica
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912009000300009-1.txt	SHORT_FORM	OD	SHORT-LONG	LONG_FORM	ojo derecho
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912009000300010-1.txt	SHORT_FORM	AGF	SHORT-LONG	LONG_FORM	angiografía fluoresceínica
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912009000300010-1.txt	SHORT_FORM	ICG	SHORT-LONG	LONG_FORM	 La angiografía con verde de indocianina 
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912009000800005-1.txt	SHORT_FORM	OD	SHORT-LONG	LONG_FORM	ojo derecho
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912009000800005-1.txt	SHORT_FORM	OI	SHORT-LONG	LONG_FORM	ojo izquierdo
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912009000800005-1.txt	SHORT_FORM	VSG	SHORT-LONG	LONG_FORM	velocidad de sedimentación globular
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1130-63432014000500008-1.txt	SHORT_FORM	ECG	SHORT-LONG	LONG_FORM	 Se le realiza electrocardiograma 
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912009001100005-1.txt	SHORT_FORM	OD	SHORT-LONG	LONG_FORM	ojo derecho
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912009001100005-1.txt	SHORT_FORM	AV	SHORT-LONG	LONG_FORM	agudeza visual
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912009001100005-1.txt	SHORT_FORM	OI	SHORT-LONG	LONG_FORM	ojo izquierdo
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912009001100005-1.txt	SHORT_FORM	AO	SHORT-LONG	LONG_FORM	ambos ojos
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912009001100005-1.txt	SHORT_FORM	TC	SHORT-LONG	LONG_FORM	tomografía computerizada
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912009001100006-1.txt	SHORT_FORM	OD	SHORT-LONG	LONG_FORM	Hg  // ojo derecho // 
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912009001100006-1.txt	SHORT_FORM	PIO	SHORT-LONG	LONG_FORM	presión intraocular
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912009001100006-1.txt	SHORT_FORM	OI	SHORT-LONG	LONG_FORM	Hg  // ojo izquierdo // 
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912009001100006-1.txt	SHORT_FORM	BMU	SHORT-LONG	LONG_FORM	biomicroscopía ultrasónica
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912010001200005-1.txt	SHORT_FORM	AGF	SHORT-LONG	LONG_FORM	angiografía fluoresceínica
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912010001200005-1.txt	SHORT_FORM	OCT	SHORT-LONG	LONG_FORM	 una tomografía de coherencia óptica 
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912010001200005-1.txt	SHORT_FORM	DRNS	SHORT-LONG	LONG_FORM	desprendimiento de retina neurosensorial
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912010001200005-1.txt	SHORT_FORM	AVI	SHORT-LONG	LONG_FORM	 y verde de indocianina 
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912010001200005-1.txt	SHORT_FORM	AVSC	SHORT-LONG	LONG_FORM	agudeza visual sin corrección
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912010001200005-1.txt	SHORT_FORM	DP	SHORT-LONG	LONG_FORM	diámetros papilares

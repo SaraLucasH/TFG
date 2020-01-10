@@ -28,9 +28,11 @@ import java_cup.runtime.*;
 %}
 Minuscula=[\u00F1\u00E1\u00E9\u00ED\u00F3\u00FA\u00F6\u00FC]|[a-z]
 Mayuscula=[A-Z]|[\u00D1\u00C1\u00C9\u00CD\u00D3\u00DA]
+FinFrase=[\u002E\u003B]
 
-Frase=([0-9]*|[0-9]+[\u002D][0-9]+|({Mayuscula}{Minuscula}+[\u003A]? | {Minuscula}+[\u003A]?))(" "(("A "|{Mayuscula}{Minuscula}+[\u003A]?|{Minuscula}*[\u003A]?)|[0-9]*))*((\u002E)|(\u003B))?
-Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |[a-z]{1,4}"-"[A-Z]{2,4}| (([a-z]|[A-Z])"\."){1,5} | [0-9]"-"[A-Z]{2,4} | [a-z]"\." |[A-Z]{1,4}[0-9]{1,3} |([A-Z]"\.")*[A-Z]
+Frase=([0-9]*[\u0025]?|[0-9]+[\u002D\u002C][0-9]+|({Mayuscula}{Minuscula}+[\u003A\u002D]?|{Mayuscula}{Minuscula}+[\u003A\u002D]{Minuscula}+([\u003A\u002D]{Minuscula}+)*|{Minuscula}+[\u003A]?))(" "(("A "|{Mayuscula}{Minuscula}+[\u003A\u002D]?|{Minuscula}*[\u003A\u002D]?)|
+ {Minuscula}+([\u003A\u002D]{Minuscula}+)*|[0-9]*[\u0025]?))*{FinFrase}?
+Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |[a-z]{1,4}[\u002D][A-Z]{2,4}| (([a-z]|[A-Z])"\."){1,5} | [0-9][\u002D][A-Z]{2,4} | [a-z]"\." |[A-Z]{1,4}[0-9]{1,3} |([A-Z]"\.")*[A-Z]
 %state estado1,estado2,estado3
 
 
@@ -39,31 +41,32 @@ Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |[a-z]{1,4}"-"[A-Z]{2,4}| (([a-z]|[A-Z])"\.
 				;}
 	<YYINITIAL> "(" {//Si hay acronimos en una frase no detectara el parentesis, pues al principio estaba en el estado 1
 				yypushback(yytext().length());
-				yybegin(estado1);}				
+				yybegin(estado1);}
+	<YYINITIAL> [\u002F] {//Barra / 
+			;}				
 	<YYINITIAL> [\u00BB] {//comillas latinas cierre
 				;}
 	<YYINITIAL> [\u00B5] {//Simbolo micro
 				;}
 	<YYINITIAL> [\u00AB] {//comillas latinas apertura
 				;}
-	<YYINITIAL> [\u002D] {//barra -
-				;}
 	<YYINITIAL> [\u0027] {//comilla simple
 				;}
 	<YYINITIAL> [\u002A] {//asterisco
 				;}
+	<YYINITIAL> [\u00DF] {//minúscula S aguda 
+				;}
 	<YYINITIAL> [\u003C] {//Simbolo menor que
+				;}
+	<YYINITIAL> [\u003E] {//Simbolo mayor que
 				;}
 	<YYINITIAL> [\u00AE] {//Simbolo registro
 				;}
 	<YYINITIAL> [\u00B0] {//Simbolo grados
 				;}
-	<YYINITIAL> [\u003A]  {//Simbolo dos puntos
-				;}
 	<YYINITIAL> [\u00BA] {//Simbolo ordinal
 				;}
-	<YYINITIAL> [\u0025] {//Porcentaje
-				;}
+	
 	<YYINITIAL> [\u0022] {//Comilla "
 				;}
 	<YYINITIAL> [\u002B] {//Sumatorio
@@ -74,10 +77,16 @@ Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |[a-z]{1,4}"-"[A-Z]{2,4}| (([a-z]|[A-Z])"\.
 				yybegin(estado1);
 				acWLf.clean();
 				acWLf.setFormaLarga(posibleLF);
-				System.out.println("lf");}	
-	 
-	 <YYINITIAL> [\u002C] {;}
-	 <YYINITIAL> \t| \n |\r| \r\n |',' {acronimo=""; posibleLF="";}	
+				System.out.println("lf");}
+	<YYINITIAL> [\u002D] {//barra -
+				;}
+	<YYINITIAL> [\u003A]  {//Simbolo dos puntos
+				;}
+	<YYINITIAL> [\u0025] {//Porcentaje
+				;}
+	<YYINITIAL> [\u002C] {//Coma
+				;}
+	<YYINITIAL> \t| \n |\r| \r\n {acronimo=""; posibleLF="";}	
 	<YYINITIAL> [\u002F] {//Barra / 
 			;}
 	 <YYINITIAL> . {System.err.println("Error lexico: caracter no reconocido <" + yytext() + "> en la linea " + (yyline+1) 
@@ -87,7 +96,7 @@ Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |[a-z]{1,4}"-"[A-Z]{2,4}| (([a-z]|[A-Z])"\.
 <estado1> "(" {yybegin(estado2);
 		System.out.println("pa");}
 
-<estado1> [^(] {String b=yytext();
+<estado1> [^(\u002D] {String b=yytext();
 			if(b!=null){
 				yypushback(b.length());
 				acWLf.clean();
