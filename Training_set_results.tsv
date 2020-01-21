@@ -72,3 +72,37 @@ C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0
 C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912010001200005-1.txt	SHORT_FORM	AVI	SHORT-LONG	LONG_FORM	 y verde de indocianina 
 C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912010001200005-1.txt	SHORT_FORM	AVSC	SHORT-LONG	LONG_FORM	agudeza visual sin correcci髇
 C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912010001200005-1.txt	SHORT_FORM	DP	SHORT-LONG	LONG_FORM	di醡etros papilares
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1131-57682003000300008-1.txt	SHORT_FORM	PFP	SHORT-LONG	LONG_FORM	 pruebas de funci髇 pulmonar 
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1131-57682003000300008-1.txt	SHORT_FORM	TB	SHORT-LONG	LONG_FORM	tuberculosis
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1131-57682003000300008-1.txt	SHORT_FORM	TC	SHORT-LONG	LONG_FORM	tomograf韆 computadorizada
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912011000900005-1.txt	SHORT_FORM	PIO	SHORT-LONG	LONG_FORM	presi髇 intraocular
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912011000900005-1.txt	SHORT_FORM	FO	SHORT-LONG	LONG_FORM	fondo de ojo
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1134-80462006000600005-1.txt	SHORT_FORM	LLA	SHORT-LONG	LONG_FORM	linfobl醩tica aguda
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912012000200004-1.txt	SHORT_FORM	OD	SHORT-LONG	LONG_FORM	ojo derecho
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912012000200004-1.txt	SHORT_FORM	AV	SHORT-LONG	LONG_FORM	agudeza visual
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912012000200004-1.txt	SHORT_FORM	TAC	SHORT-LONG	LONG_FORM	tomograf韆 axial computarizada
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912012000200004-1.txt	SHORT_FORM	OI	SHORT-LONG	LONG_FORM	ojo izquierdo
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1130-63432014000100012-1.txt	SHORT_FORM	ECMO	SHORT-LONG	LONG_FORM	Oxigenaci髇 con Membrana Extracorp髍ea
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1130-63432014000100012-1.txt	SHORT_FORM	LBA	SHORT-LONG	LONG_FORM	lavado broncoalveolar
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912006001200009-1.txt	SHORT_FORM	OD	SHORT-LONG	LONG_FORM	ojo derecho
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912006001200009-1.txt	SHORT_FORM	OI	SHORT-LONG	LONG_FORM	ojo izquierdo
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0210-48062004000900010-1.txt	SHORT_FORM	TBC	SHORT-LONG	LONG_FORM	 dudosa tuberculosis 
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0376-78922007000400008-1.txt	SHORT_FORM	MID	SHORT-LONG	LONG_FORM	miembro inferior derecho
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0376-78922007000400008-1.txt	SHORT_FORM	UCI	SHORT-LONG	LONG_FORM	Unidad de Cuidados Intensivos
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1135-76062005000100002-1.txt	SHORT_FORM	HSA	SHORT-LONG	LONG_FORM	hemorragia subaracnoidea
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0376-78922009000100014-1.txt	SHORT_FORM	RNM	SHORT-LONG	LONG_FORM	Resonancia Nuclear Magn茅tica
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0376-78922009000400002-1.txt	SHORT_FORM	UCI	SHORT-LONG	LONG_FORM	Unidad de Cuidados Intensivos
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0376-78922009000400010-1.txt	SHORT_FORM	RMN	SHORT-LONG	LONG_FORM	Resonancia Magn茅tica Nuclear
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0376-78922011000500005-1.txt	SHORT_FORM	EPOC	SHORT-LONG	LONG_FORM	enfermedad pulmonar obstructiva cr贸nica
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0376-78922011000500012-1.txt	SHORT_FORM	UCI	SHORT-LONG	LONG_FORM	Unidad de Cuidados Intensivos
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0210-48062007000700017-1.txt	SHORT_FORM	BCG	SHORT-LONG	LONG_FORM	steriormente present贸 recidiva tumoral en el a帽o 2000 y 2004 diagnosticadas de carcinoma in situ y fueron tratados con quimioterapia intravesical 
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0210-48062007000700017-1.txt	SHORT_FORM	CK	SHORT-LONG	LONG_FORM	 y citoqueratina 
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1137-66272011000300023-1.txt	SHORT_FORM	VHS	SHORT-LONG	LONG_FORM	virus Herpes simple
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1137-66272011000300023-1.txt	SHORT_FORM	CMV	SHORT-LONG	LONG_FORM	 Citomegalovirus 
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1137-66272011000300023-1.txt	SHORT_FORM	RNM	SHORT-LONG	LONG_FORM	resonancia nuclear magn茅tica
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1137-66272011000300023-1.txt	SHORT_FORM	VEB	SHORT-LONG	LONG_FORM	virus de Epstein Barr
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1137-66272011000300023-1.txt	SHORT_FORM	TAC	SHORT-LONG	LONG_FORM	tomograf铆a axial computarizada
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1137-66272011000300023-1.txt	SHORT_FORM	VVZ	SHORT-LONG	LONG_FORM	Varicela z贸ster
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0376-78922016000200011-1.txt	SHORT_FORM	RM	SHORT-LONG	LONG_FORM	resonancia magn茅tica
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0376-78922016000200011-1.txt	SHORT_FORM	PET	SHORT-LONG	LONG_FORM	tomograf铆a por emisi贸n de positrones
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1137-66272012000300023-1.txt	SHORT_FORM	ECE	SHORT-LONG	LONG_FORM	te estos hallazgos se decidi贸 realizar una enteroscopia con c谩psula endosc贸pica 

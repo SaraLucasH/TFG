@@ -30,8 +30,27 @@ Minuscula=[\u00F1\u00E1\u00E9\u00ED\u00F3\u00FA\u00F6\u00FC]|[a-z]
 Mayuscula=[A-Z]|[\u00D1\u00C1\u00C9\u00CD\u00D3\u00DA]
 FinFrase=[\u002E\u003B]
 
-Frase=([0-9]*[\u0025]?|[0-9]+[\u002D\u002C][0-9]+|({Mayuscula}{Minuscula}+[\u003A\u002D]?|{Mayuscula}{Minuscula}+[\u003A\u002D]{Minuscula}+([\u003A\u002D]{Minuscula}+)*|{Minuscula}+[\u003A]?))(" "(("A "|{Mayuscula}{Minuscula}+[\u003A\u002D]?|{Minuscula}*[\u003A\u002D]?)|
- {Minuscula}+([\u003A\u002D]{Minuscula}+)*|[0-9]*[\u0025]?))*{FinFrase}?
+Frase=([0-9]*[\u0025]?|
+	([0-9]+|[0-9]+[\u002C][0-9]+)[\u002D\u002E]([0-9]+|[0-9]+[\u002C\u002E][0-9]+)|
+	(
+		[\u002D]{Mayuscula}{Minuscula}+[\u003A\u002D]?|
+		{Mayuscula}{Minuscula}+[\u003A\u002D]?
+		[\u002D]?{Mayuscula}{Minuscula}+[\u003A\u002D]{Minuscula}+([\u003A\u002D]{Minuscula}+)*|
+		{Minuscula}+[\u003A\u002D]?|
+		[\u00B5\u039C]{Minuscula}[\u002F]{Minuscula}+
+	 )
+       )
+	(" "
+	(
+		("A "|
+		[\u002D]?{Mayuscula}{Minuscula}+[\u003A\u002D]?|
+		{Minuscula}*[\u003A\u002D]?)|
+ 		{Minuscula}+([\u003A\u002D]{Minuscula}+)*|
+		[0-9]*[\u0025]?|
+		([0-9]+|[0-9]+[\u002C][0-9]+)[\u002D\u002E]([0-9]+|[0-9]+[\u002C\u002E][0-9]+)|
+		[\u00B5\u039C]{Minuscula}[\u002F]{Minuscula}+)
+	)*
+{FinFrase}?
 Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |[a-z]{1,4}[\u002D][A-Z]{2,4}| (([a-z]|[A-Z])"\."){1,5} | [0-9][\u002D][A-Z]{2,4} | [a-z]"\." |[A-Z]{1,4}[0-9]{1,3} |([A-Z]"\.")*[A-Z]
 %state estado1,estado2,estado3
 
@@ -42,6 +61,8 @@ Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |[a-z]{1,4}[\u002D][A-Z]{2,4}| (([a-z]|[A-Z
 	<YYINITIAL> "(" {//Si hay acronimos en una frase no detectara el parentesis, pues al principio estaba en el estado 1
 				yypushback(yytext().length());
 				yybegin(estado1);}
+	<YYINITIAL> " " {System.out.println("space");}
+	<YYINITIAL> [\u0020] {System.out.println("space");}
 	<YYINITIAL> [\u002F] {//Barra / 
 			;}				
 	<YYINITIAL> [\u00BB] {//comillas latinas cierre
@@ -54,9 +75,15 @@ Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |[a-z]{1,4}[\u002D][A-Z]{2,4}| (([a-z]|[A-Z
 				;}
 	<YYINITIAL> [\u002A] {//asterisco
 				;}
+	<YYINITIAL> [\u005B\u005D] {//Corchetes 
+				;}
 	<YYINITIAL> [\u00DF] {//minúscula S aguda 
 				;}
+	<YYINITIAL> [\u00B7] {//Punto centrado
+				;}
 	<YYINITIAL> [\u003C] {//Simbolo menor que
+				;}
+	<YYINITIAL> [\u00AA] {//a sufijo
 				;}
 	<YYINITIAL> [\u003E] {//Simbolo mayor que
 				;}
@@ -66,20 +93,23 @@ Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |[a-z]{1,4}[\u002D][A-Z]{2,4}| (([a-z]|[A-Z
 				;}
 	<YYINITIAL> [\u00BA] {//Simbolo ordinal
 				;}
-	
+	<YYINITIAL> [\u003D] {//Simbolo igual
+				;}
+	<YYINITIAL> [\u0026] {//Ampersan 
+				;}
 	<YYINITIAL> [\u0022] {//Comilla "
 				;}
-	<YYINITIAL> [\u002B] {//Sumatorio
+	<YYINITIAL> [\u002B] {//Sumatorio	
 				;}
-	<YYINITIAL> " " {System.out.println("space");}
+	<YYINITIAL> [\u002D] {//barra -
+				System.out.println("Barra -");
+				;}
 	<YYINITIAL> {Acronimo} {return new Symbol(sym.acronimo,yyline +1, yycolumn +1,yytext());}
 	<YYINITIAL> {Frase} {posibleLF=yytext();
 				yybegin(estado1);
 				acWLf.clean();
 				acWLf.setFormaLarga(posibleLF);
 				System.out.println("lf");}
-	<YYINITIAL> [\u002D] {//barra -
-				;}
 	<YYINITIAL> [\u003A]  {//Simbolo dos puntos
 				;}
 	<YYINITIAL> [\u0025] {//Porcentaje
@@ -95,7 +125,7 @@ Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |[a-z]{1,4}[\u002D][A-Z]{2,4}| (([a-z]|[A-Z
 
 <estado1> "(" {yybegin(estado2);
 		System.out.println("pa");}
-
+<estado1> [\u002D] {;}
 <estado1> [^(\u002D] {String b=yytext();
 			if(b!=null){
 				yypushback(b.length());
@@ -124,5 +154,3 @@ Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |[a-z]{1,4}[\u002D][A-Z]{2,4}| (([a-z]|[A-Z
 			yypushback(yytext().length());
 			acWLf.clean();}
 			yybegin(YYINITIAL);}
-
-	

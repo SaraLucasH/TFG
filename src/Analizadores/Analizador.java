@@ -1,9 +1,13 @@
 package Analizadores;
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 
 /**
 */
@@ -11,14 +15,28 @@ public class Analizador {
 	
 	
 	public static void main(String argv[]) {
+		String charset = "UTF-8";
 		if (argv.length == 0) {
-			FileReader file;
+			File file;
 			try {
-				file=new java.io.FileReader("ArchivoPrueba1.txt");
-				AnalizadorLexico lexico = new AnalizadorLexico(file);
+				file=new File("ArchivoPrueba1.txt");				
+				BufferedReader br = new BufferedReader( 
+				      new InputStreamReader (new FileInputStream(file), charset));
+				String linea;
+				String cadenaCompleta="";
+				
+				/*
+				 * Lee linea a linea
+				 */
+				while ((linea = br.readLine()) != null) {
+					// Si no las tildes no las saca de forma correcta.
+					 cadenaCompleta+= linea;
+				}				
+				AnalizadorLexico lexico = new AnalizadorLexico(new java.io.StringReader(
+						cadenaCompleta));				
 				parser sintactico = new parser(lexico,"");
 				sintactico.parse();
-				file.close();
+				br.close();
 			} catch (java.io.FileNotFoundException e) {
 				System.out.println("Archivo \"" + "prueba1" + "\" no encontrado.");
 			} catch (java.io.IOException e) {
@@ -34,8 +52,10 @@ public class Analizador {
 				AnalizadorLexico lexico = null;
 				try {
 					//Pasando como parametro archivo docs de la tarea BARR2
-					FileReader file= new FileReader(argv[i]);
-					BufferedReader br = new BufferedReader(file);
+					File file= new File(argv[i]);					
+					BufferedReader br = new BufferedReader( 
+					      new InputStreamReader (new FileInputStream(file), charset));
+					
 					String linea;
 					String cadenaCompleta="";
 					
@@ -44,10 +64,9 @@ public class Analizador {
 					 */
 					while ((linea = br.readLine()) != null) {
 						// Si no las tildes no las saca de forma correcta.
-						 cadenaCompleta+= new String(
-								linea.getBytes("ISO_8859_1"), "UTF-8");
+						 cadenaCompleta+= linea;
 					}
-					
+					System.out.println(cadenaCompleta);
 					lexico = new AnalizadorLexico(new java.io.StringReader(
 							cadenaCompleta));
 					System.out.println(argv[i]);
@@ -55,7 +74,8 @@ public class Analizador {
 
 					sintactico.parse();
 					br.close();
-					file.close();
+				}catch (UnsupportedEncodingException e){
+		            System.out.println(e.getMessage());		        	
 				} catch (java.io.FileNotFoundException e) {
 					System.out.println("Archivo \"" + argv[i]
 							+ "\" no encontrado.");

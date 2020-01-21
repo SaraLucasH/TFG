@@ -360,7 +360,13 @@ public class Resultado {
 							//Si no es una s entonces simplemente comparo
 							if(ac1.equals(Character.toUpperCase(frase[i].charAt(correccionEspacio)))){
 								if(i+1==frase.length){
-									return lf;
+									if(indiceAcronimo+1==ac.length()-1 && (frase[i].contains(""+ac.charAt(indiceAcronimo+1))|| 
+											frase[i].contains(""+Character.toLowerCase(ac.charAt(indiceAcronimo+1))))){
+										//Por ejemplo TB 
+										return frase[i];
+									}else{
+										return lf;
+									}
 								}
 								tope=checkRestAcFromStart(i+1,frase,ac);
 							}else{
@@ -485,7 +491,7 @@ public class Resultado {
 	}
 	public static void main(String[] args){
 		Resultado r=new Resultado();
-		//System.out.println(r.checkLongFromStart("hgh dhdg dfgdhd líquido cefalorraquídeo","LCR"));
+		System.out.println(r.checkLongFromStart("Como antecedentes familiares destacaban la muerte de su madre y su padre por tuberculosis","TB"));
 		System.out.println(r.checkLongFromEnd("y la reacción en cadena de la polimerasa","PCR"));
 		//System.out.println(r.checkLongFromEnd("El  paciente fue diagnosticado de paraparesia espástica tropical","TSP"));
 	}

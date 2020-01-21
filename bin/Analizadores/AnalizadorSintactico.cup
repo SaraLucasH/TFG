@@ -5,7 +5,8 @@ import java.util.LinkedList;
 import java.util.ArrayList;
 
 parser code {:
-Resultado resultado= new Resultado();
+String nombreFicheroEntrada="";
+Resultado resultado= new Resultado(nombreFicheroEntrada);
 
 public void syntax_error (Symbol s){
 	System.err.println("Error de sintaxis (lexema <" + 	s.value.toString() + ">) en la linea " + s.left + " 	y en la columna " + s.right);
@@ -26,6 +27,7 @@ terminal FormaLargaWithAc acWithLf;
 terminal String acronimo;
 non terminal String INICIO;
 non terminal String RES;
+non terminal String lambda;
 
 
 //Reglas semanticas
@@ -33,8 +35,8 @@ non terminal String RES;
 	//Por el arbol sintactico le asigna el valor de la variable (a traves de result) a la cabeza de la regla o simbolo no terminal asociado.
 
 start with INICIO;
-INICIO::= RES:res {:System.out.println(resultado);
-	RESULT=resultado.toString();:};
+INICIO::= RES:res {:
+	RESULT=resultado.toString();:}|lambda;
 RES ::= acWithLf:a{:resultado.addDupla(a.getAcronimo(),a.getFormaLarga());RESULT=a.getFormaLarga()+" "+a.getAcronimo(); :}
 	|acWithLf:a RES{:resultado.addDupla(a.getAcronimo(),
 			a.getFormaLarga());RESULT=a.getFormaLarga()+" 				"+a.getAcronimo();:}
@@ -43,6 +45,7 @@ RES ::= acWithLf:a{:resultado.addDupla(a.getAcronimo(),a.getFormaLarga());RESULT
 	|acronimo:ac RES
 	{:resultado.addDupla(ac,null);
 		RESULT=ac;:};
+lambda::= {:RESULT="";:};
 
 	
 	
