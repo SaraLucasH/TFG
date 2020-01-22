@@ -6,7 +6,7 @@
 package Analizadores;
 
 import java_cup.runtime.*;
-import java_cup.runtime.Symbol;
+
 import java.util.LinkedList;
 import java.util.ArrayList;
 import java_cup.runtime.XMLElement;

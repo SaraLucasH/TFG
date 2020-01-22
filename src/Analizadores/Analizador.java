@@ -52,7 +52,7 @@ public class Analizador {
 				AnalizadorLexico lexico = null;
 				try {
 					//Pasando como parametro archivo docs de la tarea BARR2
-					File file= new File(argv[i]);					
+					File file= new File("C:/Users/sara.lucas.hernandez/Documents/Tfg/txt/"+argv[i]);					
 					BufferedReader br = new BufferedReader( 
 					      new InputStreamReader (new FileInputStream(file), charset));
 					
