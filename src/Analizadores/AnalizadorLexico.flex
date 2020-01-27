@@ -4,9 +4,10 @@ import java_cup.runtime.*;
 
 
 %%
+
 %public
 %class AnalizadorLexico
-%unicode
+
 %line
 %column
 %cup 
@@ -51,11 +52,21 @@ Frase=([0-9]*[\u0025]?|
 		[\u00B5\u039C]{Minuscula}[\u002F]{Minuscula}+)
 	)*
 {FinFrase}?
-Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |[a-z]{1,4}[\u002D][A-Z]{2,4}| (([a-z]|[A-Z])"\."){1,5} | [0-9][\u002D][A-Z]{2,4} | [a-z]"\." |[A-Z]{1,4}[0-9]{1,3} |([A-Z]"\.")*[A-Z]
+Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |[a-z]{1,4}[\u002D][A-Z]{2,4}| (([a-z]|[A-Z])"\."){1,5} | [0-9][\u002D][A-Z]{2,4} | [a-z]"\." |[A-Z]{1,4}[0-9]{1,3}|([A-Z][0-9])+ |([A-Z]"\.")*[A-Z]
 %state estado1,estado2,estado3
 
 
 %%	
+	<YYINITIAL> [\u03b1] {//Alpha
+		System.out.println("Alpha");}
+	<YYINITIAL> [\u03b3] {//gamma
+		System.out.println("Gamma");}
+	<YYINITIAL> [\u2122] {//tm
+		;}
+	<YYINITIAL> [\u2022] {//Bala
+		;}
+	<YYINITIAL> [\u00A0] {//Espacio de no separacion
+		;}
 	<YYINITIAL> ")" {//Si detecta frases explicatorias entre parentesis
 				;}
 	<YYINITIAL> "(" {//Si hay acronimos en una frase no detectara el parentesis, pues al principio estaba en el estado 1
@@ -64,10 +75,18 @@ Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |[a-z]{1,4}[\u002D][A-Z]{2,4}| (([a-z]|[A-Z
 	<YYINITIAL> " " {System.out.println("space");}
 	<YYINITIAL> [\u0020] {System.out.println("space");}
 	<YYINITIAL> [\u002F] {//Barra / 
-			;}				
+			;}
+	<YYINITIAL> [\u007B] {//Corchete derecho { 
+			;}
+	<YYINITIAL> [\u00BD] {//fraccion 1 medio 
+			;}
+	<YYINITIAL> [\u00D7] {//Aspa multiplicacion
+				;}
+	<YYINITIAL> [\u007D] {//Corchete izq } 
+			;}
 	<YYINITIAL> [\u00BB] {//comillas latinas cierre
 				;}
-	<YYINITIAL> [\u00B5] {//Simbolo micro
+	<YYINITIAL> [\u00B5\u03BC] {//Simbolo micro
 				;}
 	<YYINITIAL> [\u00AB] {//comillas latinas apertura
 				;}
@@ -116,6 +135,8 @@ Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |[a-z]{1,4}[\u002D][A-Z]{2,4}| (([a-z]|[A-Z
 				;}
 	<YYINITIAL> [\u002C] {//Coma
 				;}
+	<YYINITIAL> \u03b1 {//Alpha
+		System.out.println("Alpha");}
 	<YYINITIAL> \t| \n |\r| \r\n {acronimo=""; posibleLF="";}	
 	<YYINITIAL> [\u002F] {//Barra / 
 			;}

@@ -7,6 +7,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.io.Reader;
 import java.io.UnsupportedEncodingException;
 
 /**
@@ -20,20 +21,21 @@ public class Analizador {
 			File file;
 			try {
 				file=new File("ArchivoPrueba1.txt");				
-				BufferedReader br = new BufferedReader( 
-				      new InputStreamReader (new FileInputStream(file), charset));
+				/*BufferedReader br = new BufferedReader( 
+				      new InputStreamReader (new FileInputStream(file), charset));*/
+				Reader br = new InputStreamReader (new FileInputStream(file), charset);
 				String linea;
 				String cadenaCompleta="";
 				
 				/*
 				 * Lee linea a linea
 				 */
-				while ((linea = br.readLine()) != null) {
+				/*while ((linea = br.readLine()) != null) {
 					// Si no las tildes no las saca de forma correcta.
 					 cadenaCompleta+= linea;
-				}				
-				AnalizadorLexico lexico = new AnalizadorLexico(new java.io.StringReader(
-						cadenaCompleta));				
+				}	*/		
+				System.out.println(br);
+				AnalizadorLexico lexico= new AnalizadorLexico(br);				
 				parser sintactico = new parser(lexico,"");
 				sintactico.parse();
 				br.close();
@@ -52,9 +54,8 @@ public class Analizador {
 				AnalizadorLexico lexico = null;
 				try {
 					//Pasando como parametro archivo docs de la tarea BARR2
-					File file= new File("C:/Users/sara.lucas.hernandez/Documents/Tfg/txt/"+argv[i]);					
-					BufferedReader br = new BufferedReader( 
-					      new InputStreamReader (new FileInputStream(file), charset));
+					File file= new File("C:/Users/sara.lucas.hernandez/Documents/Tfg/TestingSet/txt/"+argv[i]);					
+					Reader br = new InputStreamReader (new FileInputStream(file), charset);
 					
 					String linea;
 					String cadenaCompleta="";
@@ -62,13 +63,13 @@ public class Analizador {
 					/*
 					 * Lee linea a linea
 					 */
-					while ((linea = br.readLine()) != null) {
+					/*while ((linea = br.readLine()) != null) {
 						// Si no las tildes no las saca de forma correcta.
 						 cadenaCompleta+= linea;
-					}
-					System.out.println(cadenaCompleta);
-					lexico = new AnalizadorLexico(new java.io.StringReader(
-							cadenaCompleta));
+					}*/
+					
+					//lexico = new AnalizadorLexico(new java.io.StringReader(cadenaCompleta));
+					lexico= new AnalizadorLexico(br);
 					System.out.println(argv[i]);
 					parser sintactico = new parser(lexico,argv[i]);
 

@@ -1,9 +1,15 @@
 package Analizadores;
 
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
+import java.io.Writer;
+import java.nio.charset.StandardCharsets;
+import java.text.Normalizer;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -11,18 +17,34 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map.Entry;
 
-
-
-
-
-
-
-
-
-
 import Diccionarios.CargaDiccionario;
 
 public class Resultado {	
+	
+	private class ObjetoDevuelto{
+		private boolean check;
+		private int index;
+		
+		public ObjetoDevuelto(boolean check, int index) {
+			this.check=check;
+			this.index=index;
+		}
+		
+		public boolean isCheck() {
+			return check;
+		}
+		public void setCheck(boolean check) {
+			this.check = check;
+		}
+		public int getIndex() {
+			return index;
+		}
+		public void setIndex(int index) {
+			this.index = index;
+		}	
+		
+	}
+	
 	HashMap<String,HashSet<String>> diccionarioFormaCorta;
 	HashMap<String,String> diccionarioFormaLarga;
 	CargaDiccionario cd= new CargaDiccionario();	
@@ -48,8 +70,8 @@ public class Resultado {
 		
 		//Preposiciones
 		palabrasConectoras= new HashSet<>(Arrays.asList("a", "ante", "bajo", "cabe", "con", "contra"
-				, "de", "desde", "durante", "en", "entre", "hacia", "hasta", "mediante", "para", "por", "seg˙n"
-				, "sin", "so", "sobre", "tras", "versus" , "vÌa","el","la","los","las","le","les"));
+				, "de", "desde", "durante", "en", "entre", "hacia", "hasta", "mediante", "para", "por", "seg√∫n"
+				, "sin", "so", "sobre", "tras", "versus" , "v√≠a","el","la","los","las","le","les"));
 	}
 	
 	public Resultado(String nombreFicheroEntrada){	
@@ -62,8 +84,8 @@ public class Resultado {
 		
 		//Preposiciones
 		palabrasConectoras= new HashSet<>(Arrays.asList("a", "ante", "bajo", "cabe", "con", "contra"
-				, "de", "desde", "durante", "en", "entre", "hacia", "hasta", "mediante", "para", "por", "seg˙n"
-				, "sin", "so", "sobre", "tras", "versus" , "vÌa","el","la","los","las","le","les",""));
+				, "de", "desde", "durante", "en", "entre", "hacia", "hasta", "mediante", "para", "por", "seg√∫n"
+				, "sin", "so", "sobre", "tras", "versus" , "v√≠a","el","la","los","las","le","les",""));
 	}
 
 	public void addDupla(String ac, String lf) {
@@ -129,6 +151,8 @@ public class Resultado {
 		int i=frase.length-1;
 		int correccionEspacio=0;
 		
+		ObjetoDevuelto respuesta= new ObjetoDevuelto(false,0);
+		
 		if(frase.length!=1){		
 			// ----------- Acronimo long 2 -----------------
 			/*if (ac.length() == 2) {
@@ -168,41 +192,52 @@ public class Resultado {
 				}
 			//----------- Acronimo > long 2 -----------------
 			}else{*/
-				while(i>=0 && !tope){
-					Character ac1=Character.toUpperCase(ac.charAt(indiceAcronimo)); 
-					if(!this.palabrasConectoras.contains(frase[i])&& frase[i]!=""){
-						if(frase[i].charAt(0)==' '){
+				while(i>=0 && !respuesta.isCheck()){
+					Character ac1=Character.toUpperCase(ac.charAt(indiceAcronimo));
+					
+					//Metodos usados para ignorar las tildes de las frases, dado que en caso de ignorarlas, el acronimo no lleva 
+					//y por tanto el equals falla
+					String cadenaNormalize = Normalizer.normalize(frase[i], Normalizer.Form.NFD);   
+					String cadenaSinAcentos = cadenaNormalize.replaceAll("[^\\p{ASCII}]", "");
+					
+					if(!this.palabrasConectoras.contains(cadenaSinAcentos)&& cadenaSinAcentos!=""){
+						if(cadenaSinAcentos.charAt(0)==' '){
 							correccionEspacio=1;
 						}else{
 							correccionEspacio=0;
 						}
 						if(ac1.equals(s)){
 							//Puede ser o igual a S o igual a E
-							if(e.equals(Character.toUpperCase(frase[i].charAt(correccionEspacio)))||
-									s.equals(Character.toUpperCase(frase[i].charAt(correccionEspacio))) ){
+							if(e.equals(Character.toUpperCase(cadenaSinAcentos.charAt(correccionEspacio)))||
+									s.equals(Character.toUpperCase(cadenaSinAcentos.charAt(correccionEspacio))) ){
 								if(i+1==frase.length){
 									return lf;
 								}								
-								tope=checkRestAcFromEnd(i+1,frase,ac);
-								if(!tope){
+								respuesta=checkRestAcFromEnd(i+1,frase,ac);
+								if(!respuesta.isCheck()) {
 									i-=1;
 								}
 							}else{
 								i-=1;
 							}
 						}else{
-							// Si no es una s entonces simplemente comparo
-							if (ac1.equals(Character.toUpperCase(frase[i]
+							if(cadenaSinAcentos.length()>0) {
+								// Si no es una s entonces simplemente comparo
+								if (ac1.equals(Character.toUpperCase(cadenaSinAcentos
 									.charAt(correccionEspacio)))) {
-								if (i + 1 == frase.length) {
-									return lf;
+									if (i + 1 == frase.length) {
+										return lf;
+									}
+									respuesta = checkRestAcFromEnd(i + 1, frase, ac);
+									if(!respuesta.isCheck()){
+										i-=1;
+									}
+								} else {
+									i -= 1;
 								}
-								tope = checkRestAcFromEnd(i + 1, frase, ac);
-								if(!tope){
-									i-=1;
-								}
-							} else {
-								i -= 1;
+							}else {
+								//Por si es espacio
+								i-=1;
 							}
 						}
 					}else{
@@ -213,44 +248,57 @@ public class Resultado {
 		}else{
 			return lf;
 		}
-		if(!tope){
+		if(!respuesta.isCheck()){
 			return lf;
 		}
 		//Ahora devuelvo la frase desde i hacia delante
 		resultado=frase[i];
 		i++;
-		while(i<frase.length){
-			resultado+=" "+frase[i];
+		while(i<=respuesta.index){
+			if(i<frase.length) {
+				resultado+=" "+frase[i];
+			}
 			i++;
 		}	
 		return resultado;
 	}
 
-	private boolean checkRestAcFromEnd(int i, String[] frase, String ac) {
+	private ObjetoDevuelto checkRestAcFromEnd(int i, String[] frase, String ac) {
+		ObjetoDevuelto respuesta= new ObjetoDevuelto(true,i);
+		
 		//El acronimo tiene mas de longitud 2
 		int indiceAcronimo=ac.length()-2;
 		boolean check=true;
 		int correccionEspacio=0;
+		if(i==frase.length && indiceAcronimo<0) {
+			return new ObjetoDevuelto(false,i);
+		}
 		
 		while(indiceAcronimo>=0 && check && i<frase.length){
 			if (!this.palabrasConectoras.contains(frase[i])&& frase[i]!="") {
 				Character aux = ac.charAt(indiceAcronimo);
-				if(frase[i].charAt(0)==' '){
+				
+				String cadenaNormalize = Normalizer.normalize(frase[i], Normalizer.Form.NFD);   
+				String cadenaSinAcentos = cadenaNormalize.replaceAll("[^\\p{ASCII}]", "");
+				
+				if(cadenaSinAcentos.charAt(0)==' '){
 					correccionEspacio=1;
 				}else{
 					correccionEspacio=0;
 				}
 				if (aux.equals('S')) {
-					check = aux.equals(Character.toUpperCase(frase[i].charAt(correccionEspacio)))
-							|| aux.equals(frase[i].charAt(correccionEspacio))
-							|| this.e.equals(Character.toUpperCase(frase[i]
+					check = aux.equals(Character.toUpperCase(cadenaSinAcentos.charAt(correccionEspacio)))
+							|| aux.equals(cadenaSinAcentos.charAt(correccionEspacio))
+							|| this.e.equals(Character.toUpperCase(cadenaSinAcentos
 									.charAt(correccionEspacio)));
 				} else {
-					check = aux.equals(Character.toUpperCase(frase[i].charAt(correccionEspacio)))
-							|| aux.equals(frase[i].charAt(correccionEspacio));
+					check = aux.equals(Character.toUpperCase(cadenaSinAcentos.charAt(correccionEspacio)))
+							|| aux.equals(cadenaSinAcentos.charAt(correccionEspacio));
 				}
-				indiceAcronimo -= 1;
-				i += 1;
+				if(check) {
+					indiceAcronimo -= 1;
+					i += 1;
+				}				
 			} else {
 				i += 1;
 			}
@@ -259,12 +307,20 @@ public class Resultado {
 		//Dos posibilidades: He llegado al final de la frase pero aun me queda por comparar la ultima letra del acronimo
 		//Simplemente he comparado todo
 		
+		int index=i;
 		if(indiceAcronimo==0){
+			if(this.palabrasConectoras.contains(frase[i-1])) {
+				index=i-2;
+			}else {
+				index=i-1;
+			}						
 			Character aux = ac.charAt(indiceAcronimo);
-			check=frase[i-1].contains(""+Character.toUpperCase(aux))
-			|| frase[i-1].contains(""+Character.toLowerCase(aux));			
+			check=frase[index].contains(""+Character.toUpperCase(aux))
+			|| frase[index].contains(""+Character.toLowerCase(aux));			
 		}
-		return check;
+		respuesta.setCheck(check);
+		respuesta.setIndex(index);
+		return respuesta;
 	}
 
 	//Metodo Soto, al menos no funciona con los primeros casos
@@ -294,7 +350,7 @@ public class Resultado {
 	
 	/*
 	 *   X _ _ _ _  Busco desde el inicio las siglas en la frase obtenida del lexico
-	 *  LCR lÌquido  cefalorraquÌdeo (ignorando las palabras del conjunto que tiene esta clase
+	 *  LCR l√≠quido  cefalorraqu√≠deo (ignorando las palabras del conjunto que tiene esta clase
 	 *  como atributo)Si el acronimo tiene longitud>2 entonces busco las otras coincidencias(indice i)
 	 */	
 	private String checkLongFromStart(String lf,String ac) {		
@@ -303,6 +359,8 @@ public class Resultado {
 		int indiceAcronimo=0;
 		lf.replaceAll("\t", " ");
 		String[] frase=lf.split(" ");
+		
+		ObjetoDevuelto respuesta= new ObjetoDevuelto(false,0);
 		
 		boolean tope=false;
 		int i=frase.length-1;
@@ -342,34 +400,48 @@ public class Resultado {
 				}
 			//----------- Acronimo > long 2 -----------------
 			}else{*/
-				while(i>=0 && !tope){
+				while(i>=0 && !respuesta.isCheck()){
 					Character ac1=Character.toUpperCase(ac.charAt(indiceAcronimo)); 
-					if(!this.palabrasConectoras.contains(frase[i])&& frase[i]!=""){
+					String cadenaNormalize = Normalizer.normalize(frase[i], Normalizer.Form.NFD);   
+					String cadenaSinAcentos = cadenaNormalize.replaceAll("[^\\p{ASCII}]", "");
+					if(!this.palabrasConectoras.contains(cadenaSinAcentos)&& cadenaSinAcentos!=""){
 						if(ac1.equals(s)){
 							//Puede ser o igual a S o igual a E
-							if(e.equals(Character.toUpperCase(frase[i].charAt(correccionEspacio)))||
-									s.equals(Character.toUpperCase(frase[i].charAt(correccionEspacio))) ){	
+							if(e.equals(Character.toUpperCase(cadenaSinAcentos.charAt(correccionEspacio)))||
+									s.equals(Character.toUpperCase(cadenaSinAcentos.charAt(correccionEspacio))) ){	
 								if(i+1==frase.length){
 									return lf;
 								}
-								tope=checkRestAcFromStart(i+1,frase,ac);
+								respuesta=checkRestAcFromStart(i+1,frase,ac);
+								if(!respuesta.isCheck()) {
+									i-=1;
+								}
 							}else{
 								i-=1;
 							}
 						}else{
 							//Si no es una s entonces simplemente comparo
-							if(ac1.equals(Character.toUpperCase(frase[i].charAt(correccionEspacio)))){
-								if(i+1==frase.length){
-									if(indiceAcronimo+1==ac.length()-1 && (frase[i].contains(""+ac.charAt(indiceAcronimo+1))|| 
-											frase[i].contains(""+Character.toLowerCase(ac.charAt(indiceAcronimo+1))))){
-										//Por ejemplo TB 
-										return frase[i];
-									}else{
-										return lf;
+							if(cadenaSinAcentos.length()>0) {
+								if(ac1.equals(Character.toUpperCase(cadenaSinAcentos.charAt(correccionEspacio)))){
+									
+									respuesta=checkRestAcFromStart(i+1,frase,ac);
+									/*if(i+1==frase.length){
+										if(indiceAcronimo+1==ac.length()-1 && (cadenaSinAcentos.contains(""+ac.charAt(indiceAcronimo+1))|| 
+											cadenaSinAcentos.contains(""+Character.toLowerCase(ac.charAt(indiceAcronimo+1))))){
+											//Por ejemplo TB 
+											return frase[i];
+										}else{
+											return lf;
+										}
+									}*/
+									if(!respuesta.isCheck()) {
+										i-=1;
 									}
+								}else{
+									i-=1;
 								}
-								tope=checkRestAcFromStart(i+1,frase,ac);
-							}else{
+							}else {
+								//Por si es un espacio
 								i-=1;
 							}
 						}
@@ -388,31 +460,43 @@ public class Resultado {
 		}
 		resultado=frase[i];
 		i++;
-		while(i<frase.length){
-			resultado+=" "+frase[i];
+		while(i<=respuesta.getIndex()){
+			if(i<frase.length) {
+				resultado+=" "+frase[i];
+			}
 			i++;
 		}	
 		return resultado;
 	}
 
-	private boolean checkRestAcFromStart(int i, String[] frase, String ac) {
+	private ObjetoDevuelto checkRestAcFromStart(int i, String[] frase, String ac) {
+		ObjetoDevuelto respuesta= new ObjetoDevuelto(true,i);
+		
 		// El acronimo tiene mas de longitud 2
 		int indiceAcronimo = 1;
+		if(i==frase.length && ac.length()>2) {
+			return new ObjetoDevuelto(false,i);
+		}
 		boolean check = true;		
 		while (indiceAcronimo < ac.length() && check && i < frase.length) {
-			if (!this.palabrasConectoras.contains(frase[i])&& frase[i]!="") {
+			String cadenaNormalize = Normalizer.normalize(frase[i], Normalizer.Form.NFD);   
+			String cadenaSinAcentos = cadenaNormalize.replaceAll("[^\\p{ASCII}]", "");
+			if (!this.palabrasConectoras.contains(cadenaSinAcentos)&& cadenaSinAcentos!="") {
 				Character aux = ac.charAt(indiceAcronimo);
 				if (aux.equals('S')) {
-					check = aux.equals(Character.toUpperCase(frase[i].charAt(0)))
-							|| aux.equals(frase[i].charAt(0))
-							|| this.e.equals(Character.toUpperCase(frase[i]
+					check = aux.equals(Character.toUpperCase(cadenaSinAcentos.charAt(0)))
+							|| aux.equals(cadenaSinAcentos.charAt(0))
+							|| this.e.equals(Character.toUpperCase(cadenaSinAcentos
 									.charAt(0)));
 				} else {
-					check = aux.equals(Character.toUpperCase(frase[i].charAt(0)))
-							|| aux.equals(frase[i].charAt(0));
+					check = aux.equals(Character.toUpperCase(cadenaSinAcentos.charAt(0)))
+							|| aux.equals(cadenaSinAcentos.charAt(0));
 				}
-				indiceAcronimo += 1;
-				i += 1;
+				if(check) {
+					indiceAcronimo += 1;
+					i += 1;
+				}			
+				
 			} else {
 				i += 1;
 			}
@@ -421,31 +505,38 @@ public class Resultado {
 		//He salido del bucle
 		//Dos posibilidades: He llegado al final de la frase pero aun me queda por comparar la ultima letra del acronimo
 		//Simplemente he comparado todo
-		
+		int index=i;
 		if(indiceAcronimo==ac.length()-1){
+			if(this.palabrasConectoras.contains(frase[i-1])) {
+				index=i-2;
+			}else {
+				index=i-1;
+			}						
 			Character aux = ac.charAt(indiceAcronimo);
-			check=frase[i-1].contains(""+Character.toUpperCase(aux))
-			|| frase[i-1].contains(""+Character.toLowerCase(aux));			
+			check=frase[index].contains(""+Character.toUpperCase(aux))
+			|| frase[index].contains(""+Character.toLowerCase(aux));			
 		}
-		return check;
+		respuesta.setCheck(check);
+		respuesta.setIndex(index);
+		return respuesta;
 	}
 
 	/*
 	 * Escritura del fichero de resultado tsv. Escritura de nombre de las columnas si el fichero no existe.
 	 */
 	public String toString(){
-		String result="";
+		String result="";		
 		try {
-			File file= new File("Training_set_results.tsv");
+			File file= new File("Testing_set_results.tsv");	
 			if(!file.exists()){
 				result="#DocumentID\tMention_A_type\tMention_A_StartOffset\tMention_A_EndOffsetMention_A\tRelation_type\t"
 						+ "Mention_B_type\tMention_B_StartOffset\tMention_B_EndOffset\tMention_B\n";
 			}
-			fichero= new FileWriter(file,true);
-			pw = new PrintWriter(fichero);	
+			Writer out = new BufferedWriter(new OutputStreamWriter(
+				    new FileOutputStream(file,true), "UTF-8"));
+			
 			Iterator<Entry<String,HashSet<String>>> it=this.diccionarioTextoActual.entrySet().iterator();
-			while(it.hasNext()){
-				
+			while(it.hasNext()){				
 				Entry<String,HashSet<String>> e=it.next();
 				if(!e.getValue().isEmpty()){
 					result+=nombreFichero+"\t";
@@ -461,13 +552,13 @@ public class Resultado {
 					result+="\n";
 				}
 			}
-			pw.print(result);
-			fichero.close();
-			pw.close();
+			
+			out.write(result);
+			out.flush();
+			out.close();
 		} catch (IOException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
-		}		
+		}
 		return result;		
 	}	
 	
@@ -491,8 +582,9 @@ public class Resultado {
 	}
 	public static void main(String[] args){
 		Resultado r=new Resultado();
-		System.out.println(r.checkLongFromStart("Como antecedentes familiares destacaban la muerte de su madre y su padre por tuberculosis","TB"));
-		System.out.println(r.checkLongFromEnd("y la reacciÛn en cadena de la polimerasa","PCR"));
-		//System.out.println(r.checkLongFromEnd("El  paciente fue diagnosticado de paraparesia esp·stica tropical","TSP"));
+		Character ch='Œ±';
+		System.out.println(String.format("\\u%04x", (int) ch));
+		System.out.println(r.checkLongFromStart("te estos hallazgos se decidi√≥ realizar una enteroscopia con c√°psula endosc√≥pica","ECE"));
+		System.out.println(r.checkLongFromEnd("una tomograf√≠a de coherencia √≥ptica ","OCT"));
 	}
 }

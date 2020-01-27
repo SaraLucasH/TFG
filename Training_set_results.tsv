@@ -66,16 +66,16 @@ C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0
 C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912009001100006-1.txt	SHORT_FORM	PIO	SHORT-LONG	LONG_FORM	presi�n intraocular
 C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912009001100006-1.txt	SHORT_FORM	OI	SHORT-LONG	LONG_FORM	Hg  // ojo izquierdo // 
 C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912009001100006-1.txt	SHORT_FORM	BMU	SHORT-LONG	LONG_FORM	biomicroscop�a ultras�nica
-C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912010001200005-1.txt	SHORT_FORM	AGF	SHORT-LONG	LONG_FORM	angiograf�a fluoresce�nica
-C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912010001200005-1.txt	SHORT_FORM	OCT	SHORT-LONG	LONG_FORM	 una tomograf�a de coherencia �ptica 
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912010001200005-1.txt	SHORT_FORM	AGF	SHORT-LONG	LONG_FORM	angiografía fluoresce�nica
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912010001200005-1.txt	SHORT_FORM	OCT	SHORT-LONG	LONG_FORM	tomografía de coherencia óptica 
 C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912010001200005-1.txt	SHORT_FORM	DRNS	SHORT-LONG	LONG_FORM	desprendimiento de retina neurosensorial
 C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912010001200005-1.txt	SHORT_FORM	AVI	SHORT-LONG	LONG_FORM	 y verde de indocianina 
 C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912010001200005-1.txt	SHORT_FORM	AVSC	SHORT-LONG	LONG_FORM	agudeza visual sin correcci�n
-C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912010001200005-1.txt	SHORT_FORM	DP	SHORT-LONG	LONG_FORM	di�metros papilares
-C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1131-57682003000300008-1.txt	SHORT_FORM	PFP	SHORT-LONG	LONG_FORM	 pruebas de funci�n pulmonar 
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912010001200005-1.txt	SHORT_FORM	DP	SHORT-LONG	LONG_FORM	diámetros papilares
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1131-57682003000300008-1.txt	SHORT_FORM	PFP	SHORT-LONG	LONG_FORM	 pruebas de función pulmonar 
 C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1131-57682003000300008-1.txt	SHORT_FORM	TB	SHORT-LONG	LONG_FORM	tuberculosis
-C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1131-57682003000300008-1.txt	SHORT_FORM	TC	SHORT-LONG	LONG_FORM	tomograf�a computadorizada
-C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912011000900005-1.txt	SHORT_FORM	PIO	SHORT-LONG	LONG_FORM	presi�n intraocular
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1131-57682003000300008-1.txt	SHORT_FORM	TC	SHORT-LONG	LONG_FORM	tomografía computadorizada
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912011000900005-1.txt	SHORT_FORM	PIO	SHORT-LONG	LONG_FORM	presión intraocular
 C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912011000900005-1.txt	SHORT_FORM	FO	SHORT-LONG	LONG_FORM	fondo de ojo
 C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1134-80462006000600005-1.txt	SHORT_FORM	LLA	SHORT-LONG	LONG_FORM	linfobl�stica aguda
 C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0365-66912012000200004-1.txt	SHORT_FORM	OD	SHORT-LONG	LONG_FORM	ojo derecho
@@ -105,7 +105,7 @@ C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1
 C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1137-66272011000300023-1.txt	SHORT_FORM	VVZ	SHORT-LONG	LONG_FORM	Varicela zóster
 C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0376-78922016000200011-1.txt	SHORT_FORM	RM	SHORT-LONG	LONG_FORM	resonancia magnética
 C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S0376-78922016000200011-1.txt	SHORT_FORM	PET	SHORT-LONG	LONG_FORM	tomografía por emisión de positrones
-C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1137-66272012000300023-1.txt	SHORT_FORM	ECE	SHORT-LONG	LONG_FORM	te estos hallazgos se decidió realizar una enteroscopia con cápsula endoscópica 
+C:\Users\saral\Documents\SARA\URJC\CUARTO\TFG\barr2\TrainingSet\ClinicalCases\S1137-66272012000300023-1.txt	SHORT_FORM	ECE	SHORT-LONG	LONG_FORM	enteroscopia con cápsula endoscópica 
 C:\Users\sara.lucas.hernandez\Documents\Tfg\txt\S0210-48062009000400017-1.txt	SHORT_FORM	RTU	SHORT-LONG	LONG_FORM	resección transuretral
 C:\Users\sara.lucas.hernandez\Documents\Tfg\txt\S0210-48062009000400017-1.txt	SHORT_FORM	RM	SHORT-LONG	LONG_FORM	resonancia magnética
 C:\Users\sara.lucas.hernandez\Documents\Tfg\txt\S0210-48062009000400017-1.txt	SHORT_FORM	IV	SHORT-LONG	LONG_FORM	intravenoso
@@ -196,4 +196,71 @@ S1130-01082011000500014-1.txt	SHORT_FORM	RMN	SHORT-LONG	LONG_FORM	resonancia mag
 S1887-85712015000100005-1.txt	SHORT_FORM	PNJ	SHORT-LONG	LONG_FORM	pneumocystis jiroveci
 S1130-05582007000600003-1.txt	SHORT_FORM	TVTLF	SHORT-LONG	LONG_FORM	 y el tronco venoso tirolinguofacial 
 S1889-836X2015000200005-1.txt	SHORT_FORM	TCS	SHORT-LONG	LONG_FORM	tejido celular subcutáneo
-S1889-836X2015000200005-1.txt	SHORT_FORM	IMC	SHORT-LONG	LONG_FORM	 No refería hábitos tóxicos y su índice de masa corporal 
+S1889-836X2015000200005-1.txt	SHORT_FORM	IMC	SHORT-LONG	LONG_FORM	índice de masa corporal   
+S0365-66912005001200010-1.txt	SHORT_FORM	NO	SHORT-LONG	LONG_FORM	nervio óptico
+S0365-66912005001200010-1.txt	SHORT_FORM	OD	SHORT-LONG	LONG_FORM	ojo derecho
+S0365-66912005001200010-1.txt	SHORT_FORM	OI	SHORT-LONG	LONG_FORM	ojo izquierdo
+S0210-56912010000200009-1.txt	SHORT_FORM	BAL	SHORT-LONG	LONG_FORM	lavado broncoalveolar
+S0210-56912010000200009-1.txt	SHORT_FORM	VMNI	SHORT-LONG	LONG_FORM	ventilación mecánica no invasiva
+S0365-66912007000200011-1.txt	SHORT_FORM	AGF	SHORT-LONG	LONG_FORM	 En la angiografía fluoresceínica 
+S0365-66912007000200011-1.txt	SHORT_FORM	TFD	SHORT-LONG	LONG_FORM	terapia fotodinámica
+S0365-66912007000200011-1.txt	SHORT_FORM	AVI	SHORT-LONG	LONG_FORM	angiografía con verde de indocianina
+S0365-66912007000200011-1.txt	SHORT_FORM	OD	SHORT-LONG	LONG_FORM	ojo derecho
+S0365-66912007000200011-1.txt	SHORT_FORM	OI	SHORT-LONG	LONG_FORM	ojo izquierdo
+S1130-01082009001000013-1.txt	SHORT_FORM	APC	SHORT-LONG	LONG_FORM	 se realiza tratamiento con argón plasma 
+S1139-76322017000200007-1.txt	SHORT_FORM	VSG	SHORT-LONG	LONG_FORM	velocidad de sedimentación globular
+S1139-76322017000200007-1.txt	SHORT_FORM	CMV	SHORT-LONG	LONG_FORM	 y citomegalovirus 
+S1139-76322017000200007-1.txt	SHORT_FORM	IGRA	SHORT-LONG	LONG_FORM	hora y el interferon-gamma release assays 
+S1139-76322017000200007-1.txt	SHORT_FORM	VEB	SHORT-LONG	LONG_FORM	rr 
+S1139-76322017000200007-1.txt	SHORT_FORM	PAAF	SHORT-LONG	LONG_FORM	punción aspiración con aguja fina
+S0365-66912012000500005-1.txt	SHORT_FORM	OCT	SHORT-LONG	LONG_FORM	 la tomografía óptica de coherencia 
+S0365-66912012000500005-1.txt	SHORT_FORM	MAVC	SHORT-LONG	LONG_FORM	mejor agudeza visual corregida
+S0365-66912012000500005-1.txt	SHORT_FORM	AFG	SHORT-LONG	LONG_FORM	 Angiografía fluoresceínica 
+S0365-66912012000500005-1.txt	SHORT_FORM	EPR	SHORT-LONG	LONG_FORM	epitelio pigmentario retiniano
+S0365-66912012000500005-1.txt	SHORT_FORM	FO	SHORT-LONG	LONG_FORM	fondo de ojo
+S0365-66912012000500005-1.txt	SHORT_FORM	AO	SHORT-LONG	LONG_FORM	ambos ojos
+S0365-66912012000500005-1.txt	SHORT_FORM	OD	SHORT-LONG	LONG_FORM	ojo derecho
+S0365-66912012000500005-1.txt	SHORT_FORM	PIO	SHORT-LONG	LONG_FORM	presión intraocular
+S0365-66912012000500005-1.txt	SHORT_FORM	BMC	SHORT-LONG	LONG_FORM	 y la biomicroscopia 
+S0365-66912012000500005-1.txt	SHORT_FORM	OI	SHORT-LONG	LONG_FORM	ojo izquierdo
+S0365-66912012000500005-1.txt	SHORT_FORM	NVC	SHORT-LONG	LONG_FORM	 una lesión cupuliforme densa 
+S0365-66912012000500005-1.txt	SHORT_FORM	hipo-FA	SHORT-LONG	LONG_FORM	 y lesiones lineales irregulares hipoautofluorescentes 
+S0365-66912012000500005-1.txt	SHORT_FORM	FA	SHORT-LONG	LONG_FORM	autofluorescencia de fondo
+S0365-66912012000500005-1.txt	SHORT_FORM	EA	SHORT-LONG	LONG_FORM	estrías angioides
+S0365-66912011000400005-2.txt	SHORT_FORM	anti-CCP	SHORT-LONG	LONG_FORM	 títulos altos de factor reumatoide y anticuerpos antipéptido cíclico citrulinado
+S0210-48062010000100019-4.txt	SHORT_FORM	AA	SHORT-LONG	LONG_FORM	amiloidosis
+S1137-66272015000300014-1.txt	SHORT_FORM	TAP	SHORT-LONG	LONG_FORM	 se realizó un bloqueo transabdominal percutáneo 
+S1137-66272015000300014-1.txt	SHORT_FORM	VMNI	SHORT-LONG	LONG_FORM	ventilación mecánica no invasiva
+S0210-56912007000700008-1.txt	SHORT_FORM	PEEP	SHORT-LONG	LONG_FORM	 presión positiva al final de la espiración 
+S0210-56912007000700008-1.txt	SHORT_FORM	LDH	SHORT-LONG	LONG_FORM	 lacticodeshidrogenasa 
+S1139-76322011000100011-1.txt	SHORT_FORM	PTH	SHORT-LONG	LONG_FORM	 hormona paratiroidea 
+S1139-76322011000100011-1.txt	SHORT_FORM	P	SHORT-LONG	LONG_FORM	 fósforo 
+S1139-76322011000100011-1.txt	SHORT_FORM	HTBI	SHORT-LONG	LONG_FORM	 con el diagnóstico de hiperfosfatasemia benigna transitoria de la infancia 
+S1139-76322011000100011-1.txt	SHORT_FORM	Ca	SHORT-LONG	LONG_FORM	calcio
+S0211-69952009000600023-1.txt	SHORT_FORM	HPTS	SHORT-LONG	LONG_FORM	 Tres años después de la hemodiálisis presenta hiperparatiroidismo secundario 
+S1139-76322015000100010-1.txt	SHORT_FORM	ANA	SHORT-LONG	LONG_FORM	 anticuerpos antinucleares 
+S1139-76322015000100010-1.txt	SHORT_FORM	ANCA	SHORT-LONG	LONG_FORM	anticitoplasma de neutrófilos
+S1139-76322015000100010-1.txt	SHORT_FORM	ENA	SHORT-LONG	LONG_FORM	 anticuerpos extraíbles del núcleo 
+S0211-69952014000200012-1.txt	SHORT_FORM	P3L3F2	SHORT-LONG	LONG_FORM	nica periportal 
+S1139-76322015000500009-1.txt	SHORT_FORM	ECG	SHORT-LONG	LONG_FORM	 y el electrocardiograma 
+S1139-76322015000500009-1.txt	SHORT_FORM	EFK	SHORT-LONG	LONG_FORM	l con excreción fraccional de potasio 
+S1139-76322015000500009-1.txt	SHORT_FORM	EMG	SHORT-LONG	LONG_FORM	 La electromiografía  // mpoco se pudo realizar coincidiendo con la clínica la electromiografía  // 
+S1139-76322015000500009-1.txt	SHORT_FORM	CPK	SHORT-LONG	LONG_FORM	 la determinación de creatinfosfocinasa 
+S1139-76322017000200007-1.txt	SHORT_FORM	VSG	SHORT-LONG	LONG_FORM	velocidad de sedimentación globular
+S1139-76322017000200007-1.txt	SHORT_FORM	CMV	SHORT-LONG	LONG_FORM	 y citomegalovirus 
+S1139-76322017000200007-1.txt	SHORT_FORM	IGRA	SHORT-LONG	LONG_FORM	hora y el interferon-gamma release assays 
+S1139-76322017000200007-1.txt	SHORT_FORM	VEB	SHORT-LONG	LONG_FORM	rr 
+S1139-76322017000200007-1.txt	SHORT_FORM	PAAF	SHORT-LONG	LONG_FORM	punción aspiración con aguja fina
+S1889-836X2015000100003-1.txt	SHORT_FORM	RMN	SHORT-LONG	LONG_FORM	resonancia magnética nuclear
+S1889-836X2015000100003-1.txt	SHORT_FORM	UMO	SHORT-LONG	LONG_FORM	Unidad Metabólica Ósea
+S1889-836X2015000100003-1.txt	SHORT_FORM	TAC	SHORT-LONG	LONG_FORM	tomografía axial computarizada
+S0211-69952014000200012-1.txt	SHORT_FORM	P3L3F2	SHORT-LONG	LONG_FORM	 se diagnosticó en 1984 y una biopsia hepática en el año 2000 mostró una hepatitis crónica periportal 
+S1139-76322015000300015-1.txt	SHORT_FORM	PCR	SHORT-LONG	LONG_FORM	 reactiva 
+S0211-69952016000300015-1.txt	SHORT_FORM	ADN	SHORT-LONG	LONG_FORM	ácido desoxirribonucleico
+S0211-69952016000300015-1.txt	SHORT_FORM	RM	SHORT-LONG	LONG_FORM	resonancia magnética
+S0212-16112010000100017-1.txt	SHORT_FORM	NP	SHORT-LONG	LONG_FORM	nutrición parenteral
+S0212-16112010000100017-1.txt	SHORT_FORM	AGE	SHORT-LONG	LONG_FORM	ácidos grasos esenciales
+S0212-16112010000100017-1.txt	SHORT_FORM	COL	SHORT-LONG	LONG_FORM	 colesterol 
+S0212-16112010000100017-1.txt	SHORT_FORM	TG	SHORT-LONG	LONG_FORM	triglicéridos
+S0212-16112010000100017-1.txt	SHORT_FORM	NE	SHORT-LONG	LONG_FORM	nutrición enteral
+S0212-16112010000100017-1.txt	SHORT_FORM	PCR	SHORT-LONG	LONG_FORM	 reactiva 
