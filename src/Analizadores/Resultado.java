@@ -71,7 +71,7 @@ public class Resultado {
 		//Preposiciones
 		palabrasConectoras= new HashSet<>(Arrays.asList("a", "ante", "bajo", "cabe", "con", "contra"
 				, "de", "desde", "durante", "en", "entre", "hacia", "hasta", "mediante", "para", "por", "según"
-				, "sin", "so", "sobre", "tras", "versus" , "vía","el","la","los","las","le","les"));
+				, "sin", "so", "sobre", "tras", "versus" , "vía","el","la","los","las","le","les","and", "with"));
 	}
 	
 	public Resultado(String nombreFicheroEntrada){	
@@ -104,6 +104,7 @@ public class Resultado {
 				//Empiezo por la primera forma
 				String lfCheckedStart = checkLongFromStart(lf, acAux);			
 				String lfCheckedEnd = checkLongFromEnd(lf, acAux);
+				String lfMetodoAuxiliar1=checkMetodoAuxiliar1(lf,acAux);
 				if(lfCheckedStart.length()>lfCheckedEnd.length()){
 					lfChecked=lfCheckedEnd;
 				}else{
@@ -124,6 +125,48 @@ public class Resultado {
 		}
 	}
 	
+	/*
+	 * METODO AUXILIAR 1: IHQ, EEG son ejemplos. Se comprueba que exista una palabra que contenga todas
+	 * siglas del acronimo, en ese orden.
+	 */
+	private String checkMetodoAuxiliar1(String lf, String ac) {
+		//Desde el inicio del acronimo	
+		boolean check=true;	
+		String[] frase=lf.split(" ");
+		int i=frase.length-1;
+		
+		String acAux=ac.toUpperCase();
+		while(i>=0 && check) {
+			int indiceAc=0;
+			int indexSigla=-1;
+			String cadenaNormalize = Normalizer.normalize(frase[i], Normalizer.Form.NFD);   
+			String cadenaSinAcentos = cadenaNormalize.replaceAll("[^\\p{ASCII}]", "").toUpperCase();
+			while(indiceAc<acAux.length()&& check) {
+				if(cadenaSinAcentos.indexOf(acAux.charAt(indiceAc))>=indexSigla && cadenaSinAcentos.indexOf(acAux.charAt(indiceAc))!=-1) {
+					indexSigla=cadenaSinAcentos.indexOf(acAux.charAt(indiceAc));
+					if(indexSigla<cadenaSinAcentos.length()) {
+						cadenaSinAcentos=cadenaSinAcentos.substring(indexSigla+1);
+						indexSigla=-1;
+					}
+					indiceAc++;
+				}else{
+					check=false;					
+				}
+			}
+			if(check) {
+				check=false;
+			}else {
+				check=true;
+				i--;
+			}			
+		}
+		//Salgo luego o he comprobado toda la frase sin exito o he encontrado la palabra
+		if(i>=0 && !this.palabrasConectoras.contains(frase[i])) {
+			return frase[i];
+		}
+		return lf;
+	}
+
 	private String checkDoubleAcronym(String ac) {
 		if(ac.length()==4){
 			Character aux0=ac.charAt(0);
@@ -582,7 +625,10 @@ public class Resultado {
 	}
 	public static void main(String[] args){
 		Resultado r=new Resultado();
-		Character ch='α';
+		Character ch='B';
+		System.out.println("pepe".substring(1));
+		
+		System.out.println(r.checkMetodoAuxiliar1("pepe se hizo un inmunohistoqu�mica", "IHQ"));
 		System.out.println(String.format("\\u%04x", (int) ch));
 		System.out.println(r.checkLongFromStart("te estos hallazgos se decidió realizar una enteroscopia con cápsula endoscópica","ECE"));
 		System.out.println(r.checkLongFromEnd("una tomografía de coherencia óptica ","OCT"));
