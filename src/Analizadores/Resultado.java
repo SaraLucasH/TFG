@@ -17,7 +17,9 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map.Entry;
 
+import Diccionarios.BARRDiccionario;
 import Diccionarios.CargaDiccionario;
+import Diccionarios.SEDOMDiccionario;
 
 public class Resultado {	
 	
@@ -44,9 +46,8 @@ public class Resultado {
 		}	
 		
 	}
-	
-	HashMap<String,HashSet<String>> diccionarioFormaCorta;
-	HashMap<String,String> diccionarioFormaLarga;
+	private HashMap<String, HashSet<String>> diccionarioConsultaBARR;
+	private HashMap<String,HashSet<String>> diccionarioConsulta;
 	CargaDiccionario cd= new CargaDiccionario();	
 	HashMap<String,HashSet<String>> diccionarioTextoActual;
 	HashSet<String> palabrasConectoras;	
@@ -65,9 +66,8 @@ public class Resultado {
 	public Resultado(){		
 		this.diccionarioTextoActual=new HashMap<>();
 		cd.cargaDiccionarioSF_LFTXT("DiccionarioTest002.txt");
-		this.diccionarioFormaCorta=cd.getDiccionarioSF_LF();
-		this.diccionarioFormaLarga=cd.getDiccionarioLF_SF();
-		
+		this.diccionarioConsulta=new SEDOMDiccionario().getDiccionario();
+		this.diccionarioConsultaBARR= new BARRDiccionario().getDiccionario();
 		//Preposiciones
 		palabrasConectoras= new HashSet<>(Arrays.asList("a", "ante", "bajo", "cabe", "con", "contra"
 				, "de", "desde", "durante", "en", "entre", "hacia", "hasta", "mediante", "para", "por", "según"
@@ -78,9 +78,7 @@ public class Resultado {
 		this.nombreFichero=nombreFicheroEntrada;
 		
 		this.diccionarioTextoActual=new HashMap<>();
-		cd.cargaDiccionarioSF_LFTXT("DiccionarioTest002.txt");
-		this.diccionarioFormaCorta=cd.getDiccionarioSF_LF();
-		this.diccionarioFormaLarga=cd.getDiccionarioLF_SF();
+		this.diccionarioConsulta= new HashMap<>();
 		
 		//Preposiciones
 		palabrasConectoras= new HashSet<>(Arrays.asList("a", "ante", "bajo", "cabe", "con", "contra"
@@ -99,29 +97,34 @@ public class Resultado {
 				System.out.println("Checkeo palabra");
 				String acAux=checkDoubleAcronym(ac);
 				String lfChecked;
-				//HashSet<String> consulta=consultaDiccionario(ac);
 				
-				//Empiezo por la primera forma
-				String lfCheckedStart = checkLongFromStart(lf, acAux);			
-				String lfCheckedEnd = checkLongFromEnd(lf, acAux);
-				String lfMetodoAuxiliar1=checkMetodoAuxiliar1(lf,acAux);
-				if(lfCheckedStart.length()>lfCheckedEnd.length()){
-					lfChecked=lfCheckedEnd;
-				}else{
-					lfChecked=lfCheckedStart;
+				//1�Consulto dic unidades medida y sedom
+				HashSet<String> valorSEDOM=this.diccionarioConsulta.get(ac);
+				HashSet<String> valorBARR;
+				if(valorSEDOM!=null) {
+					if(valorSEDOM.size()==1) {
+						this.diccionarioTextoActual.get(ac).add(valorSEDOM.iterator().next());
+					}
 				}
-				
-				this.diccionarioTextoActual.get(ac).add(lfChecked);
-			}
-			if (lf != null && (ac == null || ac == "")) {
-				String acAux = this.diccionarioFormaLarga.get(lf);
-				if (acAux != null) {
-					System.out.println("*********Accedo a dic lf*********");
-					HashSet<String> longForm = new HashSet<>();
-					longForm.add(lf);
-					this.diccionarioTextoActual.put(acAux, longForm);
-				}
-			}
+				if(valorSEDOM== null|| valorSEDOM.size()>1) {
+					//Busco tambien en diccionario tarea BARR2 o BARR1
+					valorBARR=this.diccionarioConsultaBARR.get(ac);
+					if(valorBARR!=null) {
+						//Desambiguacion
+					}
+					
+					/*String lfCheckedStart = checkLongFromStart(lf, acAux);			
+					String lfCheckedEnd = checkLongFromEnd(lf, acAux);
+					String lfMetodoAuxiliar1=checkMetodoAuxiliar1(lf,acAux);
+					String lfMetodoAuxiliar2=checkMetodoAuxiliar2(lf,acAux);
+					if(lfCheckedStart.length()>lfCheckedEnd.length()){
+						lfChecked=lfCheckedEnd;
+					}else{
+						lfChecked=lfCheckedStart;
+					}					
+					this.diccionarioTextoActual.get(ac).add(lfChecked);*/
+				}					
+			}			
 		}
 	}
 	
@@ -164,6 +167,94 @@ public class Resultado {
 		if(i>=0 && !this.palabrasConectoras.contains(frase[i])) {
 			return frase[i];
 		}
+		return lf;
+	}
+	
+	/*
+	 * METODO AUXILIAR 2: Busco coincidencia con una sigla y checkeo que existe alguna palabra que comience por la siguiente,
+	 * si no la encuentro entonces compruebo si la anterior palabra contiene esta segunda sigla. Asi sucesivamente
+	 */
+	private String checkMetodoAuxiliar2(String lf, String ac) {
+		String resultado;
+		
+		//Desde el inicio del acronimo	
+		boolean checkAc = true;
+		boolean checkLf = false;
+		String[] frase = lf.split(" ");
+		int i= frase.length - 1;;
+		Character siglaActual=' ';
+		
+		int pivoteInicial=-1;
+		int pivoteFinal=-1;
+		int indexUltimoCheck = -1;
+		int indiceAc = 0;
+		String acAux = ac.toUpperCase();
+		while (indiceAc < ac.length() && checkAc) {
+			checkLf=false;
+			i = frase.length - 1;
+			while (i >= 0 && !checkLf) {
+				String cadenaNormalize = Normalizer.normalize(frase[i], Normalizer.Form.NFD);
+				String cadenaSinAcentos = cadenaNormalize.replaceAll("[^\\p{ASCII}]", "").toUpperCase();
+				
+				siglaActual=acAux.charAt(indiceAc);
+				
+				if(siglaActual.equals(s) || siglaActual.equals(e)) {
+					//Busco la aparicion de esa sigla o de e o s. Ingl�s
+					if ((cadenaSinAcentos.indexOf(s)==0 || cadenaSinAcentos.indexOf(e)==0)&& i!=indexUltimoCheck){
+						//Empieza por e o s
+						checkLf=true;
+						if(pivoteInicial==-1 || i<pivoteInicial)
+							pivoteInicial=i;
+						if(pivoteFinal==-1 || i>pivoteFinal)
+							pivoteFinal=i;
+							
+						indexUltimoCheck=i;
+						
+					}else {
+						i--;
+					}					
+				}else {
+					if (cadenaSinAcentos.indexOf(siglaActual)==0 && i!=indexUltimoCheck){
+						checkLf=true;
+						if(pivoteInicial==-1 || i<pivoteInicial)
+							pivoteInicial=i;
+						if(pivoteFinal==-1 || i>pivoteFinal)
+							pivoteFinal=i;
+						
+						indexUltimoCheck=i;
+					}else {
+						i--;
+					}
+				}
+			}
+			if(i<0) {
+				//Me he salido por no encontrarlo. Busco en la ultima
+				if(indexUltimoCheck!=-1) {
+					String cadenaNormalize = Normalizer.normalize(frase[indexUltimoCheck], Normalizer.Form.NFD);
+					String cadenaSinAcentos = cadenaNormalize.replaceAll("[^\\p{ASCII}]", "").toUpperCase();
+					checkLf=cadenaSinAcentos.indexOf(siglaActual)>=0;
+				}else {
+					return lf;
+				}
+				if(!checkLf) {
+					return lf;
+				}
+			}
+			indiceAc++;
+		}
+		
+		if(pivoteInicial!=-1 && checkAc) {
+			resultado=frase[pivoteInicial];
+			pivoteInicial++;
+			while(pivoteInicial<=pivoteFinal){
+				if(i<frase.length) {
+					resultado+=" "+frase[pivoteInicial];
+				}
+				pivoteInicial++;
+			}
+			return resultado;
+		}
+		
 		return lf;
 	}
 
@@ -604,31 +695,13 @@ public class Resultado {
 		}
 		return result;		
 	}	
-	
-	private HashSet<String> consultaDiccionario(String acronimo) {	
-		if(this.diccionarioFormaCorta==null){			
-			cd.cargaDiccionarioSF_LFTXT("DiccionarioTest002");
-			this.diccionarioFormaCorta=cd.getDiccionarioSF_LF();			
-		}
-		if(this.diccionarioFormaLarga==null){
-			cd.cargaDiccionarioLF_SFTXT("DiccionarioTest002");
-			this.diccionarioFormaLarga=cd.getDiccionarioLF_SF();	
-		}
-		System.out.println("Acronimo identificado: "+acronimo);
-		HashSet<String> respuesta=this.diccionarioFormaCorta.get(acronimo);
-		if(respuesta==null){			
-			respuesta=new HashSet<String>();
-			respuesta.add("No hay formas largas en el diccionario para este acronimo");
-			
-		}	
-		return respuesta;
-	}
+		
 	public static void main(String[] args){
 		Resultado r=new Resultado();
 		Character ch='B';
 		System.out.println("pepe".substring(1));
 		
-		System.out.println(r.checkMetodoAuxiliar1("pepe se hizo un inmunohistoqu�mica", "IHQ"));
+		System.out.println(r.checkMetodoAuxiliar2("pepe hizo una anticuerpos antinucleares severa la semana psada", "ANA"));
 		System.out.println(String.format("\\u%04x", (int) ch));
 		System.out.println(r.checkLongFromStart("te estos hallazgos se decidió realizar una enteroscopia con cápsula endoscópica","ECE"));
 		System.out.println(r.checkLongFromEnd("una tomografía de coherencia óptica ","OCT"));
