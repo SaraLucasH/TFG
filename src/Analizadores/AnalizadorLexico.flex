@@ -52,7 +52,9 @@ Frase=([0-9]*[\u0025]?|
 		[\u00B5\u039C]{Minuscula}[\u002F]{Minuscula}+)
 	)*
 {FinFrase}?
-Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |[a-z]{1,4}[\u002D][A-Z]{2,4}| (([a-z]|[A-Z])"\."){1,5} | [0-9][\u002D][A-Z]{2,4} | [a-z]"\." |[A-Z]{1,4}[0-9]{1,3}|([A-Z][0-9])+ |([A-Z]"\.")*[A-Z]
+Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |
+{Mayuscula}{Minuscula}|{Minuscula}{1,3}|{Mayuscula}{1,4}[\u002D]{Mayuscula}{1,4}|
+[a-z]{1,4}[\u002D][A-Z]{2,4}| (([a-z]|[A-Z])"\."){1,5} | [0-9][\u002D][A-Z]{2,4} | [a-z]"\." |[A-Z]{1,4}[0-9]{1,3}|([A-Z][0-9])+ |([A-Z]"\.")*[A-Z]
 %state estado1,estado2,estado3
 
 
@@ -120,15 +122,18 @@ Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |[a-z]{1,4}[\u002D][A-Z]{2,4}| (([a-z]|[A-Z
 				;}
 	<YYINITIAL> [\u002B] {//Sumatorio	
 				;}
-	<YYINITIAL> [\u002D] {//barra -
-				System.out.println("Barra -");
-				;}
-	<YYINITIAL> {Acronimo} {return new Symbol(sym.acronimo,yyline +1, yycolumn +1,yytext());}
 	<YYINITIAL> {Frase} {posibleLF=yytext();
 				yybegin(estado1);
 				acWLf.clean();
-				acWLf.setFormaLarga(posibleLF);
-				System.out.println("lf");}
+				acWLf.setFormaLarga(posibleLF);System.out.println("lf");}
+	<YYINITIAL> {Acronimo} {System.out.println("Acronimo");
+		return new Symbol(sym.acronimo,yyline +1, yycolumn +1,yytext());}
+	
+				
+	<YYINITIAL> [\u002D] {//barra -
+				System.out.println("Barra -");
+				;}
+	
 	<YYINITIAL> [\u003A]  {//Simbolo dos puntos
 				;}
 	<YYINITIAL> [\u0025] {//Porcentaje
@@ -154,7 +159,8 @@ Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |[a-z]{1,4}[\u002D][A-Z]{2,4}| (([a-z]|[A-Z
 			}
 			yybegin(YYINITIAL);}
 
-<estado2> {Acronimo} {acronimo=yytext();
+<estado2> {Acronimo} {System.out.println("Acronimo");
+			acronimo=yytext();
 			acWLf.setAcronimo(acronimo);
 			yybegin(estado3);
 			System.out.println("ac");}

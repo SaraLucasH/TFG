@@ -2,3 +2,5 @@ bin
 *.class
 *.java~
 
+.metadata/.lock
+*.class

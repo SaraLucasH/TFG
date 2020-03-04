@@ -99,31 +99,37 @@ public class Resultado {
 				String lfChecked;
 				
 				//1ºConsulto dic unidades medida y sedom
-				HashSet<String> valorSEDOM=this.diccionarioConsulta.get(ac);
+				/*HashSet<String> valorSEDOM=this.diccionarioConsulta.get(ac);
 				HashSet<String> valorBARR;
 				if(valorSEDOM!=null) {
 					if(valorSEDOM.size()==1) {
 						this.diccionarioTextoActual.get(ac).add(valorSEDOM.iterator().next());
 					}
-				}
-				if(valorSEDOM== null|| valorSEDOM.size()>1) {
+				}*/
+				/*if(valorSEDOM== null|| valorSEDOM.size()>1) {
 					//Busco tambien en diccionario tarea BARR2 o BARR1
 					valorBARR=this.diccionarioConsultaBARR.get(ac);
 					if(valorBARR!=null) {
 						//Desambiguacion
-					}
+					}*/
 					
-					/*String lfCheckedStart = checkLongFromStart(lf, acAux);			
+					String lfCheckedStart = checkLongFromStart(lf, acAux);			
 					String lfCheckedEnd = checkLongFromEnd(lf, acAux);
 					String lfMetodoAuxiliar1=checkMetodoAuxiliar1(lf,acAux);
 					String lfMetodoAuxiliar2=checkMetodoAuxiliar2(lf,acAux);
-					if(lfCheckedStart.length()>lfCheckedEnd.length()){
-						lfChecked=lfCheckedEnd;
-					}else{
+					int minLong=Math.min(lfCheckedStart.length(),Math.min(lfCheckedEnd.length(), 
+							Math.min(lfMetodoAuxiliar1.length(),lfMetodoAuxiliar2.length())));
+					if(minLong==lfCheckedStart.length())
 						lfChecked=lfCheckedStart;
-					}					
-					this.diccionarioTextoActual.get(ac).add(lfChecked);*/
-				}					
+					else if(minLong==lfCheckedEnd.length())
+						lfChecked=lfCheckedEnd;
+					else if(minLong==lfMetodoAuxiliar1.length())
+						lfChecked=lfMetodoAuxiliar1;
+					else 
+						lfChecked=lfMetodoAuxiliar2;
+					
+					this.diccionarioTextoActual.get(ac).add(lfChecked);
+									
 			}			
 		}
 	}
