@@ -49,7 +49,7 @@ public class Resultado {
 	private HashMap<String, HashSet<String>> diccionarioConsultaBARR;
 	private HashMap<String,HashSet<String>> diccionarioConsulta;
 	CargaDiccionario cd= new CargaDiccionario();	
-	HashMap<String,HashSet<String>> diccionarioTextoActual;
+	HashMap<Acronimo,HashSet<String>> diccionarioTextoActual;
 	HashSet<String> palabrasConectoras;	
 	
 	String nombreFichero="";
@@ -86,11 +86,13 @@ public class Resultado {
 				, "sin", "so", "sobre", "tras", "versus" , "vía","el","la","los","las","le","les",""));
 	}
 
-	public void addDupla(String ac, String lf) {
+	public void addDupla(Acronimo acronimo, String lf) {
+		String ac=acronimo.getAcronimo();
+		System.out.println("ENTRADA "+ac+" "+lf);
 		if (ac != null && ac != " " && ac!="" && ac!="AU") {
 			//System.out.println(ac + " --- " + lf);
-			if (this.diccionarioTextoActual.get(ac) == null) {
-				this.diccionarioTextoActual.put(ac, new HashSet<String>());
+			if (this.diccionarioTextoActual.get(acronimo) == null) {
+				this.diccionarioTextoActual.put(acronimo, new HashSet<String>());
 			}
 			if (lf != null && lf!="" && lf!=" ") {
 				
@@ -127,8 +129,8 @@ public class Resultado {
 						lfChecked=lfMetodoAuxiliar1;
 					else 
 						lfChecked=lfMetodoAuxiliar2;
-					
-					this.diccionarioTextoActual.get(ac).add(lfChecked);
+					System.out.println("SALIDA LF "+lfChecked+" a�adido a "+this.diccionarioTextoActual.get(acronimo));
+					this.diccionarioTextoActual.get(acronimo).add(lfChecked);
 									
 			}			
 		}
@@ -667,21 +669,21 @@ public class Resultado {
 	public String toString(){
 		String result="";		
 		try {
-			File file= new File("Testing_set_results.tsv");	
+			File file= new File("Testing_results_withOffset.tsv");	
 			if(!file.exists()){
-				result="#DocumentID\tMention_A_type\tMention_A_StartOffset\tMention_A_EndOffsetMention_A\tRelation_type\t"
+				result="#DocumentID\tMention_A_type\tMention_A_StartOffset\tMention_A_EndOffset\tMention_A\tRelation_type\t"
 						+ "Mention_B_type\tMention_B_StartOffset\tMention_B_EndOffset\tMention_B\n";
 			}
 			Writer out = new BufferedWriter(new OutputStreamWriter(
 				    new FileOutputStream(file,true), "UTF-8"));
 			
-			Iterator<Entry<String,HashSet<String>>> it=this.diccionarioTextoActual.entrySet().iterator();
+			Iterator<Entry<Acronimo,HashSet<String>>> it=this.diccionarioTextoActual.entrySet().iterator();
 			while(it.hasNext()){				
-				Entry<String,HashSet<String>> e=it.next();
+				Entry<Acronimo,HashSet<String>> e=it.next();
 				if(!e.getValue().isEmpty()){
 					result+=nombreFichero+"\t";
 					//Acronimo 
-					result+="SHORT_FORM\t"+e.getKey()+"\tSHORT-LONG\tLONG_FORM\t";	
+					result+="SHORT_FORM\t"+e.getKey().getStartOffset()+"\t"+e.getKey().getEndOffset()+"\t"+e.getKey().getAcronimo()+"\tSHORT-LONG\tLONG_FORM\t";	
 					Iterator<String> indice=e.getValue().iterator();				
 					if(indice.hasNext()) {					
 						result+=indice.next();
@@ -691,8 +693,7 @@ public class Resultado {
 					}				
 					result+="\n";
 				}
-			}
-			
+			}			
 			out.write(result);
 			out.flush();
 			out.close();
@@ -704,9 +705,7 @@ public class Resultado {
 		
 	public static void main(String[] args){
 		Resultado r=new Resultado();
-		Character ch='B';
-		System.out.println("pepe".substring(1));
-		
+		Character ch='B';	
 		System.out.println(r.checkMetodoAuxiliar2("pepe hizo una anticuerpos antinucleares severa la semana psada", "ANA"));
 		System.out.println(String.format("\\u%04x", (int) ch));
 		System.out.println(r.checkLongFromStart("te estos hallazgos se decidió realizar una enteroscopia con cápsula endoscópica","ECE"));

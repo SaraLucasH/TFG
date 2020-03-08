@@ -24,7 +24,7 @@ action code
 
 //Zona de declaraciones
 terminal FormaLargaWithAc acWithLf;
-terminal String acronimo;
+terminal Acronimo acronimo;
 non terminal String INICIO;
 non terminal String RES;
 non terminal String lambda;
@@ -37,14 +37,13 @@ non terminal String lambda;
 start with INICIO;
 INICIO::= RES:res {:
 	RESULT=resultado.toString();:}|lambda;
-RES ::= acWithLf:a{:resultado.addDupla(a.getAcronimo(),a.getFormaLarga());RESULT=a.getFormaLarga()+" "+a.getAcronimo(); :}
-	|acWithLf:a RES{:resultado.addDupla(a.getAcronimo(),
-			a.getFormaLarga());RESULT=a.getFormaLarga()+" 				"+a.getAcronimo();:}
+RES ::= acWithLf:a{:resultado.addDupla(a.getAcronimo(),a.getFormaLarga());RESULT=a.getFormaLarga()+" "+a.getAcronimo().getAcronimo(); :}
+	|acWithLf:a RES{:resultado.addDupla(a.getAcronimo(),a.getFormaLarga());RESULT=a.getFormaLarga()+" 				"+a.getAcronimo().getAcronimo();:}
 	|acronimo:ac 
-	{:resultado.addDupla(ac,null);RESULT=ac;:}
+	{:resultado.addDupla(ac,null);RESULT=ac.getAcronimo();:}
 	|acronimo:ac RES
 	{:resultado.addDupla(ac,null);
-		RESULT=ac;:};
+		RESULT=ac.getAcronimo();:};
 lambda::= {:RESULT="";:};
 
 	

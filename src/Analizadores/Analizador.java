@@ -83,22 +83,33 @@ public class Analizador {
 					Reader br = new InputStreamReader (new FileInputStream(file), charset);
 					BufferedReader buffer= new BufferedReader(br);
 					
-					String linea;
+					/*String linea;
 					String cadenaCompleta="";
 					buffer.readLine();
 					while((linea = buffer.readLine()) != null) {
 						String[] cad=linea.split("\t");
 						System.out.println(cad[0]);
-						if(cad[1].toUpperCase()=="ES") {
-							File archivo= new File(cad[0]);	
+						if(cad[1].equalsIgnoreCase("ES")) {
+							File archivo= new File("C:\\Users\\saral\\Documents\\tfg\\BARR1\\"+cad[0]+".txt");
+							if(archivo.createNewFile()) {
+								System.out.println("creado");
+							}else {
+								System.out.println("error crear fichero");
+							}
 							Writer out = new BufferedWriter(new OutputStreamWriter(
 								    new FileOutputStream(archivo,true), "UTF-8"));
+							int p=2;
+							while(p<cad.length) {
+								out.write(cad[p]);
+								p++;
+							}
 							out.write(cad[2]);
 							out.close();
 						}
-					}
-					
-					
+					}*/
+					lexico= new AnalizadorLexico(br);				
+					parser sintactico = new parser(lexico,argv[i]);
+					sintactico.parse();
 					br.close();
 					buffer.close();
 				}catch (UnsupportedEncodingException e){

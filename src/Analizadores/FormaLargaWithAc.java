@@ -3,16 +3,19 @@ package Analizadores;
 public class FormaLargaWithAc {
 	
 	String formaLarga;
-	String acronimo;
-	public FormaLargaWithAc() {		
+	//String acronimo;
+	private Acronimo acronimo;
+	
+	public FormaLargaWithAc() {
+		
 	}
-	public FormaLargaWithAc(String ac, String lf) {
+	public FormaLargaWithAc(Acronimo ac, String lf) {
 		this.acronimo=ac;
 		this.formaLarga=lf;
 	}
 	
 	public void clean() {
-		this.acronimo="";
+		this.acronimo=new Acronimo();
 		this.formaLarga="";
 	}
 	public String getFormaLarga() {
@@ -21,10 +24,10 @@ public class FormaLargaWithAc {
 	public void setFormaLarga(String formaLarga) {
 		this.formaLarga = formaLarga;
 	}
-	public String getAcronimo() {
+	public Acronimo getAcronimo() {
 		return acronimo;
 	}
-	public void setAcronimo(String acronimo) {
+	public void setAcronimo(Acronimo acronimo) {
 		this.acronimo = acronimo;
 	}
 	

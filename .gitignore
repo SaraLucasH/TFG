@@ -1,6 +1,7 @@
-bin
+bin/*
 *.class
 *.java~
-
-.metadata/.lock
+.metadata\*
+.metadata/*
 *.class
+.metadata/.log
