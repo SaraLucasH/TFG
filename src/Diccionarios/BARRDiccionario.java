@@ -66,13 +66,13 @@ public class BARRDiccionario {
 				e2.printStackTrace();
 			}
 		}
-		for(Entry<String, HashSet<String>> e:this.diccionario.entrySet()) {
+		/*for(Entry<String, HashSet<String>> e:this.diccionario.entrySet()) {
 			System.out.print(e.getKey()+":");
 			for(String s: e.getValue()) {
 				System.out.print(s+" // ");
 			}
 			System.out.println();
-		}
+		}*/
 		return 0;
 	}
 	

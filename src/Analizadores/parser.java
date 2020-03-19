@@ -20,16 +20,16 @@ public class parser extends java_cup.runtime.lr_parser {
     return sym.class;
 }
 
-  /** Default constructor. */
-  @Deprecated
-  public parser(String nombreFicheroEntrada) {super(); this.nombreFicheroEntrada=nombreFicheroEntrada;this.resultado= new Resultado(nombreFicheroEntrada);}
+ /** Default constructor. */
+ @Deprecated
+ public parser(String nombreFicheroEntrada) {super(); this.nombreFicheroEntrada=nombreFicheroEntrada;this.resultado= new Resultado(nombreFicheroEntrada);}
 
-  /** Constructor which sets the default scanner. */
-  @Deprecated
-  public parser(java_cup.runtime.Scanner s,String nombreFicheroEntrada) {super(s);this.nombreFicheroEntrada=nombreFicheroEntrada;this.resultado= new Resultado(nombreFicheroEntrada);}
+ /** Constructor which sets the default scanner. */
+ @Deprecated
+ public parser(java_cup.runtime.Scanner s,String nombreFicheroEntrada) {super(s);this.nombreFicheroEntrada=nombreFicheroEntrada;this.resultado= new Resultado(nombreFicheroEntrada);}
 
-  /** Constructor which sets the default scanner. */
-  public parser(java_cup.runtime.Scanner s, java_cup.runtime.SymbolFactory sf,String nombreFicheroEntrada) {super(s,sf);this.nombreFicheroEntrada=nombreFicheroEntrada;this.resultado= new Resultado(nombreFicheroEntrada);}
+ /** Constructor which sets the default scanner. */
+ public parser(java_cup.runtime.Scanner s, java_cup.runtime.SymbolFactory sf,String nombreFicheroEntrada) {super(s,sf);this.nombreFicheroEntrada=nombreFicheroEntrada;this.resultado= new Resultado(nombreFicheroEntrada);}
 
   /** Production table. */
   protected static final short _production_table[][] = 
@@ -100,7 +100,7 @@ public class parser extends java_cup.runtime.lr_parser {
 
 
 String nombreFicheroEntrada="";
-Resultado resultado;
+Resultado resultado= new Resultado(nombreFicheroEntrada);
 
 public void syntax_error (Symbol s){
 	System.err.println("Error de sintaxis (lexema <" + 	s.value.toString() + ">) en la linea " + s.left + " 	y en la columna " + s.right);
@@ -181,7 +181,7 @@ class CUP$parser$actions {
 		int aleft = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).left;
 		int aright = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).right;
 		FormaLargaWithAc a = (FormaLargaWithAc)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
-		resultado.addDupla(a.getAcronimo(),a.getFormaLarga());RESULT=a.getFormaLarga()+" "+a.getAcronimo().getAcronimo(); 
+		resultado.addDupla(a.getAcronimo(),a.getFormaLarga());RESULT=a.getFormaLarga().getLf()+" "+a.getAcronimo().getAcronimo(); 
               CUP$parser$result = parser.getSymbolFactory().newSymbol("RES",1, ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
             }
           return CUP$parser$result;
@@ -193,8 +193,7 @@ class CUP$parser$actions {
 		int aleft = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-1)).left;
 		int aright = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-1)).right;
 		FormaLargaWithAc a = (FormaLargaWithAc)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-1)).value;
-		resultado.addDupla(a.getAcronimo(),
-			a.getFormaLarga());RESULT=a.getFormaLarga()+" 				"+a.getAcronimo().getAcronimo();
+		resultado.addDupla(a.getAcronimo(),a.getFormaLarga());RESULT=a.getFormaLarga().getLf()+" 				"+a.getAcronimo().getAcronimo();
               CUP$parser$result = parser.getSymbolFactory().newSymbol("RES",1, ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-1)), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
             }
           return CUP$parser$result;

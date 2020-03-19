@@ -37,8 +37,8 @@ non terminal String lambda;
 start with INICIO;
 INICIO::= RES:res {:
 	RESULT=resultado.toString();:}|lambda;
-RES ::= acWithLf:a{:resultado.addDupla(a.getAcronimo(),a.getFormaLarga());RESULT=a.getFormaLarga()+" "+a.getAcronimo().getAcronimo(); :}
-	|acWithLf:a RES{:resultado.addDupla(a.getAcronimo(),a.getFormaLarga());RESULT=a.getFormaLarga()+" 				"+a.getAcronimo().getAcronimo();:}
+RES ::= acWithLf:a{:resultado.addDupla(a.getAcronimo(),a.getFormaLarga());RESULT=a.getFormaLarga().getLf()+" "+a.getAcronimo().getAcronimo(); :}
+	|acWithLf:a RES{:resultado.addDupla(a.getAcronimo(),a.getFormaLarga());RESULT=a.getFormaLarga().getLf()+" 				"+a.getAcronimo().getAcronimo();:}
 	|acronimo:ac 
 	{:resultado.addDupla(ac,null);RESULT=ac.getAcronimo();:}
 	|acronimo:ac RES

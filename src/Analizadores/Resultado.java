@@ -49,7 +49,7 @@ public class Resultado {
 	private HashMap<String, HashSet<String>> diccionarioConsultaBARR;
 	private HashMap<String,HashSet<String>> diccionarioConsulta;
 	CargaDiccionario cd= new CargaDiccionario();	
-	HashMap<Acronimo,HashSet<String>> diccionarioTextoActual;
+	HashMap<Acronimo,HashSet<FormaLarga>> diccionarioTextoActual;
 	HashSet<String> palabrasConectoras;	
 	
 	String nombreFichero="";
@@ -86,53 +86,85 @@ public class Resultado {
 				, "sin", "so", "sobre", "tras", "versus" , "v铆a","el","la","los","las","le","les",""));
 	}
 
-	public void addDupla(Acronimo acronimo, String lf) {
-		String ac=acronimo.getAcronimo();
-		System.out.println("ENTRADA "+ac+" "+lf);
-		if (ac != null && ac != " " && ac!="" && ac!="AU") {
-			//System.out.println(ac + " --- " + lf);
+	public void addDupla(Acronimo acronimo, FormaLarga f) {
+		String ac = acronimo.getAcronimo();
+		
+		
+		if (ac != null && ac != " " && ac != "" && ac != "AU") {
+			// System.out.println(ac + " --- " + lf);
 			if (this.diccionarioTextoActual.get(acronimo) == null) {
-				this.diccionarioTextoActual.put(acronimo, new HashSet<String>());
+				this.diccionarioTextoActual.put(acronimo, new HashSet<FormaLarga>());
 			}
-			if (lf != null && lf!="" && lf!=" ") {
-				
-				System.out.println("Checkeo palabra");
-				String acAux=checkDoubleAcronym(ac);
-				String lfChecked;
-				
-				//1篊onsulto dic unidades medida y sedom
-				/*HashSet<String> valorSEDOM=this.diccionarioConsulta.get(ac);
-				HashSet<String> valorBARR;
-				if(valorSEDOM!=null) {
-					if(valorSEDOM.size()==1) {
-						this.diccionarioTextoActual.get(ac).add(valorSEDOM.iterator().next());
+			if (f != null) {
+				String lf = f.getLf();
+				System.out.println("ENTRADA " + ac + " " + lf);
+				if (lf != "" && lf != " "&& lf!=null) {
+					System.out.println("Checkeo palabra");
+					String acAux = checkDoubleAcronym(ac);
+					if(acAux.contains(".")) {
+						acAux=acAux.replaceAll("([.])", "");
 					}
-				}*/
-				/*if(valorSEDOM== null|| valorSEDOM.size()>1) {
-					//Busco tambien en diccionario tarea BARR2 o BARR1
-					valorBARR=this.diccionarioConsultaBARR.get(ac);
-					if(valorBARR!=null) {
-						//Desambiguacion
-					}*/
-					
-					String lfCheckedStart = checkLongFromStart(lf, acAux);			
+					String lfChecked;
+
+					// 1篊onsulto dic unidades medida y sedom
+					/*
+					 * HashSet<String> valorSEDOM=this.diccionarioConsulta.get(ac); HashSet<String>
+					 * valorBARR; if(valorSEDOM!=null) { if(valorSEDOM.size()==1) {
+					 * this.diccionarioTextoActual.get(ac).add(valorSEDOM.iterator().next()); } }
+					 */
+					/*
+					 * if(valorSEDOM== null|| valorSEDOM.size()>1) { //Busco tambien en diccionario
+					 * tarea BARR2 o BARR1 valorBARR=this.diccionarioConsultaBARR.get(ac);
+					 * if(valorBARR!=null) { //Desambiguacion }
+					 */
+
+					String lfCheckedStart = checkLongFromStart(lf, acAux);
 					String lfCheckedEnd = checkLongFromEnd(lf, acAux);
-					String lfMetodoAuxiliar1=checkMetodoAuxiliar1(lf,acAux);
-					String lfMetodoAuxiliar2=checkMetodoAuxiliar2(lf,acAux);
-					int minLong=Math.min(lfCheckedStart.length(),Math.min(lfCheckedEnd.length(), 
-							Math.min(lfMetodoAuxiliar1.length(),lfMetodoAuxiliar2.length())));
-					if(minLong==lfCheckedStart.length())
-						lfChecked=lfCheckedStart;
-					else if(minLong==lfCheckedEnd.length())
-						lfChecked=lfCheckedEnd;
-					else if(minLong==lfMetodoAuxiliar1.length())
-						lfChecked=lfMetodoAuxiliar1;
-					else 
-						lfChecked=lfMetodoAuxiliar2;
-					System.out.println("SALIDA LF "+lfChecked+" a馻dido a "+this.diccionarioTextoActual.get(acronimo));
-					this.diccionarioTextoActual.get(acronimo).add(lfChecked);
-									
-			}			
+					String lfMetodoAuxiliar1 = checkMetodoAuxiliar1(lf, acAux);
+					String lfMetodoAuxiliar2 = checkMetodoAuxiliar2(lf, acAux);
+					if(lfCheckedStart.length()<lfCheckedEnd.length()) {
+						lfChecked = lfCheckedStart;
+					}else if(lfCheckedStart.length()>lfCheckedEnd.length()) {
+						lfChecked = lfCheckedEnd;
+					}else {
+						//Iguales
+						if(lfMetodoAuxiliar1.length()< lfMetodoAuxiliar2.length()) {
+							lfChecked = lfMetodoAuxiliar1;
+						}else if(lfMetodoAuxiliar1.length() > lfMetodoAuxiliar2.length()) {
+							lfChecked = lfMetodoAuxiliar2;
+						}else if((lfMetodoAuxiliar1.length() ==  lfMetodoAuxiliar2.length())&& lfMetodoAuxiliar1.length()<lfCheckedStart.length()){
+							lfChecked = lfMetodoAuxiliar1;
+						}else {
+							lfChecked = lfCheckedStart;
+						}
+					}
+					
+					f = new FormaLarga(lfChecked, FormaLarga.getStart(f, lfChecked), FormaLarga.getEnd(f, lfChecked));
+					if (lfChecked.equalsIgnoreCase(lf)) {
+						// Compruebo los nested. Si es igual es porque ha fallado la busqueda
+						System.out.println("Nested");
+						if (!ac.toUpperCase().equals(ac)) {
+							acronimo.setNested(true);
+							this.diccionarioTextoActual.put(acronimo, new HashSet<FormaLarga>());
+						} else {
+							// Culpa de la forma larga
+							f.setNested(true);
+						}
+					}
+
+					/*
+					 * int minLong = Math.min(lfCheckedStart.length(),
+					 * Math.min(lfCheckedEnd.length(), Math.min(lfMetodoAuxiliar1.length(),
+					 * lfMetodoAuxiliar2.length()))); if (minLong == lfCheckedStart.length())
+					 * lfChecked = lfCheckedStart; else if (minLong == lfCheckedEnd.length())
+					 * lfChecked = lfCheckedEnd; else if (minLong == lfMetodoAuxiliar1.length())
+					 * lfChecked = lfMetodoAuxiliar1; else lfChecked = lfMetodoAuxiliar2;
+					 */
+					System.out.println(
+							"SALIDA LF " + lfChecked + " a馻dido a " + this.diccionarioTextoActual.get(acronimo));
+					this.diccionarioTextoActual.get(acronimo).add(f);
+				}
+			}
 		}
 	}
 	
@@ -669,7 +701,7 @@ public class Resultado {
 	public String toString(){
 		String result="";		
 		try {
-			File file= new File("Testing_results_withOffset.tsv");	
+			File file= new File("Testing_results_EVALUATION.tsv");	
 			if(!file.exists()){
 				result="#DocumentID\tMention_A_type\tMention_A_StartOffset\tMention_A_EndOffset\tMention_A\tRelation_type\t"
 						+ "Mention_B_type\tMention_B_StartOffset\tMention_B_EndOffset\tMention_B\n";
@@ -677,20 +709,39 @@ public class Resultado {
 			Writer out = new BufferedWriter(new OutputStreamWriter(
 				    new FileOutputStream(file,true), "UTF-8"));
 			
-			Iterator<Entry<Acronimo,HashSet<String>>> it=this.diccionarioTextoActual.entrySet().iterator();
+			Iterator<Entry<Acronimo,HashSet<FormaLarga>>> it=this.diccionarioTextoActual.entrySet().iterator();
 			while(it.hasNext()){				
-				Entry<Acronimo,HashSet<String>> e=it.next();
+				Entry<Acronimo,HashSet<FormaLarga>> e=it.next();
 				if(!e.getValue().isEmpty()){
+					//File identifier
 					result+=nombreFichero+"\t";
-					//Acronimo 
-					result+="SHORT_FORM\t"+e.getKey().getStartOffset()+"\t"+e.getKey().getEndOffset()+"\t"+e.getKey().getAcronimo()+"\tSHORT-LONG\tLONG_FORM\t";	
-					Iterator<String> indice=e.getValue().iterator();				
+					
+					//Short form
+					if(e.getKey().isNested()) {
+						//result+="NESTED\t"+e.getKey().getStartOffset()+"\t"+e.getKey().getEndOffset()+"\t"+e.getKey().getAcronimo()+"\tNESTED-";
+						result+="NESTED\t"+e.getKey().getStartOffset()+"\t"+e.getKey().getAcronimo()+"\tNESTED-";
+					}else {
+						//result+="SHORT_FORM\t"+e.getKey().getStartOffset()+"\t"+e.getKey().getEndOffset()+"\t"+e.getKey().getAcronimo()+"\tSHORT-";
+						result+="SHORT_FORM\t"+e.getKey().getStartOffset()+"\t"+e.getKey().getAcronimo()+"\tSHORT-";
+					}
+					
+					Iterator<FormaLarga> indice=e.getValue().iterator();
+					FormaLarga aux;
+					
+					//Long form
 					if(indice.hasNext()) {					
-						result+=indice.next();
+						aux=indice.next();
+						if(aux.isNested()) {
+							result+="NESTED\tNESTED\t";	
+						}else {
+							result+="LONG\tLONG_FORM\t";	
+						}
+						result+=aux.getStartOffset()+"\t"+aux.getEndOffset()+"\t"+aux.getLf();
 					}
 					while(indice.hasNext()) {
-						result+=" // "+indice.next()+" // ";
-					}				
+						aux=indice.next();
+						result+=aux.getStartOffset()+"\t"+aux.getEndOffset()+"\t"+aux.getLf();
+					}			
 					result+="\n";
 				}
 			}			
@@ -706,9 +757,11 @@ public class Resultado {
 	public static void main(String[] args){
 		Resultado r=new Resultado();
 		Character ch='B';	
-		System.out.println(r.checkMetodoAuxiliar2("pepe hizo una anticuerpos antinucleares severa la semana psada", "ANA"));
-		System.out.println(String.format("\\u%04x", (int) ch));
-		System.out.println(r.checkLongFromStart("te estos hallazgos se decidi贸 realizar una enteroscopia con c谩psula endosc贸pica","ECE"));
-		System.out.println(r.checkLongFromEnd("una tomograf铆a de coherencia 贸ptica ","OCT"));
+		/*r.addDupla(new Acronimo(0,15,"P.A.AF"), new FormaLarga("Se realiza punci髇 aspiraci髇 por aguja fina ",93,98));
+		r.toString();*/		
+		//System.out.println(r.checkMetodoAuxiliar1("y la biomicroscopia", "BMC"));
+		/*System.out.println(String.format("\\u%04x", (int) ch));*/
+		//System.out.println(r.checkMetodoAuxiliar1("un coloboma de retina y nervio 髉tico","NO"));
+		//System.out.println(r.checkLongFromEnd("una tomograf铆a de coherencia 贸ptica ","OCT"));
 	}
 }

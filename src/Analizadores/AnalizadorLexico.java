@@ -414,6 +414,7 @@ public class AnalizadorLexico implements java_cup.runtime.Scanner {
 	String varAux="";
 	String posibleLF="";
 	Acronimo acronimo=new Acronimo();
+	FormaLarga f=new FormaLarga();
 	int offset=0;
 	
 	FormaLargaWithAc acWLf=new FormaLargaWithAc ();
@@ -805,11 +806,11 @@ public class AnalizadorLexico implements java_cup.runtime.Scanner {
       else {
         switch (zzAction < 0 ? zzAction : ZZ_ACTION[zzAction]) {
           case 1: 
-            { posibleLF=yytext();
-				offset=offset+yytext().length();
+            { posibleLF=yytext();				
 				yybegin(estado1);
 				acWLf.clean();
-				acWLf.setFormaLarga(posibleLF);
+				acWLf.setFormaLarga(new FormaLarga(posibleLF,offset,offset+yytext().length()));
+				offset=offset+yytext().length();
 				System.out.println("lf");
             } 
             // fall through
@@ -898,6 +899,7 @@ public class AnalizadorLexico implements java_cup.runtime.Scanner {
           case 15: 
             { //Si hay acronimos en una frase no detectara el parentesis, pues al principio estaba en el estado 1
 				yypushback(yytext().length());
+				
 				yybegin(estado1);
             } 
             // fall through

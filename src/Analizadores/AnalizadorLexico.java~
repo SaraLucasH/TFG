@@ -824,7 +824,7 @@ public class AnalizadorLexico implements java_cup.runtime.Scanner {
           case 3: 
             { System.out.println("Acronimo");
 				offset=offset+yytext().length();
-				return new Symbol(sym.acronimo,yyline +1, yycolumn +1,new Acronimo(offset-yytext().length(),offset,yytext());
+				return new Symbol(sym.acronimo,yyline +1, yycolumn +1,new Acronimo(offset-yytext().length(),offset,yytext()));
             } 
             // fall through
           case 49: break;

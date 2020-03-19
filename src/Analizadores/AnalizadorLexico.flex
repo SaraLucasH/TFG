@@ -24,6 +24,7 @@ import java_cup.runtime.*;
 	String varAux="";
 	String posibleLF="";
 	Acronimo acronimo=new Acronimo();
+	FormaLarga f=new FormaLarga();
 	int offset=0;
 	
 	FormaLargaWithAc acWLf=new FormaLargaWithAc ();
@@ -127,11 +128,11 @@ Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |
 				offset=offset+yytext().length();}
 	<YYINITIAL> [\u002B] {//Sumatorio	
 				offset=offset+yytext().length();}
-	<YYINITIAL> {Frase} {posibleLF=yytext();
-				offset=offset+yytext().length();
+	<YYINITIAL> {Frase} {posibleLF=yytext();				
 				yybegin(estado1);
 				acWLf.clean();
-				acWLf.setFormaLarga(posibleLF);
+				acWLf.setFormaLarga(new FormaLarga(posibleLF,offset,offset+yytext().length()));
+				offset=offset+yytext().length();
 				System.out.println("lf");}
 	<YYINITIAL> {Acronimo} {System.out.println("Acronimo");
 				offset=offset+yytext().length();

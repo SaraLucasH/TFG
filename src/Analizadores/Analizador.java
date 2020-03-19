@@ -79,7 +79,7 @@ public class Analizador {
 
 					sintactico.parse();
 					br.close();*/
-					File file= new File(argv[i]);					
+					File file= new File("C:/Users/saral/Documents/tfg/Evaluation/testing/txt/"+argv[i]+".txt");					
 					Reader br = new InputStreamReader (new FileInputStream(file), charset);
 					BufferedReader buffer= new BufferedReader(br);
 					
@@ -107,7 +107,8 @@ public class Analizador {
 							out.close();
 						}
 					}*/
-					lexico= new AnalizadorLexico(br);				
+					lexico= new AnalizadorLexico(br);	
+					String[] arrya=argv[i].split(".");
 					parser sintactico = new parser(lexico,argv[i]);
 					sintactico.parse();
 					br.close();
