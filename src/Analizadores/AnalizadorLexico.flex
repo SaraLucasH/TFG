@@ -2,7 +2,6 @@
 import java.util.LinkedList;
 import java_cup.runtime.*;
 
-
 %%
 
 %public
@@ -13,9 +12,6 @@ import java_cup.runtime.*;
 %cup 
 %full
 
-%eofval{
- return new Symbol(sym.EOF, null); 
-%eofval}
 
 %{
 	StringBuffer aux = new StringBuffer();
@@ -24,21 +20,25 @@ import java_cup.runtime.*;
 	String varAux="";
 	String posibleLF="";
 	Acronimo acronimo=new Acronimo();
-	FormaLarga f=new FormaLarga();
+	
+	//FormaLarga f=new FormaLarga();
+	
 	int offset=0;
 	
-	FormaLargaWithAc acWLf=new FormaLargaWithAc ();
+	AcWithContext acWC=new AcWithContext();
+	//FormaLargaWithAc acWLfacWLf=new FormaLargaWithAc ();
 	
 %}
 Minuscula=[\u00F1\u00E1\u00E9\u00ED\u00F3\u00FA\u00F6\u00FC]|[a-z]
 Mayuscula=[A-Z]|[\u00D1\u00C1\u00C9\u00CD\u00D3\u00DA]
-FinFrase=[\u002E\u003B]
+FinFrase=[\u002E\u003B\u002C]
 
 Frase=([0-9]*[\u0025]?|
 	([0-9]+|[0-9]+[\u002C][0-9]+)[\u002D\u002E]([0-9]+|[0-9]+[\u002C\u002E][0-9]+)|
 	(
+		[A]" "|
 		[\u002D]{Mayuscula}{Minuscula}+[\u003A\u002D]?|
-		{Mayuscula}{Minuscula}+[\u003A\u002D]?
+		{Mayuscula}{Minuscula}{Minuscula}+[\u003A\u002D]?|
 		[\u002D]?{Mayuscula}{Minuscula}+[\u003A\u002D]{Minuscula}+([\u003A\u002D]{Minuscula}+)*|
 		{Minuscula}+[\u003A\u002D]?|
 		[\u00B5\u039C]{Minuscula}[\u002F]{Minuscula}+
@@ -46,17 +46,28 @@ Frase=([0-9]*[\u0025]?|
        )
 	(" "
 	(
-		("A "|
-		[\u002D]?{Mayuscula}{Minuscula}+[\u003A\u002D]?|
-		{Minuscula}*[\u003A\u002D]?)|
+		[\u002D]?{Minuscula}+[\u003A\u002D]?|
+		{Minuscula}*[\u003A\u002D]?|
  		{Minuscula}+([\u003A\u002D]{Minuscula}+)*|
 		[0-9]*[\u0025]?|
 		([0-9]+|[0-9]+[\u002C][0-9]+)[\u002D\u002E]([0-9]+|[0-9]+[\u002C\u002E][0-9]+)|
-		[\u00B5\u039C]{Minuscula}[\u002F]{Minuscula}+)
-	)*
-{FinFrase}?
-Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |
-{Mayuscula}{Minuscula}|{Minuscula}{1,3}|{Mayuscula}{1,4}[\u002D]{Mayuscula}{1,4}|
+		[\u00B5\u039C]{Minuscula}[\u002F]{Minuscula}+|[0-9][\u002D]{Mayuscula}{Minuscula}+[\u002D]{Mayuscula}{Minuscula}+
+		)
+	)*|
+	{Mayuscula}{Minuscula}(" "
+	(
+		[\u002D]?{Minuscula}+[\u003A\u002D]?|
+		{Minuscula}*[\u003A\u002D]?|
+ 		{Minuscula}+([\u003A\u002D]{Minuscula}+)*|
+		[0-9]*[\u0025]?|
+		([0-9]+|[0-9]+[\u002C][0-9]+)[\u002D\u002E]([0-9]+|[0-9]+[\u002C\u002E][0-9]+)|
+		[\u00B5\u039C]{Minuscula}[\u002F]{Minuscula}+
+		|[0-9][\u002D]{Mayuscula}{Minuscula}+[\u002D]{Mayuscula}{Minuscula}+
+		)
+	)+
+
+Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |{Mayuscula}{Minuscula}{Mayuscula}| {Mayuscula}{Minuscula}
+|{Minuscula}{1,3}|{Mayuscula}{1,4}[\u002D]{Mayuscula}{1,4}|
 [a-z]{1,4}[\u002D][A-Z]{2,4}| (([a-z]|[A-Z])"\."){1,5} | [0-9][\u002D][A-Z]{2,4} | [a-z]"\." |[A-Z]{1,4}[0-9]{1,3}|([A-Z][0-9])+ |([A-Z]"\.")*[A-Z]
 %state estado1,estado2,estado3
 
@@ -64,11 +75,23 @@ Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |
 %%	
 	<YYINITIAL> [\u03b1] {//Alpha
 		System.out.println("Alpha");offset=offset+yytext().length();}
+	<YYINITIAL> [\u00B1] {//mas menos
+		System.out.println("mas menos");offset=offset+yytext().length();}
 	<YYINITIAL> [\u03b3] {//gamma
 		System.out.println("Gamma");offset=offset+yytext().length();}
+	<YYINITIAL> [\u00E5] {//a con anillo encima 
+		System.out.println("a con anillo encima ");offset=offset+yytext().length();}	
 	<YYINITIAL> [\u2122] {//tm
 		offset=offset+yytext().length();}
+	<YYINITIAL> [\u2014] {//guion largo 
+		System.out.println("guion largo");offset=offset+yytext().length();}	
 	<YYINITIAL> [\u2022] {//Bala
+		offset=offset+yytext().length();}
+	<YYINITIAL> [\u00E4] {//a minuscula dieresis
+		offset=offset+yytext().length();}	
+	<YYINITIAL> [\u03B2] {//Beta
+		System.out.println("beta");
+		System.out.println("long "+yytext().length()+" "+offset);
 		offset=offset+yytext().length();}
 	<YYINITIAL> [\u00A0] {//Espacio de no separacion
 		offset=offset+yytext().length();}
@@ -76,12 +99,8 @@ Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |
 				offset=offset+yytext().length();}
 	<YYINITIAL> "(" {//Si hay acronimos en una frase no detectara el parentesis, pues al principio estaba en el estado 1
 				yypushback(yytext().length());
-				
 				yybegin(estado1);}
-	<YYINITIAL> " " {System.out.println("space");
-				offset=offset+yytext().length();}
-	<YYINITIAL> [\u0020] {System.out.println("space");
-				offset=offset+yytext().length();}
+	<YYINITIAL> " "|[\u0020] {System.out.println("space "+yytext().length());offset=offset+yytext().length();}	
 	<YYINITIAL> [\u002F] {//Barra / 
 				offset=offset+yytext().length();}
 	<YYINITIAL> [\u007B] {//Corchete derecho { 
@@ -128,16 +147,17 @@ Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |
 				offset=offset+yytext().length();}
 	<YYINITIAL> [\u002B] {//Sumatorio	
 				offset=offset+yytext().length();}
-	<YYINITIAL> {Frase} {posibleLF=yytext();				
+	<YYINITIAL> {Frase}({FinFrase}|" ") {posibleLF=yytext();				
 				yybegin(estado1);
-				acWLf.clean();
-				acWLf.setFormaLarga(new FormaLarga(posibleLF,offset,offset+yytext().length()));
 				offset=offset+yytext().length();
-				System.out.println("lf");}
+				System.out.println("lf");
+				return new Symbol(sym.frase,posibleLF);}
 	<YYINITIAL> {Acronimo} {System.out.println("Acronimo");
 				offset=offset+yytext().length();
-				return new Symbol(sym.acronimo,yyline +1, yycolumn +1,new Acronimo(offset-yytext().length(),offset,yytext()));}
-	
+				return new Symbol(sym.acWithContext,yyline +1, yycolumn +1,new AcWithContext(new Acronimo(offset-yytext().length(),offset,yytext()),posibleLF));}
+	<YYINITIAL> [0-9] {//NUMERO
+				System.out.println("NUMERO");
+				offset=offset+yytext().length();}
 				
 	<YYINITIAL> [\u002D] {//barra -
 				System.out.println("Barra -");
@@ -145,14 +165,11 @@ Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |
 	
 	<YYINITIAL> [\u003A]  {//Simbolo dos puntos
 				offset=offset+yytext().length();}
-	<YYINITIAL> [\u0025] {//Porcentaje
-				offset=offset+yytext().length();}
+	
 	<YYINITIAL> [\u002C] {//Coma
 				offset=offset+yytext().length();}
-	<YYINITIAL> \u03b1 {//Alpha
-		System.out.println("Alpha");
-		offset=offset+yytext().length();}
-	<YYINITIAL> \t| \n |\r| \r\n {acronimo=new Acronimo(); offset=offset+yytext().length(); posibleLF="";}	
+	
+	<YYINITIAL> [\t]| [\n] | [\r]| "\r\n" {acronimo=new Acronimo(); offset=offset+yytext().length(); posibleLF="";}	
 	<YYINITIAL> [\u002F] {//Barra / 
 			offset=offset+yytext().length();}
 	 <YYINITIAL> . {System.err.println("Error lexico: caracter no reconocido <" + yytext() + "> en la linea " + (yyline+1) 
@@ -166,30 +183,29 @@ Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |
 <estado1> [^(\u002D] {String b=yytext();
 			if(b!=null){
 				yypushback(b.length());
-				acWLf.clean();
 			}
 			yybegin(YYINITIAL);}
-
+			
+<estado2> {Frase}({FinFrase}{Frase})* {posibleLF=yytext(); offset=offset+yytext().length();return new Symbol(sym.frase,posibleLF);}
 <estado2> {Acronimo} {System.out.println("Acronimo");
 			acronimo= new Acronimo(offset,offset+yytext().length(),yytext());
 			offset=offset+yytext().length();
-			acWLf.setAcronimo(acronimo);
 			yybegin(estado3);
-			System.out.println("ac");}
-<estado2> {Frase}")" {offset=offset+yytext().length(); yybegin(YYINITIAL); acWLf.clean();}
-<estado2> {Frase}" )" {offset=offset+yytext().length();yybegin(YYINITIAL); acWLf.clean();}
+			}
+
 <estado2> [^] {	if(yytext()!=null){
 			yypushback(yytext().length());
-			acWLf.clean();}
+			}
 			yybegin(YYINITIAL);}
 
 <estado3> ")" {offset=offset+yytext().length();yybegin(YYINITIAL);
 		System.out.println("pc");
 		//Cuidado si le paso el objeto en el sintactico lo usa como puntero y solo se guarda la ultima ocurrencia. Por ello new Object
-		return new Symbol(sym.acWithLf,yyline+1,yycolumn+1,new FormaLargaWithAc(acWLf.getAcronimo(),acWLf.getFormaLarga()));
-		
+		return new Symbol(sym.acWithContext,yyline +1, yycolumn +1,new AcWithContext(new Acronimo(acronimo.getStartOffset(),acronimo.getEndOffset(),acronimo.getAcronimo()),posibleLF));
 		}	
 <estado3> [^)] {if(yytext()!=null){
 			yypushback(yytext().length());
-			acWLf.clean();}
+			}
 			yybegin(YYINITIAL);}
+			
+<<EOF>> {return new Symbol(sym.EOF);}

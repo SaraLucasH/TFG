@@ -11,8 +11,7 @@ a. m.: Ante meridiem (por la mañana).
 AA: Abdomen agudo // Alcohólicos
 anónimos - Amenaza de aborto -
 Aminoácido - Anemia aplásica -
-Aorta abdominal - Aorta ascendente
-- Apendicitis aguda.
+Aorta abdominal - Aorta ascendente - Apendicitis aguda.
 AAA: Aneurisma de aorta abdominal.
 AAD: Arco aórtico derecho.
 AAF: Aspiración con aguja fina.

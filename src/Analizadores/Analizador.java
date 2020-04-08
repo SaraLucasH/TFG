@@ -57,56 +57,11 @@ public class Analizador {
 			for (int i = 0; i < argv.length; i++) {
 				AnalizadorLexico lexico = null;
 				try {
-					//Pasando como parametro archivo docs de la tarea BARR2
-					/*File file= new File("C:/Users/sara.lucas.hernandez/Documents/Tfg/TestingSet/txt/"+argv[i]);					
-					Reader br = new InputStreamReader (new FileInputStream(file), charset);
-					
-					String linea;
-					String cadenaCompleta="";*/
-					
-					/*
-					 * Lee linea a linea
-					 */
-					/*while ((linea = br.readLine()) != null) {
-						// Si no las tildes no las saca de forma correcta.
-						 cadenaCompleta+= linea;
-					}*/
-					
-					//lexico = new AnalizadorLexico(new java.io.StringReader(cadenaCompleta));
-					/*lexico= new AnalizadorLexico(br);
+					File file= new File("C:\\Users\\saral\\Documents\\tfg\\Evaluation\\Sample\\txt\\"+argv[i]+".txt");					
 					System.out.println(argv[i]);
-					parser sintactico = new parser(lexico,argv[i]);
-
-					sintactico.parse();
-					br.close();*/
-					File file= new File("C:/Users/saral/Documents/tfg/Evaluation/testing/txt/"+argv[i]+".txt");					
 					Reader br = new InputStreamReader (new FileInputStream(file), charset);
 					BufferedReader buffer= new BufferedReader(br);
-					
-					/*String linea;
-					String cadenaCompleta="";
-					buffer.readLine();
-					while((linea = buffer.readLine()) != null) {
-						String[] cad=linea.split("\t");
-						System.out.println(cad[0]);
-						if(cad[1].equalsIgnoreCase("ES")) {
-							File archivo= new File("C:\\Users\\saral\\Documents\\tfg\\BARR1\\"+cad[0]+".txt");
-							if(archivo.createNewFile()) {
-								System.out.println("creado");
-							}else {
-								System.out.println("error crear fichero");
-							}
-							Writer out = new BufferedWriter(new OutputStreamWriter(
-								    new FileOutputStream(archivo,true), "UTF-8"));
-							int p=2;
-							while(p<cad.length) {
-								out.write(cad[p]);
-								p++;
-							}
-							out.write(cad[2]);
-							out.close();
-						}
-					}*/
+
 					lexico= new AnalizadorLexico(br);	
 					String[] arrya=argv[i].split(".");
 					parser sintactico = new parser(lexico,argv[i]);

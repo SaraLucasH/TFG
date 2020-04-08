@@ -1,13 +1,20 @@
 package Diccionarios;
 
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileReader;
+import java.io.InputStreamReader;
+import java.io.Reader;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map.Entry;
 
 public class SEDOMDiccionario {
-	//Un unico diccionario para evitar repeticiones en la lectura de los archivos
+	private String charset="UTF8";
+	//Un unico diccionario para evitar repeticiones en la lectura de los archivos.
+	//Emplea tanto el diccionario de unidades de medida como el SEDOM
+	
 	HashMap<String,HashSet<String>> diccionario;
 	
 	public SEDOMDiccionario() {
@@ -20,12 +27,14 @@ public class SEDOMDiccionario {
 	 */
 	private int load() {
 		
-		FileReader fr = null;
+		File fr = null;
+		Reader reader;
 		BufferedReader br = null;
 		
 		try {					
-			fr = new FileReader("Herramientas/AllAcronyms.txt");
-			br = new BufferedReader(fr);			
+			fr = new File("./Herramientas/Diccionarios/AllAcronyms.txt");
+			reader = new InputStreamReader (new FileInputStream(fr), charset);
+			br = new BufferedReader(reader);			
 			String linea;			
 			while ((linea = br.readLine()) != null){
 				String[]cadena=linea.split(":");
@@ -44,8 +53,9 @@ public class SEDOMDiccionario {
 				}
 			}
 			//Lectura de fichero unidades de medida
-			fr = new FileReader("Herramientas/mesuresAcronyms.csv");
-			br = new BufferedReader(fr);			
+			fr = new File("./Herramientas/Diccionarios/mesuresAcronyms.csv");
+			reader = new InputStreamReader (new FileInputStream(fr), charset);
+			br = new BufferedReader(br);			
 					
 			while ((linea = br.readLine()) != null){
 				String[]cadena=linea.split(";");
@@ -60,25 +70,26 @@ public class SEDOMDiccionario {
 					value.add(cadena[1]);					
 				}
 			}
+			
 		}catch(Exception e) {
 			e.printStackTrace();
 			return -1;
 		}finally {			
 			try {
-				if (null != fr) {
-					fr.close();					
+				if (null != br) {
+					br.close();					
 				}
 			} catch (Exception e2) {
 				e2.printStackTrace();
 			}
 		}
-		/*for(Entry<String, HashSet<String>> e:this.diccionario.entrySet()) {
+		for(Entry<String, HashSet<String>> e:this.diccionario.entrySet()) {
 			System.out.print(e.getKey()+":");
 			for(String s: e.getValue()) {
 				System.out.print(s+" // ");
 			}
 			System.out.println();
-		}*/
+		}
 		return 0;
 	}
 	public static void main(String[]args) {

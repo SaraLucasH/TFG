@@ -8,14 +8,20 @@ package Analizadores;
 /** CUP generated class containing symbol constants. */
 public class sym {
   /* terminals */
-  public static final int acronimo = 3;
+  public static final int acronimo = 6;
+  public static final int contexto = 5;
   public static final int error = 1;
   public static final int acWithLf = 2;
   public static final int EOF = 0;
+  public static final int acWithContext = 4;
+  public static final int frase = 3;
   public static final String[] terminalNames = new String[] {
   "EOF",
   "error",
   "acWithLf",
+  "frase",
+  "acWithContext",
+  "contexto",
   "acronimo"
   };
 }

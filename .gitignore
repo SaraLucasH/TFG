@@ -5,3 +5,5 @@ bin/*
 .metadata/*
 *.class
 .metadata/.log
+/bin/
+/target/

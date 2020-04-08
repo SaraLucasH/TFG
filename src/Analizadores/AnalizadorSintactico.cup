@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 parser code {:
 String nombreFicheroEntrada="";
-Resultado resultado= new Resultado(nombreFicheroEntrada);
+Resultado resultado;
 
 public void syntax_error (Symbol s){
 	System.err.println("Error de sintaxis (lexema <" + 	s.value.toString() + ">) en la linea " + s.left + " 	y en la columna " + s.right);
@@ -14,7 +14,7 @@ public void syntax_error (Symbol s){
 }
 
 public void unrecovered_syntax_error(Symbol s){
-	System.err.println("Error de sintaxis no 			recuperable");
+	System.err.println("Error de sintaxis no recuperable");
 }
 :};
 //------> Codigo parentesis_abierto las acciones semanticas, asocidado a las distintas producciones gramticales
@@ -24,9 +24,12 @@ action code
 
 //Zona de declaraciones
 terminal FormaLargaWithAc acWithLf;
+terminal String frase;
+terminal AcWithContext acWithContext;
+terminal ArrayList<String> contexto;
 terminal Acronimo acronimo;
 non terminal String INICIO;
-non terminal String RES;
+non terminal String RES,RES2;
 non terminal String lambda;
 
 
@@ -35,16 +38,22 @@ non terminal String lambda;
 	//Por el arbol sintactico le asigna el valor de la variable (a traves de result) a la cabeza de la regla o simbolo no terminal asociado.
 
 start with INICIO;
-INICIO::= RES:res {:
-	RESULT=resultado.toString();:}|lambda;
+INICIO::= RES2 {: resultado.load(); RESULT="";:}|lambda;
+
+RES2::=	acWithContext:a RES2{:resultado.addAcWithContext(a); RESULT="";:}|
+		frase:f {:resultado.getContexto().add(0,f);RESULT="";:}|
+		frase:f RES2 {:resultado.getContexto().add(0,f);RESULT="";:}|
+		acWithContext:a	{:resultado.addAcWithContext(a);RESULT="";:};
+
 RES ::= acWithLf:a{:resultado.addDupla(a.getAcronimo(),a.getFormaLarga());RESULT=a.getFormaLarga().getLf()+" "+a.getAcronimo().getAcronimo(); :}
-	|acWithLf:a RES{:resultado.addDupla(a.getAcronimo(),a.getFormaLarga());RESULT=a.getFormaLarga().getLf()+" 				"+a.getAcronimo().getAcronimo();:}
+	|acWithLf:a RES{:resultado.addDupla(a.getAcronimo(),a.getFormaLarga());RESULT=a.getFormaLarga().getLf()+" 			"+a.getAcronimo().getAcronimo();:}
 	|acronimo:ac 
 	{:resultado.addDupla(ac,null);RESULT=ac.getAcronimo();:}
 	|acronimo:ac RES
 	{:resultado.addDupla(ac,null);
 		RESULT=ac.getAcronimo();:};
 lambda::= {:RESULT="";:};
+
 
 	
 	
