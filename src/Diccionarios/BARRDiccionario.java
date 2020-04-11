@@ -42,10 +42,10 @@ public class BARRDiccionario {
 				String linea;
 				while((linea=buffer.readLine())!=null) {
 					String[]row=linea.split("\t");
-					HashSet<String> value=this.diccionario.get(row[0]);
+					HashSet<String> value=this.diccionario.get(row[0].toUpperCase());
 					if(value==null) {
 						value = new HashSet<String>();
-						this.diccionario.put(row[0], value);
+						this.diccionario.put(row[0].toUpperCase(), value);
 					}
 					for(int i=1;i<row.length;i++) {
 						value.add(row[i]);
@@ -83,10 +83,10 @@ public class BARRDiccionario {
 				HashSet<String> value;
 				//Filtramos lineas basura
 				if(cadena.length>1 && !cadena[4].contains("NESTED")) {
-					value=this.diccionario.get(cadena[3]);
+					value=this.diccionario.get(cadena[3].toUpperCase());
 					if(value==null) {
 						value= new HashSet<String>();
-						this.diccionario.put(cadena[3],value);
+						this.diccionario.put(cadena[3].toUpperCase(),value);
 					}
 					value.add(cadena[8]);					
 				}
@@ -102,10 +102,10 @@ public class BARRDiccionario {
 				HashSet<String> value;
 				//Filtramos lineas basura
 				if(cadena.length>1 && !cadena[4].contains("NESTED")) {
-					value=this.diccionario.get(cadena[3]);
+					value=this.diccionario.get(cadena[3].toUpperCase());
 					if(value==null) {
 						value= new HashSet<String>();
-						this.diccionario.put(cadena[3],value);
+						this.diccionario.put(cadena[3].toUpperCase(),value);
 					}
 					value.add(cadena[8]);					
 				}
@@ -121,10 +121,10 @@ public class BARRDiccionario {
 				HashSet<String> value;
 				//Filtramos lineas basura
 				if(cadena.length>1 && !cadena[4].toUpperCase().contains("NESTED")) {
-					value=this.diccionario.get(cadena[3]);
+					value=this.diccionario.get(cadena[3].toUpperCase());
 					if(value==null) {
 						value= new HashSet<String>();
-						this.diccionario.put(cadena[3],value);
+						this.diccionario.put(cadena[3].toUpperCase(),value);
 					}
 					value.add(cadena[8]);					
 				}
@@ -140,10 +140,10 @@ public class BARRDiccionario {
 				HashSet<String> value;
 				//Filtramos lineas basura
 				if(cadena.length>1 && !cadena[4].contains("NESTED")) {
-					value=this.diccionario.get(cadena[3]);
+					value=this.diccionario.get(cadena[3].toUpperCase());
 					if(value==null) {
 						value= new HashSet<String>();
-						this.diccionario.put(cadena[3],value);
+						this.diccionario.put(cadena[3].toUpperCase(),value);
 					}
 					value.add(cadena[8]);					
 				}

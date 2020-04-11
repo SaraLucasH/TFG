@@ -1,0 +1,10 @@
+//** Default constructor. */
+@Deprecated
+public parser(String nombreFicheroEntrada,WordVectors wvect) {super(); this.nombreFicheroEntrada=nombreFicheroEntrada;this.resultado= new Resultado(nombreFicheroEntrada,wvect);}
+
+/** Constructor which sets the default scanner. */
+@Deprecated
+public parser(java_cup.runtime.Scanner s,String nombreFicheroEntrada,WordVectors wvect) {super(s);this.nombreFicheroEntrada=nombreFicheroEntrada;this.resultado= new Resultado(nombreFicheroEntrada,wvect);}
+
+/** Constructor which sets the default scanner. */
+public parser(java_cup.runtime.Scanner s, java_cup.runtime.SymbolFactory sf,String nombreFicheroEntrada,WordVectors wvect) {super(s,sf);this.nombreFicheroEntrada=nombreFicheroEntrada;this.resultado= new Resultado(nombreFicheroEntrada,wvect);}

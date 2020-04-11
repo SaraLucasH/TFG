@@ -28,8 +28,8 @@ import org.deeplearning4j.models.embeddings.loader.WordVectorSerializer;
 import org.deeplearning4j.models.embeddings.wordvectors.WordVectors;
 
 import Diccionarios.BARRDiccionario;
-import Diccionarios.CargaDiccionario;
 import Diccionarios.SEDOMDiccionario;
+import Diccionarios.UnidadesMedidaDiccionario;
 import WordMoversDistance.WordMovers;
 import WordMoversDistance.WordMovers.Builder;
 
@@ -58,64 +58,73 @@ public class Resultado {
 		}	
 		
 	}
-	private HashMap<String, HashSet<String>> diccionarioConsultaBARR;
-	private HashMap<String,HashSet<String>> diccionarioConsulta;
-		
+	
+	
+	//Mapas para consulta
 	private HashMap<Acronimo,HashSet<FormaLarga>> diccionarioTextoActual;
-	private HashMap<Acronimo,String> diccionarioDesambiguacion;
-	private HashSet<String> palabrasConectoras;	
+	//Subtarea 2
+	private HashMap<String, HashSet<String>> diccionarioConsultaBARR;
+	private HashMap<String, HashSet<String>> diccionarioConsultaUnidadesMedida;
+	private HashMap<String,HashSet<String>> diccionarioConsultaSEDOM;
+	private HashMap<Acronimo,String> diccionarioDesambiguacion;	
+	private HashSet<String> stopWords;	
+	private HashSet<String> signosPuntuacion;
+	
+	//Desambiguacion
+	Builder b;
+	WordVectors v;
+	WordMovers wmd;
 	
 	//Del analizador sintactico
 	ArrayList<String> contexto;
 	HashMap<Acronimo,HashSet<String>> almacen;
 	
+	//Identificador fichero resultado
 	String nombreFichero="";
 	
+	//Para comparar caracteres
 	Character e='E';
-	Character s='S';
+	Character s='S';	
 	
-	/*
-	 * Para la escritura del fichero de resultado
-	 */	
+	//Escritura del fichero de resultado	 
 	FileWriter fichero = null;
     PrintWriter pw = null;
 	
-	public Resultado(){		
-		this.diccionarioTextoActual=new HashMap<>();	
+    private void init() {
+    	this.diccionarioTextoActual=new HashMap<>();	
 		this.diccionarioDesambiguacion=new HashMap<>();
-		this.diccionarioConsulta=new SEDOMDiccionario().getDiccionario();
+		this.diccionarioConsultaSEDOM=new SEDOMDiccionario().getDiccionario();
 		this.diccionarioConsultaBARR= new BARRDiccionario().getDiccionario();
+		this.diccionarioConsultaUnidadesMedida=new UnidadesMedidaDiccionario().getDiccionario();
 		this.almacen=new HashMap<>();
 		this.contexto=new ArrayList<>();
-		//Preposiciones
-		palabrasConectoras= new HashSet<>(Arrays.asList("a", "ante", "bajo", "cabe", "con", "contra"
-				, "de", "desde", "durante", "en", "entre", "hacia", "hasta", "mediante", "para", "por", "seg˙n"
-				, "sin", "so", "sobre", "tras", "versus" , "v√≠a","el","la","los","las","le","les","and", "with"));
+		//Palabras de Parada
+		stopWords= this.loadStopWords();	
+		b.stopwords(this.stopWords);
+		this.wmd=new WordMovers(b);
+		
+		signosPuntuacion= new HashSet<>(Arrays.asList(",", ";","."));
+	}
+    
+	public Resultado(){	
+		init();
 	}
 	
-	public Resultado(String nombreFicheroEntrada){	
+	public Resultado(String nombreFicheroEntrada,WordVectors wvect){
+		this.b=WordMovers.Builder();
+		this.v=wvect;
+		this.b.wordVectors=wvect;
 		this.nombreFichero=nombreFicheroEntrada;
-		this.diccionarioDesambiguacion=new HashMap<>();
-		this.diccionarioConsulta=new SEDOMDiccionario().getDiccionario();
-		this.diccionarioConsultaBARR= new BARRDiccionario().getDiccionario();
-		this.almacen=new HashMap<>();
-		this.diccionarioTextoActual=new HashMap<>();
-		this.contexto=new ArrayList<>();
-		//this.diccionarioConsulta= new HashMap<>();
-		
-		//Preposiciones
-		palabrasConectoras= new HashSet<>(Arrays.asList("a", "ante", "bajo", "cabe", "con", "contra"
-				, "de", "desde", "durante", "en", "entre", "hacia", "hasta", "mediante", "para", "por", "seg√∫n"
-				, "sin", "so", "sobre", "tras", "versus" , "v√≠a","el","la","los","las","le","les",""));
+		init();
 	}
 
 	public void load() {		
 		for(Entry<Acronimo,HashSet<String>> e:this.almacen.entrySet()) {
 			for(String s:e.getValue()) {
 				this.addDuplaDesambiguacion(e.getKey(), s);
-			}			
+			}									
 		}
-		//this.toOutputFile();
+		toOutputFileSecondTask();
 	}
 	
 	public ArrayList<String> getContexto(){
@@ -131,61 +140,128 @@ public class Resultado {
 		value.add(a.getFraseInmediata());
 	}
 	
-	public void addDuplaDesambiguacion(Acronimo ac, String contexto) {
+	private void encuentraCandidato(HashSet<String> conjunto,double minimo, String candidato,String newContexto) {
+		String newSentence;
+		int index=0;
+		double minAux;
+		
+		for (String i : conjunto) {									
+			newSentence = this.deleteStopWords(i);									
+			if (newSentence != null) {
+				boolean existsVectorNewSentence=true;
+				String[] cadenaNewSentence= newSentence.split(" ");										
+				index=0;
+				if(cadenaNewSentence.length==1 && cadenaNewSentence[0].equals("")) {
+					existsVectorNewSentence=false;
+				}
+				while (index<cadenaNewSentence.length && existsVectorNewSentence) {
+					if(cadenaNewSentence[index]!="" && !v.hasWord(cadenaNewSentence[index])) {
+						existsVectorNewSentence=false;
+					}
+					index++;
+				}
+				if(existsVectorNewSentence) {
+					minAux = wmd.distance(newContexto, newSentence);
+					if (minAux < minimo) {
+						minimo = minAux;
+						candidato = i;
+					}
+				}										
+			}
+		}
+	}
+	
+	public void addDuplaDesambiguacion(Acronimo ac, String contextoAc) {
 		if (this.diccionarioDesambiguacion.get(ac) == null) {
 			// 1∫Consulto dic unidades medida y sedom
-			HashSet<String> valorSEDOM = new HashSet<>();
-			HashSet<String> valorBARR = new HashSet<>();
-
-			valorSEDOM = this.diccionarioConsulta.get(ac.getAcronimo());
-			
-			if (valorSEDOM!=null && valorSEDOM.size() == 1) {
+			HashSet<String> valorUnidadesMedida=this.diccionarioConsultaUnidadesMedida.get(ac.getAcronimo());	
+			HashSet<String> valorSEDOM = this.diccionarioConsultaSEDOM.get(ac.getAcronimo());
+			if (valorUnidadesMedida!=null && valorUnidadesMedida.size() == 1) {
+				this.diccionarioDesambiguacion.put(ac, valorUnidadesMedida.iterator().next());
+			}else if (valorSEDOM!=null && valorSEDOM.size() == 1) {
 				this.diccionarioDesambiguacion.put(ac, valorSEDOM.iterator().next());
-			}else {
-				valorBARR=this.diccionarioConsultaBARR.get(ac.getAcronimo());
-				if(valorBARR!=null || valorSEDOM!=null) {
-					//Desambiguacion
-					Builder b=WordMovers.Builder();
-					WordVectors v=loadEmbeddings();
-					b.wordVectors=v;
-					loadStopWords(b);
-					WordMovers wmd=new WordMovers(b);
-					
-					
-					double min=Double.MAX_VALUE;
-					double minAux;
-					String candidato;
-					if(valorSEDOM!=null) {
-						for(String i:valorSEDOM) {
-							minAux=wmd.distance(contexto, i);
-							if(minAux<min) {
-								min=minAux;
-								candidato=i;
+			}else {				 
+				 HashSet<String> valorBARR = this.diccionarioConsultaBARR.get(ac.getAcronimo());
+				if (valorBARR != null || valorSEDOM != null) {
+					boolean encontrado = false;
+					String candidato = null;
+					double min = Double.MAX_VALUE;
+					int inicio = this.contexto.indexOf(contextoAc);
+					int pivote = this.contexto.indexOf(contextoAc);
+					while (!encontrado && !(pivote > this.contexto.size() - 1)) {
+						// Desambiguacion
+						String newContexto = deleteStopWords(contextoAc);						
+						boolean existsVectorNewContexto=true;
+						String[] cadenaNewContexto=newContexto.split(" ");
+						int index=0;
+						
+						if(cadenaNewContexto.length==1 && cadenaNewContexto[0].equals("")) {
+							existsVectorNewContexto=false;
+						}
+						while (index<cadenaNewContexto.length && existsVectorNewContexto) {
+							if(!cadenaNewContexto[index].equals("") && !v.hasWord(cadenaNewContexto[index])) {
+								existsVectorNewContexto=false;
+							}
+							index++;
+						}
+						
+						if (existsVectorNewContexto) {
+							if(valorUnidadesMedida!=null) {
+								encuentraCandidato(valorUnidadesMedida,min,candidato,newContexto);
+							}							
+							if (valorSEDOM != null) {
+								encuentraCandidato(valorSEDOM,min,candidato,newContexto);
+							}
+							if (valorBARR != null) {
+								encuentraCandidato(valorBARR,min,candidato,newContexto);
 							}
 						}
+						if (min < 10) {
+							encontrado = true;
+						} else {
+							if (pivote > 0 && pivote <= inicio) {
+								// Continuo hacia atras
+								contextoAc = this.contexto.get(--pivote);
+							} else {
+								// Continuo hacia delante
+								if (pivote < inicio) {
+									pivote = inicio;
+								}
+								if (pivote >= inicio && pivote < this.contexto.size() - 2) {
+									contextoAc = this.contexto.get(++pivote);
+								} else {
+									pivote++;
+								}
+							}
+						}
+
 					}
-					
-					if(valorBARR!=null) {
-						for(String i:valorBARR) {
-							minAux=wmd.distance(contexto, i);
-							if(minAux<min) {
-								min=minAux;
-								candidato=i;
-							}
-						}
-					}					
+					if (encontrado || min < 13) {
+						this.diccionarioDesambiguacion.put(ac, candidato);
+					}
 				}
 			}
 		}
 	}
 	
-	private WordVectors loadEmbeddings() {
-		return WordVectorSerializer.loadStaticModel(new File("C:\\Users\\saral\\Documents\\tfg\\Embeddings_2019-01-01\\Embeddings"
-    			+ "\\Embeddings_ES\\Scielo\\50\\W2V_scielo_w10_c5_50_15epoch.txt"));
+	private String deleteStopWords(String contexto) {
+		String[] sentence= contexto.split(" ");
+		String newContexto="";
+		for(String s:sentence) {
+			if(!this.stopWords.contains(s.toLowerCase())) {
+				if(newContexto=="") {
+					newContexto=s;
+				}else {
+					newContexto+=" "+s;
+				}
+			}
+		}
+		return newContexto;
 	}
+
 	
-	private void loadStopWords(WordMovers.Builder b) {
-    	Set<String> list=new HashSet<String>();
+	private HashSet<String> loadStopWords() {
+		HashSet<String> list=new HashSet<String>();
     	File file= new File("C:\\Users\\saral\\Documents\\tfg\\Evaluation\\stopwords-es.txt");	
     	String charset = "UTF-8";
 		Reader br;
@@ -196,7 +272,8 @@ public class Resultado {
 			
 			while((linea=buffer.readLine())!=null) {
 				list.add(linea);
-			}			
+			}
+			
 			buffer.close();
 			br.close();
 		} catch (UnsupportedEncodingException e) {
@@ -206,7 +283,7 @@ public class Resultado {
 		}catch(IOException e) {
 			e.printStackTrace();
 		}
-		b.stopwords=list;
+		return list;
 	}
 	
 	public void addDupla(Acronimo acronimo, FormaLarga f) {
@@ -266,6 +343,7 @@ public class Resultado {
 				}
 			}
 		}
+		
 	}
 	
 	/*
@@ -304,7 +382,7 @@ public class Resultado {
 			}			
 		}
 		//Salgo luego o he comprobado toda la frase sin exito o he encontrado la palabra
-		if(i>=0 && !this.palabrasConectoras.contains(frase[i])) {
+		if(i>=0 && !this.stopWords.contains(frase[i])) {
 			return frase[i];
 		}
 		return lf;
@@ -474,7 +552,7 @@ public class Resultado {
 					String cadenaNormalize = Normalizer.normalize(frase[i], Normalizer.Form.NFD);   
 					String cadenaSinAcentos = cadenaNormalize.replaceAll("[^\\p{ASCII}]", "");
 					
-					if(!this.palabrasConectoras.contains(cadenaSinAcentos)&& cadenaSinAcentos!=""){
+					if(!this.stopWords.contains(cadenaSinAcentos)&& cadenaSinAcentos!=""){
 						if(cadenaSinAcentos.charAt(0)==' '){
 							correccionEspacio=1;
 						}else{
@@ -549,7 +627,7 @@ public class Resultado {
 		}
 		
 		while(indiceAcronimo>=0 && check && i<frase.length){
-			if (!this.palabrasConectoras.contains(frase[i])&& frase[i]!="") {
+			if (!this.stopWords.contains(frase[i])&& frase[i]!="") {
 				Character aux = ac.charAt(indiceAcronimo);
 				
 				String cadenaNormalize = Normalizer.normalize(frase[i], Normalizer.Form.NFD);   
@@ -583,7 +661,7 @@ public class Resultado {
 		
 		int index=i;
 		if(indiceAcronimo==0){
-			if(this.palabrasConectoras.contains(frase[i-1])) {
+			if(this.stopWords.contains(frase[i-1])) {
 				index=i-2;
 			}else {
 				index=i-1;
@@ -678,7 +756,7 @@ public class Resultado {
 					Character ac1=Character.toUpperCase(ac.charAt(indiceAcronimo)); 
 					String cadenaNormalize = Normalizer.normalize(frase[i], Normalizer.Form.NFD);   
 					String cadenaSinAcentos = cadenaNormalize.replaceAll("[^\\p{ASCII}]", "");
-					if(!this.palabrasConectoras.contains(cadenaSinAcentos)&& cadenaSinAcentos!=""){
+					if(!this.stopWords.contains(cadenaSinAcentos)&& cadenaSinAcentos!=""){
 						if(ac1.equals(s)){
 							//Puede ser o igual a S o igual a E
 							if(e.equals(Character.toUpperCase(cadenaSinAcentos.charAt(correccionEspacio)))||
@@ -755,7 +833,7 @@ public class Resultado {
 		while (indiceAcronimo < ac.length() && check && i < frase.length) {
 			String cadenaNormalize = Normalizer.normalize(frase[i], Normalizer.Form.NFD);   
 			String cadenaSinAcentos = cadenaNormalize.replaceAll("[^\\p{ASCII}]", "");
-			if (!this.palabrasConectoras.contains(cadenaSinAcentos)&& cadenaSinAcentos!="") {
+			if (!this.stopWords.contains(cadenaSinAcentos)&& cadenaSinAcentos!="") {
 				Character aux = ac.charAt(indiceAcronimo);
 				if (aux.equals('S')) {
 					check = aux.equals(Character.toUpperCase(cadenaSinAcentos.charAt(0)))
@@ -781,7 +859,7 @@ public class Resultado {
 		//Simplemente he comparado todo
 		int index=i;
 		if(indiceAcronimo==ac.length()-1){
-			if(this.palabrasConectoras.contains(frase[i-1])) {
+			if(this.stopWords.contains(frase[i-1])) {
 				index=i-2;
 			}else {
 				index=i-1;
@@ -800,9 +878,9 @@ public class Resultado {
 	}
 	
 	/*
-	 * Escritura del fichero de resultado tsv. Escritura de nombre de las columnas si el fichero no existe.
+	 * PRIMERA TAREA:Escritura del fichero de resultado tsv. Escritura de nombre de las columnas si el fichero no existe.
 	 */
-	public String toOutputFile(){
+	public String toOutputFileFirstTask(){
 		String result="";		
 		try {
 			File file= new File(".\\Herramientas\\Archivos salida\\Sample_SecondTask_Results_EVALUATION.tsv");	
@@ -857,11 +935,44 @@ public class Resultado {
 		}
 		return result;		
 	}	
-		
+	
+	/*
+	 * SEGUNDA TAREA:Escritura del fichero de resultado tsv. Escritura de nombre de las columnas si el fichero no existe.
+	 */
+	public String toOutputFileSecondTask(){
+		String result="";		
+		try {
+			File file= new File(".\\Herramientas\\Archivos salida\\Sample_SecondTask_Results_EVALUATION.tsv");	
+			if(!file.exists()){
+				result="#DocumentID\tStartOffset\tEndOffset\tAbbreviation\tDefinition\tDefinition_lemmatized\n";
+			}
+			Writer out = new BufferedWriter(new OutputStreamWriter(
+				    new FileOutputStream(file,true), "UTF-8"));
+			
+			Iterator<Entry<Acronimo, String>> it=this.diccionarioDesambiguacion.entrySet().iterator();
+			while(it.hasNext()){				
+				Entry<Acronimo, String> e=it.next();
+				if(e.getValue()!=null || !e.getValue().isEmpty() ){
+					//File identifier
+					result+=nombreFichero+"\t"+e.getKey().getStartOffset()+"\t"+e.getKey().getEndOffset()+
+							"\t"+e.getKey().getAcronimo()+"\t"+e.getValue()+"\t"+e.getValue();
+								
+					result+="\n";
+				}
+			}			
+			out.write(result);
+			out.flush();
+			out.close();
+		} catch (IOException e1) {
+			e1.printStackTrace();
+		}
+		return result;		
+	}	
+	
 	public static void main(String[] args){
 		Resultado r=new Resultado();
 		Character ch='B';	
-		r.addDuplaDesambiguacion(new Acronimo(0,15,"TSP"),"El paciente fue diagnosticado de paraparesia esp·stica tropical");
+		r.addDuplaDesambiguacion(new Acronimo(0,15,"TSP"),"El paciente fue diagnosticado de paraparesia paraparesia esp·stica tropical");
 		r.toString();		
 		//System.out.println(r.checkMetodoAuxiliar1("y la biomicroscopia", "BMC"));
 		/*System.out.println(String.format("\\u%04x", (int) ch));*/

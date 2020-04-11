@@ -68,21 +68,21 @@ public class AnalizadorLexico implements java_cup.runtime.Scanner {
     "\1\23\1\24\1\25\1\26\1\27\1\30\1\31\1\32"+
     "\2\33\1\34\1\35\1\36\1\37\1\40\1\41\1\42"+
     "\1\43\1\44\1\45\1\46\1\47\1\50\1\51\1\52"+
-    "\1\53\2\54\1\55\1\56\1\57\1\60\2\1\1\61"+
-    "\1\60\3\1\1\60\1\61\1\1\1\60\1\62\1\3"+
+    "\1\53\2\54\1\55\1\7\1\56\1\57\2\1\1\60"+
+    "\1\57\3\1\1\57\1\60\1\1\1\57\1\61\1\3"+
     "\1\0\1\4\1\3\1\0\1\4\2\3\1\0\1\3"+
     "\1\0\1\3\1\0\1\4\1\0\1\4\6\0\3\1"+
-    "\2\61\1\0\1\61\1\0\1\61\1\0\1\1\5\0"+
+    "\2\60\1\0\1\60\1\0\1\60\1\0\1\1\5\0"+
     "\3\1\1\0\2\3\2\0\1\3\2\0\1\3\1\0"+
     "\1\3\1\0\3\3\7\0\1\1\1\0\1\1\2\0"+
-    "\1\61\1\0\1\61\1\0\1\61\1\0\2\61\1\0"+
-    "\1\61\2\0\2\1\3\0\2\3\1\0\1\3\1\0"+
-    "\3\3\1\4\2\0\1\1\1\61\1\1\1\61\1\1"+
-    "\1\61\1\0\3\61\1\0\1\1\1\3\1\0\3\3"+
-    "\2\0\1\61\1\1\3\0\3\61\1\0\1\3\1\0"+
-    "\1\3\1\0\1\1\1\61\1\0\1\61\2\0\1\3"+
-    "\1\1\3\0\1\61\2\3\1\1\2\61\1\0\1\3"+
-    "\3\0\1\61\1\3\1\61\1\3\1\61\2\0";
+    "\1\60\1\0\1\60\1\0\1\60\1\0\2\60\1\0"+
+    "\1\60\2\0\2\1\3\0\2\3\1\0\1\3\1\0"+
+    "\3\3\1\4\2\0\1\1\1\60\1\1\1\60\1\1"+
+    "\1\60\1\0\3\60\1\0\1\1\1\3\1\0\3\3"+
+    "\2\0\1\60\1\1\3\0\3\60\1\0\1\3\1\0"+
+    "\1\3\1\0\1\1\1\60\1\0\1\60\2\0\1\3"+
+    "\1\1\3\0\1\60\2\3\1\1\2\60\1\0\1\3"+
+    "\3\0\1\60\1\3\1\60\1\3\1\60\2\0";
 
   private static int [] zzUnpackAction() {
     int [] result = new int[228];
@@ -837,273 +837,268 @@ public class AnalizadorLexico implements java_cup.runtime.Scanner {
             { posibleLF=yytext(); offset=offset+yytext().length();return new Symbol(sym.frase,posibleLF);
             } 
             // fall through
-          case 51: break;
+          case 50: break;
           case 2: 
             { System.err.println("Error lexico: caracter no reconocido <" + yytext() + "> en la linea " + (yyline+1) 
 	+ " y columna " + (yycolumn +1));
 	offset=offset+yytext().length();
             } 
             // fall through
-          case 52: break;
+          case 51: break;
           case 3: 
-            { System.out.println("Acronimo");
-				offset=offset+yytext().length();
+            { offset=offset+yytext().length();
 				return new Symbol(sym.acWithContext,yyline +1, yycolumn +1,new AcWithContext(new Acronimo(offset-yytext().length(),offset,yytext()),posibleLF));
             } 
             // fall through
-          case 53: break;
+          case 52: break;
           case 4: 
             { posibleLF=yytext();				
 				yybegin(estado1);
 				offset=offset+yytext().length();
-				System.out.println("lf");
+				
 				return new Symbol(sym.frase,posibleLF);
             } 
             // fall through
-          case 54: break;
+          case 53: break;
           case 5: 
             { //NUMERO
-				System.out.println("NUMERO");
+				offset=offset+yytext().length();
+            } 
+            // fall through
+          case 54: break;
+          case 6: 
+            { //barra -
 				offset=offset+yytext().length();
             } 
             // fall through
           case 55: break;
-          case 6: 
-            { //barra -
-				System.out.println("Barra -");
-				offset=offset+yytext().length();
+          case 7: 
+            { offset=offset+yytext().length();
             } 
             // fall through
           case 56: break;
-          case 7: 
-            { System.out.println("space "+yytext().length());offset=offset+yytext().length();
-            } 
-            // fall through
-          case 57: break;
           case 8: 
             { //Simbolo dos puntos
 				offset=offset+yytext().length();
             } 
             // fall through
-          case 58: break;
+          case 57: break;
           case 9: 
             { //Barra / 
 				offset=offset+yytext().length();
             } 
             // fall through
-          case 59: break;
+          case 58: break;
           case 10: 
             { //Alpha
-		System.out.println("Alpha");offset=offset+yytext().length();
+		offset=offset+yytext().length();
+            } 
+            // fall through
+          case 59: break;
+          case 11: 
+            { //mas menos
+		offset=offset+yytext().length();
             } 
             // fall through
           case 60: break;
-          case 11: 
-            { //mas menos
-		System.out.println("mas menos");offset=offset+yytext().length();
+          case 12: 
+            { //gamma
+		offset=offset+yytext().length();
             } 
             // fall through
           case 61: break;
-          case 12: 
-            { //gamma
-		System.out.println("Gamma");offset=offset+yytext().length();
+          case 13: 
+            { //a con anillo encima 
+		offset=offset+yytext().length();
             } 
             // fall through
           case 62: break;
-          case 13: 
-            { //a con anillo encima 
-		System.out.println("a con anillo encima ");offset=offset+yytext().length();
-            } 
-            // fall through
-          case 63: break;
           case 14: 
             { //tm
 		offset=offset+yytext().length();
             } 
             // fall through
-          case 64: break;
+          case 63: break;
           case 15: 
             { //guion largo 
-		System.out.println("guion largo");offset=offset+yytext().length();
+		offset=offset+yytext().length();
             } 
             // fall through
-          case 65: break;
+          case 64: break;
           case 16: 
             { //Bala
 		offset=offset+yytext().length();
             } 
             // fall through
-          case 66: break;
+          case 65: break;
           case 17: 
             { //a minuscula dieresis
 		offset=offset+yytext().length();
             } 
             // fall through
-          case 67: break;
+          case 66: break;
           case 18: 
             { //Beta
-		System.out.println("beta");
-		System.out.println("long "+yytext().length()+" "+offset);
 		offset=offset+yytext().length();
             } 
             // fall through
-          case 68: break;
+          case 67: break;
           case 19: 
             { //Espacio de no separacion
 		offset=offset+yytext().length();
             } 
             // fall through
-          case 69: break;
+          case 68: break;
           case 20: 
             { //Si detecta frases explicatorias entre parentesis
 				offset=offset+yytext().length();
             } 
             // fall through
-          case 70: break;
+          case 69: break;
           case 21: 
             { //Si hay acronimos en una frase no detectara el parentesis, pues al principio estaba en el estado 1
 				yypushback(yytext().length());
 				yybegin(estado1);
             } 
             // fall through
-          case 71: break;
+          case 70: break;
           case 22: 
             { //Corchete derecho { 
 				offset=offset+yytext().length();
             } 
             // fall through
-          case 72: break;
+          case 71: break;
           case 23: 
             { //fraccion 1 medio 
 				offset=offset+yytext().length();
             } 
             // fall through
-          case 73: break;
+          case 72: break;
           case 24: 
             { //Aspa multiplicacion
 				offset=offset+yytext().length();
             } 
             // fall through
-          case 74: break;
+          case 73: break;
           case 25: 
             { //Corchete izq } 
 				offset=offset+yytext().length();
             } 
             // fall through
-          case 75: break;
+          case 74: break;
           case 26: 
             { //comillas latinas cierre
 				offset=offset+yytext().length();
             } 
             // fall through
-          case 76: break;
+          case 75: break;
           case 27: 
             { //Simbolo micro
 				offset=offset+yytext().length();
             } 
             // fall through
-          case 77: break;
+          case 76: break;
           case 28: 
             { //comillas latinas apertura
 				offset=offset+yytext().length();
             } 
             // fall through
-          case 78: break;
+          case 77: break;
           case 29: 
             { //comilla simple
 				offset=offset+yytext().length();
             } 
             // fall through
-          case 79: break;
+          case 78: break;
           case 30: 
             { //asterisco
 				offset=offset+yytext().length();
             } 
             // fall through
-          case 80: break;
+          case 79: break;
           case 31: 
             { //Corchetes 
 				offset=offset+yytext().length();
             } 
             // fall through
-          case 81: break;
+          case 80: break;
           case 32: 
             { //minúscula S aguda 
 				offset=offset+yytext().length();
             } 
             // fall through
-          case 82: break;
+          case 81: break;
           case 33: 
             { //Punto centrado
 				offset=offset+yytext().length();
             } 
             // fall through
-          case 83: break;
+          case 82: break;
           case 34: 
             { //Simbolo menor que
 				offset=offset+yytext().length();
             } 
             // fall through
-          case 84: break;
+          case 83: break;
           case 35: 
             { //a sufijo
 				offset=offset+yytext().length();
             } 
             // fall through
-          case 85: break;
+          case 84: break;
           case 36: 
             { //Simbolo mayor que
 				offset=offset+yytext().length();
             } 
             // fall through
-          case 86: break;
+          case 85: break;
           case 37: 
             { //Simbolo registro
 				offset=offset+yytext().length();
             } 
             // fall through
-          case 87: break;
+          case 86: break;
           case 38: 
             { //Simbolo grados
 				offset=offset+yytext().length();
             } 
             // fall through
-          case 88: break;
+          case 87: break;
           case 39: 
             { //Simbolo ordinal
 				offset=offset+yytext().length();
             } 
             // fall through
-          case 89: break;
+          case 88: break;
           case 40: 
             { //Simbolo igual
 				offset=offset+yytext().length();
             } 
             // fall through
-          case 90: break;
+          case 89: break;
           case 41: 
             { //Ampersan 
 				offset=offset+yytext().length();
             } 
             // fall through
-          case 91: break;
+          case 90: break;
           case 42: 
             { //Comilla "
 				offset=offset+yytext().length();
             } 
             // fall through
-          case 92: break;
+          case 91: break;
           case 43: 
             { //Sumatorio	
 				offset=offset+yytext().length();
             } 
             // fall through
-          case 93: break;
+          case 92: break;
           case 44: 
             { acronimo=new Acronimo(); offset=offset+yytext().length(); posibleLF="";
             } 
             // fall through
-          case 94: break;
+          case 93: break;
           case 45: 
             { String b=yytext();
 			if(b!=null){
@@ -1112,42 +1107,35 @@ public class AnalizadorLexico implements java_cup.runtime.Scanner {
 			yybegin(YYINITIAL);
             } 
             // fall through
-          case 95: break;
+          case 94: break;
           case 46: 
-            { offset=offset+yytext().length();
-            } 
-            // fall through
-          case 96: break;
-          case 47: 
             { offset=offset+yytext().length();yybegin(estado2);
-		System.out.println("pa");
             } 
             // fall through
-          case 97: break;
-          case 48: 
+          case 95: break;
+          case 47: 
             { if(yytext()!=null){
 			yypushback(yytext().length());
 			}
 			yybegin(YYINITIAL);
             } 
             // fall through
-          case 98: break;
-          case 49: 
-            { System.out.println("Acronimo");
-			acronimo= new Acronimo(offset,offset+yytext().length(),yytext());
+          case 96: break;
+          case 48: 
+            { acronimo= new Acronimo(offset,offset+yytext().length(),yytext());
 			offset=offset+yytext().length();
 			yybegin(estado3);
             } 
             // fall through
-          case 99: break;
-          case 50: 
+          case 97: break;
+          case 49: 
             { offset=offset+yytext().length();yybegin(YYINITIAL);
-		System.out.println("pc");
+		
 		//Cuidado si le paso el objeto en el sintactico lo usa como puntero y solo se guarda la ultima ocurrencia. Por ello new Object
 		return new Symbol(sym.acWithContext,yyline +1, yycolumn +1,new AcWithContext(new Acronimo(acronimo.getStartOffset(),acronimo.getEndOffset(),acronimo.getAcronimo()),posibleLF));
             } 
             // fall through
-          case 100: break;
+          case 98: break;
           default:
             zzScanError(ZZ_NO_MATCH);
         }

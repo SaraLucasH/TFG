@@ -3,7 +3,6 @@
  package Analizadores;
 import java.util.LinkedList;
 import java_cup.runtime.*;
-import java.util.ArrayList;
 
 
 /**
@@ -433,7 +432,6 @@ public class AnalizadorLexico implements java_cup.runtime.Scanner {
   private int zzFinalHighSurrogate = 0;
 
   /* user code: */
-	ArrayList<String> contexto= new ArrayList<>();
 	StringBuffer aux = new StringBuffer();
      	int auxLinea = 0;
      	int auxColumna = 0;
@@ -830,13 +828,13 @@ public class AnalizadorLexico implements java_cup.runtime.Scanner {
         zzAtEOF = true;
             zzDoEOF();
               {
-                return new Symbol(sym.contexto,this.contexto);
+                return new Symbol(sym.EOF);
               }
       }
       else {
         switch (zzAction < 0 ? zzAction : ZZ_ACTION[zzAction]) {
           case 1: 
-            { posibleLF=yytext(); this.contexto.add(yytext());offset=offset+yytext().length();
+            { posibleLF=yytext(); offset=offset+yytext().length();return new Symbol(sym.frase,posibleLF);
             } 
             // fall through
           case 51: break;
@@ -857,9 +855,9 @@ public class AnalizadorLexico implements java_cup.runtime.Scanner {
           case 4: 
             { posibleLF=yytext();				
 				yybegin(estado1);
-				this.contexto.add(posibleLF);
 				offset=offset+yytext().length();
 				System.out.println("lf");
+				return new Symbol(sym.frase,posibleLF);
             } 
             // fall through
           case 54: break;

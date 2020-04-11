@@ -8,6 +8,9 @@ package Analizadores;
 import java_cup.runtime.*;
 import java_cup.runtime.Symbol;
 import java.util.LinkedList;
+
+import org.deeplearning4j.models.embeddings.wordvectors.WordVectors;
+
 import java.util.ArrayList;
 import java_cup.runtime.XMLElement;
 
@@ -22,14 +25,14 @@ public class parser extends java_cup.runtime.lr_parser {
 
 //** Default constructor. */
 @Deprecated
-public parser(String nombreFicheroEntrada) {super(); this.nombreFicheroEntrada=nombreFicheroEntrada;this.resultado= new Resultado(nombreFicheroEntrada);}
+public parser(String nombreFicheroEntrada,WordVectors wvect) {super(); this.nombreFicheroEntrada=nombreFicheroEntrada;this.resultado= new Resultado(nombreFicheroEntrada,wvect);}
 
 /** Constructor which sets the default scanner. */
 @Deprecated
-public parser(java_cup.runtime.Scanner s,String nombreFicheroEntrada) {super(s);this.nombreFicheroEntrada=nombreFicheroEntrada;this.resultado= new Resultado(nombreFicheroEntrada);}
+public parser(java_cup.runtime.Scanner s,String nombreFicheroEntrada,WordVectors wvect) {super(s);this.nombreFicheroEntrada=nombreFicheroEntrada;this.resultado= new Resultado(nombreFicheroEntrada,wvect);}
 
 /** Constructor which sets the default scanner. */
-public parser(java_cup.runtime.Scanner s, java_cup.runtime.SymbolFactory sf,String nombreFicheroEntrada) {super(s,sf);this.nombreFicheroEntrada=nombreFicheroEntrada;this.resultado= new Resultado(nombreFicheroEntrada);}
+public parser(java_cup.runtime.Scanner s, java_cup.runtime.SymbolFactory sf,String nombreFicheroEntrada,WordVectors wvect) {super(s,sf);this.nombreFicheroEntrada=nombreFicheroEntrada;this.resultado= new Resultado(nombreFicheroEntrada,wvect);}
 
   /** Production table. */
   protected static final short _production_table[][] = 

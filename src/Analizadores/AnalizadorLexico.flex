@@ -74,24 +74,22 @@ Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |{Mayuscula}{Minuscula}{Mayuscula}| {Mayusc
 
 %%	
 	<YYINITIAL> [\u03b1] {//Alpha
-		System.out.println("Alpha");offset=offset+yytext().length();}
+		offset=offset+yytext().length();}
 	<YYINITIAL> [\u00B1] {//mas menos
-		System.out.println("mas menos");offset=offset+yytext().length();}
+		offset=offset+yytext().length();}
 	<YYINITIAL> [\u03b3] {//gamma
-		System.out.println("Gamma");offset=offset+yytext().length();}
+		offset=offset+yytext().length();}
 	<YYINITIAL> [\u00E5] {//a con anillo encima 
-		System.out.println("a con anillo encima ");offset=offset+yytext().length();}	
+		offset=offset+yytext().length();}	
 	<YYINITIAL> [\u2122] {//tm
 		offset=offset+yytext().length();}
 	<YYINITIAL> [\u2014] {//guion largo 
-		System.out.println("guion largo");offset=offset+yytext().length();}	
+		offset=offset+yytext().length();}	
 	<YYINITIAL> [\u2022] {//Bala
 		offset=offset+yytext().length();}
 	<YYINITIAL> [\u00E4] {//a minuscula dieresis
 		offset=offset+yytext().length();}	
 	<YYINITIAL> [\u03B2] {//Beta
-		System.out.println("beta");
-		System.out.println("long "+yytext().length()+" "+offset);
 		offset=offset+yytext().length();}
 	<YYINITIAL> [\u00A0] {//Espacio de no separacion
 		offset=offset+yytext().length();}
@@ -100,7 +98,7 @@ Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |{Mayuscula}{Minuscula}{Mayuscula}| {Mayusc
 	<YYINITIAL> "(" {//Si hay acronimos en una frase no detectara el parentesis, pues al principio estaba en el estado 1
 				yypushback(yytext().length());
 				yybegin(estado1);}
-	<YYINITIAL> " "|[\u0020] {System.out.println("space "+yytext().length());offset=offset+yytext().length();}	
+	<YYINITIAL> " "|[\u0020] {offset=offset+yytext().length();}	
 	<YYINITIAL> [\u002F] {//Barra / 
 				offset=offset+yytext().length();}
 	<YYINITIAL> [\u007B] {//Corchete derecho { 
@@ -150,17 +148,15 @@ Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |{Mayuscula}{Minuscula}{Mayuscula}| {Mayusc
 	<YYINITIAL> {Frase}({FinFrase}|" ") {posibleLF=yytext();				
 				yybegin(estado1);
 				offset=offset+yytext().length();
-				System.out.println("lf");
+				
 				return new Symbol(sym.frase,posibleLF);}
-	<YYINITIAL> {Acronimo} {System.out.println("Acronimo");
+	<YYINITIAL> {Acronimo} {
 				offset=offset+yytext().length();
 				return new Symbol(sym.acWithContext,yyline +1, yycolumn +1,new AcWithContext(new Acronimo(offset-yytext().length(),offset,yytext()),posibleLF));}
 	<YYINITIAL> [0-9] {//NUMERO
-				System.out.println("NUMERO");
 				offset=offset+yytext().length();}
 				
 	<YYINITIAL> [\u002D] {//barra -
-				System.out.println("Barra -");
 				offset=offset+yytext().length();}
 	
 	<YYINITIAL> [\u003A]  {//Simbolo dos puntos
@@ -178,7 +174,7 @@ Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |{Mayuscula}{Minuscula}{Mayuscula}| {Mayusc
 		
 
 <estado1> "(" {offset=offset+yytext().length();yybegin(estado2);
-		System.out.println("pa");}
+		}
 <estado1> [\u002D] {offset=offset+yytext().length();}
 <estado1> [^(\u002D] {String b=yytext();
 			if(b!=null){
@@ -187,7 +183,7 @@ Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |{Mayuscula}{Minuscula}{Mayuscula}| {Mayusc
 			yybegin(YYINITIAL);}
 			
 <estado2> {Frase}({FinFrase}{Frase})* {posibleLF=yytext(); offset=offset+yytext().length();return new Symbol(sym.frase,posibleLF);}
-<estado2> {Acronimo} {System.out.println("Acronimo");
+<estado2> {Acronimo} {
 			acronimo= new Acronimo(offset,offset+yytext().length(),yytext());
 			offset=offset+yytext().length();
 			yybegin(estado3);
@@ -199,7 +195,7 @@ Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |{Mayuscula}{Minuscula}{Mayuscula}| {Mayusc
 			yybegin(YYINITIAL);}
 
 <estado3> ")" {offset=offset+yytext().length();yybegin(YYINITIAL);
-		System.out.println("pc");
+		
 		//Cuidado si le paso el objeto en el sintactico lo usa como puntero y solo se guarda la ultima ocurrencia. Por ello new Object
 		return new Symbol(sym.acWithContext,yyline +1, yycolumn +1,new AcWithContext(new Acronimo(acronimo.getStartOffset(),acronimo.getEndOffset(),acronimo.getAcronimo()),posibleLF));
 		}	

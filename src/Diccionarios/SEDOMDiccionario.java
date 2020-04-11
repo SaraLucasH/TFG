@@ -46,30 +46,12 @@ public class SEDOMDiccionario {
 						value= new HashSet<String>();
 						this.diccionario.put(cadena[0],value);
 					}
-					String[] valores= cadena[1].split("-");
+					String[] valores= cadena[1].split("//");
 					for(String s:valores) {
 							value.add(s);
 					}					
 				}
-			}
-			//Lectura de fichero unidades de medida
-			fr = new File("./Herramientas/Diccionarios/mesuresAcronyms.csv");
-			reader = new InputStreamReader (new FileInputStream(fr), charset);
-			br = new BufferedReader(br);			
-					
-			while ((linea = br.readLine()) != null){
-				String[]cadena=linea.split(";");
-				HashSet<String> value;
-				//Filtramos lineas basura
-				if(cadena.length>1) {
-					value=this.diccionario.get(cadena[0]);
-					if(value==null) {
-						value= new HashSet<String>();
-						this.diccionario.put(cadena[0],value);
-					}
-					value.add(cadena[1]);					
-				}
-			}
+			}			
 			
 		}catch(Exception e) {
 			e.printStackTrace();
@@ -83,13 +65,13 @@ public class SEDOMDiccionario {
 				e2.printStackTrace();
 			}
 		}
-		for(Entry<String, HashSet<String>> e:this.diccionario.entrySet()) {
+		/*for(Entry<String, HashSet<String>> e:this.diccionario.entrySet()) {
 			System.out.print(e.getKey()+":");
 			for(String s: e.getValue()) {
 				System.out.print(s+" // ");
 			}
 			System.out.println();
-		}
+		}*/
 		return 0;
 	}
 	public static void main(String[]args) {

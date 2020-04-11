@@ -2624,11 +2624,11 @@ HTIC:hipertensión intracraneal
 HTII:hipertensión intracraneal idiopática
 HTL:hipertricosis lanuginosa//hipotálamo lateral
 HTLV:human t cell leukemia//lymphoma virus//virus de la leucemia//linfoma de células t humanas//human t cell leukemia
-HTLV-I:virus linfotrópico de células t humano, tipo i//virus de la leucemia humana de células t, tipo 1
-HTLV-II:virus linfotrópico de células t humano, tipo ii//virus de la leucemia humana de células t, tipo 2
+HTLV-I:virus de la leucemia humana de células t, tipo 1
+HTLV-II:virus de la leucemia humana de células t, tipo 2
 HTLV-V:virus linfotrópico de células t humano, tipo v
-HTLV_-_I:virus linfotrópico de células t humano, tipo i//virus de la leucemia humana de células t, tipo 1
-HTLV_-_II:virus linfotrópico de células t humano, tipo ii//virus de la leucemia humana de células t, tipo 2
+HTLV_-_I:virus de la leucemia humana de células t, tipo 1
+HTLV_-_II:virus de la leucemia humana de células t, tipo 2
 HTLV_-_V:virus linfotrópico de células t humano, tipo v
 HTM:hipertensión maligna//hipertermia maligna
 HTN:hipertensión//hipertensión
@@ -7063,6 +7063,7 @@ kd:constante de disociación
 kel:constante de eliminación
 keq:constante de equilibrio
 kg:kilogramo
+Kg:kilogramo
 l:símbolo de litro
 l/m:litros por minuto
 lab:labial//laboratorio 
