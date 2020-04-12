@@ -82,9 +82,16 @@ public class Resultado {
 	//Identificador fichero resultado
 	String nombreFichero="";
 	
-	//Para comparar caracteres
+	//Comparar caracteres
 	Character e='E';
-	Character s='S';	
+	Character s='S';
+	
+	//Metodo encontrar candidato en desambiguacion
+	String candidato;
+	double min;
+	HashSet<String> valorUnidadesMedida;
+	HashSet<String> valorBARR;
+	HashSet<String> valorSEDOM;
 	
 	//Escritura del fichero de resultado	 
 	FileWriter fichero = null;
@@ -121,8 +128,8 @@ public class Resultado {
 	public void load() {		
 		for(Entry<Acronimo,HashSet<String>> e:this.almacen.entrySet()) {
 			for(String s:e.getValue()) {
-				this.addDuplaDesambiguacion(e.getKey(), s);
-			}									
+				this.addDuplaDesambiguacion(e.getKey(), s);				
+			}
 		}
 		toOutputFileSecondTask();
 	}
@@ -140,7 +147,7 @@ public class Resultado {
 		value.add(a.getFraseInmediata());
 	}
 	
-	private void encuentraCandidato(HashSet<String> conjunto,double minimo, String candidato,String newContexto) {
+	private void encuentraCandidato(HashSet<String> conjunto,String newContexto) {
 		String newSentence;
 		int index=0;
 		double minAux;
@@ -162,9 +169,9 @@ public class Resultado {
 				}
 				if(existsVectorNewSentence) {
 					minAux = wmd.distance(newContexto, newSentence);
-					if (minAux < minimo) {
-						minimo = minAux;
-						candidato = i;
+					if (minAux < this.min) {
+						this.min = minAux;
+						this.candidato = i;
 					}
 				}										
 			}
@@ -173,19 +180,23 @@ public class Resultado {
 	
 	public void addDuplaDesambiguacion(Acronimo ac, String contextoAc) {
 		if (this.diccionarioDesambiguacion.get(ac) == null) {
-			// 1ºConsulto dic unidades medida y sedom
-			HashSet<String> valorUnidadesMedida=this.diccionarioConsultaUnidadesMedida.get(ac.getAcronimo());	
-			HashSet<String> valorSEDOM = this.diccionarioConsultaSEDOM.get(ac.getAcronimo());
+			// 1ºConsulto dicc unidades medida y sedom
+			this.valorUnidadesMedida=this.diccionarioConsultaUnidadesMedida.get(ac.getAcronimo());	
+			this.valorSEDOM = this.diccionarioConsultaSEDOM.get(ac.getAcronimo());
+			
 			if (valorUnidadesMedida!=null && valorUnidadesMedida.size() == 1) {
 				this.diccionarioDesambiguacion.put(ac, valorUnidadesMedida.iterator().next());
 			}else if (valorSEDOM!=null && valorSEDOM.size() == 1) {
 				this.diccionarioDesambiguacion.put(ac, valorSEDOM.iterator().next());
 			}else {				 
-				 HashSet<String> valorBARR = this.diccionarioConsultaBARR.get(ac.getAcronimo());
-				if (valorBARR != null || valorSEDOM != null) {
+				this.valorBARR = this.diccionarioConsultaBARR.get(ac.getAcronimo());
+				
+				if (valorBARR != null || valorSEDOM != null || valorUnidadesMedida!=null) {
 					boolean encontrado = false;
-					String candidato = null;
-					double min = Double.MAX_VALUE;
+					
+					this.candidato=null;
+					this.min = Double.MAX_VALUE;
+					
 					int inicio = this.contexto.indexOf(contextoAc);
 					int pivote = this.contexto.indexOf(contextoAc);
 					while (!encontrado && !(pivote > this.contexto.size() - 1)) {
@@ -206,17 +217,17 @@ public class Resultado {
 						}
 						
 						if (existsVectorNewContexto) {
-							if(valorUnidadesMedida!=null) {
-								encuentraCandidato(valorUnidadesMedida,min,candidato,newContexto);
+							if(this.valorUnidadesMedida!=null) {
+								encuentraCandidato(this.valorUnidadesMedida,newContexto);
 							}							
-							if (valorSEDOM != null) {
-								encuentraCandidato(valorSEDOM,min,candidato,newContexto);
+							if (this.valorSEDOM != null) {
+								encuentraCandidato(this.valorSEDOM,newContexto);
 							}
-							if (valorBARR != null) {
-								encuentraCandidato(valorBARR,min,candidato,newContexto);
+							if (this.valorBARR != null) {
+								encuentraCandidato(this.valorBARR,newContexto);
 							}
 						}
-						if (min < 10) {
+						if (min < 7) {
 							encontrado = true;
 						} else {
 							if (pivote > 0 && pivote <= inicio) {
@@ -236,7 +247,7 @@ public class Resultado {
 						}
 
 					}
-					if (encontrado || min < 13) {
+					if (encontrado || min < 14) {
 						this.diccionarioDesambiguacion.put(ac, candidato);
 					}
 				}
@@ -942,7 +953,7 @@ public class Resultado {
 	public String toOutputFileSecondTask(){
 		String result="";		
 		try {
-			File file= new File(".\\Herramientas\\Archivos salida\\Sample_SecondTask_Results_EVALUATION.tsv");	
+			File file= new File(".\\Herramientas\\Archivos_salida\\Training_SecondTask_Results_EVALUATION.tsv");	
 			if(!file.exists()){
 				result="#DocumentID\tStartOffset\tEndOffset\tAbbreviation\tDefinition\tDefinition_lemmatized\n";
 			}

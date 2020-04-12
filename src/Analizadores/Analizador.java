@@ -32,7 +32,7 @@ public class Analizador {
 		for (int i = 0; i < argv.length; i++) {
 			AnalizadorLexico lexico = null;
 			try {
-				File file = new File("C:\\Users\\saral\\Documents\\tfg\\Evaluation\\Sample\\txt\\" + argv[i] + ".txt");
+				File file = new File("C:\\Users\\saral\\Documents\\tfg\\Evaluation\\training\\txt\\" + argv[i] + ".txt");
 				System.out.println(argv[i]);
 				Reader br = new InputStreamReader(new FileInputStream(file), charset);
 				BufferedReader buffer = new BufferedReader(br);

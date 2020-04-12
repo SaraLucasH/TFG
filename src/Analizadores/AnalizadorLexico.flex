@@ -29,9 +29,9 @@ import java_cup.runtime.*;
 	//FormaLargaWithAc acWLfacWLf=new FormaLargaWithAc ();
 	
 %}
-Minuscula=[\u00F1\u00E1\u00E9\u00ED\u00F3\u00FA\u00F6\u00FC]|[a-z]
-Mayuscula=[A-Z]|[\u00D1\u00C1\u00C9\u00CD\u00D3\u00DA]
-FinFrase=[\u002E\u003B\u002C]
+Minuscula=[[\u00F1\u00E1\u00E9\u00ED\u00F3\u00FA\u00F6\u00FC]||[a-z]] 
+Mayuscula=[[A-Z]||[\u00D1\u00C1\u00C9\u00CD\u00D3\u00DA]]
+FinFrase=[\u002E\u003B\u002C\u003A]
 
 Frase=([0-9]*[\u0025]?|
 	([0-9]+|[0-9]+[\u002C][0-9]+)[\u002D\u002E]([0-9]+|[0-9]+[\u002C\u002E][0-9]+)|
@@ -47,27 +47,28 @@ Frase=([0-9]*[\u0025]?|
 	(" "
 	(
 		[\u002D]?{Minuscula}+[\u003A\u002D]?|
-		{Minuscula}*[\u003A\u002D]?|
+		{Minuscula}+[\u003A\u002D]?|
  		{Minuscula}+([\u003A\u002D]{Minuscula}+)*|
-		[0-9]*[\u0025]?|
+		[0-9]+[\u0025]?|
 		([0-9]+|[0-9]+[\u002C][0-9]+)[\u002D\u002E]([0-9]+|[0-9]+[\u002C\u002E][0-9]+)|
 		[\u00B5\u039C]{Minuscula}[\u002F]{Minuscula}+|[0-9][\u002D]{Mayuscula}{Minuscula}+[\u002D]{Mayuscula}{Minuscula}+
 		)
 	)*|
-	{Mayuscula}{Minuscula}(" "
+	{Mayuscula}{Minuscula}+(" "
 	(
-		[\u002D]?{Minuscula}+[\u003A\u002D]?|
-		{Minuscula}*[\u003A\u002D]?|
+		[\u002D]?{Minuscula}+[\u003A\u002D]?|{Minuscula}+|
+		{Minuscula}+[\u003A\u002D]?|
  		{Minuscula}+([\u003A\u002D]{Minuscula}+)*|
-		[0-9]*[\u0025]?|
+		[0-9]+|
+		[0-9]+[\u0025]?|
 		([0-9]+|[0-9]+[\u002C][0-9]+)[\u002D\u002E]([0-9]+|[0-9]+[\u002C\u002E][0-9]+)|
 		[\u00B5\u039C]{Minuscula}[\u002F]{Minuscula}+
 		|[0-9][\u002D]{Mayuscula}{Minuscula}+[\u002D]{Mayuscula}{Minuscula}+
 		)
 	)+
 
-Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |{Mayuscula}{Minuscula}{Mayuscula}| {Mayuscula}{Minuscula}
-|{Minuscula}{1,3}|{Mayuscula}{1,4}[\u002D]{Mayuscula}{1,4}|
+Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |{Mayuscula}{Minuscula}{Mayuscula}| {Mayuscula}{Minuscula}([0-9]+{Minuscula})?
+|{Minuscula}{1,3}|{Mayuscula}{1,4}[\u002D]{Mayuscula}{1,4}|{Mayuscula}{1,3}[0-9]+(([\u002E]|" ")[0-9]+)?|
 [a-z]{1,4}[\u002D][A-Z]{2,4}| (([a-z]|[A-Z])"\."){1,5} | [0-9][\u002D][A-Z]{2,4} | [a-z]"\." |[A-Z]{1,4}[0-9]{1,3}|([A-Z][0-9])+ |([A-Z]"\.")*[A-Z]
 %state estado1,estado2,estado3
 

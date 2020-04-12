@@ -570,7 +570,7 @@ CDA III:anemia diseritropoyética congénita tipo iii//cda tipo iii
 CDA IV:anemia diseritropoyética congénita tipo iv
 CDAN4:anemia diseritropoyética congénita tipo 4
 CDC:center for diseases control and prevention//centro para el control y prevención de enfermedades, estados unidos//carcinoma de los conductos de bellini
-CDDP:cisdiaminodicloroplatino o cisplatino
+CDDP:cisdiaminodicloroplatino
 CDG-IL:síndrome cdg tipo il//síndrome de glicoproteínas deficientes en carbohidratos tipo il
 CDG1M:síndrome cdg  tipo 1m
 CDG1P:síndrome cdg tipo 1p
@@ -816,7 +816,7 @@ CSIMI:cuadrante superior interno de mama izquierda
 CSM:centro de salud mental
 CST:cesárea segmentaria transversa
 CSVT:trombosis de los senos venosos cerebrales
-CT:calcitonina//colesterol total//colon transverso//computed tomography//tomografía computarizada
+CT:calcitonina//colesterol total//colon transverso//computed tomography//tomografía computerizada
 CTG:cardiotocografía
 CTL:compuestos tóxicos persistentes//cytotoxic t-lymphocyte//linfocito t citotóxico
 CTLN1:citrulinemia tipo 1
@@ -3644,6 +3644,7 @@ LGG:leucocitos granulares grandes
 LGH:ligamento gastrohepático//ligamento glenohumeral
 LGHI:ligamento glenohumeral inferior
 LGHM:ligamento glenohumeral medio
+C5:quinta vertebra dorsal
 LGHS:ligamento glenohumeral superior
 LGI:linfoma de grado intermedio
 LGL:lown-ganong-levine, síndrome
@@ -3652,6 +3653,7 @@ LGNH:linfoma gástrico no hodgkiniano
 LGP:linfoadenopatía generalizada persistente//linfoma gástrico primario
 LGS:ley general de sanidad
 LGSS:ley general de la seguridad social
+D1:primera vertebra dorsal
 LGV:linfogranuloma venéreo
 LH:leucemia hipoplásica//leucocito humano//linfoma histiocítico//linfoma de hodgkin//lipasa hepática//lúes hereditaria//lutropina//luteinizing hormone//hormona luteinizante
 LHA:leucemia hipoplásica aguda//leucoencefalitis hemorrágica aguda
@@ -4568,6 +4570,8 @@ NDE:neurotoxina derivada de los eosinófilos
 NDI:no dependiente de la insulina
 NDM:diabetes mellitus neonatal
 NDR:no debe reanimarse
+CAM5.2:anticuerpo monoclonal de cytokeratina 5.2
+CD34:cumulo de diferenciación 34
 NDU:necrosis dérmica ulcerosa
 NE:nutrición enteral//norepinefrina//nefritis epidémica//nefroesclerosis//neoplasia endocrina//neumonía eosinofílica//neuroendocrinología//neuroendocrinológico//neuroepitelioma//nistagmo espontáneo//nivel de evidencia//no elevado//no especificado//no específico//no evaluable//no evaluado
 NEA:neumonía eosinofílica aguda
@@ -5108,7 +5112,7 @@ P>ST(W)<:curva estática de retracción de la pared torácica
 PA:pancreatitis aguda//poliartritis//posteroanterior//presión alveolar//presión arterial//pulso arterial//presión parcial alveolar//pseudomona aeruginosa//parkinsoniano agudo//pericarditis aguda//pielonefritis aguda//poliposis adenomatosa
 PAA:punción aspirativa con aguja
 PAAD:punción aspiración con aguja delgada
-PAAF:punción aspirativa con aguja fina
+PAAF:punción aspiracion con aguja fina
 PAAG:punción aspiración con aguja gruesa
 PAB:pancreatitis aguda biliar//punción aspirativa biópsica
 PABA:para-aminobenzoic acid//ácido para-aminobenzóico
@@ -5176,6 +5180,7 @@ PBVA:cisplatino, bleomicina, vimblastina y doxorrubicina
 PC:pancreatitis crónica//parálisis cerebral//pares craneales//pérdida de conocimiento//perímetro cefálico//perímetro craneal//postcirugía//postconización//proteína c//cisplatino y ciclofosfamida//paclitaxel y carboplatino//paclitaxel y cisplatino//paro cardíaco//pericarditis constrictiva//pericarditis crónica//peritonitis crónica//pielonefritis crónica//plasma congelado//pneumocystis carinii//poliartritis crónica//porfiria congénita//porfiria crónica//presión capilar//pruebas complementarias//prueba de coombs tc//pruebas cruzadas//pruebas cutáneas//pulso carotídeo//paquioniquia congénita//parálisis cerebral infantil//parálisis cerebral infantil espástica
 PC I:par craneal i o nervio olfatorio
 PC II:par craneal ii o nervio óptico
+i.v.:intravenoso
 PC III:par craneal iii o nervio motor ocular común
 PC IV:par craneal iv o nervio patético
 PC IX:par craneal ix o nervio glosofaríngeo
@@ -5983,7 +5988,7 @@ Re:renina
 Rh:rhesus//rodio
 RsCsAs:ruidos cardiacos arrítmicos
 RsCsRs:ruidos cardiacos rítmicos
-Rx:radiografía
+Rx:radiografía//rayos x
 RxT:radiografía de tórax//radioterapia
 S:sacro//sangre//semana//sensible//servicio//símbolo químico del azufre//síndrome//sistólico
 SA:sinoauricular
@@ -6164,7 +6169,7 @@ SP:sacropubiana, posición fetal//sangre periférica//sarampión-parotiditis//se
 SPB:sarcoma de partes blandas 
 SPCA:serum prothrombin conversión accelerator//acelerador de la conversión de la protrombina sérica
 SPE:serum protein electrophoresis//electroforesis de proteínas séricas
-SPECT:single photon emission computed tomography//tomografía computarizada por emisión de fotón simple
+SPECT:single photon emission computed tomography//tomografía computerizada por emisión de fotón simple
 SPF:solar protection factor//factor de protección solar//specific pathogen free//libre de agentes patógenos específicos
 SPIT:shunt portosistémico intrahepático transyugular
 SPJ:síndrome de peutz-jeghers
@@ -6240,12 +6245,13 @@ T-LGL:leucemia lgl de células t//leucemia linfocítica granular de células t g
 T-PLL:leucemia prolinfocítica de células t
 T3:triyodotironina
 T4:tiroxina
+angio-RMN:angioresonancia magnetica
 TA:temperatura ambiente//tensión arterial//tratamiento actual//traumatismo abdominal
 TAB:tableta//tifoidea, paratifoidea a y b, vacuna
 TABM:typhi, paratyphi a y b, melitensis
-TAC:tomografía axial computarizada
-TAC-SAI:tomografía axial computarizada - sai
-TAC_-_SAI:tomografía axial computarizada - sai
+TAC:tomografía axial computerizada
+TAC-SAI:tomografía axial computerizada - sai
+TAC_-_SAI:tomografía axial computerizada - sai
 TAD:tensión arterial diastólica
 TAE:trastorno afectivo estacional
 TAG:tolerancia anormal a la glucosa//trastorno de ansiedad generalizada
@@ -6275,10 +6281,10 @@ TBP:tuberculosis pulmonar
 TBPA:thyroxine-binding prealbumin//prealbúmina transportadora de tiroxina
 TBQ:tabaquismo
 TBS:síndrome de townes-brocks
-TC:tendón del cuádriceps//tiempo de coagulación//tomografía computarizada//trasplante cardiaco//tumor carcinoide
-TC-SAI:tomografía computarizada - sai
+TC:tendón del cuádriceps//tiempo de coagulación//tomografía computerizada//trasplante cardiaco//tumor carcinoide
+TC-SAI:tomografía computerizada - sai
 TCA:tiempo de coagulación activado//trastorno de la conducta alimentaria
-TCC:terapia cognitivo-conductual//tomografía computarizada cuantitativa//tetracloruro de carbono//tetraclorometano
+TCC:terapia cognitivo-conductual//tomografía computerizada cuantitativa//tetracloruro de carbono//tetraclorometano
 TCE:traumatismo craneoencefálico
 TCEC:tiempo de circulación extracorpórea
 TCF:tamaño, consistencia y forma
@@ -6289,7 +6295,7 @@ TCPH:trasplante de células progenitoras hematopoyéticas
 TCRF:termocoagulación por radiofrecuencia
 TCS:tejido celular subcutáneo
 TCT:telecobaltoterapia//tirocalcitonina
-TC_-_SAI:tomografía computarizada - sai
+TC_-_SAI:tomografía computerizada - sai
 TD:testículo descendido//tuberculosis diseminada//túbulo distal//displasia tanatofórica
 TD1:displasia tanatofórica tipo 1
 TD2:displasia tanatofórica tipo 2
@@ -6385,7 +6391,7 @@ TRV:tabique rectovaginal
 TS:taquicardia sinusal//taquicardia supraventricular//tricodisplasia espinulosa//tricodisplasia espinulosa asociada a virus
 TSA:troncos supraaórticos
 TSE:tendón supraespinoso
-TSH:thyroid-stimulating hormone//hormona tiroestimulante
+TSH:thyroid-stimulating hormone
 TSP:taquicardia supraventricular paroxística//paraparesia espástica tropical//paraparesia espástica tropical/mielopatía asociada al htlv-1//paraparesia espástica tropical/mielopatía asociada al virus linfotrópico de células t humanas tipo 1//paraparesia espástica tropical/mielopatía asociada al virus linfotrópico de células t humanas tipo i
 TSS:síndrome del shock tóxico
 TSST-1:toxina del síndrome de shock tóxico-1
@@ -6605,6 +6611,8 @@ VC_7:vaso concepción 7
 VC_8:vaso concepción 8
 VC_9:vaso concepción 9
 VD:ventrículo derecho//vasodilatación//vasodilatadores
+CD99:cumulo de diferenciación 99
+CK20:citoqueratina 20
 VDDR II:raquitismo dependiente de vitamina d tipo ii//raquitismo hereditario resistente a la vitamina d
 VDDR-I:raquitismo dependiente de vitamina d tipo i//raquitismo hipocalcémico dependiente de vitamina d
 VDDS:ventrículo derecho de doble salida
@@ -7194,7 +7202,8 @@ rpm:respiraciones por minuto//revoluciones por minuto//ruptura prematura de memb
 rscsas:ruidos cardiacos arrítmicos
 rscsrs:ruidos cardiacos rítmicos
 rvao:recambio valvular aórtico
-rx:radiografía
+RX:rayos x
+rx:radiografía//rayos x
 rxt:radiografía de tórax//radioterapia
 sato2:saturación de oxígeno
 sc:subcutáneo
