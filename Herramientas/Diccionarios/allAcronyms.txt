@@ -70,7 +70,7 @@ AD:aparato digestivo//aurícula derecha//axila derecha
 AD-CNM:miopatía centronuclear autosómica dominante
 AD-HED:displasia ectodérmica anhidrótica autosómica dominante//displasia ectodérmica hipohidrótica autosómica dominante
 AD-HIES:hies autosómico dominante//síndrome de hiper-ige autosómico dominante//síndrome de hiperinmunoglobulina e autosómico dominante
-ADA:arteria descendente anterior//adenosindesaminasa
+ADA:arteria descendente anterior//adenosindesaminasa//adenosín de aminasa
 ADAC:altas dosis de arabinósido de citosina
 ADANE:encefalopatía aguda necrosante familiar//encefalopatía aguda necrosante recurrente
 ADC:adenilciclasa//adenocarcinoma
@@ -156,7 +156,7 @@ AIDS:acquired immunodeficiency síndrome//síndrome de inmunodeficiencia adquiri
 AIEF:encefalopatía aguda con convulsiones bifásicas y difusión reducida tardía
 AII:acromioiliaca izquierda, posición fetal
 AIMAH:hiperplasia suprarrenal macronodular acth-independiente//hiperplasia suprarrenal macronodular independiente de la hormona adrenocorticotropa
-AINE:antiinflamatorio no esteroideo//antiinflamatorio no esteroide//antinflamatorio no esteroide
+AINE:antiinflamatorio no esteroideo//antiinflamatorio no esteroide
 AINEs:antiinflamatorios no esteroideos
 AIP:pancreatitis autoinmune
 AIS:abbreviated injury scale//síndrome de insensibilidad a los andrógenos//síndrome de resistencia a los andrógenos
@@ -499,7 +499,7 @@ Bulky:masa
 Bx:biopsia
 By-pass:derivación, puente, cortocircuito
 ByD:blando y depresible
-C:ácido ascórbico, vitamina//canino//carbono//caloría grande//cirugía//complemento//consulta//culombio
+C:ácido ascórbico, vitamina//canino//carbono//caloría grande//cirugía//complemento//consulta//culombio//centígrado
 C-ALCL:linfoma cutáneo primario anaplásico de células grandes
 C-C:cabeza y cuello
 C/T:índice cardiotorácico
@@ -576,6 +576,11 @@ CDG1M:síndrome cdg  tipo 1m
 CDG1P:síndrome cdg tipo 1p
 CDG2H:síndrome cdg tipo 2h
 CDG2M:síndrome cdg tipo 2m
+CD117:cúmulo de diferenciación 117
+CD20:cúmulo de diferenciación 20
+CD30:cúmulo de diferenciación 30
+CD45:cúmulo de diferenciación 45
+CD34:cúmulo de diferenciación 34
 CDH:hernia diafragmática congénita
 CDI:carcinoma ductal infiltrante//diabetes insípida central
 CDM:categoría diagnóstica mayor
@@ -668,6 +673,7 @@ CJ:creutzfeldt-jakob
 CJD:creutzfeldt-jakob disease//enfermedad de creutzfeldt-jakob
 CJS:creutzfeldt-jakob syndrom//síndrome de creutzfeldt-jakob
 CK:creatin kinase//creatincinasa
+CK 7:citoqueratina 7
 CK-MB:creatin kinase mb fraction//creatincinasa fracción mb
 CL:caldwell-luc//cirugía laparoscópica//clearance//aclaramiento//colecistectomía laparoscópica//cuerpo lúteo//cloro
 CLAH:hiperplasia suprarrenal congénita lipoide por deficiencia de star//hiperplasia suprarrenal congénita lipoide por déficit de star
@@ -841,7 +847,7 @@ CX:arteria coronaria circunfleja//cerviz o cuello uterino//cirugía//cérvix o c
 CYC:cyclophosphamide//ciclofosfamida
 CYR:captación de yodo radiactivo
 CZ:carbimazol
-Ca:símbolo químico del calcio//contenido en sangre arterial
+Ca:calcio//contenido en sangre arterial
 Ca++:calcio iónico
 CaCU:cáncer de cervix uterino
 CaEp:carcinoma epidermoide
@@ -1058,13 +1064,13 @@ ECA:enzima conversora de la angiotensina
 ECC:extracorporeal circulation//circulación extracorpórea
 ECE-1:enzima 1 convertidora de endotelina
 ECE_-_1:enzima 1 convertidora de endotelina
-ECG:electrocardiograma//hvd
+ECG:electrocardiograma
 ECHO:enteric cytopathogenic human orphan viruses//virus huérfanos humanos entéricos citopatogénicos
 ECJ:enfermedad de creutzfeldt-jakob
 ECM:enfermedad con cambios mínimos//esternocleidomastoideo
 ECMO:extracorporeal membrane oxigenatión//oxigenación por membrana extracorpórea
 ECP:embarazo cronológicamente prolongado//enfermedad crónica del pulmón//enfermedad de las cadenas pesadas
-ECT:emission computed tomography//tomografía computarizada de emisión
+ECT:emission computed tomography//tomografía computerizada de emisión
 ECU:extensor cubital del carpo
 ECV:enfermedad cardiovascular//enfermedad cerebrovascular
 ECVA:enfermedad cardiovascular arterioesclerótica//enfermedad cerebrovascular arterioesclerótica
@@ -1131,7 +1137,7 @@ ELISA:enzyme-linked immunosorbent assay//análisis de inmunoabsorción ligada a 
 ELP:elp de aparición en adultos//esclerosis lateral primaria//esclerosis lateral primaria de aparición en adultos
 ELX:enfermedad ligada al cromosoma x
 EM:electromiograma//eritema multiforme//esclerosis múltiple//estancia media//estenosis mitral
-EMA:enfermedad mitroaórtica
+EMA:enfermedad mitroaórtica//epithelial membrane antigen
 EMAD:encefalitis diseminada aguda//encefalomielitis aguda diseminada
 EMD:edema macular difuso
 EMDA:encefalitis diseminada aguda//encefalomielitis aguda diseminada
@@ -1215,7 +1221,7 @@ F-6-P:6-fosfato de fructosa
 F1:falange proximal//primera generación filial
 F2:falange medial//segunda generación filial
 F3:falange distal
-FA:fase acelerada//fecha de alta//fibrilación auricular//foco aórtico//fontanela anterior//fosfatasa ácida//fosfatasa alcalina//faringoamigdalitis//fase arterial//fenilalanina//fenómeno adverso//feto arlequín//fibroadenoma//fiebre amarilla//flujo aórtico//fluorouracilo y doxorrubicina//flúter auricular//fotoaféresis//fracción de acortamiento//fractura abierta//frecuencia audible//fumador activo
+FA:fase acelerada//fosfatasa alcalina//fluorescein angiography//fecha de alta//fibrilación auricular//foco aórtico//fontanela anterior//fosfatasa ácida//fosfatasa alcalina//faringoamigdalitis//fase arterial//fenilalanina//fenómeno adverso//feto arlequín//fibroadenoma//fiebre amarilla//flujo aórtico//fluorouracilo y doxorrubicina//flúter auricular//fotoaféresis//fracción de acortamiento//fractura abierta//frecuencia audible//fumador activo
 FAA:faringoamigdalitis aguda//fármaco antiarrítmico//formol, ácido acético y alcohol//fracción de acortamiento del área
 FAAU:flujo ausente en la arteria umbilical
 FAB:french-american-british, cooperative group//factor activador de los linfocitos b//fluorouracilo, doxorrubicina y carmustina//fosfatasa alcalina biliar
@@ -1352,6 +1358,7 @@ FDR:fludarabina
 FDS:ficha de datos de seguridad//fondo de saco
 FDSD:fondo de saco de douglas
 FDT:final de tratamiento
+GGAT:guanine guanine adenine thymine
 FE:fluorouracilo y epirrubicina//fracción de expulsión o de eyección//factor de elongación//factor emocional//factor extrínseco//facultativo especialista//faringoesofágico//farmacoeconomía; farmacoeconómico//farmacopea española//farmacopea europea//fascitis eosinofílica//fecha de egreso//ferritina eritrocítica//fibrilación espontánea//fibroblasto embrionario//fijación externa//fijador externo//foco ectópico//fracción etiológica//fracción de excreción//hierro
 FEA:facultativo especialista de área//feniletilamina
 FEAP:federación española de asociaciones de psicoterapeutas
@@ -1820,7 +1827,7 @@ GGO:gammagrafía ósea
 GGP:gammagrafía pulmonar
 GGR:gammagrafía renal
 GGS:gammagrafía secuencial
-GGT:gammaglutamiltranspeptidasa//glutamil-transferasa//gammagrafía tiroidea
+GGT:gamma-glutamil transpeptidasa//glutamil-transferasa//gammagrafía tiroidea
 GGTP:glutamil-transpeptidasa
 GH:ganglio hiliar//gonadotropina humana//grasa en heces//somatotropina//growth hormone//hormona del crecimiento
 GHB:hidroxibutírico//hidroxibutirato
@@ -2126,7 +2133,7 @@ HBRI:hemibloqueo de la rama izquierda
 HBS:hipoacusia bilateral simétrica//hepatitis b surface//antígeno de superficie de la hepatitis b
 HBSL:hipomielinización con afectación del tronco cerebral y de la médula espinal y espasticidad de las piernas
 HBV:hipertrofia biventricular//virus de la hepatitis b
-HBc:hepatitis b core antigen//antígeno core del virus de la hepatitis b
+HBc:hepatitis b core antigen//antígeno core del virus de la hepatitis b//hemoglobina c
 HBcAg:hepatitis b core antigen//antígeno core del virus de la hepatitis b
 HBeAg:hepatitis b e antigen//antígeno e del virus de la hepatitis b
 HBs:hepatitis b surface//antígeno de superficie de la hepatitis b
@@ -2469,6 +2476,7 @@ HNN:hematemesis neonatal//hemorragia neonatal//hepatitis neonatal//herpes neonat
 HNO:hasta nueva orden
 HNP:hernia del núcleo pulposo//hospital nacional de parapléjicos
 HNPCC:cáncer colorrectal hereditario no polipósico//cáncer de colon hereditario no polipósico
+L1:primera vértebra lumbar
 HNPJ:hospital nacional de parapléjicos
 HNPP:microdeleción heterocigota
 HNR:hiperplasia nodular regenerativa
@@ -2624,8 +2632,8 @@ HTIC:hipertensión intracraneal
 HTII:hipertensión intracraneal idiopática
 HTL:hipertricosis lanuginosa//hipotálamo lateral
 HTLV:human t cell leukemia//lymphoma virus//virus de la leucemia//linfoma de células t humanas//human t cell leukemia
-HTLV-I:virus de la leucemia humana de células t, tipo 1
-HTLV-II:virus de la leucemia humana de células t, tipo 2
+HTLV-I:virus de la leucemia humana de células t, tipo 1// human t-cell lymphotrophic virus type-i
+HTLV-II:virus de la leucemia humana de células t, tipo 2// human t-cell lymphotrophic virus type-ii
 HTLV-V:virus linfotrópico de células t humano, tipo v
 HTLV_-_I:virus de la leucemia humana de células t, tipo 1
 HTLV_-_II:virus de la leucemia humana de células t, tipo 2
@@ -3001,7 +3009,6 @@ IHSC:ictiosis - hipotricosis - colangitis esclerosante
 IHSF:insuficiencia hepática subfulminante
 IHTU:infección hospitalaria del tracto urinario
 IHVU:infección hospitalaria de vías urinarias
-II:factor ii, protrombina//incontinencia imperiosa//independiente de la insulina//isquemia intestinal//nervio óptico, ii par craneal
 II-para:secundípara
 IIA:indice de incidencia de absentismo//infección intestinal aguda//infección intr(a)abdominal
 IIC:insuficiencia ístmica cervical//insulina en infusión continua//intervalo intercuartil//inyección intracardíaca//inyección intracitoplásmica
@@ -3351,6 +3358,10 @@ Ife:indice de hierro
 Ifo:ifosfamida
 IfoVP:ifosfamida y etopósido
 Ig:inmunoglobulina
+IgA:inmunoglobulina a
+IgG:inmunoglobulina g
+IgE:inmunoglobulina e
+IgM:inmunoglobulina m
 IgAR:inmunoglobulina antirrábica
 IgMs:inmunoglobulinas m//inmunoglobulina m secretora
 IgTET:inmunoglobulina antitetánica
@@ -3470,7 +3481,7 @@ KTR:kinesi(o)terapia respiratoria
 KTZ:ketoconazol//ketoconazol
 KW:keith-wagener
 KZ:ketoconazol
-L:lactancia//leucocito//leucemia//linfocito//lóbulo//lumbar//símbolo de litro//lúes//luético//lactobacillus//legionella//leishmania//leptospira//ligamento//listeria
+L:lactancia//leucocito//leucemia//linfocito//lóbulo//lumbar//litro//lúes//luético//lactobacillus//legionella//leishmania//leptospira//ligamento//listeria
 L+A:luz y acomodación
 L-2-HGA:acidemia l-2-hidroxiglutárica//aciduria l-2-hidroxiglutárica
 L-ASA:l-asparginasa
@@ -3586,7 +3597,7 @@ LDCPH:linfoma difuso de células pequeñas hendidas
 LDD:límite de detección
 LDDI:linfoma difuso con diferenciación intermedia
 LDE:lupus discoide eritematoso//lupus diseminado eritematoso
-LDH:lactatodeshidrogenasa//linfoma difuso histiocítico//lóbulo derecho del hígado//láctico deshidrogenasa//lactato deshidrogenasa
+LDH:linfoma difuso histiocítico//lóbulo derecho del hígado//láctico deshidrogenasa//lactato-deshidrogenasa
 LDI:linfoma de diferenciación intermedia//lipoproteína de densidad intermedia//lipoproteína de densidad intermedia
 LDL:low-density lipoprotein//lipoproteína de baja densidad
 LDM:leucodistrofia metacromática//linfoma difuso mixto//leucoencefalopatía metacromática
@@ -3653,7 +3664,7 @@ LGNH:linfoma gástrico no hodgkiniano
 LGP:linfoadenopatía generalizada persistente//linfoma gástrico primario
 LGS:ley general de sanidad
 LGSS:ley general de la seguridad social
-D1:primera vertebra dorsal
+D1:primera vértebra dorsal
 LGV:linfogranuloma venéreo
 LH:leucemia hipoplásica//leucocito humano//linfoma histiocítico//linfoma de hodgkin//lipasa hepática//lúes hereditaria//lutropina//luteinizing hormone//hormona luteinizante
 LHA:leucemia hipoplásica aguda//leucoencefalitis hemorrágica aguda
@@ -3731,6 +3742,7 @@ LLPD:linfoma linfocítico poco diferenciado
 LLT:ligadura laparoscópica de trompas//linfoma de linfocitos t
 LLTA:leucemia linfoma t del adulto
 LLV:llenado ventricular
+YAG:doped yttrium aluminium garnet
 LLVR:llenado ventricular rápido
 LM:lactancia materna//laparotomía media//leucemia del manto//leucemia mieloblástica//línea media//linfoma mixto//líquido meconial//lóbulo medio//larva migratoria//leche maternizada//leishmaniosis mucosa//leucemia megaloblástica//leucemia meníngea//leucemia mielógena//ley del medicamento//liberación mantenida//limitación de la movilidad//linfoma maligno//linguomesial//linfangioma//malformación linfática
 LMA:lesión medular aguda//leucemia mieloide aguda//leucemia mielógena aguda//leucemia megacariocítica aguda//leucemia monocítica aguda//línea media axilar//leucemia mieloblástica aguda//leucemia no linfoblástica aguda
@@ -4096,6 +4108,7 @@ MDM:menisco discoide(o) medial//metilendioximetanfetamina
 MDMA:3,4-metilendioximetanfetamina//3,4-metilendioximetanfetamina
 MDMT:metoxidimetiltriptamina
 MDNI:miocardiopatía dilatada no isquémica
+MDP:metilendifosfonato
 MDR:multi-drug resistant//resistente a múltiples fármacos//máxima dosis recomendada
 MDT:máxima dosis tolerable
 MDW:malformación de dandy-walker//miopatía distal de welander
@@ -5102,7 +5115,7 @@ OVU:oclusión de las vías urinarias
 Op:operación//operada//operado
 OyG:obstetricia y ginecología
 OyT:ortopedia y traumatología
-P:cisplatino//onda del electrocardiograma de la despolarización de la aurícula//percentil//post//prevalencia//proteína//pulso//símbolo químico del fósforo
+P:cisplatino//onda del electrocardiograma de la despolarización de la aurícula//percentil//post//prevalencia//proteína//pulso//fósforo
 P+A:percusión y auscultación//piel y anexos
 P+R:pulso y respiración
 P+V:piloroplastia y vagotomía
@@ -5221,7 +5234,7 @@ PCO2:presión parcial de co2
 PCOC:paciente consciente, orientado y colaborador
 PCP:peace pill o phencyclidine//presión capilar pulmonar//pericarditis constrictiva post-operatoria//pericarditis purulenta//poliartritis crónica primaria//peace pill o phencyclidine 
 PCPO:pericarditis constrictiva post-operatoria
-PCR:parada cardiorrespiratoria//polimerase chain reaction//reacción en cadena de la polimerasa//proteína c reactiva//pólipo colorrectal//pericarditis traumática//proteínas corporales totales//prótesis de cadera tota
+PCR:parada cardiorrespiratoria//polymerase chain reaction//reacción en cadena de la polimerasa//proteína c reactiva//pólipo colorrectal//pericarditis traumática//proteínas corporales totales//prótesis de cadera tota
 PCT:peso corporal total//plasmocitoma//porfiria cutánea tardía
 PCTE:porfiria cutánea tardía esclerodermiforme
 PCTF:porfiria cutánea tardía familiar
@@ -5701,7 +5714,7 @@ PTG:proteinograma//prueba de tolerancia a la glucosa
 PTGEV:prueba de tolerancia a la glucosa endovenosa
 PTGIV:prueba de tolerancia a la glucosa intravenosa
 PTGO:prueba de tolerancia a la glucosa oral
-PTH:parathyroid hormone//hormona paratiroidea o parathormona
+PTH:parathyroid hormone//paratohormona
 PTI:peso teórico ideal//prueba de tolerancia a la insulina//púrpura trombocitopénica idiopática//púrpura trombocitopénica inmunológica//púrpura trombocitopénica autoinmune//púrpura trombocitopénica inmune
 PTIC:prueba de tolerancia intravenosa a carbohidratos
 PTIG:prueba de tolerancia intravenosa a la glucosa
@@ -6245,6 +6258,7 @@ T-LGL:leucemia lgl de células t//leucemia linfocítica granular de células t g
 T-PLL:leucemia prolinfocítica de células t
 T3:triyodotironina
 T4:tiroxina
+CBMF-HGO:cirugía bucal y maxilofacial del hospital general del oeste doctor josé gregorio hernández
 angio-RMN:angioresonancia magnetica
 TA:temperatura ambiente//tensión arterial//tratamiento actual//traumatismo abdominal
 TAB:tableta//tifoidea, paratifoidea a y b, vacuna
@@ -6391,7 +6405,7 @@ TRV:tabique rectovaginal
 TS:taquicardia sinusal//taquicardia supraventricular//tricodisplasia espinulosa//tricodisplasia espinulosa asociada a virus
 TSA:troncos supraaórticos
 TSE:tendón supraespinoso
-TSH:thyroid-stimulating hormone
+TSH:hormona tiroestimulante
 TSP:taquicardia supraventricular paroxística//paraparesia espástica tropical//paraparesia espástica tropical/mielopatía asociada al htlv-1//paraparesia espástica tropical/mielopatía asociada al virus linfotrópico de células t humanas tipo 1//paraparesia espástica tropical/mielopatía asociada al virus linfotrópico de células t humanas tipo i
 TSS:síndrome del shock tóxico
 TSST-1:toxina del síndrome de shock tóxico-1
@@ -6427,7 +6441,8 @@ TXB:tromboxano b
 Tanato:raíz o prefijo griego que significa muerte
 Tbc:tuberculosis
 Tc:símbolo químico del tecnecio
-Tc99:tecnecio 99
+Tc99:tecnecio-99
+Tc99m:tecnecio-99m
 Th:símbolo químico del torio
 Ti:símbolo químico del titanio
 Tiamina:vitamina b1
@@ -6441,7 +6456,7 @@ TxH:trasplante hepático
 TxR:trasplante renal
 Tª:temperatura
 Tº:tratamiento
-U:unidad//uracilo//uranio//urología//útero
+U:unidad
 UA:uveítis aguda//urticaria alérgica//unidad arbitraria
 UACL:uriticaria alérgica de contacto por látex
 UADC:unidad de admisión y documentación clínica
@@ -6621,7 +6636,8 @@ VDF:volumen diastólico final o telediastólico
 VDRL:venereal disease research laboratory//prueba de laboratorio para la investigación de enfermedades venéreas
 VDRR II:raquitismo hereditario resistente a la vitamina d//raquitismo hipocalcémico resistente a la vitamina d//raquitismo resistente a la vitamina d tipo ii
 VE:vacuoextracción
-VEB:virus de epstein-barr
+i.v.:intravenoso
+VEB:virus de epstein barr
 VEC:vincristina, epirrubicina y ciclofosfamida//volumen extracelular
 VEF:volumen espiratorio forzado
 VEMS:volumen espiratorio máximo por segundo
@@ -6728,7 +6744,7 @@ VVC:vía venosa central//vulvovaginitis cíclica
 VVI:marcapasos de estimulación ventricular inhibida por sensibilización ventricular//volumen ventricular izquierdo
 VVIR:marcapasos de estimulación ventricular inhibida por sensibilización ventricular con respuesta de la frecuencia
 VVP:válvula ventrículoperitoneal//vía venosa periférica
-VVZ:virus varicela-zoster
+VVZ:virus varicela-zóster
 VWS:síndrome de van der woude
 VYE:vena yugular externa
 VYI:vena yugular interna
@@ -6837,8 +6853,9 @@ cLDL:cholesterol low-density lipoproteins//colesterol de las lipoproteínas de b
 ca++:calcio iónico
 cacu:cáncer de cervix uterino
 caep:carcinoma epidermoide
+D5:quinta vértebra dorsal
 cal:caloría//cirugía antirreflujo laparoscópica//colecistitis aguda litiásica
-cc:cabeza y cuello//centímetro cúbico//cabeza y cuello//cáncer de colon
+cc:cabeza y cuello//centimetro cúbico//cabeza y cuello//cáncer de colon
 cd:cuenta dedos
 cep:centro de extracción periférica//porfiria eritropoyética congénita
 cg:centigramo

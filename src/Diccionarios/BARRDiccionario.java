@@ -26,6 +26,14 @@ public class BARRDiccionario {
 		this.loadFromTSV();
 	}
 	
+	public HashSet<String> get(String key){
+		return this.diccionario.get(key);
+	}
+	
+	public void put(String key,HashSet<String>value) {
+		this.diccionario.put(key, value);
+	}
+	
 	private void loadFromTSV() {
 		File file=null;
 		Reader br;

@@ -19,58 +19,62 @@ import java_cup.runtime.*;
      	int auxColumna = 0;
 	String varAux="";
 	String posibleLF="";
-	Acronimo acronimo=new Acronimo();
+	Acronimo acronimo;
 	
 	//FormaLarga f=new FormaLarga();
 	
 	int offset=0;
-	
-	AcWithContext acWC=new AcWithContext();
 	//FormaLargaWithAc acWLfacWLf=new FormaLargaWithAc ();
 	
 %}
 Minuscula=[[\u00F1\u00E1\u00E9\u00ED\u00F3\u00FA\u00F6\u00FC]||[a-z]] 
 Mayuscula=[[A-Z]||[\u00D1\u00C1\u00C9\u00CD\u00D3\u00DA]]
-FinFrase=[\u002E\u003B\u002C\u003A]
+FinFrase=[\u002E\u003B\u002C\u003A\u002D\n]
 
-Frase=([0-9]*[\u0025]?|
+Frase=([0-9]+[\u0025]?|
 	([0-9]+|[0-9]+[\u002C][0-9]+)[\u002D\u002E]([0-9]+|[0-9]+[\u002C\u002E][0-9]+)|
 	(
-		[A]" "|
+		([A]|[aeou]|"El"|"La"|"Los"|"Las"|"En"|"Al"|"No"|"Se"|"Ni"|"Le"|"en"|"al"|"el"|"la"|"lo"|"le"|"de"|"no"|"se"|"ni"|"le"|"y"|"un"|"Un"|"si"|"Si"|"su"|"Su"|"Es")|
 		[\u002D]{Mayuscula}{Minuscula}+[\u003A\u002D]?|
 		{Mayuscula}{Minuscula}{Minuscula}+[\u003A\u002D]?|
-		[\u002D]?{Mayuscula}{Minuscula}+[\u003A\u002D]{Minuscula}+([\u003A\u002D]{Minuscula}+)*|
-		{Minuscula}+[\u003A\u002D]?|
-		[\u00B5\u039C]{Minuscula}[\u002F]{Minuscula}+
-	 )
+		{Minuscula}{Minuscula}{Minuscula}+	 
+	)
        )
 	(" "
-	(
-		[\u002D]?{Minuscula}+[\u003A\u002D]?|
-		{Minuscula}+[\u003A\u002D]?|
- 		{Minuscula}+([\u003A\u002D]{Minuscula}+)*|
+	(	[aeou]| ("en"|"al"|"el"|"la"|"lo"|"le"|"de"|"no"|"se"|"ni"|"le"|"y"|"un"|"si"|"su"|"es") |{Minuscula}{Minuscula}{Minuscula}+|
+		[\u002D]?{Minuscula}{Minuscula}{Minuscula}+[\u003A\u002D]?|		
+ 		{Minuscula}{Minuscula}+([\u003A\u002D]{Minuscula}{Minuscula}+)+|
+		{Mayuscula}{Minuscula}{Minuscula}+|
 		[0-9]+[\u0025]?|
-		([0-9]+|[0-9]+[\u002C][0-9]+)[\u002D\u002E]([0-9]+|[0-9]+[\u002C\u002E][0-9]+)|
-		[\u00B5\u039C]{Minuscula}[\u002F]{Minuscula}+|[0-9][\u002D]{Mayuscula}{Minuscula}+[\u002D]{Mayuscula}{Minuscula}+
+		[0-9]+[u002C][0-9]+|
+		([0-9]+|[0-9]+[\u002C][0-9]+)[\u002D\u002E]([0-9]+|[0-9]+[\u002C\u002E][0-9]+)		
 		)
-	)*|
-	{Mayuscula}{Minuscula}+(" "
-	(
-		[\u002D]?{Minuscula}+[\u003A\u002D]?|{Minuscula}+|
-		{Minuscula}+[\u003A\u002D]?|
- 		{Minuscula}+([\u003A\u002D]{Minuscula}+)*|
-		[0-9]+|
-		[0-9]+[\u0025]?|
-		([0-9]+|[0-9]+[\u002C][0-9]+)[\u002D\u002E]([0-9]+|[0-9]+[\u002C\u002E][0-9]+)|
-		[\u00B5\u039C]{Minuscula}[\u002F]{Minuscula}+
-		|[0-9][\u002D]{Mayuscula}{Minuscula}+[\u002D]{Mayuscula}{Minuscula}+
-		)
-	)+
+	)*
 
-Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |{Mayuscula}{Minuscula}{Mayuscula}| {Mayuscula}{Minuscula}([0-9]+{Minuscula})?
-|{Minuscula}{1,3}|{Mayuscula}{1,4}[\u002D]{Mayuscula}{1,4}|{Mayuscula}{1,3}[0-9]+(([\u002E]|" ")[0-9]+)?|
-[a-z]{1,4}[\u002D][A-Z]{2,4}| (([a-z]|[A-Z])"\."){1,5} | [0-9][\u002D][A-Z]{2,4} | [a-z]"\." |[A-Z]{1,4}[0-9]{1,3}|([A-Z][0-9])+ |([A-Z]"\.")*[A-Z]
-%state estado1,estado2,estado3
+Acronimo= {Mayuscula}{2,7}|
+			[[A-Z]--[I]]|
+			[A-Z]+[a-z]{1} |
+			[a-z]"\." |
+			([\u00c2\u00b5]|[\u00b5\u03BC\u0540])|
+			{Mayuscula}{1,2}" "[0-9]|
+			{Mayuscula}{Minuscula}|
+			{Mayuscula}?{Minuscula}[\u002D]("I")+|
+			({Mayuscula}[\u002E]{Mayuscula}[\u002E])+|
+			{Minuscula}[\u002E]({Minuscula}[\u002E])*|
+			[[[A-Z]||[\u00D1\u00C1\u00C9\u00CD\u00D3\u00DA]]--[UL]][\u002F][[[A-Z]||[\u00D1\u00C1\u00C9\u00CD\u00D3\u00DA]]--[L]]|
+			([\u00c2\u00b5]|[\u00b5\u03BC\u0540]){Mayuscula}+|
+			([\u00c2\u00b5]|[\u00b5\u03BC\u0540]){Minuscula}+({Mayuscula}+)?|
+			{Mayuscula}{Minuscula}{Mayuscula}|			
+			{Minuscula}{Minuscula}+(" ")?{Mayuscula}((" ")?{Minuscula}+)?|
+			{Mayuscula}{Minuscula}([0-9]+{Minuscula}|[0-9]+|[\u002E])? |
+			{Minuscula}{1,4}({Mayuscula}|{Mayuscula}{1,3}[0-9]|[0-9])?|
+			{Mayuscula}{Minuscula}+[\u002D]([0-9]+[\u002D]|{Mayuscula})?{Minuscula}+|
+			{Mayuscula}{1,4}[\u002D]({Mayuscula}{1,4}[0-9]+|{Mayuscula}{1,4}|[0-9]+|{Minuscula}+)|
+			{Mayuscula}{1,2}[0-9]+((([\u002E]|" ")[0-9]+)|{Mayuscula}{1,3})?|
+			(([a-z]|[A-Z])"\."){1,5} |
+			[0-9][\u002D][A-Z]{2,4} 
+					 
+%state estado1,estado2,estado3,estado4
 
 
 %%	
@@ -111,9 +115,7 @@ Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |{Mayuscula}{Minuscula}{Mayuscula}| {Mayusc
 	<YYINITIAL> [\u007D] {//Corchete izq } 
 				offset=offset+yytext().length();}
 	<YYINITIAL> [\u00BB] {//comillas latinas cierre
-				offset=offset+yytext().length();}
-	<YYINITIAL> [\u00B5\u03BC] {//Simbolo micro
-				offset=offset+yytext().length();}
+				offset=offset+yytext().length();}	
 	<YYINITIAL> [\u00AB] {//comillas latinas apertura
 				offset=offset+yytext().length();}
 	<YYINITIAL> [\u0027] {//comilla simple
@@ -146,32 +148,31 @@ Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |{Mayuscula}{Minuscula}{Mayuscula}| {Mayusc
 				offset=offset+yytext().length();}
 	<YYINITIAL> [\u002B] {//Sumatorio	
 				offset=offset+yytext().length();}
-	<YYINITIAL> {Frase}({FinFrase}|" ") {posibleLF=yytext();				
-				yybegin(estado1);
-				offset=offset+yytext().length();
-				
+	<YYINITIAL> {Frase}({FinFrase}|" "|[\u002f]) {posibleLF=yytext();				
+				offset=offset+posibleLF.length();
+				yybegin(estado1);				
 				return new Symbol(sym.frase,posibleLF);}
 	<YYINITIAL> {Acronimo} {
 				offset=offset+yytext().length();
-				return new Symbol(sym.acWithContext,yyline +1, yycolumn +1,new AcWithContext(new Acronimo(offset-yytext().length(),offset,yytext()),posibleLF));}
-	<YYINITIAL> [0-9] {//NUMERO
-				offset=offset+yytext().length();}
-				
-	<YYINITIAL> [\u002D] {//barra -
-				offset=offset+yytext().length();}
-	
-	<YYINITIAL> [\u003A]  {//Simbolo dos puntos
-				offset=offset+yytext().length();}
-	
+				acronimo= new Acronimo(offset-yytext().length(),offset,yytext());
+				yybegin(estado4);}
+	<YYINITIAL> "¿"|"?" {offset=offset+yytext().length();}
 	<YYINITIAL> [\u002C] {//Coma
 				offset=offset+yytext().length();}
-	
-	<YYINITIAL> [\t]| [\n] | [\r]| "\r\n" {acronimo=new Acronimo(); offset=offset+yytext().length(); posibleLF="";}	
-	<YYINITIAL> [\u002F] {//Barra / 
-			offset=offset+yytext().length();}
-	 <YYINITIAL> . {System.err.println("Error lexico: caracter no reconocido <" + yytext() + "> en la linea " + (yyline+1) 
-	+ " y columna " + (yycolumn +1));
-	offset=offset+yytext().length();}
+	<YYINITIAL> [\u002E] {//Punto
+				offset=offset+yytext().length();}
+	<YYINITIAL> [0-9] {//NUMERO
+				offset=offset+yytext().length();}
+	<YYINITIAL> " "|[\u0020] {offset=offset+yytext().length();}				
+	<YYINITIAL> [\u002D] {//barra -
+				offset=offset+yytext().length();}
+	<YYINITIAL> {FinFrase} {offset=offset+yytext().length();}
+	<YYINITIAL> [\u0025]  {//porcentaje
+				offset=offset+yytext().length();}
+	<YYINITIAL>	[\u005c][\u0072][\u005c][\u006e] | [\u005c][\u006e] {offset=offset+yytext().length();}
+	<YYINITIAL> [\t]| [\n] | [\r]| "\r\n" {offset=offset+yytext().length(); posibleLF="";}	
+	<YYINITIAL> . {offset=offset+yytext().length();System.err.println("Error lexico: caracter no reconocido <" + yytext() + "> en la linea " + (yyline+1) 
+	+ " y columna " + (yycolumn +1));}
 		
 
 <estado1> "(" {offset=offset+yytext().length();yybegin(estado2);
@@ -183,10 +184,10 @@ Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |{Mayuscula}{Minuscula}{Mayuscula}| {Mayusc
 			}
 			yybegin(YYINITIAL);}
 			
-<estado2> {Frase}({FinFrase}{Frase})* {posibleLF=yytext(); offset=offset+yytext().length();return new Symbol(sym.frase,posibleLF);}
+<estado2> {Frase}({FinFrase}{Frase})* {posibleLF=yytext(); offset=offset+posibleLF.length();return new Symbol(sym.frase,posibleLF);}
 <estado2> {Acronimo} {
-			acronimo= new Acronimo(offset,offset+yytext().length(),yytext());
 			offset=offset+yytext().length();
+			acronimo= new Acronimo(offset-yytext().length(),offset,yytext());			
 			yybegin(estado3);
 			}
 
@@ -195,14 +196,23 @@ Acronimo= [A-Z]{1,5}| [A-Z]+[a-z]{1} |{Mayuscula}{Minuscula}{Mayuscula}| {Mayusc
 			}
 			yybegin(YYINITIAL);}
 
-<estado3> ")" {offset=offset+yytext().length();yybegin(YYINITIAL);
-		
-		//Cuidado si le paso el objeto en el sintactico lo usa como puntero y solo se guarda la ultima ocurrencia. Por ello new Object
-		return new Symbol(sym.acWithContext,yyline +1, yycolumn +1,new AcWithContext(new Acronimo(acronimo.getStartOffset(),acronimo.getEndOffset(),acronimo.getAcronimo()),posibleLF));
-		}	
+<estado3> ")" {offset=offset+yytext().length();
+				yybegin(YYINITIAL);		
+				//Cuidado si le paso el objeto en el sintactico lo usa como puntero y solo se guarda la ultima ocurrencia. Por ello new Object
+				return new Symbol(sym.acWithContext,yyline +1, yycolumn +1,new AcWithContext(new Acronimo(acronimo.getStartOffset(),acronimo.getEndOffset(),acronimo.getAcronimo()),posibleLF));
+			}	
 <estado3> [^)] {if(yytext()!=null){
 			yypushback(yytext().length());
 			}
 			yybegin(YYINITIAL);}
 			
-<<EOF>> {return new Symbol(sym.EOF);}
+<estado4> ({FinFrase}|" "|[\u002f]|")") {
+			offset=offset+yytext().length();
+			yybegin(YYINITIAL);
+			return new Symbol(sym.acWithContext,yyline +1, yycolumn +1,new AcWithContext(new Acronimo(acronimo.getStartOffset(),acronimo.getEndOffset(),acronimo.getAcronimo()),posibleLF));}
+<estado4> [^] {	if(yytext()!=null){
+					yypushback(yytext().length());
+				}
+				yybegin(YYINITIAL);}
+			
+<<EOF>> {offset=offset+yytext().length(); return new Symbol(sym.EOF);}

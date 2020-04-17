@@ -14,10 +14,8 @@ public class FormaLargaWithAc {
 		this.formaLarga=lf;
 	}
 	
-	public void clean() {
-		this.acronimo=new Acronimo();
-		this.formaLarga=new FormaLarga();
-	}
+	public void clean() {}
+		
 	public FormaLarga getFormaLarga() {
 		return formaLarga;
 	}

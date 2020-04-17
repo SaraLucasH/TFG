@@ -25,7 +25,7 @@ public class SEDOMDiccionario {
 	/*
 	 * Carga el contenido del fichero txt, en caso de estar vacio manda un -1
 	 */
-	private int load() {
+	private void load() {
 		
 		File fr = null;
 		Reader reader;
@@ -55,7 +55,6 @@ public class SEDOMDiccionario {
 			
 		}catch(Exception e) {
 			e.printStackTrace();
-			return -1;
 		}finally {			
 			try {
 				if (null != br) {
@@ -72,13 +71,14 @@ public class SEDOMDiccionario {
 			}
 			System.out.println();
 		}*/
-		return 0;
-	}
-	public static void main(String[]args) {
-		SEDOMDiccionario s= new SEDOMDiccionario();	
+		
 	}
 
-	public HashMap<String, HashSet<String>> getDiccionario() {
-		return this.diccionario;
+	public HashSet<String> get(String key){
+		return this.diccionario.get(key);
+	}
+
+	public void put(String key,HashSet<String>value) {
+		this.diccionario.put(key, value);
 	}
 }

@@ -11,6 +11,7 @@ kgs;kilogramos
 gr;gramo
 grs;gramos
 l;litro
+L;litro
 lt;litro
 mm;milímetro
 cm;centímetro
@@ -20,7 +21,9 @@ cc;centrímetro cúbico
 ug;microgramo
 ng;nanogramo
 dl;decilitro
+dL;decilitro
 h;hora
+h.;hora
 min;minuto
 sg;segundo
 c;centígrado
@@ -29,7 +32,8 @@ lpm;latidos por minuto
 rpm;respiraciones por minuto
 mm3;milímetro cúbico
 pg;picogramo
-µl;microlitro;
+µL;microlitro
+µl;microlitro
 ul;microlitro
 m2;metro cuadrado
 d;día

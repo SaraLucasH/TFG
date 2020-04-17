@@ -25,14 +25,14 @@ public class parser extends java_cup.runtime.lr_parser {
 
 //** Default constructor. */
 @Deprecated
-public parser(String nombreFicheroEntrada,WordVectors wvect) {super(); this.nombreFicheroEntrada=nombreFicheroEntrada;this.resultado= new Resultado(nombreFicheroEntrada,wvect);}
+public parser(String nombreFicheroEntrada,WordVectors wvect) {super(); this.nombreFicheroEntrada=nombreFicheroEntrada;this.resultado= new DesambiguadorAcronimos(nombreFicheroEntrada,wvect);}
 
 /** Constructor which sets the default scanner. */
 @Deprecated
-public parser(java_cup.runtime.Scanner s,String nombreFicheroEntrada,WordVectors wvect) {super(s);this.nombreFicheroEntrada=nombreFicheroEntrada;this.resultado= new Resultado(nombreFicheroEntrada,wvect);}
+public parser(java_cup.runtime.Scanner s,String nombreFicheroEntrada,WordVectors wvect) {super(s);this.nombreFicheroEntrada=nombreFicheroEntrada;this.resultado= new DesambiguadorAcronimos(nombreFicheroEntrada,wvect);}
 
 /** Constructor which sets the default scanner. */
-public parser(java_cup.runtime.Scanner s, java_cup.runtime.SymbolFactory sf,String nombreFicheroEntrada,WordVectors wvect) {super(s,sf);this.nombreFicheroEntrada=nombreFicheroEntrada;this.resultado= new Resultado(nombreFicheroEntrada,wvect);}
+public parser(java_cup.runtime.Scanner s, java_cup.runtime.SymbolFactory sf,String nombreFicheroEntrada,WordVectors wvect) {super(s,sf);this.nombreFicheroEntrada=nombreFicheroEntrada;this.resultado= new DesambiguadorAcronimos(nombreFicheroEntrada,wvect);}
 
   /** Production table. */
   protected static final short _production_table[][] = 
@@ -104,7 +104,7 @@ public parser(java_cup.runtime.Scanner s, java_cup.runtime.SymbolFactory sf,Stri
 
 
 String nombreFicheroEntrada="";
-Resultado resultado;
+DesambiguadorAcronimos resultado;
 
 public void syntax_error (Symbol s){
 	System.err.println("Error de sintaxis (lexema <" + 	s.value.toString() + ">) en la linea " + s.left + " 	y en la columna " + s.right);

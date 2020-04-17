@@ -6,7 +6,11 @@ public class FormaLarga {
 	private int endOffset;
 	private boolean nested;
 	
-	public FormaLarga() {		
+	public FormaLarga(String lf, int startOffset, int endOffset) {
+		this.lf = lf;
+		this.startOffset = startOffset;
+		this.endOffset = endOffset;
+		this.nested=false;
 	}
 
 	public boolean isNested() {
@@ -16,15 +20,7 @@ public class FormaLarga {
 	public void setNested(boolean nested) {
 		this.nested = nested;
 	}
-
-	public FormaLarga(String lf, int startOffset, int endOffset) {
-		super();
-		this.lf = lf;
-		this.startOffset = startOffset;
-		this.endOffset = endOffset;
-		this.nested=false;
-	}
-
+	
 	public String getLf() {
 		return lf;
 	}
@@ -37,16 +33,8 @@ public class FormaLarga {
 		return startOffset;
 	}
 
-	public void setStartOffset(int startOffset) {
-		this.startOffset = startOffset;
-	}
-
 	public int getEndOffset() {
 		return endOffset;
-	}
-
-	public void setEndOffset(int endOffset) {
-		this.endOffset = endOffset;
 	}
 	
 	public static int getStart(FormaLarga lf,String checked) {
@@ -67,7 +55,4 @@ public class FormaLarga {
 		return lf.getEndOffset();
 	}
 	
-	public static void main(String[]args) {
-		System.out.println(getEnd(new FormaLarga("con exteriorización cutánea que obligó al inicio de nutrición parenteral",401,475),"nutrición parenteral"));
-	}
 }

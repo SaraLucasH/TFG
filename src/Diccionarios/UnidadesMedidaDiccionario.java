@@ -17,8 +17,12 @@ public class UnidadesMedidaDiccionario {
 		this.load();
 	}
 
-	public HashMap<String, HashSet<String>> getDiccionario() {
-		return this.diccionario;
+	public void put(String key,HashSet<String>value) {
+		this.diccionario.put(key, value);
+	}
+	
+	public HashSet<String> get(String key){
+		return this.diccionario.get(key);
 	}
 	
 	private void load() {

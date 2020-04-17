@@ -22,7 +22,7 @@ import org.deeplearning4j.models.embeddings.wordvectors.WordVectors;
 public class Analizador {
 	
 	private static WordVectors loadEmbeddings() {
-		return WordVectorSerializer.loadStaticModel(new File("C:\\Users\\saral\\Documents\\tfg\\Embeddings_2019-01-01\\Embeddings"
+		return WordVectorSerializer.loadStaticModel(new File(".\\Herramientas\\Embeddings_2019-01-01\\Embeddings"
     			+ "\\Embeddings_ES\\Scielo\\50\\W2V_scielo_w10_c5_50_15epoch.txt"));
 	}
 	
@@ -32,12 +32,13 @@ public class Analizador {
 		for (int i = 0; i < argv.length; i++) {
 			AnalizadorLexico lexico = null;
 			try {
-				File file = new File("C:\\Users\\saral\\Documents\\tfg\\Evaluation\\training\\txt\\" + argv[i] + ".txt");
-				System.out.println(argv[i]);
+				File file = new File(argv[i]);
+				String[] archivo=argv[i].split("/");
+				String id=archivo[archivo.length-1].split(".")[0];
 				Reader br = new InputStreamReader(new FileInputStream(file), charset);
 				BufferedReader buffer = new BufferedReader(br);
 				lexico = new AnalizadorLexico(br);				
-				parser sintactico = new parser(lexico, argv[i], wvect);
+				parser sintactico = new parser(lexico,id, wvect);
 				sintactico.parse();
 				br.close();
 				buffer.close();

@@ -1,44 +1,3 @@
-A: Abdomen - Aborto - Aguas (meconiales) - Analítica - Anestesia - Anexo
-- Antecedentes - Años - Aurícula.
-A-: Prefijo negativo.
-A00: Marcapasos con estimulación auricular asincrónica.
-a. Ce.: Antes de la cena.
-a. Co.: Antes de la comida.
-a. De.: Antes del desayuno.
-A. Gral.: Analítica general - Anestesia
-general.
-a. m.: Ante meridiem (por la mañana).
-AA: Abdomen agudo // Alcohólicos
-anónimos - Amenaza de aborto -
-Aminoácido - Anemia aplásica -
-Aorta abdominal - Aorta ascendente - Apendicitis aguda.
-AAA: Aneurisma de aorta abdominal.
-AAD: Arco aórtico derecho.
-AAF: Aspiración con aguja fina.
-AAI: Apéndice auricular izquierdo -
-Anticuerpo antiinsulina - Marcapasos con estimulación auricular inhibida a demanda.
-AAINE: Analgésicos y antiinflamatorios no esteroideos.
-AAIR: Marcapasos con estimulación
-auricular inhibida a demanda con respuesta de frecuencia.
-AAN: Anticuerpos antinucleares.
-AAP: Amputación abdominoperineal.
-
-AAS: Ácido acetilsalicílico - Anemia
-aplásica severa.
-AAT: Alfa-1-antitripsina - Anticuerpo
-antitiroglobulina.
-AB: Abdomen - Adriamicina y bleomicina, quimioterapia - Antibiótico -
-Asma bronquial.
-Ab: Antibody (anticuerpo).
-Ab.: Ablación - Aborto.
-Ab-: Prefijo que significa de o desde.
-ABC: Actividades básicas cotidianas.
-ABCD: Adriamicina, bleomicina,
-CCNU (lomustina) y dacarbacina,
-quimioterapia.
-ABCP: Adriamicina, bleomicina,
-CCNU (lomustina) y metilprednisolona, quimioterapia.
-ABD.: Abdomen - Abducción.
 Abd. Bl.: Abdomen blando.
 ABDI: Abdomen blando, depresible e
 indoloro.
@@ -47,21 +6,11 @@ dacarbacina y vinblastina, quimioterapia.
 ABE: Adriamicina, bleomicina y etopósido, quimioterapia.
 ABI: Ankle/brachial pressure index (Índice de presión brazo/tobillo).
 ABO: Sistema de grupos sanguíneos
-ABO.
-11
-
-Aborto
-ACFA: Arritmia completa por fibrilación auricular. Se codifica fibrilación
-auricular.
-ACFV: Adriamicina, ciclofosfamida,
-fluorouracilo y vincristina, quimioterapia.
-ACG: Adjusted clinical groups (es un sistema de clasificación de pacientes
-ambulatorios) - Ambulatory care groups
-(es un sistema de clasificación de
-pacientes ambulatorios) // Angiocardiografía - Arteritis de células gigantes.
-ACI: Arteria carótida interna - Arteria
-carótida izquierda - Arteria coronaria
-izquierda.
+ABO.:Aborto
+ACFA: Arritmia completa por fibrilación auricular. Se codifica fibrilación auricular.
+ACFV: Adriamicina, ciclofosfamida,fluorouracilo y vincristina, quimioterapia.
+ACG: Adjusted clinical groups (es un sistema de clasificación de pacientes ambulatorios)//Ambulatory care groups (es un sistema de clasificación de pacientes ambulatorios) // Angiocardiografía//Arteritis de células gigantes.
+ACI: Arteria carótida interna//Arteria carótida izquierda//Arteria coronaria izquierda.
 ACID: Arteria carótida interna derecha.
 Ácido ascórbico: Vitamina C.
 ACII: Arteria carótida interna izquierda.
@@ -72,9 +21,9 @@ ACM: Arteria cerebral media.
 ACMF: Adriamicina, ciclofosfamida,
 metotrexato y ácido folínico, quimioterapia.
 AcMo: Anticuerpo monoclonal.
-ACO: Acetilcolina - Anticoagulación -
+ACO: Acetilcolina//Anticoagulación -
 Anticoagulantes orales.
-ACP: Arteria cerebral posterior - Auscultación cardiopulmonar.
+ACP: Arteria cerebral posterior//Auscultación cardiopulmonar.
 AC-P: Auscultación cardiopulmonar.
 ACR: Auscultación cardiorrespiratoria.
 Acro-: Prefijo que indica relación con
@@ -97,17 +46,17 @@ del embarazo con retención del feto
 muerto.
 ABS: Absceso.
 ABT: Antibiótico.
-ABV: Adriamicina, bleomicina y vinblastina, quimioterapia - Adriamicina, bleomicina y vincristina, quimioterapia.
+ABV: Adriamicina, bleomicina y vinblastina, quimioterapia//Adriamicina, bleomicina y vincristina, quimioterapia.
 ABVD: Actividades básicas de la vida
-diaria - Adriamicina, bleomicina, vinblastina y dacarbacina, quimioterapia.
+diaria//Adriamicina, bleomicina, vinblastina y dacarbacina, quimioterapia.
 ABVP: Adriamicina, bleomicina, vinblastina y prednisona, quimioterapia.
-AC: Adenocarcinoma - Anticonceptivo - Arabinósido de citosina - Arteria carótida - Arteria coronaria -
-Arteria (coronaria) circunfleja - Auscultación cardiaca.
+AC: Adenocarcinoma//Anticonceptivo//Arabinósido de citosina//Arteria carótida//Arteria coronaria -
+Arteria (coronaria) circunfleja//Auscultación cardiaca.
 Ac: Anticuerpo.
 ∅: Auscultación cardiaca normal.
-AC∅
+
 ACA: Anticuerpos anticardiolipina.
-ACD: Arteria carótida derecha - Arteria coronaria derecha.
+ACD: Arteria carótida derecha//Arteria coronaria derecha.
 ACE: Antígeno carcinoembrionario -
 Arteria carótida externa.
 -aceae: Sufijo usado en bacteriología
@@ -118,23 +67,23 @@ con un rayo o una radiación.
 ACTP: Angioplastia coronaria transluminal percutánea.
 Acu-: Prefijo que indica relación con las
 agujas.
-ACV: Accidente cardiovascular - Accidente cerebrovascular - Angiología y cirugía vascular (Servicio de).
+ACV: Accidente cardiovascular//Accidente cerebrovascular//Angiología y cirugía vascular (Servicio de).
 ACVA: Accidente cerebrovascular agudo.
 ACVD: Actividades de la vida diaria.
 ACVI: Accidente cerebrovascular
 isquémico.
 ACxFA: Arritmia completa por fibrilación auricular. Se codifica fibrilación
 auricular.
-AD: Aparato digestivo - Aurícula derecha - Axila derecha.
+AD: Aparato digestivo//Aurícula derecha//Axila derecha.
 Ad-: Prefijo que significa a o hacia.
 Ad lib: A voluntad, sin límite.
 Ad libitum: A voluntad, sin límite.
 ADA: Arteria (coronaria) descendente
-anterior - Adenosindesaminasa
+anterior//Adenosindesaminasa
 (prueba para el diagnóstico de tuberculosis).
 ADAC: Altas dosis de arabinósido de
 citosina.
-ADC: Adenilciclasa - Adenocarcinoma.
+ADC: Adenilciclasa//Adenocarcinoma.
 ADCC: Antibody-dependent cell-mediated
 cytotoxicity (Citotoxicidad mediada por
 células anticuerpodependiente).
@@ -158,10 +107,10 @@ ADO: Antidiabético oral.
 ADOC: Adriamicina, cisplatino, Oncovin (vincristina) y ciclofosfamida, quimioterapia.
 ADOs: Antidiabéticos orales. Se debe
 escribir sin s final aunque sea en plural.
-ADP: Adenopatía - Adenosine diphosphate (Difosfato de adenosina) - Arteria
+ADP: Adenopatía//Adenosine diphosphate (Difosfato de adenosina)//Arteria
 (coronaria) descendente posterior.
-ADQ: Adquirido - Alta dosis de quimioterapia.
-ADR: Adrenalina - Adriamicina.
+ADQ: Adquirido//Alta dosis de quimioterapia.
+ADR: Adrenalina//Adriamicina.
 Adren(o)-: Prefijo que indica relación
 con las glándulas suprarrenales.
 ADT: Antidepresivos tricíclicos.
@@ -176,9 +125,9 @@ AEP: Appropriateness Evaluatión Protocol
 hospitalarios).
 Aero-: Prefijo que indica relación con
 aire o gas.
-AF: Ácido fólico - Anemia de Fanconi
-- Antecedentes familiares - Arteria
-femoral - Ataxia de Friedreich.
+AF: Ácido fólico//Anemia de Fanconi
+- Antecedentes familiares//Arteria
+femoral//Ataxia de Friedreich.
 13
 
 Afaquia
@@ -187,13 +136,13 @@ AHG: Antihemophilic globulin (Globulina
 antihemofílica o Factor VIII de la
 coagulación).
 AHO: Anticoncepción oral hormonal.
-AI: Adriamicina e ifosfamida, quimioterapia - Anexectomía izquierda -
-Angina inestable - Aurícula izquierda
+AI: Adriamicina e ifosfamida, quimioterapia//Anexectomía izquierda -
+Angina inestable//Aurícula izquierda
 - Axila izquierda.
 AICA: Anterior inferior cerebellar artery
 (Arteria cerebelosa anteroinferior).
 AID: Acromioiliaca derecha, posición
-fetal - Adriamicina, ifosfamida y
+fetal//Adriamicina, ifosfamida y
 dacarbacina, quimioterapia
 AIDS: Acquired immunodeficiency syndrome
 (Síndrome de inmunodeficiencia
@@ -210,19 +159,19 @@ AITES: Ataques isquémicos transitorios (se debe escribir AIT aunque sea
 en plural).
 AJ: Autorización judicial.
 AK: Adenosine kinase (Adenosincinasa).
-AL: Ácido linoleico - Adriamicina y
-lomustina, quimioterapia - Amiloidosis primaria - Anestesia local - Antecedentes laborales - Anticoagulante
+AL: Ácido linoleico//Adriamicina y
+lomustina, quimioterapia//Amiloidosis primaria//Anestesia local//Antecedentes laborales//Anticoagulante
 lúpico.
 Afaquia: Ausencia de cristalino. Puede
 ser congénita o postraumática, pero
 generalmente es postoperatoria tras
 extirpación de una catarata.
 AFCF: Alteración de la frecuencia cardiaca fetal.
-AFP: Adriamicina, fluorouracilo y cisplatino, quimioterapia - Alfafetoproteína - Arteria femoral profunda.
+AFP: Adriamicina, fluorouracilo y cisplatino, quimioterapia//Alfafetoproteína//Arteria femoral profunda.
 AFS: Arteria femoral superficial.
-AG: Ácidos grasos - Adenocarcinoma
-gástrico - Anestesia general.
-Ag: Antígeno - Símbolo de la plata.
+AG: Ácidos grasos//Adenocarcinoma
+gástrico//Anestesia general.
+Ag: Antígeno//Símbolo de la plata.
 Ag TABM: Aglutinaciones typhi, paratyphi A y B y brucella melitensis.
 AGCC: Ácidos grasos de cadena corta.
 AGCL: Ácidos grasos de cadena larga.
@@ -235,12 +184,12 @@ obstétricos.
 -agogo: Sufijo que significa que conduce, provoca o induce.
 AGS: Ácidos grasos saturados.
 AGT: Abnormal glucose tolerance (Tolerancia
-anormal a la glucosa) - Amnesia global
-transitoria - Angiotensinógeno.
-AH: Ácido hialurónico - Analítica
-habitual - Anemia hemolítica - Arteria hepática - Asa de Henle.
+anormal a la glucosa)//Amnesia global
+transitoria//Angiotensinógeno.
+AH: Ácido hialurónico//Analítica
+habitual//Anemia hemolítica//Arteria hepática//Asa de Henle.
 AHA: American Heart Association (Asociación Americana del Corazón) -
-Anemia hemolítica adquirida - Anemia hemolítica aguda - Anemia
+Anemia hemolítica adquirida//Anemia hemolítica aguda//Anemia
 hemolítica autoinmune.
 AHAI: Anemia hemolítica autoinmune.
 AHC: Anemia hemolítica crónica.
@@ -248,20 +197,20 @@ AME: Atrofia muscular espinal.
 Amenaza de aborto: Es una hemorragia uterina con o sin contracciones
 uterinas en embarazada de menos de
 22 semanas.
-AMF: Adriamicina, metotrexato y ácido folínico, quimioterapia - Ángulo
+AMF: Adriamicina, metotrexato y ácido folínico, quimioterapia//Ángulo
 de máxima flexión.
 AMH: Antimüllerian hormone (Hormona
 antimülleriana o antidesarrollo del
 conducto de Müller).
 AMI: Acute myocardial infarction (Infarto
-agudo de miocardio) - Arteria mamaria interna - Arteria mesentérica inferior.
+agudo de miocardio)//Arteria mamaria interna//Arteria mesentérica inferior.
 Amil(o)-: Prefijo que indica relación
 con el almidón.
-AMO: Amoxicilina - Antecedentes
-médicos obstétricos - Aspirado de
+AMO: Amoxicilina//Antecedentes
+médicos obstétricos//Aspirado de
 médula ósea.
 Amox: Amoxicilina.
-AMP: Adenosine monophosphate (Monofosfato de adenosina) - Ampicilina.
+AMP: Adenosine monophosphate (Monofosfato de adenosina)//Ampicilina.
 Amp: Amperio.
 AMPc: Adenosine monophosphate cyclic
 (Monofosfato de adenosina cíclico) -
@@ -300,9 +249,9 @@ TGP).
 Alumbramiento: Es la expulsión de la
 placenta y membranas y la contracción del útero.
 AM: Adriamicina y melfalán o metotrexato o mitomicina C, quimioterapia -
-Antecedentes médicos - Anticuerpos
-monoclonales - Aplasia medular -
-Aspirado medular - Astigmatismo.
+Antecedentes médicos//Anticuerpos
+monoclonales//Aplasia medular -
+Aspirado medular//Astigmatismo.
 AMA: Antimitochondrial antibodies (Anticuerpos antimitocondriales).
 AMB: Ambulatorio.
 Ambul-: Prefijo que indica relación con
@@ -323,7 +272,7 @@ Anexect.: Anexectomía.
 Anexectomía: Extirpación de los anexos uterinos (ovario, trompa de Falopio y ligamentos uterinos). Puede ser
 de un solo lado (unilateral) o de ambos
 (bilateral o doble anexectomía).
-ANG: Aspiración nasogástrica - Aspirado nasogástrico.
+ANG: Aspiración nasogástrica//Aspirado nasogástrico.
 Angi(o)-: Prefijo que indica relación
 con un vaso generalmente sanguíneo.
 Angioplastia Coronaria Transluminal Percutánea: Dilatación de una
@@ -333,16 +282,16 @@ zona estenótica a través de una punción de la piel en la sala de hemodinámic
 ANL: Accidente no laboral.
 ANR: Anestesia y reanimación (Servicio de).
 Anr.: Anormal.
-Ant.: Antecedentes - Anterior.
+Ant.: Antecedentes//Anterior.
 Antec.: Antecedentes.
 Anti-HBs: Anticuerpo contra el antígeno de superficie del virus de la hepatitis B.
 Anti-VHC: Anticuerpos contra el virus
 de la hepatitis C.
 Antrop-: Prefijo que indica relación con
-AO: Albinismo ocular - Alimentación
-oral - Ambos ojos - Análisis de orina
-- Anovulatorios - Anticoagulantes
-orales - Anticonceptivo oral - Antidiabéticos orales - Aorta - Arterioesclerosis obliterante - Asociación de
+AO: Albinismo ocular//Alimentación
+oral//Ambos ojos//Análisis de orina
+- Anovulatorios//Anticoagulantes
+orales//Anticonceptivo oral//Antidiabéticos orales//Aorta//Arterioesclerosis obliterante//Asociación de
 osteosíntesis (técnica de la).
 Ao: Aorta.
 AO2: Contenido arterial de Oxígeno.
@@ -353,9 +302,9 @@ AoD: Aorta descendente.
 AOU: Área de observación de urgencias.
 AOXN: Albinismo ocular (ligado al
 cromosoma) X tipo Nettleship.
-AP: Adriamicina y cisplatino, quimioterapia - Anatomía patológica - Antecedentes patológicos - Antecedentes
-personales - Anteroposterior - Arteria pulmonar - Asistencia primaria -
-Atresia pulmonar - Auscultación pulmonar - Auscultación y percusión.
+AP: Adriamicina y cisplatino, quimioterapia//Anatomía patológica//Antecedentes patológicos//Antecedentes
+personales//Anteroposterior//Arteria pulmonar//Asistencia primaria -
+Atresia pulmonar//Auscultación pulmonar//Auscultación y percusión.
 APA: Anatomía patológica (Servicio
 de).
 APACHE: Acute phisiology and cronic
@@ -379,33 +328,33 @@ APKD: Adult-onset polycystic kidney disease
 adulto).
 APLV: Alergia a las proteínas de la
 leche de vaca.
-APO: Adriamicina, prednisona y Oncovin, quimioterapia - Antígeno pancreático oncofetal.
+APO: Adriamicina, prednisona y Oncovin, quimioterapia//Antígeno pancreático oncofetal.
 Apo: Apolipoproteína.
 Apo A: Apolipoproteína A.
 Apo B: Apolipoproteína B.
 Apo C: Apolipoproteína C.
 Apo D: Apolipoproteína D. Actualmente se denomina Apo AIII.
 Apo E: Apolipoproteína E.
-APP: A petición propia - Amenaza de
-parto prematuro - Antecedentes personales patológicos.
+APP: A petición propia//Amenaza de
+parto prematuro//Antecedentes personales patológicos.
 APR-DRG (o APR-DRGs): All Patient
 Refined Diagnosis Related Groups. Ver
 GRD-APR.
 Aprox.: Aproximadamente.
 APS: Ambos párpados superiores.
 APSAC: Anisoylated plasminogen streptokinase activator complex (Complejo activador de estreptoquinasa y plasminógeno acilado o anistreplasa).
-APSI: Adolescentes psiquiátricos (Unidad de) - Atresia pulmonar con septo
+APSI: Adolescentes psiquiátricos (Unidad de)//Atresia pulmonar con septo
 íntegro.
 APT: Alimentación parenteral total -
-Amnesia postraumática - Angioplastia percutánea transluminal.
+Amnesia postraumática//Angioplastia percutánea transluminal.
 aPTT: Activated partial thromboplastin
 time (Tiempo de tromboplastina parcial activada).
 APUD: Amine precursor uptake and decarboxilation (Captación y descarboxilación de los precursores aminados).
 AQ: Antecedentes quirúrgicos.
 ÂQRS: Eje frontal del complejo QRS
 del electrocardiograma.
-AR: Anemia refractaria - Angina de
-reposo - Aparato respiratorio - Arteria renal - Artritis reumatoide - Auscultación respiratoria - Autosómico
+AR: Anemia refractaria//Angina de
+reposo//Aparato respiratorio//Arteria renal//Artritis reumatoide//Auscultación respiratoria//Autosómico
 recesivo.
 Ar: Símbolo químico del argón.
 ARA: Angiotensin II receptor antagonist
@@ -430,17 +379,17 @@ ARSA: Anemia refractaria con sideroblastos en anillo.
 ART: Automated reagin test (Test de reagina automatizado).
 Arterioesclerosis: Enfermedad crónica de las arterias que pierden elasticidad, se engruesan y endurecen. Aterosclerosis. Ateromatosis.
 ARTP: Angioplastia renal transluminal
-percutánea - Aterectomía rotacional
+percutánea//Aterectomía rotacional
 transluminal percutánea.
 Artralgia: Dolor articular. Es un síntoma que no se codifica excepto que no
 haya más información y entonces es
 un diagnóstico sintomático.
 ARV: Antirretrovirales.
-AS: Aborto séptico - Aceite de silicona
-- Arteria subclavia - Artritis séptica.
+AS: Aborto séptico//Aceite de silicona
+- Arteria subclavia//Artritis séptica.
 As: Símbolo químico del arsénico.
 A-S: Adams-Stokes.
-ASA: Ácido acetil salicílico - Puntuación de riesgo prequirúrgico de la
+ASA: Ácido acetil salicílico//Puntuación de riesgo prequirúrgico de la
 American Society of Anesthesiologists
 (Sociedad americana de anestesistas).
 ASAT: Aspartato aminotransferasa.
@@ -455,28 +404,28 @@ O.
 ASLX: Anemia sideroblástica ligada al
 cromosoma X.
 ASMA: Anticuerpos antimúsculo liso.
-ASO: Antiestreptolisina O - Arterioesclerosis obliterante.
-Asp.: Aspártico (ácido) - Aspiración -
+ASO: Antiestreptolisina O//Arterioesclerosis obliterante.
+Asp.: Aspártico (ácido)//Aspiración -
 Aspirado.
-Aspir.: Aspiración - Aspirado.
+Aspir.: Aspiración//Aspirado.
 AST: Aspartato transaminasa.
 ASV: Aneurisma del seno de Valsalva.
-AT: Accidente de trabajo - Angiotensina - Antitrombina - Arteritis de Takayasu - Arteritis temporal - Artroplastia total - Atresia tricuspídea.
-AT III: Angiotensina III - Antitrombina III.
+AT: Accidente de trabajo//Angiotensina//Antitrombina//Arteritis de Takayasu//Arteritis temporal//Artroplastia total//Atresia tricuspídea.
+AT III: Angiotensina III//Antitrombina III.
 Atb.: Antibiótico.
-ATC: Anemia de los trastornos crónicos - Angioplastia transluminal coronaria - Antecedentes - Antidepresivos tricíclicos - Artroplastia total de
+ATC: Anemia de los trastornos crónicos//Angioplastia transluminal coronaria//Antecedentes//Antidepresivos tricíclicos//Artroplastia total de
 cadera.
 Ateromatosis: Arterioesclerosis.
 Aterosclerosis: Arterioesclerosis.
-ATG: Antígeno - Antithymocyte globulin
+ATG: Antígeno//Antithymocyte globulin
 (Globulina antitimocítica).
 ATM: Articulación temporomandibular.
 atm: Atmósfera.
 ATMO: Autotrasplante de médula
 ósea.
-ATO: Absceso tuboovárico - Atorvastatina.
-ATP: Activador tisular del plasminógeno - Adenosine triphosphate (Trifosfato
-de adenosina) - Angioplastia transluminal percutánea.
+ATO: Absceso tuboovárico//Atorvastatina.
+ATP: Activador tisular del plasminógeno//Adenosine triphosphate (Trifosfato
+de adenosina)//Angioplastia transluminal percutánea.
 ATPase: Adenosine triphosphatase (Adenosin trifosfatasa).
 ATPH: Autotrasplante de progenitores
 hematopoyéticos.
@@ -490,19 +439,19 @@ transretinoico).
 ATS: Arteria temporal superficial -
 Ayudante técnico sanitario.
 ATT: Adenoma tiroideo tóxico.
-Au: Antígeno Australia - Arteria umbilical - Símbolo químico del oro.
+Au: Antígeno Australia//Arteria umbilical//Símbolo químico del oro.
 Audio.: Audiometría.
 Ausc.: Auscultación.
 Auto: Autólogo.
 AUU: Arteria umbilical única.
-AV: Adenoma velloso - Adriamicina y
-vincristina, quimioterapia - Agudeza
-visual - Arteriovenoso - Atrioventricular - Auriculoventricular.
+AV: Adenoma velloso//Adriamicina y
+vincristina, quimioterapia//Agudeza
+visual//Arteriovenoso//Atrioventricular//Auriculoventricular.
 A-V: Auriculoventricular.
 AVA: Área valvular aórtica.
 AVAo: Área valvular aórtica.
-AVB: Adriamicina, vincristina y bleomicina, quimioterapia - Asistencia vital
-básica - Atresia de vías biliares.
+AVB: Adriamicina, vincristina y bleomicina, quimioterapia//Asistencia vital
+básica//Atresia de vías biliares.
 AVBC: Adriamicina, vincristina, bleomicina y CCNU (lomustina), quimioterapia.
 AVC: Accidente vascular cerebral.
 AVCA: Accidente vascular cerebral agudo.
@@ -512,8 +461,8 @@ aVF: Augmented voltage foot (Voltaje incrementado en pie, derivación del electr
 AVG: Ambulatory visitors groups. Es un sistema de clasificación de pacientes
 ambulatorios.
 aVL: Augmented voltage left (Voltaje incrementado en brazo izquierdo, derivación del electrocardiograma).
-AVM: Ácido vanililmandélico - Adriamicina, vinblastina y mitomicina, quimioterapia - Área valvular mitral.
-AVP: Ácido valproico - Arginina vasopresina (Hormona antidiurética).
+AVM: Ácido vanililmandélico//Adriamicina, vinblastina y mitomicina, quimioterapia//Área valvular mitral.
+AVP: Ácido valproico//Arginina vasopresina (Hormona antidiurética).
 aVR: Augmented voltage right (Voltaje
 incrementado en brazo derecho, derivación del electrocardiograma).
 AVS: Arritmia ventricular sostenida.
@@ -522,9 +471,9 @@ Ax.: Axila.
 AZT: Azidotimidina o Zidovudina.
 BAVC: Bloqueo auriculoventricular
 completo.
-BB: Biberón - Bilirrubina.
+BB: Biberón//Bilirrubina.
 BBIA: Bomba de balón intraaórtico.
-BC: Broncopatía crónica - Bronquitis
+BC: Broncopatía crónica//Bronquitis
 crónica.
 BCA: Balón de contrapulsación aórtica.
 BCG: Bacilo de Calmette y Guérin.
@@ -544,9 +493,9 @@ izquierda.
 BCS: Banco de sangre (Servicio de).
 BD: Bilirrubina directa / Broncodilatadores.
 BDBA: Broncodilatadores beta-adrenérgicos.
-BDI: Beck Depression Inventory (Inventario de Depresión de Beck) - Blando,
+BDI: Beck Depression Inventory (Inventario de Depresión de Beck)//Blando,
 depresible e indoloro (abdomen).
-B: Basófilo - Biopsia - Bolsa (amniótica).
+B: Basófilo//Biopsia//Bolsa (amniótica).
 B-I: Billroth I.
 B-II: Billroth II.
 B1: Vitamina B1 (Tiamina).
@@ -576,7 +525,7 @@ malla.
 BAV: Bloqueo auriculoventricular.
 Billroth II: Operación consistente en
 una gastrectomía parcial con anastomosis del extremo que queda del estómago al yeyuno a través del mesocolon transverso.
-BIO: Biopsia intraoperatoria - Bioquímica clínica (Servicio de).
+BIO: Biopsia intraoperatoria//Bioquímica clínica (Servicio de).
 Bio-: Prefijo que indica relación con
 vida.
 Bip.: Bipedestación.
@@ -602,7 +551,7 @@ BMI: Body mass index (Índice de masa
 corporal).
 BMN: Biopsias múltiples normalizadas
 (son biopsias de vejiga que se hacen
-durante una RTU de vejiga en diversas áreas de la misma) - Bocio multinodular.
+durante una RTU de vejiga en diversas áreas de la misma)//Bocio multinodular.
 BMO: Biopsia de médula ósea.
 BMR: Basal metabolic rate (Tasa de metabolismo basal).
 BDZ: Benzodiazepina.
@@ -616,7 +565,7 @@ BEI: Butanol-extractable iodine (Yodo
 extraíble con butanol).
 BEP: Bleomicina, etopósido y cisplatino, quimioterapia.
 BFU: Burst-forming unit (Unidad formadora de brotes o célula madre).
-BGC: Bajo gasto cardiaco - Biopsia del
+BGC: Bajo gasto cardiaco//Biopsia del
 ganglio centinela.
 BGN: Bacilo gramnegativo.
 BGP: Bacilo grampositivo.
@@ -625,7 +574,7 @@ gonadotropin (Gonadotrofina coriónica
 humana, subunidad beta).
 BHE: Barrera hematoencefálica.
 BHP: Biopsia hepática percutánea.
-BI: Bilirrubina indirecta - Biopsia
+BI: Bilirrubina indirecta//Biopsia
 intestinal.
 Bi: Símbolo químico del bismuto.
 BIA: Balón intraaórtico.
@@ -649,10 +598,10 @@ Brugada (Síndrome de): Arritmia con
 corazón estructuralmente normal.
 Hay taquicardia o fibrilación ventricular que puede llegar a producir una
 muerte súbita.
-BS: Bocio simple - Bradicardia sinusal.
+BS: Bocio simple//Bradicardia sinusal.
 BSC: Bloqueo simpático continuo.
 BSP: Bromosulftaleína.
-BT: Bilirrubina total - Bitemporal.
+BT: Bilirrubina total//Bitemporal.
 BTB: Biopsia transbronquial.
 BTPS: Body temperature, atmospheric pressure and saturated with water vapor (Condiciones de temperatura corporal, presión atmosférica ambiental y saturación de agua a temperatura corporal).
 Bu: Busulfán.
@@ -678,7 +627,7 @@ BNT: Bocio nodular tóxico.
 BONO: Bronquiolitis obliterante con
 neumonía organizada.
 BOTE: Buena orientación temporoespacial.
-BP: Bajo peso - Biopsia.
+BP: Bajo peso//Biopsia.
 BPAEG: Bajo peso pero adecuado a su
 edad gestacional.
 BPAF: By-pass aortofemoral.
@@ -693,19 +642,19 @@ psiquiátrica ampliada).
 BPT: Bronchial provocation test (Prueba de
 provocación bronquial).
 BQ: Bioquímica.
-BR: Bajo riesgo - Bilirrubina - Biopsia
+BR: Bajo riesgo//Bilirrubina//Biopsia
 renal.
 Bradi-: Prefijo que indica relación con
 lento.
 Braqui(o)-: Prefijo que indica relación
 con corto o con brazo.
-BRD: Bilirrubina directa - Bloqueo de
+BRD: Bilirrubina directa//Bloqueo de
 rama derecha (del Haz de His).
 BRDHH: Bloqueo de rama derecha del
 Haz de His.
 BRHH: Bloqueo de rama del Haz de
 His.
-BRI: Bilirrubina indirecta - Bloqueo de
+BRI: Bilirrubina indirecta//Bloqueo de
 rama izquierda (del Haz de His).
 CA 19/9: Marcador tumoral monoclonal del cáncer de colon, de pulmón,
 páncreas y mama.
@@ -731,14 +680,14 @@ CAGE (Test o cuestionario): Cuttingdown, Annoyed, Guilt, Eyeopen (Problemas rela
 alcohol, molestarse por las críticas,
 sentimiento de culpa y consumo de
 alcohol por la mañana). Es un instrumento para el diagnóstico del alcoholismo a partir de 4 items que componen el test.
-C: Ácido ascórbico, vitamina - Canino
-- Carbono - Caloría grande - Cirugía
-- Complemento - Consulta -
+C: Ácido ascórbico, vitamina//Canino
+- Carbono//Caloría grande//Cirugía
+- Complemento//Consulta -
 Culombio.
 C´: Complemento.
 ºC: Símbolo de grado Celsius o centígrado.
-c: Caloría pequeña - Centi- (10-2).
-c.: Carcinoma - Cena - Concentrado -
+c: Caloría pequeña//Centi- (10-2).
+c.: Carcinoma//Cena//Concentrado -
 Comprimido.
 c/: Notación que significa cada (c/8h:
 cada 8 horas).
@@ -747,11 +696,11 @@ C2:2ª vértebra cervical.
 C3:3ª vértebra cervical.
 C4:4ª vértebra cervical.
 C7:7.ª vértebra cervical.
-CA: Cámara anterior - Colon ascendente.
-CA: Cámara anterior - Cáncer - Cancer
-antigen (Marcador tumoral) - Carcinoma - Cetoacidosis - Ciclofosfamida y
+CA: Cámara anterior//Colon ascendente.
+CA: Cámara anterior//Cáncer//Cancer
+antigen (Marcador tumoral)//Carcinoma//Cetoacidosis//Ciclofosfamida y
 adriamicina, quimioterapia.
-Ca: Símbolo químico del calcio - Contenido en sangre arterial.
+Ca: Símbolo químico del calcio//Contenido en sangre arterial.
 Ca.: Carcinoma.
 Ca++: Calcio iónico.
 CA DHP: Calcioantagonistas dihidropiridínicos.
@@ -778,11 +727,11 @@ o transcortina).
 CBM: Concentración bactericida mínima.
 CBP: Cirrosis biliar primaria.
 CC: Cabeza y cuello (en la exploración
-física) - Cáncer de colon.
+física)//Cáncer de colon.
 C-C: Cabeza y cuello.
-cc: Cabeza y cuello - Centímetro cúbico. La forma correcta es cm3 sin punto.
+cc: Cabeza y cuello//Centímetro cúbico. La forma correcta es cm3 sin punto.
 CCA: Chimpanzee coryza agent (Agente de
-la coriza del chimpancé o virus sincitial respiratorio) - Cirugía cardiaca
+la coriza del chimpancé o virus sincitial respiratorio)//Cirugía cardiaca
 (Servicio de).
 CCAD: Citotoxicidad celular anticuerpodependiente.
 CCEE: Consultas externas.
@@ -791,7 +740,7 @@ CCK: Cholecystokinin (Colecistocinina).
 CCLB12: Capacidad de captación libre
 de vitamina B12.
 CCM: Centro de cuidados mínimos.
-CAI: Calcio iónico - Conducto auditivo interno - Crecimiento auricular
+CAI: Calcio iónico//Conducto auditivo interno//Crecimiento auricular
 izquierdo.
 CAL: Cirugía antirreflujo laparoscópica
 - Colecistitis aguda litiásica.
@@ -807,14 +756,14 @@ cAMP: Cyclic adenosine monophosphate
 Ampicilina.
 Cáncer gástrico precoz: Es un carcinoma in situ.
 CAP: Centro de atención primaria -
-Ciclofosfamida, adriamicina y cisplatino, quimioterapia - Complejo
-areola pezón - Conducto arterioso
-permeable - Contracciones auriculares prematuras.
+Ciclofosfamida, adriamicina y cisplatino, quimioterapia//Complejo
+areola pezón//Conducto arterioso
+permeable//Contracciones auriculares prematuras.
 Cap.: Cápsula.
 CAPD: Continuous ambulatory peritoneal
 dialysis (diálisis peritoneal ambulatoria
 continua).
-CAR: Cardiología (Servicio de) - Cirugía artroscópica de rodilla.
+CAR: Cardiología (Servicio de)//Cirugía artroscópica de rodilla.
 Car.: Carcinoma.
 Carbo.: Carboplatino.
 Carc.: Carcinoma.
@@ -828,8 +777,8 @@ CCO: Consciente, colaborador y orientado.
 CCV: Cirugía cardiovascular (Servicio
 de).
 CD: Cluster of differentiation (Grupos o
-racimos de diferenciación) - Coito
-dirigido - Colon descendente - Coronaria derecha (arteria).
+racimos de diferenciación)//Coito
+dirigido//Colon descendente//Coronaria derecha (arteria).
 CD4: Linfocitos cooperadores inductivos.
 cd: Cuenta dedos.
 CDC: Center for diseases control and prevention (Centro para el control y prevención de enfermedades, Estados Unidos).
@@ -843,12 +792,12 @@ en los que se clasifican los grupos de
 pacientes de una determinada especialidad.
 CDP: Cytidine diphosphate (Citidina
 difosfato).
-CE: Cardioversión eléctrica - Carótida
-externa - Centro de especialidades -
-Circulación extracorpórea - Cistografía estática - Consulta externa - Cuerpo extraño.
+CE: Cardioversión eléctrica//Carótida
+externa//Centro de especialidades -
+Circulación extracorpórea//Cistografía estática//Consulta externa//Cuerpo extraño.
 CEA: Carcinoembryonic antigen (antígeno
-carcinoembrionario) - Comisión de
-ética asistencial - Comité de ética
+carcinoembrionario)//Comisión de
+ética asistencial//Comité de ética
 asistencial.
 CEC: Circulación extracorpórea. Técnica usada en cirugía cardiaca para sustituir la función de bomba del corazón y
 poder pararlo para operarlo.
@@ -892,11 +841,11 @@ tipo ostium primun.
 CIA OS: Comunicación interauricular
 tipo ostium secundum.
 Cianocobalamina: Vitamina B12.
-CID: Carcinoma intraductal - Carótida
-interna derecha - Coagulación intravascular diseminada - Cuadrante
+CID: Carcinoma intraductal//Carótida
+interna derecha//Coagulación intravascular diseminada//Cuadrante
 inferior derecho.
 CIE: Clasificación Internacional de
-Enfermedades - Contrainmunoelectroforesis - Cuadrante inferior externo - Cuadrantectomía inferoexterna.
+Enfermedades//Contrainmunoelectroforesis//Cuadrante inferior externo//Cuadrantectomía inferoexterna.
 CIE-9-MC: Clasificación Internacional
 de Enfermedades 9.ª revisión Modificación Clínica.
 CIEMD: Cuadrante inferior externo de
@@ -906,7 +855,7 @@ mama izquierda.
 CIE-O: Clasificación Internacional de
 Enfermedades para Oncología
 Cig.: Cigarrillo.
-CII: Carótida interna izquierda - Cuadrante inferior interno - Cuadrantectomía inferointerna.
+CII: Carótida interna izquierda//Cuadrante inferior interno//Cuadrantectomía inferointerna.
 CIIMD: Cuadrante inferior interno de
 mama derecha.
 CIIMI: Cuadrante inferior interno de
@@ -923,14 +872,14 @@ bajo grado.
 CEX: Consulta externa.
 C3F8: Es un gas que, a veces, introducen en el globo ocular tras una vitrectomía para ocupar el espacio del
 vítreo que se ha quitado.
-CFA: Células formadoras de anticuerpos - Complete Freund´s adjuvant
+CFA: Células formadoras de anticuerpos//Complete Freund´s adjuvant
 (Adyuvante completo de Freund).
 CFC: Capacidad formadora de colonias.
 CFCT: Complejo fibrocartílago triangular.
 CFM: Ciclofosfamida.
 CFR: Capacidad funcional residual.
 CFU: Colony-forming units (Unidades formadoras de colonias).
-CG: Carcinoma gástrico - Crioglobulina - Cromatografía de gases.
+CG: Carcinoma gástrico//Crioglobulina//Cromatografía de gases.
 cg: Centigramo.
 CGD: Cirugía general y digestivo (Servicio de).
 CGI: Clinical global impression (Escala de
@@ -938,17 +887,17 @@ impresión clínica global).
 CGN: Cocos gramnegativos.
 CGP: Cocos grampositivos.
 cGy: Centigray (Unidad de dosis de radiación absorbida equivalente a un rad).
-CH: Carcinoma hepático - Cirrosis
-hepática - Concentrado de hematíes
+CH: Carcinoma hepático//Cirrosis
+hepática//Concentrado de hematíes
 - Crisis hipertensiva.
 CHC: Carcinoma hepatocelular.
 cHDL: Colesterol HDL.
 CHOP: Ciclofosfamida, hidroxidaunomicina, Oncovín® y prednisona, quimioterapia.
-CI: Capacidad inspiratoria - Cardiopatía isquémica - Carótida izquierda -
-Claudicación intermitente - Coeficiente intelectual - Coitus interruptus -
-Colon irritable - Consentimiento
-informado - Coronaria izquierda
-(arteria) - Cuerpo de inclusión - Cuidados intensivos.
+CI: Capacidad inspiratoria//Cardiopatía isquémica//Carótida izquierda -
+Claudicación intermitente//Coeficiente intelectual//Coitus interruptus -
+Colon irritable//Consentimiento
+informado//Coronaria izquierda
+(arteria)//Cuerpo de inclusión//Cuidados intensivos.
 28
 
 CMI
@@ -958,9 +907,9 @@ CIN III: Cervix intraepitelial neoplasia III
 (Neoplasia intraepitelial de cuello uterino). Es una displasia severa de cérvix uterino. Es un carcinoma in situ y
 sinónimo de SIL de alto grado.
 CIO: Colangiografía intraoperatoria.
-CIP: Ciprofloxacino - Código de identificación personal - Cuidados intensivos pediátricos.
+CIP: Ciprofloxacino//Código de identificación personal//Cuidados intensivos pediátricos.
 CIR: Crecimiento intrauterino retardado.
-CIS: Carcinoma in situ - Cisplatino.
+CIS: Carcinoma in situ//Cisplatino.
 Cisto.: Cistografía.
 Cisto-, cisti-: Prefijo que indica relación
 con un saco, quiste o vejiga. Generalmente se refiere a la vejiga urinaria.
@@ -980,7 +929,7 @@ CJD: Creutzfeldt-Jakob Disease (Enfermedad de Creutzfeldt-Jakob).
 CJS: Creutzfeldt-Jakob Syndrom (Síndrome de Creutzfeldt-Jakob).
 CK: Creatin kinase (Creatincinasa).
 CK-MB: Creatin kinase MB fraction (Creatincinasa fracción MB).
-CL: Caldwell-Luc - Cirugía laparoscópica - Clearance (Aclaramiento) -
+CL: Caldwell-Luc//Cirugía laparoscópica//Clearance (Aclaramiento) -
 
 Colecistectomía laparoscópica -
 Cuerpo lúteo.
@@ -999,8 +948,8 @@ baja densidad).
 CLF: Cloramfenicol.
 CLIS: Carcinoma lobulillar in situ.
 ClNa: Cloruro de sodio.
-CM: Cambios mínimos - Cáncer de
-mama - Carcinoma metastásico -
+CM: Cambios mínimos//Cáncer de
+mama//Carcinoma metastásico -
 Componente monoclonal.
 cm: Centímetro (Se escribe sin punto.
 Tampoco se le debe añadir una s para
@@ -1015,10 +964,10 @@ datos de hospitalización. Ver CMBD.
 CMC: Carpometacarpiana, articulación
 - Centro médico coordinador.
 CMF: Ciclofosfamida, metotrexato y
-fluorouracilo, quimioterapia - Cirugía
+fluorouracilo, quimioterapia//Cirugía
 maxilofacial (Servicio de).
 CMI: Cell-mediated immunity (Inmunidad
-mediada por células) - Concentración
+mediada por células)//Concentración
 mínima inhibitoria.
 29
 
@@ -1031,11 +980,11 @@ CN: Cólico nefrítico.
 CND: Cólico nefrítico derecho.
 CNI: Cólico nefrítico izquierdo.
 CNIO: Centro Nacional de Investigaciones Oncológicas.
-CO: Cáncer de ovario - Carbone monoxide (Monóxido de Carbono) - Consciente y orientado.
-Co: Cobalamina - Cobalto.
+CO: Cáncer de ovario//Carbone monoxide (Monóxido de Carbono)//Consciente y orientado.
+Co: Cobalamina//Cobalto.
 CO2: Dióxido de carbono.
 co. y ce.: Comida y cena.
-CoA: Coartación de aorta - Coenzima
+CoA: Coartación de aorta//Coenzima
 A.
 Coagulación Intravascular Diseminada: Trastorno de coagulación (Síndrome de Desfibrinación en terminología CIE-9-MC).
 CoAo: Coartación de Aorta.
@@ -1084,15 +1033,15 @@ Fecalito.
 Cortic-: Prefijo que indica relación con
 corteza suprarrenal.
 COT: Cirugía ortopédica y traumatología.
-CP: Cáncer de próstata - Cáncer de
-pulmón - Cáncer pancreático - Cardiopulmonar - Cisplatino - Concentrado de plaquetas - Creatinphosphate
-(Creatinfosfato) - Cuidados paliativos.
+CP: Cáncer de próstata//Cáncer de
+pulmón//Cáncer pancreático//Cardiopulmonar//Cisplatino//Concentrado de plaquetas//Creatinphosphate
+(Creatinfosfato)//Cuidados paliativos.
 30
 
 CRVM
 CPV: Complejos prematuros ventriculares.
-CR: Cociente respiratorio - Cólico
-renal - Creatinina.
+CR: Cociente respiratorio//Cólico
+renal//Creatinina.
 Cr: Símbolo químico del cromo.
 Cr.: Creatinina.
 CRABP: Cellular retinoic acid binding protein (Proteína celular fijadora de ácido
@@ -1129,12 +1078,12 @@ miocárdica.
 CPAP: Continuous positive airway pressure
 (Presión positiva continua en la vía
 respiratoria).
-CPC: Cor pulmonale crónico - Corazón
+CPC: Cor pulmonale crónico//Corazón
 pulmonar crónico.
 CPCP: Carcinoma pulmonar de células
 pequeñas (o microcítico).
 CPDD: Cisplatino diaminodicloruro.
-CPE: Ciático poplíteo externo - Cirugía pediátrica (Servicio de) - Colangiopancreatografía endoscópica.
+CPE: Ciático poplíteo externo//Cirugía pediátrica (Servicio de)//Colangiopancreatografía endoscópica.
 CPIA: Contrapulsación intraaórtica.
 CPK: Creatine phosfhokinase (Creatinfosfocinasa).
 CPKMB: Creatine phosfhokinase MB fraction (Creatinfosfocinasa fracción MB).
@@ -1155,8 +1104,8 @@ CPRMN: Colangiopancreatografía por
 resonancia magnética nuclear.
 cps: Ciclos por segundo.
 CPT: Cáncer papilar de tiroides -
-Capacidad pulmonar total - Control
-postransfusional - Current Procedural
+Capacidad pulmonar total//Control
+postransfusional//Current Procedural
 Terminolog y (Ter minología actual
 sobre procedimientos). Es un sistema
 de clasificación de procedimientos.
@@ -1165,7 +1114,7 @@ de clasificación de procedimientos.
 CS
 Ctrl.: Control.
 cts.: Constantes.
-CTX: Cefotaxima - Ciclofosfamida.
+CTX: Cefotaxima//Ciclofosfamida.
 CU: Cordón umbilical.
 Cu: Símbolo químico del cobre.
 CU=2A+1V: Cordón umbilical (presenta) dos arterias y una vena.
@@ -1178,17 +1127,17 @@ seriada.
 Curación: Término utilizado en oncología cuando la neoplasia está en remisión más de 3 o 4 años, es decir, sin que
 se pueda detectar la presencia de la
 enfermedad por la clínica o las exploraciones complementarias.
-CV: Calidad de vida - Campos visuales -
-Capacidad vital - Cardiovascular - Cardioversión - Carga viral - Ciclofosfamida y vincristina, quimioterapia -
-Coeficiente de variación - Cuerda vocal
-- Cúpula vaginal - Curriculum vitae.
+CV: Calidad de vida//Campos visuales -
+Capacidad vital//Cardiovascular//Cardioversión//Carga viral//Ciclofosfamida y vincristina, quimioterapia -
+Coeficiente de variación//Cuerda vocal
+- Cúpula vaginal//Curriculum vitae.
 CVA: Cirugía vascular.
 CVD: Cuerda vocal derecha.
 CVE: Cardioversión eléctrica.
 CVI: Crecimiento ventricular izquierdo
 - Cuerda vocal izquierda.
-CX: Arteria coronaria circunfleja - Cérvix o cuello uterino - Cirugía.
-CyA: Cultivo y antibiograma - Cyclosporine A (Ciclosporina A).
+CX: Arteria coronaria circunfleja//Cérvix o cuello uterino//Cirugía.
+CyA: Cultivo y antibiograma//Cyclosporine A (Ciclosporina A).
 CYC: Cyclophosphamide (Ciclofosfamida).
 CyC: Cabeza y cuello.
 CyO: Consciente y orientado.
@@ -1208,7 +1157,7 @@ de mama derecha.
 CSEMI: Cuadrante superior externo de
 mama izquierda.
 CSF: Colony stimulating factor (Factor estimulante de colonias).
-CSI: Cuadrante superior interno - Cuadrantectomía superointerna.
+CSI: Cuadrante superior interno//Cuadrantectomía superointerna.
 CSIC: Consejo Superior de Investigaciones Científicas.
 CSIMD: Cuadrante superior interno de
 mama derecha.
@@ -1217,8 +1166,8 @@ mama izquierda.
 CsIV: Cesio intravaginal.
 CSM: Centro de salud mental.
 CST: Cesárea segmentaria transversa.
-CT: Calcitonina - Colesterol total -
-Colon transverso - Computed tomography (Tomografía computarizada).
+CT: Calcitonina//Colesterol total -
+Colon transverso//Computed tomography (Tomografía computarizada).
 C/T: Índice cardiotorácico.
 Cta.: Consulta.
 cta.: Cucharadita.
@@ -1235,10 +1184,10 @@ CTPH: Colangiografía transparietohepática.
 32
 
 D
-D: Derecho - Desayuno - Diagnóstico
-- Diálisis - Dioptría - Diuresis -
-Dosis - Vitamina.
-d: Deci- (10-1) - Día.
+D: Derecho//Desayuno//Diagnóstico
+- Diálisis//Dioptría//Diuresis -
+Dosis//Vitamina.
+d: Deci- (10-1)//Día.
 D1, D2, , D12: 1ª, 2ª, , 12ª vértebras dorsales o torácicas. Es lo mismo
 que T1, T2, , T12.
 DI, DII, DIII: Derivaciones del electrocardiograma.
@@ -1248,9 +1197,9 @@ D3: Colecalciferol, vitamina.
 3-D: Tridimensional.
 D y ce.: Desayuno y cena.
 D, co. y ce.: Desayuno, comida y cena.
-DA: Dermatitis atópica - Descendente
-anterior (arteria coronaria) - Doble
-anexectomía - Ductus arterioso.
+DA: Dermatitis atópica//Descendente
+anterior (arteria coronaria)//Doble
+anexectomía//Ductus arterioso.
 DAA: Diarrea asociada a antibióticos -
 Doble arco aórtico.
 DAB: Dolor abdominal.
@@ -1267,11 +1216,11 @@ DAV: Dispositivo de acceso vascular -
 Dispositivo de asistencia ventricular.
 DBM: Dobutamina.
 DBP: Diámetro biparietal.
-DBT: Diabetes - Dobutamina.
-DC: Diagnóstico clínico - Diarrea crónica - Displasia cervical - Donante
+DBT: Diabetes//Dobutamina.
+DC: Diagnóstico clínico//Diarrea crónica//Displasia cervical//Donante
 cadáver.
 D-C-C: Desayuno, comida y cena.
-Dch: Derecha - Derecho.
+Dch: Derecha//Derecho.
 Dcha: Derecha.
 Dcho: Derecho.
 DCM: Deterioro cognitivo mínimo.
@@ -1311,7 +1260,7 @@ DIT: Diiodotyrosine (Diyodotirosina).
 DIU: Dispositivo intrauterino.
 DIVAS: Digital intravenous angiography
 subtraction (Angiografía digital intravenosa de sustracción).
-DL: Decúbito lateral - Dislipemia -
+DL: Decúbito lateral//Dislipemia -
 Dosis letal.
 dl: decilitro.
 DLAo: Doble lesión aórtica (estenosis
@@ -1323,16 +1272,16 @@ DLI: Decúbito lateral izquierdo.
 DLM: Dentro de los límites normales -
 Doble lesión mitral.
 DLP: Dislipemia.
-DM: Densitometría - Dermatomiositis
-- Diabetes mellitus - Duramadre.
+DM: Densitometría//Dermatomiositis
+- Diabetes mellitus//Duramadre.
 DM1: Diabetes mellitus tipo 1.
 DM2: Diabetes mellitus tipo 2.
 
 DDVI: Diámetro diastólico de ventrículo izquierdo.
-DE: Desviación estándar - Disfunción
+DE: Desviación estándar//Disfunción
 erectil.
 DEA: Demencia en la enfermedad de
-Alzheimer - Descompensación edemoascítica.
+Alzheimer//Descompensación edemoascítica.
 DEM: Disociación electromecánica.
 Dem-: Prefijo que indica relación con
 población.
@@ -1353,8 +1302,8 @@ DFH: Difenilhidantoína.
 DFU: Densitometría de fotón único.
 DG: Diabetes gestacional.
 DHEA: Deshidroepiandrosterona.
-DHT: Dihidroergotamina - Dihidrotestosterona.
-DI: Diabetes insípida - Dosis inhibitoria mínima.
+DHT: Dihidroergotamina//Dihidrotestosterona.
+DI: Diabetes insípida//Dosis inhibitoria mínima.
 DIA: Diabetes de inicio en adultos -
 Diarrea infecciosa aguda.
 Diabetes descompensada: Alteración
@@ -1369,7 +1318,7 @@ DS
 DM tipo 1: Diabetes mellitus juvenil,
 con tendencia a la cetosis, de comienzo juvenil, diabetes mellitus insulinodependiente.
 DM tipo 2: Diabetes mellitus del adulto, de la madurez, resistente a la cetosis, diabetes mellitus no insulinodependiente.
-DMA: Dimetilamina - Dimetilarsénico.
+DMA: Dimetilamina//Dimetilarsénico.
 DMG: Diabetes mellitus gestacional.
 DMID: Diabetes mellitus insulinodependiente. Es la diabetes mellitus tipo 1
 (aunque existen pacientes con diabetes
@@ -1391,22 +1340,22 @@ largo.
 DOM: Dimetoximetil anfetamina.
 DOPA: Dihydroxyphenylalanine (Dihidroxifenil-alanina o dopamina).
 DOTE: Desorientación temporoespacial.
-DP: Decúbito prono - Derrame pericárdico - Descendente posterior
+DP: Decúbito prono//Derrame pericárdico//Descendente posterior
 
-(arteria coronaria) - Diagnóstico
-principal - Diálisis peritoneal.
+(arteria coronaria)//Diagnóstico
+principal//Diálisis peritoneal.
 DPA: Drenaje (venoso) pulmonar anómalo.
 DPAC: Diálisis peritoneal ambulatoria
 continua.
-DPC: Déficit de Proteína C - Desnutrición proteinocalórica - Desproporción pelvicocefálica - Duodenopancreatectomía cefálica.
+DPC: Déficit de Proteína C//Desnutrición proteinocalórica//Desproporción pelvicocefálica//Duodenopancreatectomía cefálica.
 DPCA: Diálisis peritoneal continua
 ambulatoria.
 DPG: Diphosphoglycerate (Difosfoglicerato).
 DPM: Desarrollo psicomotor.
-DPN: Diagnóstico prenatal - Diálisis
-peritoneal nocturna - Disnea paroxística nocturna - Diphosphopyridine nucleotide
+DPN: Diagnóstico prenatal//Diálisis
+peritoneal nocturna//Disnea paroxística nocturna//Diphosphopyridine nucleotide
 (Nucleótido de difosfopiridina).
-DPP: Desprendimiento precoz de placenta - Doppler pulsado.
+DPP: Desprendimiento precoz de placenta//Doppler pulsado.
 DPPI: Derivación portosistémica percutánea intrahepática.
 DPPNI: Desprendimiento precoz de la
 placenta normalmente inserta.
@@ -1414,15 +1363,15 @@ DPS: Déficit de Proteína S.
 DPTY: Derivación portosistémica
 transyugular.
 DPx: Diagnóstico principal.
-DR: Desprendimiento de retina - Distrés respiratorio.
+DR: Desprendimiento de retina//Distrés respiratorio.
 Dr: Doctor.
-DRA: Diarrea relacionada con antibióticos - Distrés respiratorio agudo.
+DRA: Diarrea relacionada con antibióticos//Distrés respiratorio agudo.
 Dra: Doctora.
 DRG (o DRGs): Diagnosis Related
 Groups. Sistema de clasificación de
 pacientes (ver GRD).
-DS: Decúbito supino - Demencia senil
-- Desviación estándar - Diagnóstico
+DS: Decúbito supino//Demencia senil
+- Desviación estándar//Diagnóstico
 secundario.
 35
 
@@ -1442,10 +1391,10 @@ DSV: Defecto del septo ventricular (cardiopatía congénita).
 DSVD: Doble salida del ventrículo
 derecho (cardiopatía congénita).
 DSVI: Diámetro sistólico ventricular
-izquierdo - Disfunción sistólica del
-ventrículo izquierdo - Doble salida del
+izquierdo//Disfunción sistólica del
+ventrículo izquierdo//Doble salida del
 ventrículo izquierdo (cardiopatía congénita).
-DT: Delirium tremens - Diámetro torácico - Discinesia tardía - Dolor torácico.
+DT: Delirium tremens//Diámetro torácico//Discinesia tardía//Dolor torácico.
 DTA: Demencia tipo Alzheimer -
 Dolor torácico agudo.
 DTD: Diámetro telediastólico.
@@ -1453,14 +1402,14 @@ DTDVI: Diámetro telediastólico ventricular izquierdo.
 dTGV: Dextrotrasposición de los grandes vasos.
 dTMP: Deoxithymidine monophosphate
 (Monofosfato de desoxitimidina).
-DTN: Defecto del tubo neural - Desviación del tabique nasal.
+DTN: Defecto del tubo neural//Desviación del tabique nasal.
 
 Dto.: Desprendimiento.
 DTP: Dphteria, tetanus, pertussis (Vacuna
 de difteria, tétanos y tos ferina o vacuna triple).
 DTS: Diámetro telesistólico.
 DTT: Difteria, tétanos y tosferina
-(vacuna) - Ditiotreitol - Drenaje
+(vacuna)//Ditiotreitol//Drenaje
 transtimpánico.
 DTTOD: Drenaje transtimpánico de
 oído derecho.
@@ -1473,7 +1422,7 @@ DUE: Diplomado universitario en
 enfermería.
 dUMP: Deoxiuridine monophosphate (Desoxiuridinmonofosfato).
 DV: Demencia vascular.
-DVA: Deficiencia de vitamina A - Derivación ventriculoabdominal - Documento de voluntades anticipadas.
+DVA: Deficiencia de vitamina A//Derivación ventriculoabdominal//Documento de voluntades anticipadas.
 DVI: Disfunción ventricular izquierda.
 DVP: Derivación ventriculoperitoneal -
 Drenaje venoso pulmonar.
@@ -1482,7 +1431,7 @@ DVPAP: Drenaje venoso pulmonar
 anómalo parcial.
 DVPAT: Drenaje venoso pulmonar
 anómalo total.
-Dx: Dextrosa - Diagnóstico.
+Dx: Dextrosa//Diagnóstico.
 DXM: Dexametasona.
 DyL: Dilatación y legrado.
 DZ: Diazepan.
@@ -1491,19 +1440,19 @@ DZ: Diazepan.
 
 E
 nar (poco frecuente) se codifica de otra
-manera - Ecografía abdominopélvica
+manera//Ecografía abdominopélvica
 - Equipo de atención primaria.
 EAR: Enfermedad autosómica recesiva
 EAT: Eating Attitudes Test (Test de actitudes hacia la alimentación).
-EB: Endocarditis bacteriana - Enema
-de bario - Epitelioma basocelular -
-Epstein-Bar - Espina bífida - Exceso
+EB: Endocarditis bacteriana//Enema
+de bario//Epitelioma basocelular -
+Epstein-Bar//Espina bífida//Exceso
 de bases.
 EBA: Equipos de base asociativa -
 Exploración bajo anestesia.
-EC: Edad cronológica - Enfermedad
-celiaca - Enfer medad común -
-Enfermedad coronaria - Enfermedad de Crohn - Escherichia coli -
+EC: Edad cronológica//Enfermedad
+celiaca//Enfer medad común -
+Enfermedad coronaria//Enfermedad de Crohn//Escherichia coli -
 Exploraciones complementarias.
 ECA: Enzima conversora de la angiotensina.
 ECC: Extracorporeal circulation (Circulación extracorpórea).
@@ -1511,23 +1460,23 @@ ECG: Electrocardiograma.
 ECHO: Enteric cytopathogenic human
 orphan viruses (Virus huérfanos humanos entéricos citopatogénicos).
 ECJ: Enfermedad de CreutzfeldtJakob.
-ECM: Enfermedad con cambios mínimos - Esternocleidomastoideo.
+ECM: Enfermedad con cambios mínimos//Esternocleidomastoideo.
 ECMO: Extracorporeal membrane oxigenatión (Oxigenación por membrana
 extracorpórea).
 
-E: Eosinófilo - Eritrocito - Esófago -
-Especificidad - Esterilización - Vitamina E (Tocoferol).
+E: Eosinófilo//Eritrocito//Esófago -
+Especificidad//Esterilización//Vitamina E (Tocoferol).
 E. Coli: Escherichia Coli.
-EA: Enfermedad actual - Enfermedad
-de Alzheimer - Espondilitis anquilosante - Estenosis aórtica.
+EA: Enfermedad actual//Enfermedad
+de Alzheimer//Espondilitis anquilosante//Estenosis aórtica.
 EAA: Espectrometría de absorción atómica.
 EAB: Equilibrio ácido-base.
 EAC: Endarteriectomía carotídea -
 Enfermedad arterial coronaria (es
 equivalente a aterosclerosis coronaria.
 EACA: Enfermedades asociadas al
-consumo de alcohol - Epsilon-aminocaproic acid (Ácido epsilonaminocaproico).
-EAD: Enfermedad articular degenerativa - Enfermedad autosómica dominante.
+consumo de alcohol//Epsilon-aminocaproic acid (Ácido epsilonaminocaproico).
+EAD: Enfermedad articular degenerativa//Enfermedad autosómica dominante.
 -eae: Sufijo usado en bacteriología para
 la jerarquía Tribu.
 EAHF: Eczema, asthma, hay fever (Complejo de eccema, asma y fiebre del
@@ -1545,28 +1494,28 @@ con dobutamina.
 EEDD: Extremidades derechas.
 EEF: Estudio electrofisiológico.
 EEG: Electroencefalograma.
-EEII: Extremidades inferiores - Extremidades izquierdas.
+EEII: Extremidades inferiores//Extremidades izquierdas.
 EEM: Error estándar de la media.
 EES: Encefalopatía espongiforme subaguda (Creutzfeldt-Jakob).
 EESS: Extremidades superiores.
-EF: Edad fetal - Electroforesis - Espiración forzada - Espirometría forzada - Exploración física - Exploración
+EF: Edad fetal//Electroforesis//Espiración forzada//Espirometría forzada//Exploración física//Exploración
 funcional.
 EFQM: European Foundation for Quality
 Management (Fundación Europea para
 la Gestión de la Calidad).
 EFR: Exploración funcional respiratoria.
-EG: Edad gestacional - Escala de Glasgow - Estado general.
+EG: Edad gestacional//Escala de Glasgow//Estado general.
 EGB: Estreptococo del grupo B.
 EGD: Esofagogastroduodenoscopia -
 Estudio gastroduodenal (radiológico).
 EFG: Endothelial growth factor (Factor de
-crecimiento endotelial) - Epidermal
+crecimiento endotelial)//Epidermal
 growth factor (Factor de crecimiento
 epidérmico).
 EGG: Electrogastrograma.
-EH: Encefalopatía hepática - Enfermedad de Hirschsprung - Enfermedad de Hodgkin.
+EH: Encefalopatía hepática//Enfermedad de Hirschsprung//Enfermedad de Hodgkin.
 EHP: Enfermedad hemolítica perinatal
-- Esofagopatía por hipertensión portal - Estenosis hipertrófica de píloro.
+- Esofagopatía por hipertensión portal//Estenosis hipertrófica de píloro.
 EHRN: Enfermedad hemolítica del
 recién nacido.
 
@@ -1578,8 +1527,8 @@ Eco TR: Ecografía transrrectal
 Eco TT: Ecografía transtorácica.
 Ecocardio.: Ecocardiografía.
 ECP: Embarazo cronológicamente
-prolongado - Enfermedad crónica
-del pulmón - Enfermedad de las
+prolongado//Enfermedad crónica
+del pulmón//Enfermedad de las
 cadenas pesadas.
 ECT: Emission computed tomography (Tomografía computarizada de emisión).
 Ect(o)-: Prefijo que significa fuera de o
@@ -1589,17 +1538,17 @@ o extirpación.
 ECV: Enfermedad cardiovascular -
 Enfermedad cerebrovascular.
 ECVA: Enfermedad cardiovascular
-arterioesclerótica - Enfermedad cerebrovascular arterioesclerótica.
-EDG: Electrodermatografía - Electrodinograma.
+arterioesclerótica//Enfermedad cerebrovascular arterioesclerótica.
+EDG: Electrodermatografía//Electrodinograma.
 EDO: Enfermedad de declaración obligatoria.
 EDTA: Edetic acid (Ácido edético) -
 Ethylene diamine tetra-acetic (Ácido etilendiaminotetracético).
-EE: Embarazo ectópico - Error estándar - Esfinterotomía endoscópica -
-Extracción extracapsular - Extremidades.
+EE: Embarazo ectópico//Error estándar//Esfinterotomía endoscópica -
+Extracción extracapsular//Extremidades.
 EEB: Encefalopatía espongiforme
 bovina.
 EEC: Extracción extracapsular de cristalino (o de catarata).
-EECC: Exploraciones complementarias - Extracción extracapsular de
+EECC: Exploraciones complementarias//Extracción extracapsular de
 cataratas.
 38
 
@@ -1608,45 +1557,45 @@ Embarazo ectópico: Embarazo que se
 produce cuando un óvulo fecundado
 anida y se desarrolla fuera del útero.
 EMD: Edema macular difuso.
-EMG: Electromiografía - Electromiograma.
+EMG: Electromiografía//Electromiograma.
 EMH: Enfermedad de la membrana
 hialina.
 EMO: Extracción de material de osteosíntesis.
 EMP: Extracción manual de la placenta.
-EN: Endovenoso - Eritema nodoso -
-Esclerosis nodular - Exploración
+EN: Endovenoso//Eritema nodoso -
+Esclerosis nodular//Exploración
 neurológica.
 ENA: Extractable nuclear antigen (Antígeno nuclear extraible).
 END: Endocrinología (Servicio de).
-Enf.: Enfermedad - Enfermo.
-ENG: Electroneumografía - Electroneurografía - Electronistagmografía.
+Enf.: Enfermedad//Enfermo.
+ENG: Electroneumografía//Electroneurografía//Electronistagmografía.
 ENM: Enfermedad de neurona motora.
 Enter(o)-: Prefijo que indica relación
 con el intestino.
 EO: Edad ósea.
 Eo: Eosinófilo.
-EOG: Electroculograma - Electroftalmograma.
-EOP: Enema opaco - Enfermedad
+EOG: Electroculograma//Electroftalmograma.
+EOP: Enema opaco//Enfermedad
 ovárica poliquística.
-EP: Embolia pulmonar - Enfermedad
-profesional - Enseñanza primaria -
+EP: Embolia pulmonar//Enfermedad
+profesional//Enseñanza primaria -
 Estenosis pulmonar.
-EPA: Edema pulmonar agudo - Enfermedad poliquística del adulto.
+EPA: Edema pulmonar agudo//Enfermedad poliquística del adulto.
 EPCO: Enfermedad pulmonar crónica
 obstructiva.
 EPES: Empresa pública de emergencias sanitarias.
 
 EHSC: Enfermedad de Hand-Schüller-Christian.
-EI: Endocarditis infecciosa - Espacio
+EI: Endocarditis infecciosa//Espacio
 intercostal.
-EIA: Electroinmunoanálisis - Enzimoinmunoanálisis
+EIA: Electroinmunoanálisis//Enzimoinmunoanálisis
 EIAS: Espina ilíaca anterosuperior.
-EIC: Ecografía intracoronaria - Espacio intercostal - Extensión (tumoral)
+EIC: Ecografía intracoronaria//Espacio intercostal//Extensión (tumoral)
 intracraneal.
 EICH: Enfermedad del injerto contra
 el huésped.
-EID: Electroinmunodifusión - Extremidad inferior derecha.
-EII: Enfermedad inflamatoria intestinal - Extremidad inferior izquierda.
+EID: Electroinmunodifusión//Extremidad inferior derecha.
+EII: Enfermedad inflamatoria intestinal//Extremidad inferior izquierda.
 EIP: Enfermedad inflamatoria pélvica
 - Enfermedad intersticial pulmonar -
 Extensor propio del índice.
@@ -1661,8 +1610,8 @@ assay (Análisis de inmunoabsorción
 ligada a las enzimas). Es un radioinmunoanálisis.
 Elong.: Elongación.
 ELX: Enfermedad ligada al cromosoma X.
-EM: Electromiograma - Eritema multifor me - Esclerosis múltiple -
-Estancia media - Estenosis mitral.
+EM: Electromiograma//Eritema multifor me//Esclerosis múltiple -
+Estancia media//Estenosis mitral.
 EMA: Enfermedad mitroaórtica.
 Emb.: Embarazo.
 Embarazo a término: Embarazo que
@@ -1673,7 +1622,7 @@ EPI
 EPI: Enfermedad pélvica inflamatoria
 - Enfermedad pulmonar intersticial -
 Enfermedades propias de la infancia
-- Epilepsia - Episiotomía.
+- Epilepsia//Episiotomía.
 Epi.: Epidural (anestesia).
 Epicrisis: Evaluación crítica de un caso
 clínico cuando ha finalizado. A veces
@@ -1683,7 +1632,7 @@ EPINE: Estudio de prevalencia de la
 infección nosocomial en España.
 EPL: Extensor largo del pulgar.
 EPNP: Esclerotomía profunda no perforante.
-EPO: Enfermedad poliquística del ovario - Enfermedad pulmonar obstructiva - Eritropoyetina (hormona que
+EPO: Enfermedad poliquística del ovario//Enfermedad pulmonar obstructiva//Eritropoyetina (hormona que
 estimula la producción de eritrocitos
 o hematíes).
 EPOC: Enfermedad pulmonar obstructiva crónica.
@@ -1692,7 +1641,7 @@ placa motora terminal)EPQA: Enfermedad poliquística del
 adulto.
 EPR: Epitelio pigmentario retiniano -
 Esofagitis por reflujo.
-EPS: Electroforesis de proteínas séricas - Electrophysiologic study (Estudio
+EPS: Electroforesis de proteínas séricas//Electrophysiologic study (Estudio
 electrofisiológico).
 EPV: Enfermedad de pequeños vasos
 - Estenosis pulmonar valvular.
@@ -1705,11 +1654,11 @@ Ergocalciferol: Vitamina D2.
 ERM: Enfermedad residual mínima.
 
 ERV: Expiratory reserve volume (Volumen
-de reserva espiratorio - Expiratory
+de reserva espiratorio//Expiratory
 residual volume (Volumen residual espiratorio).
-ES: Electroshock - Enfisema subcutáneo.
-ESA: Espacio subacromial - Espacio
-subaracnoideo - Extrasístole auricular.
+ES: Electroshock//Enfisema subcutáneo.
+ESA: Espacio subacromial//Espacio
+subaracnoideo//Extrasístole auricular.
 Escirro-: Prefijo que significa duro.
 Esclero-: Prefijo que significa duro.
 -escopia: Sufijo que significa acto de
@@ -1718,7 +1667,7 @@ examinar.
 ESD: Extremidad superior derecha.
 ESHI: Estenosis subaórtica hipertrófica idiopática.
 ESI: Extremidad superior izquierda.
-EsIs: Extremidades inferiores - Extremidades izquierdas.
+EsIs: Extremidades inferiores//Extremidades izquierdas.
 -esis: Sufijo que significa acción, proceso o trastorno.
 Espinal: Perteneciente o relativo a la
 columna vertebral o a la médula espinal.
@@ -1742,16 +1691,16 @@ Eu-: Prefijo que significa bueno, normal
 o fácil.
 EUA: Esfínter urinario artificial.
 Eutócico: Es el parto normal.
-EV: Endovenoso - Enterovirus -
+EV: Endovenoso//Enterovirus -
 Extrasístoles ventriculares.
-EVA: Escala visual análoga - Estenosis
+EVA: Escala visual análoga//Estenosis
 de la válvula aórtica.
 EVBP: Exploración de vía biliar principal.
 EVG: Electroventriculograma.
 Evol.: Evolución.
 EVP: Estenosis de la válvula pulmonar.
 EvW: Enfermedad de von Willebrand.
-Ex.: Examen - Exéresis - Exploración.
+Ex.: Examen//Exéresis//Exploración.
 Exitus: Muerte (del latín salida). La
 expresión completa es exitus letalis.
 Exo-: Prefijo que significa fuera o hacia
@@ -1759,7 +1708,7 @@ afuera.
 Exp.: Exploración.
 Expec.: Expectoración.
 Expl.: Exploración.
-Ext.: Externo - Extremidad.
+Ext.: Externo//Extremidad.
 Extras.: Extrasístoles.
 Eyac.: Eyaculación.
 
@@ -1777,7 +1726,7 @@ ETC: Ecocardiograma transtorácico.
 ETCO2: End tidal CO2 (CO2 al final de
 la espiración).
 ETE: Ecocardiograma transesofágico. Se
-codifica ecocardiograma + esogagoscopia - Enfermedad tromboembólica.
+codifica ecocardiograma + esogagoscopia//Enfermedad tromboembólica.
 ETEA: Enfermedad tromboembólica
 arterial.
 ETEV: Enfermedad tromboembólica
@@ -1794,9 +1743,9 @@ F
 F1: Falange proximal.
 F2: Falange medial.
 F3: Falange distal.
-FA: Fase acelerada - Fecha de alta -
-Fibrilación auricular - Foco aórtico -
-Fontanela anterior - Fosfatasa ácida -
+FA: Fase acelerada//Fecha de alta -
+Fibrilación auricular//Foco aórtico -
+Fontanela anterior//Fosfatasa ácida -
 Fosfatasa alcalina.
 FAB: French-American-British, Cooperative
 group. Es una clasificación de tumores
@@ -1804,7 +1753,7 @@ del Grupo cooperativo Franco-Americano-Británico.
 Fab: Fragment antigen-binding (Fragmento
 de unión a antígeno).
 FAC: Farmacología clínica (Servicio de)
-- Fibrilación auricular crónica - Fluorouracilo, adriamicina y ciclofosfamida, quimioterapia.
+- Fibrilación auricular crónica//Fluorouracilo, adriamicina y ciclofosfamida, quimioterapia.
 Faco: Lenteja o mancha en forma de lenteja. Se suele referir al cristalino o como
 abreviatura de Facoemulsificación.
 Facoemulsificación: Procedimiento
@@ -1873,15 +1822,15 @@ FAV: Fístula arteriovenosa.
 FAVI: Fístula arteriovenosa interna.
 FB: Fenobarbital.
 FBC: Fibrobroncoscopia.
-FC: Fase crónica - Frecuencia cardiaca.
+FC: Fase crónica//Frecuencia cardiaca.
 
 FCF: Fractura de cuello de fémur -
 Frecuencia cardiaca fetal.
 FCG: Fonocardiograma.
 FCM: Frecuencia cardiaca materna -
 Frecuencia cardiaca máxima.
-FDA: Food and drug administration (Administración de alimentos y medicamentos, Estados Unidos) - Frontoderecha anterior (posición fetal).
-FE: Fluorouracilo y epirrubicina, quimioterapia - Fracción de eyección
+FDA: Food and drug administration (Administración de alimentos y medicamentos, Estados Unidos)//Frontoderecha anterior (posición fetal).
+FE: Fluorouracilo y epirrubicina, quimioterapia//Fracción de eyección
 (parte del volumen de sangre ventricular que es capaz de eyectar el corazón por latido).
 Fe: Símbolo químico del hierro.
 FEA: Facultativo especialista de área.
@@ -1903,7 +1852,7 @@ intracoronaria.
 FG: Filtrado glomerular.
 FGF: Fibroblast growth factor (Factor de
 crecimiento fibroblástico).
-FI: Fecha de ingreso - Fosa ilíaca -
+FI: Fecha de ingreso//Fosa ilíaca -
 Fracción inspiratoria.
 Fibrilación auricular (o atrial): Arritmia cardiaca por contracción anómala
 44
@@ -1927,13 +1876,13 @@ Flutter auricular (o atrial): Es una
 arritmia cardiaca por contracción
 anómala de las aurículas distinta de la
 FA. Tiene código específico.
-FM: Fibromialgia - Fórmula magistral
-- Fórmula menstrual - Fracaso de
+FM: Fibromialgia//Fórmula magistral
+- Fórmula menstrual//Fracaso de
 maduración.
 FMN: Flavin mononucleotide (Mononucleótido de flavina).
 FMO: Fallo (o fracaso) multiorgánico.
 FMT: Frecuencia máxima teórica.
-FN: Fecha de nacimiento - Fosa nasal.
+FN: Fecha de nacimiento//Fosa nasal.
 FNAB: Fine needle aspiration biopsy (Biopsia por aspiración con aguja fina).
 FND: Fosa nasal derecha
 FNI: Fosa nasal izquierda.
@@ -1941,7 +1890,7 @@ FO: Fondo de ojo.
 FOB: Fiberoptic bronchoscopy (Fibrobroncoscopia).
 -fobia: Sufijo que significa temor patológico.
 FOD: Fiebre de origen desconocido.
-FOP: Fibrodisplasia osificante progresiva - Foramen ovale permeable.
+FOP: Fibrodisplasia osificante progresiva//Foramen ovale permeable.
 
 de la musculatura de las aurículas. Se
 expresa también como FA, ACFA o
@@ -1982,17 +1931,17 @@ Forage: Procedimiento consistente en
 hacer perforaciones en un hueso (se
 puede considerar una incisión de hueso).
 Foto.: Fototerapia.
-FP: Factor plaquetario - Ferritina plasmática - Fiebre puerperal - Flexor
-profundo - Flujo pulmonar - Fosa
-pélvica - Fosfolípido plaquetario.
-FPI: Fallo primario del injerto - Fibrosis pulmonar idiopática.
+FP: Factor plaquetario//Ferritina plasmática//Fiebre puerperal//Flexor
+profundo//Flujo pulmonar//Fosa
+pélvica//Fosfolípido plaquetario.
+FPI: Fallo primario del injerto//Fibrosis pulmonar idiopática.
 FPP: Falta de progresión del parto -
-Fecha probable del parto - Fracción
+Fecha probable del parto//Fracción
 de proteínas plasmáticas.
 FPR: Flujo plasmático renal.
 FQ: Fibrosis quística.
-FR: Factor de riesgo - Factor reumatoide - Fenómeno de Raynaud - Fracaso renal - Fracaso respiratorio - Frecuencia respiratoria.
-FRA: Fracaso renal agudo - Fractura.
+FR: Factor de riesgo//Factor reumatoide//Fenómeno de Raynaud//Fracaso renal//Fracaso respiratorio//Frecuencia respiratoria.
+FRA: Fracaso renal agudo//Fractura.
 Fractura abierta: Rotura de un hueso
 con herida externa que comunica con
 el foco de fractura.
@@ -2045,21 +1994,21 @@ codifica como fractura cerrada.
 46
 
 Fx
-FRC: Factor de riesgo coronario - Factores de riesgo conocidos - Fracaso
-renal crónico - Fracaso respiratorio
-crónico - Functional residual capacity
+FRC: Factor de riesgo coronario//Factores de riesgo conocidos//Fracaso
+renal crónico//Fracaso respiratorio
+crónico//Functional residual capacity
 (Capacidad residual funcional).
 FRCV: Factor de riesgo cardiovascular.
 FRCVs: Factores de riesgo cardiovascular. Se debe escribir sin s aunque sea en
 plural.
 FRD: Fosa renal derecha.
-Fren: Diafragma - Mente.
+Fren: Diafragma//Mente.
 FRI: Fibrosis retroperitoneal idiopática
 - Fosa renal izquierda.
 Frig: Frigorífico.
 FRR: Fracción de reserva de flujo
 (coronario).
-FRV: Factor de riesgo vascular - Fístula
+FRV: Factor de riesgo vascular//Fístula
 rectovaginal.
 FSC: Fosa supraclavicular.
 FSD: Fondo de saco de Douglas.
@@ -2069,7 +2018,7 @@ FSH: Follicle-stimulating hormone (Hormona foliculoestimulante).
 FSHRH: Follicle-stimulating hormon-releasing hormonee (Hormona liberadora de
 hormona foliculoestimulante).
 
-FSR: Flujo sanguíneo renal - Flujo sanguíneo retiniano.
+FSR: Flujo sanguíneo renal//Flujo sanguíneo retiniano.
 FTA: Fluorescent treponemal antibody (Anticuerpos treponémicos fluorescentes).
 FTA-ABS: Fluorescent treponemal antibody
 absortion (Absorción de anticuerpos
@@ -2101,9 +2050,9 @@ GDR (o GDRs): Ver GRD.
 GDR-AP (o GDRs-AP): Ver GRDAP.
 GDR-APR (o GDRs-APR): Ver
 GRD-APR.
-GE: Gastroenteritis - Gastroenterología - Gastroesofágico - Glomeruloesclerosis.
-GEA: Gastroenteritis aguda - Glomerulonefritis extramembranosa aguda.
-GEC: Gastroenteritis crónica - Gastroenterocolitis.
+GE: Gastroenteritis//Gastroenterología//Gastroesofágico//Glomeruloesclerosis.
+GEA: Gastroenteritis aguda//Glomerulonefritis extramembranosa aguda.
+GEC: Gastroenteritis crónica//Gastroenterocolitis.
 GEN: Genética (Servicio de).
 Genu: Prefijo o raíz que indica rodilla.
 Ger(o)-, geront(o)-: Prefijo que indica
@@ -2114,7 +2063,7 @@ GFT: Guía farmacoterapéutica.
 GG: Gammaglobulina.
 Gg.: Grageas.
 GGT: Gammaglutamiltranspeptidasa.
-GH: Ganglio hiliar - Growth hormone
+GH: Ganglio hiliar//Growth hormone
 (Hormona del crecimiento).
 GHRF: Growth hormone-releasing factor
 (Factor liberador de la hormona del
@@ -2122,12 +2071,12 @@ crecimiento).
 GHRH: Growth hormone-releasing hormone
 (Hormona liberadora de la hormona
 del crecimiento).
-GI: Gastrointestinal - Gran invalidez.
+GI: Gastrointestinal//Gran invalidez.
 
-G: Gástrico - Glucemia - Grado -
+G: Gástrico//Glucemia//Grado -
 Gravidez.
 g: Gramo.
-GA: Gasometría arterial - Gastroenteritis aguda.
+GA: Gasometría arterial//Gastroenteritis aguda.
 Ga: Símbolo químico del galio.
 GAA: Glaucoma de ángulo abierto -
 Glucemia alterada en ayunas.
@@ -2140,11 +2089,11 @@ Gamma-GT: Gamma glutamil transferasa.
 Gastr(o)-: Prefijo que indica relación
 con el estómago.
 Gaw: Conductancia de la vía aérea.
-GB: Ganglios basales - Gasto basal -
-Glucemia basal - Guillain-Barré, síndrome.
+GB: Ganglios basales//Gasto basal -
+Glucemia basal//Guillain-Barré, síndrome.
 GBS: Group B streptococcal (Estreptococo
 del grupo B).
-GC: Ganglio centinela - Gasto cardiaco
+GC: Ganglio centinela//Gasto cardiaco
 - Glucocorticoides.
 GCS: Glasgow coma scale (Escala de coma
 de Glasgow).
@@ -2162,19 +2111,19 @@ GIP: Gastric inhibitory peptide (Péptido
 inhibidor gástrico).
 GITS: Gastrointestinal therapeutic system
 (Sistema terapéutico gastrointestinal).
-GL: Ganglio linfático - Grados de
+GL: Ganglio linfático//Grados de
 libertad.
-Glc.: Glucemia - Glucosa.
+Glc.: Glucemia//Glucosa.
 Gloso-: Prefijo que indica relación con
 la lengua.
-Gluc.: Glucemia - Glucosa.
+Gluc.: Glucemia//Glucosa.
 GM: Gammapatía monoclonal.
 GM-: Gramnegativo.
 GM+: Grampositivo.
 GM-CSF: Granulocyte-macrophage colonystimulating factor (Factor estimulante de
 colonias granulocitico-macrofágicas).
 GMN: Glomerulonefritis.
-GMP: Glucosa monophosphate (Monofosfato de glucosa) - Guanosine monophosphate (Monofosfato de guanosina).
+GMP: Glucosa monophosphate (Monofosfato de glucosa)//Guanosine monophosphate (Monofosfato de guanosina).
 GMSI: Gammapatía monoclonal de
 significado incierto.
 GN: Glomerulonefritis.
@@ -2191,7 +2140,7 @@ reproductivos.
 
 GOT: Glutamic oxaloacetic transaminase
 (Transaminasa glutámico oxalacética).
-GP: Ganglios pélvicos - Glicoproteínas
+GP: Ganglios pélvicos//Glicoproteínas
 - Glutatión peroxidasa.
 G-6-P: Glucose 6 phosphate (Glucosa 6
 fosfato).
@@ -2202,8 +2151,8 @@ GPE: Gastrostomía percutánea (con
 control) endoscópico.
 GPT: Glutamic pyruvic transaminase
 (Transaminasa glutámico pirúvica).
-GR: Gammagrafía renal - Glóbulos
-rojos - Glutatión reductasa.
+GR: Gammagrafía renal//Glóbulos
+rojos//Glutatión reductasa.
 gr: Gramo. El símbolo correcto es g sin
 r ni punto detrás.
 -grafía: Sufijo que significa escritura,
@@ -2232,7 +2181,7 @@ de gases en sangre arterial.
 GSH: Glutatión reducido.
 GSSG: Glutatión oxidado.
 GSSG-SYN: Glutatión oxidado sintetasa.
-GT: Galactosintransferasa - Gastrectomía total - Glutamiltranspeptidasa.
+GT: Galactosintransferasa//Gastrectomía total//Glutamiltranspeptidasa.
 GTP: Guanosine-triphosphate (Trifosfato
 de guanosina).
 GU: Genitourinario.
@@ -2291,14 +2240,14 @@ superficie de la hepatitis B).
 HBsAg: Hepatitis B surface antigen (Antígeno de superficie de la hepatitis B o
 Antígeno Australia).
 
-H: Histerectomía - Hormona - Símbolo químico del hidrógeno.
-h: Altura - Hematíe - Hora.
+H: Histerectomía//Hormona//Símbolo químico del hidrógeno.
+h: Altura//Hematíe//Hora.
 Hª: Historia.
-HA: Hepatitis A - Hepatitis activa -
-Hepatitis aguda - Hipertrofia amigdalar.
+HA: Hepatitis A//Hepatitis activa -
+Hepatitis aguda//Hipertrofia amigdalar.
 HAAg: Hepatitis A antigen (Antígeno de
 la hepatitis A).
-HAD: Hormona antidiurética - Hospitalización a domicilio (Servicio de).
+HAD: Hormona antidiurética//Hospitalización a domicilio (Servicio de).
 HAI: Hemibloqueo anterior izquierdo
 - Hepatitis autoinmune.
 HAP: Hipertensión arterial pulmonar.
@@ -2309,11 +2258,11 @@ HARS: Hamilton Anxiety Rating Scale
 HASI: Hemibloqueo anterosuperior de
 rama izquierda (del haz de His).
 HAVA: Hipertrofia amigdalina y vegetaciones adenoideas.
-HB: Hepatitis B - Hiperreactividad
+HB: Hepatitis B//Hiperreactividad
 bronquial.
 Hb.: Hemoglobina.
 HBA: Hemibloqueo anterior (del Haz
-de His) - Hipertrofia biauricular.
+de His)//Hipertrofia biauricular.
 HBAb: Hepatitis B antibody (Anticuerpo
 de la hepatitis B).
 HbA1C: Hemoglobina glucosilada.
@@ -2333,10 +2282,10 @@ HDQ: Hospital de día quirúrgico.
 HDRS: Hamilton Depression Rating Scale.
 (Escala de Hamilton para la depresión).
 HDVVC: Hemodiálisis venovenosa
-continua - Hemodiálisis vía venosa
+continua//Hemodiálisis vía venosa
 central.
-HE: Hematoxilina-eosina - Hepatitis E
-- Hipertensión endocraneal - Homocisteína.
+HE: Hematoxilina-eosina//Hepatitis E
+- Hipertensión endocraneal//Homocisteína.
 He: Símbolo químico del helio.
 He.: Hematíe.
 HEL: Hematología y Laboratorio (Servicio de).
@@ -2355,10 +2304,10 @@ asociada con prueba de Ham en suero
 acidificado positiva).
 Hepat-: Prefijo en relación con el hígado.
 
-HC: Hemodiálisis crónica - Hemograma completo - Hemorragia cerebral
-- Hepatitis C - Hepatopatía crónica -
+HC: Hemodiálisis crónica//Hemograma completo//Hemorragia cerebral
+- Hepatitis C//Hepatopatía crónica -
 Historia clínica.
-HCC: Hepatitis C crónica - Hepatocellular carcinoma (Carcinoma hepatocelular).
+HCC: Hepatitis C crónica//Hepatocellular carcinoma (Carcinoma hepatocelular).
 HCD: Hipocondrio derecho.
 HCE: Historia clínica electrónica.
 HCFA: Health Care Financing Administration (Administración para la financiación de la asistencia sanitaria, Estados Unidos).
@@ -2376,15 +2325,15 @@ HCS: Human chorionic somatotropic
 Hct.: Hematócrito.
 Hcto.: Hematócrito.
 HCV: Hepatitis C virus (Virus de la hepatitis C).
-HD: Hemiplejia derecha - Hemitórax
-derecho - Hemodiálisis - Hemorragia digestiva - Hepatitis D - Hernia
-discal - Hipocondrio derecho - Hospitalización domiciliaria.
+HD: Hemiplejia derecha//Hemitórax
+derecho//Hemodiálisis//Hemorragia digestiva//Hepatitis D//Hernia
+discal//Hipocondrio derecho//Hospitalización domiciliaria.
 HDA: Hemorragia digestiva aguda -
 Hemorragia digestiva alta.
 HDAg: Hepatitis D antigen (Antígeno de
 la hepatitis D).
 HDB: Hemorragia digestiva baja.
-HDC: Hemodiálisis continua - Hemorragia digestiva crónica.
+HDC: Hemodiálisis continua//Hemorragia digestiva crónica.
 HDD: Hospital de día (Servicio de).
 54
 
@@ -2399,17 +2348,17 @@ en la que se usa malla.
 HETE: Hydroxyeicosatetraenoic acid (Ácido hidroxieicosatetraenoico).
 HF: Hipercolesterolemia familiar -
 Historia familiar.
-HG: Hemorragia gástrica - Hipogastrio.
+HG: Hemorragia gástrica//Hipogastrio.
 Hg: Símbolo químico del mercurio.
 Hgb.: Hemoglobina.
 hGH: Human growth hormone (Hormona
 del crecimiento humana).
 HGI: Hemorragia gastrointestinal.
 HGPRT: Hypoxantine-guanine-phosphorybosil-transferase (Hipoxantina-guaninafosforribosil-transferasa).
-HH: Haz de His - Hernia de hiato.
+HH: Haz de His//Hernia de hiato.
 HI: Hernia inguinal.
 5-HIAA: 5-Hydroxyindolacetic acid (Ácido 5-hidroxindolacético).
-HIC: Hemorragia intracraneal - Herida incisocontusa - Hipertensión
+HIC: Hemorragia intracraneal//Herida incisocontusa//Hipertensión
 intracraneal.
 Hickman: Catéter intravenoso implantable con trayecto subcutáneo y salida
 a través de la piel para acceso vascular
@@ -2434,9 +2383,9 @@ con útero o con histeria.
 HIV: Human immunodeficiency virus
 (Virus de la inmunodeficiencia humana).
 HLA: Histocompatibility locus antigen
-(Locus del antígeno de histocompatibilidad) - Human leukocyte-antigens
+(Locus del antígeno de histocompatibilidad)//Human leukocyte-antigens
 (Antígenos leucocitarios humanos).
-HLP: Hiperlipemia - Hiperlipidemia -
+HLP: Hiperlipemia//Hiperlipidemia -
 Hiperlipoproteinemia.
 HMG: Human menopausal gonadotropin
 (Gonadoptropina menopáusica
@@ -2450,8 +2399,8 @@ H2O2: Peróxido de Hidrógeno (agua
 oxigenada).
 HOSPIDOM: Hospitalización a
 domicilio (Servicio de).
-HP: Hipertensión portal - Hipertensión pulmonar - Historia personal.
-Hp: Haptoglobina - Helicobacter Pylori.
+HP: Hipertensión portal//Hipertensión pulmonar//Historia personal.
+Hp: Haptoglobina//Helicobacter Pylori.
 55
 
 HPB
@@ -2465,27 +2414,27 @@ HPL: Human placental lactogen (Lactógeno placentario humano).
 HPLC: High-performance liquid chromatography (Cromatografía en fase líquida
 de alta resolución).
 HPN: Hemoglobinuria paroxística nocturna.
-HPT: Haptoglobina - Hiperparatiroidismo - Hipertensión portal - Hipertensión pulmonar.
+HPT: Haptoglobina//Hiperparatiroidismo//Hipertensión portal//Hipertensión pulmonar.
 HPV: Human papilloma virus (Virus del
 papiloma humano o Virus del papiloma).
 HRA: Histamine receptor antagonist (Antagonista de los receptores de la histamina).
 HRB: Hiperreactividad bronquial.
 HRBI: Hiperreactividad bronquial inespecífica.
 HRF: Hemograma, recuento y fórmula
-- Hipertensión resistente a la farmacoterapia - Histamine releasing factor
+- Hipertensión resistente a la farmacoterapia//Histamine releasing factor
 (Factor liberador de histamina).
-HS: Hematoma subdural - Hemorragia
-subaracnoidea - Hepatitis sérica - Herpes simple / Hipertensión sistólica.
+HS: Hematoma subdural//Hemorragia
+subaracnoidea//Hepatitis sérica//Herpes simple / Hipertensión sistólica.
 HSA: Hemorragia subaracnoidea.
 HSD: Hematoma subdural.
 HSG: Histerosalpingografía.
 HST: Hernioplastia sin tensión (con
-malla) - Hormona somatotrópica.
+malla)//Hormona somatotrópica.
 HSV: Herpes simplex virus (Virus del herpes simple).
-HT: Hemitórax - Hipertensión - Histerectomía - Histerectomía total.
+HT: Hemitórax//Hipertensión//Histerectomía//Histerectomía total.
 5-HT: 5-hidroxitriptamina o serotonina.
 
-HTA: Hipertensión arterial - Histerectomía total abdominal.
+HTA: Hipertensión arterial//Histerectomía total abdominal.
 HTAD: Hipertensión arterial diastólica.
 HTAE: Hipertensión arterial esencial.
 HTAPP: Hipertensión arterial pulmonar primaria.
@@ -2500,7 +2449,7 @@ HTLV: Human T cell leukemia/lymphoma
 virus (Virus de la leucemia/linfoma de
 células T humanas).
 Hto.: Hematócrito.
-HTP: Hipertensión portal - Hipertensión pulmonar.
+HTP: Hipertensión portal//Hipertensión pulmonar.
 HTV: Histerectomía vaginal.
 HTVCP: Hipertensión venocapilar pulmonar.
 HU: Hernia umbilical.
@@ -2508,11 +2457,11 @@ Hughes (operación de): Es un tipo de
 injerto palpebral.
 HV: Hallus valgus // Hepatitis vírica -
 Herpes virus (Virus del herpes).
-HVA: Hepatitis vírica A - Hepatitis vírica aguda - Hipertrofia de vegetaciones adenoideas - Homovanilic acid (ácido homovanílico).
+HVA: Hepatitis vírica A//Hepatitis vírica aguda//Hipertrofia de vegetaciones adenoideas//Homovanilic acid (ácido homovanílico).
 HVB: Hepatitis B.
 HVC: Hepatitis C.
 HVCP: Hipertensión venocapilar pulmonar.
-HVD: Hepatitis viral D - Hipertrofia
+HVD: Hepatitis viral D//Hipertrofia
 ventricular derecha.
 HVI: Hipertrofia ventricular izquierda.
 HVR: Hipertensión vasculorrenal.
@@ -2525,8 +2474,8 @@ IBC: Intubación bicanalicular.
 IBP: Ibuprofeno.
 IBV: Infection bronchitis virus (Virus de la
 bronquitis infecciosa).
-IC: Inspiratory capacity (Capacidad inspiratoria) - Insuficiencia cardiaca -
-Insuficiencia coronaria - Interconsulta - Intercuadrántica.
+IC: Inspiratory capacity (Capacidad inspiratoria)//Insuficiencia cardiaca -
+Insuficiencia coronaria//Interconsulta//Intercuadrántica.
 ICA: Islet cell antibody (Anticuerpos contra las células de los islotes).
 ICAM: Intercellular adhesion molecules
 (Moléculas de adherencia intercelular).
@@ -2537,7 +2486,7 @@ ICD-9-CM: International Classification of
 Diseases, 9th revision, Clinical Modification
 (Clasificación Internacional de Enfermedades, 9.ª revisión, Modificación
 Clínica).
-ICE: Idarrubicina, citarabina y etopósido, quimioterapia - Ifosfamida, carboplatino y etopósido, quimioterapia
+ICE: Idarrubicina, citarabina y etopósido, quimioterapia//Ifosfamida, carboplatino y etopósido, quimioterapia
 - Infarto cardioembólico.
 ICG: Impresión clínica global.
 ICI: Insuficiencia cardiaca izquierda.
@@ -2546,9 +2495,9 @@ inferiores.
 ICNR: Isocoria normorreactiva.
 ICO: Instituto Catalán de Oncología
 
-I: Impresión - Índice - Infección -
-Insuficiencia - Insulina - Izquierda(o) - Símbolo químico del yodo.
-IA: Índice alfabético - Insuficiencia
+I: Impresión//Índice//Infección -
+Insuficiencia//Insulina//Izquierda(o)//Símbolo químico del yodo.
+IA: Índice alfabético//Insuficiencia
 aórtica.
 ia: Intraarterial.
 IAA: Indolacetic acid (Ácido indolacético).
@@ -2583,11 +2532,11 @@ intersticiales).
 ICSI: Intra cytoplasmatic sperm injection
 (Inyección intracitoplasmática de espermatozoides). Se inyectan los espermatozoides en el citoplasma del ovocito con
 transferencia posterior al útero.
-ICT: Índice cardiotorácico - Irradiación corporal total.
+ICT: Índice cardiotorácico//Irradiación corporal total.
 Ict.: Ictericia.
 ICV: Inmunodeficiencia común variable.
-ID: Impresión diagnóstica - Inmunodifusión - Intradérmico.
-id.: Idem, lo mismo - Intradérmico.
+ID: Impresión diagnóstica//Inmunodifusión//Intradérmico.
+id.: Idem, lo mismo//Intradérmico.
 -idae: Sufijo usado en virología para la
 jerarquía Familia.
 IDCV: Inmunodeficiencia común
@@ -2602,7 +2551,7 @@ de la angiotensina.
 IECAs: Inhibidores del enzima conversor de la angiotensina. Lo correcto es
 escribirlo sin S aunque sea en plural.
 IEF: Inmunoelectroforesis.
-IF: Inmunofijación - Interfalángica,
+IF: Inmunofijación//Interfalángica,
 articulación.
 IFD: Inmunofluorescencia directa -
 Interfalángica distal, articulación.
@@ -2624,7 +2573,7 @@ IGT: Impaired glucose tolerance (Alteración
 de la tolerancia a la glucosa).
 IGZ: Inmunoglobulina del zoster.
 IHQ: Inmunohistoquímica, técnica de.
-IL: Infarto lacunar - Infiltración local -
+IL: Infarto lacunar//Infiltración local -
 Interleucina.
 ILE: Interrupción legal de embarazo -
 Intervalo libre de enfermedad.
@@ -2639,19 +2588,19 @@ Ilr: Interleucina recombinante.
 IL-1Ra: Interleukin 1 receptor antagonist
 (Antagonista del receptor de la interleucina 1).
 ILT: Incapacidad laboral transitoria.
-IM: Infarto de miocardio - Insuficiencia mitral.
+IM: Infarto de miocardio//Insuficiencia mitral.
 Im.: Intramuscular.
 IMA: Infarto de miocardio agudo.
 IMAO: Inhibidores de la monoaminoxidasa.
-IMC: Índice de masa corporal - Índice
-metabólico cerebral - Inmunidad
+IMC: Índice de masa corporal//Índice
+metabólico cerebral//Inmunidad
 mediada por células.
 58
 
 IRA
 IMi: Insuficiencia mitral.
 IMO: Intolerancia al material de osteosíntesis.
-IMP: Infarto de miocardio perioperatorio - Inosine monophosphate (Monofosfato de inosina).
+IMP: Infarto de miocardio perioperatorio//Inosine monophosphate (Monofosfato de inosina).
 Imp.: Impedancia.
 Impigment hombro: Trastorno similar
 a una Periartritis escapulohumeral.
@@ -2666,7 +2615,7 @@ IN: Infección nosocomial.
 In: Símbolo químico del indio.
 in: Inch (pulgada). Equivale a 25,4 mm.
 -inae: Sufijo usado en bacteriología
-para la jerarquía Subtribu - Sufijo usado en virología para la jerarquía Subfamilia.
+para la jerarquía Subtribu//Sufijo usado en virología para la jerarquía Subfamilia.
 -ineae: Sufijo usado en bacteriología
 para la jerarquía Suborden.
 Inf.: Inferior.
@@ -2692,13 +2641,13 @@ corazón.
 Insuficiencia cardiaca congestiva:
 Insuficiencia cardiaca derecha. Hay
 signos y síntomas de que falla el ventrículo derecho.
-Int.: Interno - Intervención.
-IO: Incontinencia de orina - Intraocular.
+Int.: Interno//Intervención.
+IO: Incontinencia de orina//Intraocular.
 IOE: Incontinencia de orina de esfuerzo.
 IOT: Intubación orotraqueal.
-IP: Íleo postoperatorio - Incapacidad
-permanente - Índice de protrombina
-- Índice ponderal - Insuficiencia pulmonar - Intraperitoneal.
+IP: Íleo postoperatorio//Incapacidad
+permanente//Índice de protrombina
+- Índice ponderal//Insuficiencia pulmonar//Intraperitoneal.
 IPA: Incapacidad permanente absoluta.
 IPP: Incapacidad permanente parcial.
 IPPB: Intermitent positive pression breathing
@@ -2708,19 +2657,19 @@ IPPV: Intermitent positive pression ventilation (Ventilación con presión posit
 intermitente).
 IPT: Incapacidad permanente total.
 IPZ: Insulina protamina zinc.
-IQ: Índice de Quick - Intervención
+IQ: Índice de Quick//Intervención
 quirúrgica.
-IR: Insuficiencia renal - Insuficiencia
-respiratoria - Intrarrectal.
+IR: Insuficiencia renal//Insuficiencia
+respiratoria//Intrarrectal.
 Ir: Símbolo químico del iridio.
 IRA: Infección respiratoria aguda -
-Insuficiencia renal aguda - Insuficiencia respiratoria aguda.
+Insuficiencia renal aguda//Insuficiencia respiratoria aguda.
 59
 
 IRC
-IRC: Insuficiencia renal crónica - Insuficiencia respiratoria crónica.
+IRC: Insuficiencia renal crónica//Insuficiencia respiratoria crónica.
 IRCT: Insuficiencia renal crónica terminal.
-IRG: Insuficiencia renal grave - Insuficiencia respiratoria global.
+IRG: Insuficiencia renal grave//Insuficiencia respiratoria global.
 IRI: Immunoreactive insulin (Insulina
 inmunorreactiva):
 IRM: Imágenes de resonancia magnética.
@@ -2731,14 +2680,14 @@ Inhibidor de la recaptación de serotonina.
 IRT: Insuficiencia renal terminal.
 IRV: Inspiratory reserve volume (Volumen
 de reserva inspiratorio).
-IS: Intrasinovial - Isquemia silente.
+IS: Intrasinovial//Isquemia silente.
 ISA: Intrinsic sympatomimetic activity (Actividad simpaticomimética intrínseca).
 ISRS: Inhibidor selectivo de la recaptación de serotonina.
 ist: Índice de saturación de la transferrina.
-IT: Incapacidad temporal - Inmunotoxina - Insuficiencia tricuspídea -
-Intratecal - Intratraqueal - Isquemia
+IT: Incapacidad temporal//Inmunotoxina//Insuficiencia tricuspídea -
+Intratecal//Intratraqueal//Isquemia
 transitoria.
-ITB: Índice tobillo/brazo - Inducción
+ITB: Índice tobillo/brazo//Inducción
 del trabajo del parto.
 ITCF: Isotiocianato de fluoresceína.
 ITG: Intolerancia a la glucosa.
@@ -2746,14 +2695,14 @@ ITGV: Intrathoracic gas volume (Volumen
 de gas intratorácico).
 ITS: Infección de transmisión sexual.
 
-ITT: Incapacidad total de trabajo - Insuline-tolerance test (Prueba de tolerancia a
+ITT: Incapacidad total de trabajo//Insuline-tolerance test (Prueba de tolerancia a
 la insulina).
 ITU: Infección del tracto urinario.
-IU: Incontinencia urinaria - Infección
+IU: Incontinencia urinaria//Infección
 urinaria.
 IUE: Incontinencia urinaria de esfuerzo.
 IUF: Incontinencia urinaria femenina.
-iv.: Intravenoso - Intraventricular.
+iv.: Intravenoso//Intraventricular.
 IVA: Interventricular anterior(arteria
 coronaria).
 IVB: Isquemia vertebrobasilar.
@@ -2786,8 +2735,8 @@ JHF: Jaqueca hemipléjica familiar.
 JM: Juicio médico.
 JUAP: Jefe de unidad de atención primaria.
 
-J: Juicio - Símbolo de Joule (julio). Unidad de energía y calor.
-JC: Juicio clínico - Virus JC (tipo de
+J: Juicio//Símbolo de Joule (julio). Unidad de energía y calor.
+JC: Juicio clínico//Virus JC (tipo de
 virus del Papiloma humano). Las letras
 JC corresponden a las iniciales del primer paciente en que se aisló.
 
@@ -2805,9 +2754,9 @@ K-T: Klippel-Trenaunay, Síndrome de.
 KTZ: Ketoconazol.
 KZ: Ketoconazol.
 
-K: Karnofsky (escala de) - Kelvin (unidad de temperatura termodinámica) -
+K: Karnofsky (escala de)//Kelvin (unidad de temperatura termodinámica) -
 Símbolo químico del potasio (kalium
-en latín) - Vitamina K (Factor antihemorrágico).
+en latín)//Vitamina K (Factor antihemorrágico).
 k: Kilo (103).
 Kaliemia: Potasemia. Nivel de potasio
 en sangre.
@@ -2822,12 +2771,12 @@ kg: Kilogramo. Es el símbolo de la unidad de masa en el Sistema Internacional d
 63
 
 L
-L: Lactancia - Leucocito - Leucemia -
-Linfocito - Lóbulo - Lumbar - Símbolo de litro.
+L: Lactancia//Leucocito//Leucemia -
+Linfocito//Lóbulo//Lumbar//Símbolo de litro.
 l: Símbolo de litro.
 L1, L2, L3, L4 y L5: 1ª, 2ª, 3ª, 4ª y 5ª
 vértebras lumbares.
-LA: Lactancia artificial - Linfadenectomía axilar - Líquido amniótico -
+LA: Lactancia artificial//Linfadenectomía axilar//Líquido amniótico -
 Líquido ascítico.
 LA no L: Leucemia aguda no linfoblática.
 LAA: Línea axilar anterior.
@@ -2837,7 +2786,7 @@ Lact.: Lactancia.
 LADA: Late autoimmune diabetes mellitus
 in adults (Diabetes mellitus autoinmune tardía del adulto).
 LAF: Laminar air flow (Flujo de aire
-laminar) - Lymphocyte-activating factor
+laminar)//Lymphocyte-activating factor
 (Factor activador de linfocitos).
 LAK: Lymphokine-activated killer cells
 (Células agresoras activadas por linfocinas).
@@ -2848,11 +2797,11 @@ LAMG: Lesiones agudas de la mucosa
 gástrica. Se puede considerar una gastritis aguda.
 LANL: Leucemia aguda no linfoblática.
 
-LAP: Laparoscopia - Laparotomía -
-Latido auricular prematuro - Leucemia aguda promielocítica - Leucinaminopeptidasa.
+LAP: Laparoscopia//Laparotomía -
+Latido auricular prematuro//Leucemia aguda promielocítica//Leucinaminopeptidasa.
 Lapar-: Prefijo relacionado con abdomen.
 Laparot.: Laparotomía.
-LAS: Lateral amyotrophic sclerosis (Esclerosis lateral amiotrófica) - Lung alveolar surfactant (Surfactante alveolar pulmonar).
+LAS: Lateral amyotrophic sclerosis (Esclerosis lateral amiotrófica)//Lung alveolar surfactant (Surfactante alveolar pulmonar).
 L-ASA: L-asparginasa.
 LASER: Light amplification by stimulated
 emission of radiation (Amplificación de
@@ -2872,8 +2821,8 @@ LBP: Lavado broncopulmonar.
 
 LCA
 LFA: Limitación al flujo aéreo.
-LFH: Lesión focal hepática - Linfoma
-de Hodgkin - Litro de hemofiltrado.
+LFH: Lesión focal hepática//Linfoma
+de Hodgkin//Litro de hemofiltrado.
 LGC: Leucemia granulocítica crónica -
 Linfadenectomía del ganglio centinela.
 LGL: Lown-Ganong-Levine, síndrome.
@@ -2920,18 +2869,18 @@ LCM: Linfoma de células del manto.
 Lcm.: Leucemia.
 LCP: Ligamento cruzado posterior (de
 la rodilla).
-LCR: Líquido cefalorraquídeo - Locorregional, anestesia.
+LCR: Líquido cefalorraquídeo//Locorregional, anestesia.
 LCS: Ligadura del cayado de la safena
 (vena).
-LD: Lactatodeshidrogenasa - Lateral
-derecho - Levodopa - Lóbulo derecho.
+LD: Lactatodeshidrogenasa//Lateral
+derecho//Levodopa//Lóbulo derecho.
 LDCG: Linfoma difuso de células grandes.
-LDH: Lactatodeshidrogenasa - Linfoma difuso histiocítico.
+LDH: Lactatodeshidrogenasa//Linfoma difuso histiocítico.
 LDL: Low-density lipoprotein (Lipoproteína de baja densidad).
 L-DOPA: Levodopa o L-3,4 dihidroxifenilalanina.
-LE: Lista de espera - Lupus eritematoso.
-LEC: Legrado endocervical - Lesión
-endocervical - Lupus eritematoso
+LE: Lista de espera//Lupus eritematoso.
+LEC: Legrado endocervical//Lesión
+endocervical//Lupus eritematoso
 crónico.
 LED: Lupus eritematoso discoide -
 Lupus eritematoso diseminado.
@@ -2942,7 +2891,7 @@ choque.
 LES: Lupus eritematoso sistémico.
 Let-: Prefijo relacionado con muerte.
 Leuco.: Leucocitos.
-LF: Latidos fetales - Linfoma folicular
+LF: Latidos fetales//Linfoma folicular
 - Longitud femoral.
 66
 
@@ -2967,7 +2916,7 @@ el habla o la palabra.
 LOPS: Ley de ordenación de profesiones sanitarias.
 Lowenstein: Cultivo de micobacterias
 (para el diagnóstico de tuberculosis).
-LP: Leucemia prolinfocítica - Leucopenia - Linfadenectomía pélvica -
+LP: Leucemia prolinfocítica//Leucopenia//Linfadenectomía pélvica -
 Líquido pleural.
 LPA: Latido prematuro auricular -
 Leucemia promielocítica aguda.
@@ -2975,7 +2924,7 @@ LPAA: Ligamento peroneo astragalino
 anterior.
 LPD: Lavado peritoneal diagnóstico.
 LPG: Linfadenopatía persistente generalizada.
-LPL: Leucemia prolinfocítica - Lipoproteinlipasa.
+LPL: Leucemia prolinfocítica//Lipoproteinlipasa.
 LPM: Latidos por minuto.
 LPNI: Lesiones permanentes no invalidantes.
 LPT: Linfomas pleomórficos T.
@@ -2986,7 +2935,7 @@ Lito: Prefijo o sufijo que indica relación
 con piedra o cálculo.
 LKM: Liver-kidney microsomal (Anticuerpos microsomales contra hígado y
 riñón).
-LL: Leucemia linfoide - Linfoma linfoblástico - Linfoma linfocítico.
+LL: Leucemia linfoide//Linfoma linfoblástico//Linfoma linfocítico.
 LLA: Leucemia linfoblástica (o linfoide) aguda.
 LLC: Leucemia linfoblástica (o linfoide) crónica.
 LLE: Ligamento lateral externo.
@@ -2999,9 +2948,9 @@ LLG: Leucemia de linfocitos grandes.
 LLI: Ligamento lateral interno.
 LLP: Linfoma linfoplasmocitoide.
 LLTA: Leucemia linfoma T del adulto.
-LM: Lactancia materna - Laparotomía
-media - Leucemia del manto - Leucemia mieloblástica - Línea media
--Linfoma mixto - Líquido meconial
+LM: Lactancia materna//Laparotomía
+media//Leucemia del manto//Leucemia mieloblástica//Línea media
+-Linfoma mixto//Líquido meconial
 - Lóbulo medio.
 l/m: Litros por minuto. La forma
 correcta es l/min (sin punto).
@@ -3014,7 +2963,7 @@ LMD: Lóbulo medio derecho. Parte del
 pulmón derecho que depende del
 bronquio medio derecho.
 LMET: Lesión meduloespinal traumática.
-LMI: Laparotomía media infraumbilical - Línea media infraumbilical.
+LMI: Laparotomía media infraumbilical//Línea media infraumbilical.
 67
 
 LPX
@@ -3040,7 +2989,7 @@ LVO: Leucoplasia vellosa oral.
 LZM: Linfoma de la zona marginal.
 
 LPX: Lipoproteína X.
-LS: Líquido sinovial - Lumbosacro.
+LS: Líquido sinovial//Lumbosacro.
 LsCsAs: Latidos cardiacos arrítmicos.
 LsCsRs: Latidos cardiacos rítmicos.
 LsCsRs y SS: Latidos cardiacos rítmicos y sin soplos.
@@ -3048,14 +2997,14 @@ LSCV: Linfoma esplénico de células
 vellosas.
 LSD: Lóbulo superior derecho. Parte
 del pulmón derecho que depende del
-bronquio superior derecho - Lysergic
+bronquio superior derecho//Lysergic
 acid diethylamide (dietilamida del ácido
 lisérgico).
 LSI: Lóbulo superior izquierdo. Parte
 del pulmón izquierdo que depende del
 bronquio superior izquierdo.
-LT: Lepra tuberculoide - Leucotrieno -
-Ligamento transverso - Linfocitos T
+LT: Lepra tuberculoide//Leucotrieno -
+Ligamento transverso//Linfocitos T
 - Lóbulo temporal.
 LTBF: Legrado total con biopsia fraccionada.
 LTGV: Levotransposición de los grandes vasos (izquierda).
@@ -3076,23 +3025,23 @@ relación con la mama o la apófisis
 mastoides.
 MAU: Médico adjunto de urgencias.
 MAV: Malformación arteriovenosa.
-MB: Meduloblastoma - Membrana
-basal - Meningitis bacteriana - Mioglobina.
+MB: Meduloblastoma//Membrana
+basal//Meningitis bacteriana//Mioglobina.
 M-BACOD: Metotrexato, bleomicina,
 adriamicina, ciclofosfamida, Oncovin®
 y dexametasona, quimioterapia.
 MBE: Medicina basada en la evidencia.
 MBP: Major basic protein (Proteína básica principal).
-MC: Masa corporal - Media cuadrática
-- Médico de cabecera - Motivo de
+MC: Masa corporal//Media cuadrática
+- Médico de cabecera//Motivo de
 consulta.
 MCD: Miocardiopatía dilatada.
 MCF: Metacarpofalángica, articulación.
 MCG: Mecanocardiografía.
 
-M: Médico - Menopausia - Miembro -
-Miopía - Monocito.
-m: Mes - Metro (símbolo de la unidad
+M: Médico//Menopausia//Miembro -
+Miopía//Monocito.
+m: Mes//Metro (símbolo de la unidad
 de longitud en el Sistema Internacional de Unidades).
 m2: Metro cuadrado (símbolo de la unidad de superficie en el Sistema Internacional de Unidades).
 M + Am: Miopía más astigmatismo.
@@ -3124,16 +3073,16 @@ MCL: Microcirugía laríngea.
 MCMI-II: McMillon Clinical Multiaxial
 Inventory-II. (Test de personalidad de
 McMillon-II).
-MCP: Marcapasos - Miocardiopatía.
+MCP: Marcapasos//Miocardiopatía.
 McVay: Técnica de herniorrafia sin
 malla.
 MD: Mama derecha.
 MDH: Malato deshidrogenasa.
-MDI: Medicina interna - Miocardiopatía dilatada idiopática.
+MDI: Medicina interna//Miocardiopatía dilatada idiopática.
 MDMA: 3,4-metilendioximetanfetamina (Éxtasis).
 MDR: Multi-drug resistant (Resistente a
 múltiples fármacos).
-ME: Menisco externo - Microscopía
+ME: Menisco externo//Microscopía
 electrónica.
 MEC: Miniexamen cognoscitivo.
 Med.: Medicina.
@@ -3141,7 +3090,7 @@ MEF: Maximal expiratory flow (Flujo
 espiratorio máximo).
 MEF50: Mean maximal expiratory flow
 (Flujo espiratorio máximo medio).
-MEG: Magnetoencefalograma - Mal
+MEG: Magnetoencefalograma//Mal
 estado general.
 Melanoma: Es una neoplasia maligna
 muy agresiva, derivada de las células
@@ -3163,11 +3112,11 @@ MERI: Menisco externo de rodilla
 izquierda.
 MESTO: Médico especialista sin título
 oficial.
-MET: Mapa electroencefalotopográfico - Metabolic equivalent task (Tarea
-equivalente metabólica) - Unidad de
+MET: Mapa electroencefalotopográfico//Metabolic equivalent task (Tarea
+equivalente metabólica)//Unidad de
 esfuerzo físico que representa el consumo de oxígeno basal y que valora el
 gasto calórico.
-Met: Metástasis - Metionina.
+Met: Metástasis//Metionina.
 Metast.: Metástasis.
 -metría: Sufijo que significa medición.
 Metror.: Metrorragia.
@@ -3176,11 +3125,11 @@ debe escribir sin S.
 Metro-: Prefijo que indica relación con
 el útero.
 -metro: Sufijo que significa instrumento usado para medir.
-MF: Mastopatía fibroquística - Médico
-de familia - Metacarpofalángica, articulación - Micosis fungoide - Mielofibrosis - Monitorización fetal -
+MF: Mastopatía fibroquística//Médico
+de familia//Metacarpofalángica, articulación//Micosis fungoide//Mielofibrosis//Monitorización fetal -
 Movimientos fetales.
 MFQ: Mastopatía fibroquística.
-MG: Médico de guardia - Médico general - Miastenia grave.
+MG: Médico de guardia//Médico general//Miastenia grave.
 Mg: Símbolo químico de magnesio.
 mg: Miligramo. Se escribe sin s aunque
 sea en plural.
@@ -3195,10 +3144,10 @@ MNU
 MHC: Major histocompatibility complex
 (Complejo principal de histocompatibilidad).
 MHPG: 3-metoxi-4-hidroxifenil glicol.
-MI: Mama izquierda - Medicina interna
-- Menisco interno - Mielofibrosis
-idiopática - Miembro inferior -
-Mononucleosis infecciosa - Motivo
+MI: Mama izquierda//Medicina interna
+- Menisco interno//Mielofibrosis
+idiopática//Miembro inferior -
+Mononucleosis infecciosa//Motivo
 de ingreso.
 MIBI: Metoxisobutil isonitrilo.
 MIC: Microbiología y parasitología
@@ -3218,10 +3167,10 @@ primaria de células de la médula ósea.
 MIF: Macrophage inhibitory factor (Factor
 inhibidor de los macrófagos) // Melanocyte (stimulating hormone) inhibiting factor (Factor inhibidor de la hormona
 estimulante de melanocitos).
-MII: Mamaria interna izquierda (arteria) - Miembro inferior izquierdo.
+MII: Mamaria interna izquierda (arteria)//Miembro inferior izquierdo.
 Mill.: Millones.
 MIME: Metil-GAG, ifosfamida, metotrexato y etopósido, quimioterapia.
-min: Mínimo - Minuto.
+min: Mínimo//Minuto.
 MINE: Mesna, ifosfamida, Novantrone® y etopósido, quimioterapia.
 Mio: Músculo.
 MIP: Maximun inspiratory pressure (Presión inspiratoria máxima).
@@ -3241,8 +3190,8 @@ ml: Mililitro.
 MLC: Minimal lethal concentration (Concentración letal mínima).
 MLF: Melfalán.
 MLR: Mixed lymphocyte reaction (Reacción mixta linfocitaria).
-MM: Melanoma maligno - Meningitis
-meningocócica - Mieloma múltiple -
+MM: Melanoma maligno//Meningitis
+meningocócica//Mieloma múltiple -
 Miembros.
 mM: Milimoles.
 mm: milímetro.
@@ -3273,9 +3222,9 @@ MSI: Miembro superior izquierdo.
 MSLT: Multiple Sleep Latency Test. (Test
 de latencia múltiple del sueño).
 MST: Analgésico con morfina.
-MT: Malos tratos - Marcadores tumorales - Melatonina - Metástasis.
+MT: Malos tratos//Marcadores tumorales//Melatonina//Metástasis.
 Mt.: Metástasis.
-MTC: Metacarpo - Mitomicina C.
+MTC: Metacarpo//Mitomicina C.
 MTF: Metatarsofalángica, articulación.
 MTHF: Metilentetrahidrofolato.
 Mtl: Mortalidad.
@@ -3283,24 +3232,24 @@ MTO: Masa de tejido óseo.
 MTS: Metástasis.
 MTTF: Metatarsofalángica, articulación.
 MTU: Metiltiouracilo.
-MTX: Metástasis - Metotrexato.
+MTX: Metástasis//Metotrexato.
 MTZ: Metronidazol.
 MU: Millones de unidades.
 Muc.: Mucosa.
 Murmullo vesicular: Ruido respiratorio normal correspondiente a la ventilación de los alvéolos pulmonares que
 se oye al auscultar el tórax.
-MV: Miocardio viable - Murmullo vesicular.
+MV: Miocardio viable//Murmullo vesicular.
 M-VAC: Metotrexato, vinblastina, adriamicina y cisplatino, quimioterapia.
 MVC: Murmullo vesicular conservado.
 MVN: Murmullo vesicular normal.
 MVV: Maximun voluntary ventilation (Ventilación voluntaria máxima).
 MW: Macroglobulinemia de Waldenström.
-Mx: Mamografía - Máximo.
+Mx: Mamografía//Máximo.
 
 MNVSR: Membrana neovascular subrretiniana.
-MO: Médula ósea - Microscopía óptica.
+MO: Médula ósea//Microscopía óptica.
 MOC: Motor ocular común, nervio (Par
-craneal III) - Movimientos oculares.
+craneal III)//Movimientos oculares.
 MOE: Motor ocular externo, nervio.
 MOI: Motor ocular interno, nervio.
 mol: En el Sistema Internacional de
@@ -3309,7 +3258,7 @@ cantidad de sustancia. Representa el
 peso molecular de una sustancia
 expresado en gramos.
 Mov.: Movimiento.
-MP: Marcapasos - Menopausia - Metilprednisona.
+MP: Marcapasos//Menopausia//Metilprednisona.
 MPA: Músculo papilar anterior.
 MPR: Medicina preventiva (Servicio
 de).
@@ -3323,11 +3272,11 @@ MRS: Magnetic resonance spectroscopic
 (Resonancia magnética espectroscópica).
 MRT: Mortalidad relacionada con el
 tratamiento.
-MS: Miembro superior - Muerte súbita.
+MS: Miembro superior//Muerte súbita.
 ms: Milisegundo.
 MSD: Miembro superior derecho.
 MSF: Médecins sans frontières (Médicos sin
-fronteras) - Melanocyte stimulating factor
+fronteras)//Melanocyte stimulating factor
 (Factor estimulante de los melanocitos).
 
 72
@@ -3336,12 +3285,12 @@ N
 NB: Neuroblastoma.
 NBT: Nitroblue tetrazolium (Nitroazul de
 tetrazolio).
-NC: Nefrocalcinosis - Neumoconiosis
+NC: Nefrocalcinosis//Neumoconiosis
 - Neumonía comunitaria.
 NCOC: No clasificable bajo otro concepto (siglas de la CIE-9-MC).
 Ncto.: Nacimiento.
 nd: No se dispone de datos.
-NE: Nutrición enteral - Norepinefrina
+NE: Nutrición enteral//Norepinefrina
 (Noradrenalina).
 Necro-: Prefijo que indica relación con
 la muerte o con un cuerpo o tejido
@@ -3361,10 +3310,10 @@ no hay una distinción clara si son células benignas o malignas.
 NEOM: No especificado de otra
 manera (siglas usadas en la CIE-9MC).
 
-N: Neutrófilo - Normal - Nutrición -
+N: Neutrófilo//Normal//Nutrición -
 Símbolo químico del nitrógeno.
 n: Nano (símbolo del submúltiplo 10-9)
-- Neutrón - Número de observaciones o tamaño de la muestra.
+- Neutrón//Número de observaciones o tamaño de la muestra.
 Nº: Número.
 NA: Noradrenalina.
 Na: Símbolo químico del sodio.
@@ -3427,8 +3376,8 @@ NFL: Neurofisiología clínica (Servicio de).
 NFV: Nelfinavir.
 NG: Nasogástrico.
 NGF: Nerve growth factor (Factor de crecimiento nervioso).
-NH: Neumonía hospitalaria - Nódulos
-hepáticos - Normohidratado.
+NH: Neumonía hospitalaria//Nódulos
+hepáticos//Normohidratado.
 NH3: Amoniaco.
 NH4+: Amonio.
 NHP: Ningún hallazgo patológico.
@@ -3441,7 +3390,7 @@ presión positiva).
 NIU: Neumonitis intersticial usual.
 NIV: Neoplasia intraepitelial vulvar.
 NK: Natural killer (Célula natural agresora).
-NL: Nefrolitiasis - Nefropatía lúpica -
+NL: Nefrolitiasis//Nefropatía lúpica -
 Neurológico.
 NLG: Neurología.
 NLP: Nefrolitotomía percutánea.
@@ -3450,7 +3399,7 @@ de).
 NML: Neumología (Servicio de).
 NMN: Nicotinamida mononucleótido.
 NN: Neumonía nosocomial.
-NNP: Neonato patológico - Nitrógeno no proteico.
+NNP: Neonato patológico//Nitrógeno no proteico.
 NO: Neuritis óptica.
 74
 
@@ -3463,11 +3412,11 @@ NRL: Neurología (Servicio de).
 NSILA: Non-suppressible insulin-like activity (Actividad insulinoide no suprimible).
 NSP: No se palpan.
 NST: No se tocan.
-NT: Nasotraqueal - Neumotórax -
+NT: Nasotraqueal//Neumotórax -
 Normotenso.
 NTG: Nitroglicerina.
 NTG-SL: Nitroglicerina sublingual.
-NTP: Nefrostomía percutánea - Nitroprusiato.
+NTP: Nefrostomía percutánea//Nitroprusiato.
 NTX: Neumotórax.
 NVI: Neoplasia vulvar intraepitelial.
 NVT: Nacido vivo a término.
@@ -3480,16 +3429,16 @@ NOA: Necrosis ósea avascular.
 NOD: Neoplasia de origen desconocido.
 NOI: Neuritis óptica isquémica.
 NOIA: Neuritis óptica isquémica anterior.
-NP: Nefrostomía percutánea - Nutrición parenteral.
-NPC: Nefrostomía percutánea - Neumonía por Pneumocystis carinii.- Nutrición parenteral (por vía) central.
-NPH: Neuralgia postherpética - Neutral Protamine Hagedorn insulin (Insulina
+NP: Nefrostomía percutánea//Nutrición parenteral.
+NPC: Nefrostomía percutánea//Neumonía por Pneumocystis carinii.- Nutrición parenteral (por vía) central.
+NPH: Neuralgia postherpética//Neutral Protamine Hagedorn insulin (Insulina
 protamina neutra de Hagedorn) -
 Nutrición parenteral hipocalórica.
 NPM: Neoplasias primarias múltiples -
 Nódulos pulmonares múltiples.
 NPN: Nonproteic nitrogen (Nitrógeno no
 proteico).
-NPP: No progresión del parto - Nutrición parenteral (por vena) periférica.
+NPP: No progresión del parto//Nutrición parenteral (por vena) periférica.
 NPS: Nódulo pulmonar solitario.
 NPT: Nutrición parenteral total.
 NPY: Neuropéptido Y.
@@ -3497,21 +3446,21 @@ NPY: Neuropéptido Y.
 75
 
 O
-O: Oído - Ojo - Oncovin® (Vincristina)
-- Orina - Símbolo químico del oxígeno.
-∅: Diámetro - Negativo - Normal.
-O2: Ambos ojos - Oxígeno.
+O: Oído//Ojo//Oncovin® (Vincristina)
+- Orina//Símbolo químico del oxígeno.
+∅: Diámetro//Negativo//Normal.
+O2: Ambos ojos//Oxígeno.
 O2: Oxígeno.
 OAD: Oblicua anterior derecha.
 OAI: Oblicua anterior izquierda.
-OB: Obesidad - Osteoblastos.
+OB: Obesidad//Osteoblastos.
 OBG: Obstetricia y Ginecología (Servicio de).
 OBS: Obstetricia (Servicio de).
 OBU: Observación de urgencias (área
 de).
-OC: Onda corta - Oral contraception
-(Contracepción por vía oral) - Orina
-completa - Osteoclastos.
+OC: Onda corta//Oral contraception
+(Contracepción por vía oral)//Orina
+completa//Osteoclastos.
 OCD: Oxigenoterapia crónica domiciliaria.
 O2CD: Oxigenoterapia crónica domiciliaria.
 O2CD: Oxigenoterapia crónica domiciliaria.
@@ -3522,12 +3471,12 @@ aéreo.
 OCI: Orificio cervical interno (del cuello uterino).
 OCT: Oficina de coordinación de trasplantes.
 
-OD: Oído derecho - Ojo derecho -
+OD: Oído derecho//Ojo derecho -
 Ovario derecho.
 ODG: Oftamodinamografía.
 ODM: Oftalmodinamometría.
 Odont-: Prefijo en relación con diente.
-OE: Oído externo - Otitis externa.
+OE: Oído externo//Otitis externa.
 OEC: Otras exploraciones complementarias.
 OEMG: Oculoelectromiografía.
 OFT: Oftalmología (Servicio de).
@@ -3538,10 +3487,10 @@ como abreviatura de alcohol.
 OHB: Oxígeno hiperbárico.
 O2HB: Oxihemoglobina.
 OHB12: Hidroxicobalamina.
-OI: Oído izquierdo - Ojo izquierdo -
-Osteogénesis imperfecta - Ovario
+OI: Oído izquierdo//Ojo izquierdo -
+Osteogénesis imperfecta//Ovario
 izquierdo.
-OIC: Osteogénesis imperfecta congénita - Osteoporosis inducida por corticoides.
+OIC: Osteogénesis imperfecta congénita//Osteoporosis inducida por corticoides.
 OIDA: Occipitoiliaca derecha anterior,
 posición fetal.
 -oideae: Sufijo usado en bacteriología
@@ -3557,7 +3506,7 @@ OIIP: Occipitoiliaca izquierda posterior, posición fetal.
 OIIT: Occipitoiliaca izquierda transversa, posición fetal.
 Oligo-: Prefijo que significa poco o
 menos de lo normal.
-OM: Obtusa marginal (arteria coronaria) - Oído medio - Otitis media.
+OM: Obtusa marginal (arteria coronaria)//Oído medio//Otitis media.
 Om-: Prefijo que indica relación con el
 hombro.
 OMA: Otitis media aguda.
@@ -3565,18 +3514,18 @@ Omalgia: Dolor de hombro.
 OMB: Otitis media bilateral.
 OMC: Organización médica colegial -
 Otitis media crónica.
-OME: Omeprazol - Otitis media exudativa.
+OME: Omeprazol//Otitis media exudativa.
 OMEC: Oxigenación con membrana
 extracorpórea.
 OMS: Organización mundial de la
-salud - Otitis media serosa - Otitis
+salud//Otitis media serosa//Otitis
 media supurada.
-OMT: Organización mundial de trasplantes - Otras medidas terapéuticas.
-ON: Obstrucción nasal - Osteonecrosis - Óxido nítrico.
+OMT: Organización mundial de trasplantes//Otras medidas terapéuticas.
+ON: Obstrucción nasal//Osteonecrosis//Óxido nítrico.
 ONACF: Osteonecrosis aséptica de
 cabeza femoral.
 ONAV: Osteonecrosis avascular.
-ONC: Oncogén - Oncología médica
+ONC: Oncogén//Oncología médica
 (Servicio de).
 ONCF: Osteonecrosis de cabeza
 femoral.
@@ -3584,11 +3533,11 @@ Onco.: Oncología (Servicio de).
 Onda Q: Parte inicial del complejo
 QRS del electrocardiograma relacionada con la fase inicial de la despolarización ventricular.
 
-ONG: Oído, nariz y garganta - Organización no gubernamental.
+ONG: Oído, nariz y garganta//Organización no gubernamental.
 Onic-: Prefijo en relación con uña.
-ONR: Oncología radioterápica (Servicio de) - Orden de no reanimar.
+ONR: Oncología radioterápica (Servicio de)//Orden de no reanimar.
 ONT: Organización nacional de trasplantes.
-OO: Ooforectomizada - Osteoma
+OO: Ooforectomizada//Osteoma
 osteoide.
 Oo-: Prefijo que indica relación con
 huevo u óvulo.
@@ -3597,17 +3546,17 @@ Ooforectomía + Salpingectomía:
 Extirpación del ovario y de la Trompa
 de Falopio. Dícese también anexectomía. Suele ser bilateral (doble anexectomía) o unilateral.
 OP: Occipitopubiana, posición fetal -
-Osteoporosis - Ostium primun. Es un
+Osteoporosis//Ostium primun. Es un
 tipo de comunicación interauricular
 (cardiopatía congénita).
-Op: Operación - Operada - Operado.
+Op: Operación//Operada//Operado.
 OPD: Oblicua posterior derecha.
 OPI: Oblicua posterior izquierda.
 O2pp: Oxígeno a presión positiva.
 -opsia: Sufijo que significa trastorno o
 defecto de la visión.
 OPU: Obstrucción pieloureteral.
-OR: Odds ratio (Razón de azar) - Operating room (Quirófano).
+OR: Odds ratio (Razón de azar)//Operating room (Quirófano).
 ORL: Otorrinolaringología (Servicio
 de).
 Oro-: Prefijo que indica relación con la
@@ -3625,7 +3574,7 @@ OTSVI: Obstrucción del tracto de salida del ventrículo izquierdo.
 OU: Observación de urgencias (Unidad
 de).
 OUPU: Obstrucción de la unión pieloureteral.
-OV: Oculovestibular - Órdenes verbales - Osteomielitis vertebral - Ovario.
+OV: Oculovestibular//Órdenes verbales//Osteomielitis vertebral//Ovario.
 Ov.: Ovario.
 OVA: Obstrucción de la vía aérea.
 OVCR: Obstrucción de la vena central
@@ -3657,8 +3606,8 @@ Salud.
 Ot.: Otitis.
 OTC: Over the counter (Medicamentos de
 venta sin receta).
-OTD: Occipitotransversa derecha, posición fetal - Organo-tolerance dose (Dosis
-orgánica tolerable) - Oxigenoterapia
+OTD: Occipitotransversa derecha, posición fetal//Organo-tolerance dose (Dosis
+orgánica tolerable)//Oxigenoterapia
 domiciliaria.
 Oto-: Prefijo que indica relación con el
 oído.
@@ -3669,7 +3618,7 @@ P
 Pac.: Paciente.
 PACS: Picture archiving and computer storage (Archivo de imágenes y almacenamiento en ordenadores).
 PAEG: Peso adecuado para la edad gestacional.
-PAF: Platelet-activating factor (Factor activador de las plaquetas) - Punción con
+PAF: Platelet-activating factor (Factor activador de las plaquetas)//Punción con
 aguja fina.
 PAG: Peso adecuado (para la edad) gestacional.
 PAH: Paraminohipurato.
@@ -3677,8 +3626,8 @@ PAI: Plasminogen activator inhibitor (Inhibidor del activador del fibrinógeno) 
 Presión de la aurícula izquierda.
 PAMO: Punción aspirativa de médula
 ósea.
-PAN: Panarteritis nudosa - Periarteritis
-nudosa - Poliarteritis nudosa.
+PAN: Panarteritis nudosa//Periarteritis
+nudosa//Poliarteritis nudosa.
 Pan-: Prefijo que significa todo.
 PANSS: Positive And Negative Syndrome
 Scale. Escala para el síndrome positivo
@@ -3690,43 +3639,43 @@ PAO: Peak acid output (Pico de máxima
 secreción ácida).
 PAo: Presión aórtica.
 
-P: Cisplatino - Onda del electrocardiograma de la despolarización de la aurícula - Percentil - Post - Prevalencia -
-Proteína - Pulso - Símbolo químico
+P: Cisplatino//Onda del electrocardiograma de la despolarización de la aurícula//Percentil//Post//Prevalencia -
+Proteína//Pulso//Símbolo químico
 del fósforo.
-p: Brazo corto del cromosoma - Plasma - Protón.
+p: Brazo corto del cromosoma//Plasma//Protón.
 p. m.: Post meridiem (por la tarde).
-PA: Pancreatitis aguda - Poliartritis -
-Posteroanterior - Presión alveolar -
-Presión arterial - Presión parcial alveolar - Pseudomona Aeruginosa.
+PA: Pancreatitis aguda//Poliartritis -
+Posteroanterior//Presión alveolar -
+Presión arterial//Presión parcial alveolar//Pseudomona Aeruginosa.
 Pa: En el Sistema Internacional de Unidades, símbolo del pascal (unidad de
-presión) - Presión parcial en sangre
-arterial - Símbolo químico del protactinio.
+presión)//Presión parcial en sangre
+arterial//Símbolo químico del protactinio.
 PAA: Punción aspirativa con aguja.
 PAAF: Punción aspirativa con aguja
 fina. Es un procedimiento para obtener una muestra de tejido para biopsia.
 PAAG: Punción aspiración con aguja
 gruesa.
-PAB: Pancreatitis aguda biliar - Punción aspirativa biópsica.
+PAB: Pancreatitis aguda biliar//Punción aspirativa biópsica.
 PABA: Para-aminobenzoic acid (Ácido
 para-aminobenzóico).
-PAC: Puente aortocoronario - Puesto
-de atención continuada - Cisplatino,
+PAC: Puente aortocoronario//Puesto
+de atención continuada//Cisplatino,
 adriamicina y ciclofosfamida, quimioterapia.
 81
 
 PAP
 Patela: Rótula.
 Pb: Símbolo químico del plomo.
-PBA: Pancreatitis biliar aguda - Punción biopsia aspirativa.
+PBA: Pancreatitis biliar aguda//Punción biopsia aspirativa.
 PBD: Partes blandas desfavorables. Se
 refiere a cuando antes de iniciarse el
 periodo activo del parto se observa
-que el útero no se contrae - Prueba
+que el útero no se contrae//Prueba
 broncodilatadora.
 PBE: Peritonitis bacteriana espontánea
 - Punción biopsia esplénica.
 PBEG: Peso bajo para la edad gestacional.
-PBG: Peso bajo (para la edad) gestacional - Porfobilinógeno - Punción
+PBG: Peso bajo (para la edad) gestacional//Porfobilinógeno//Punción
 biopsia ganglionar.
 PBH: Punción biopsia hepática.
 PBI: Protein-bound iodine (Yodo ligado a
@@ -3736,11 +3685,11 @@ ligada a la penicilina).
 PBR: Punción biopsia renal.
 PBS: Phosphate-buffered saline (Suspensión salina tamponada con fosfato al
 20%).
-PC: Pancreatitis crónica - Parálisis
-cerebral - Pares craneales - Pérdida
-de conocimiento - Perímetro cefálico
-- Perímetro craneal - Postcirugía -
-Postconización - Proteína C.
+PC: Pancreatitis crónica//Parálisis
+cerebral//Pares craneales//Pérdida
+de conocimiento//Perímetro cefálico
+- Perímetro craneal//Postcirugía -
+Postconización//Proteína C.
 PC I: Par craneal I o nervio olfatorio.
 PC II: Par craneal II o nervio óptico.
 PC III: Par craneal III o nervio motor
@@ -3753,8 +3702,8 @@ PC VII: Par craneal VII o nervio facial.
 PC VIII: Par craneal VIII o nervio
 cocleovestibular.
 
-PAP: Papaverina - Periodo activo de
-parto - Presión de arteria pulmonar.
+PAP: Papaverina//Periodo activo de
+parto//Presión de arteria pulmonar.
 Pap.: Papanicolau, tinción.
 Papilitis: Inflamación de la papila. Se
 puede referir a la papila de la ampolla
@@ -3781,7 +3730,7 @@ semanas.
 Parto tedioso: Expresión utilizada para
 indicar que el trabajo del parto se alarga. Equivale al descriptor de la CIE-9MC «parto prolongado, primera fase».
 PAS: Para-amino-salycilic acid (ácido
-paraaminosalicílico) - Periodic acidSchiff (Ácido peryódico de Schiff, tinción) - Presión arterial sistémica -
+paraaminosalicílico)//Periodic acidSchiff (Ácido peryódico de Schiff, tinción)//Presión arterial sistémica -
 Presión arterial sistólica.
 PAT: Punción aspiratoria transtorácica.
 Pat-: Prefijo en relación con enfermedad.
@@ -3795,23 +3744,23 @@ o accesorio.
 PC XII: Par craneal XII o nervio hipogloso.
 PCA: Pancreatitis crónica alcohólica -
 Patient-controlled analgesia (Analgesia
-controlada por el paciente) - Persistencia del conducto arterioso. Es lo
+controlada por el paciente)//Persistencia del conducto arterioso. Es lo
 mismo que Ductus o Ductus Persistente. Se trata de una arteria normal
 en el feto que debe cerrarse tras el parto pero, si no lo hace, constituye una
-anomalía congénita - Proteína C activada.
+anomalía congénita//Proteína C activada.
 PCAA: Antígeno asociado al carcinoma
 de páncreas.
 PCD: Pirofosfato cálcico dihidratado.
 PCG: Puntuación de coma de Glasgow.
-PCI: Parálisis cerebral infantil - Percutaneous coronary interventión (Intervención
-coronaria percutánea) - Peso corporal ideal.
+PCI: Parálisis cerebral infantil//Percutaneous coronary interventión (Intervención
+coronaria percutánea)//Peso corporal ideal.
 PCO2: Presión parcial de CO2.
 PCP: Peace Pill o Phencyclidine (Píldora de
 la paz, «polvo de ángel» o fenciclidina)
 - Presión capilar pulmonar.
-PCR: Parada cardiorrespiratoria - Polimerase chain reaction (Reacción en cadena de la polimerasa) - Proteína C
+PCR: Parada cardiorrespiratoria//Polimerase chain reaction (Reacción en cadena de la polimerasa)//Proteína C
 reactiva.
-PCT: Peso corporal total - Plasmocitoma - Porfiria cutánea tardía.
+PCT: Peso corporal total//Plasmocitoma//Porfiria cutánea tardía.
 PCTF: Porfiria cutánea tardía familiar.
 PCU: Prolapso de cordón umbilical.
 PCV: Parálisis de cuerdas vocales -
@@ -3830,8 +3779,8 @@ PDPCM: Programa de detección precoz de cáncer de mama.
 PDS: Paciente en decúbito supino.
 PDW: Platelet cell distribution width (Banda de distribución de plaquetas).
 PDx: Pruebas diagnósticas.
-PE: Parto espontáneo - Potenciales
-evocados - Presión espiratoria -
+PE: Parto espontáneo//Potenciales
+evocados//Presión espiratoria -
 Prueba de esfuerzo (ergometría).
 Pe.: Perinatal.
 PEA: Potencial evocado auditivo.
@@ -3854,9 +3803,9 @@ PEFV: Partial expiratory flowing volume
 
 PEG
 PEG: Pequeño para la edad gestacional
-- Peso elevado (para la edad) gestacional - Polietilenglicol.
+- Peso elevado (para la edad) gestacional//Polietilenglicol.
 PEH: Periartritis escapulohumeral.
-Pen: Penicilina - Pirógeno endógeno.
+Pen: Penicilina//Pirógeno endógeno.
 -penia: Sufijo que indica reducción
 anormal en la cuantía de un elemento.
 Penning: Es un fijador externo que se
@@ -3884,11 +3833,11 @@ de la terapéutica de las hemopatías
 
 malignas. Es un protocolo multicéntrico de quimioterapia usado en
 Hematología.
-PEV: Pielografía endovenosa - Potencial evocado visual.
+PEV: Pielografía endovenosa//Potencial evocado visual.
 Pexia: Fijación generalmente mediante
 sutura.
 PF: Punto de fusión.
-PFC: Plasma fresco congelado - Poliposis familiar de colon.
+PFC: Plasma fresco congelado//Poliposis familiar de colon.
 PFCL: Perfluorocarbono líquido.
 PFGE: Pulsed-field gel electrophoresis (Elecroforesis en gel de campos pulsantes).
 PFH: Prueba de función hepática.
@@ -3900,7 +3849,7 @@ pg: Picogramo.
 PG: Prostaglandina.
 Pg.: Progesterona.
 PGA: Prostaglandina A.
-PGB: Penicilina G benzatina - Prostaglandina B.
+PGB: Penicilina G benzatina//Prostaglandina B.
 PGC: Prostaglandina C.
 PGD: Prostaglandina D.
 PGE: Prostaglandina E.
@@ -3908,7 +3857,7 @@ PGF: Prostaglandina F.
 PGH: Prostaglandina H.
 PGI: Prostaglandina I.
 PGP: Parálisis general progresiva.
-PH: Paciente hipertenso - Progenitores hematopoyéticos.
+PH: Paciente hipertenso//Progenitores hematopoyéticos.
 pH: Logaritmo negativo del ion hidrógeno activo (Símbolo utilizado para
 expresar la acidez o alcalinidad de una
 solución).
@@ -3923,8 +3872,8 @@ ausencia de vitamina K).
 PJ: Peutz-Jeghers, síndrome.
 PK: Piruvate kinase (Piruvatocinasa).
 PL: Posterolateral (Arteria coronaria) -
-Postlegrado - Punción lumbar.
-Pl.: Plaquetas - Pleural.
+Postlegrado//Punción lumbar.
+Pl.: Plaquetas//Pleural.
 Plaq.: Plaquetas.
 -plasia: Sufijo que significa reparación.
 Plastia: Reconstrucción quirúrgica.
@@ -3935,11 +3884,11 @@ más, excesivo o múltiple.
 PLI: Punto lagrimal inferior.
 PLP: Punción lavado peritoneal.
 Plug: Tapón, obturador.
-PM: Pacemaker (Marcapasos) - Peso
-molecular - Petit (pequeño) mal -
-Polimiositis - Post mortem (Después de
-muerto) - Psicomotor.
-pm: Por minuto - Pulsaciones por
+PM: Pacemaker (Marcapasos)//Peso
+molecular//Petit (pequeño) mal -
+Polimiositis//Post mortem (Después de
+muerto)//Psicomotor.
+pm: Por minuto//Pulsaciones por
 minuto.
 PMD: Psicosis maniacodepresiva.
 PMM: Plan de mantenimiento con
@@ -3948,10 +3897,10 @@ PMN: Polimorfonuclear.
 PMO: Progenitores de médula ósea -
 Punción de médula ósea.
 PMR: Polimialgia reumática.
-PN: Pancreatitis necrosante - Peso al
-nacer - Pielonefritis.
+PN: Pancreatitis necrosante//Peso al
+nacer//Pielonefritis.
 PNA: Pielonefritis aguda.
-PNC: Penicilina - Pielonefritis crónica.
+PNC: Penicilina//Pielonefritis crónica.
 PND: Polineuropatía diabética.
 PNET: Peripheral neuroectodermal tumor
 (Tumor neuroectodérmico periférico).
@@ -3960,10 +3909,10 @@ PNG: Penicilina G.
 PHI: Phosphohexose isomerase (Fosfoexosa isomerasa).
 Phyllodes: Es un fibroadenoma gigante de mama. Es sinónimo de Filodo o
 Fibroadenoma filoides.
-PI: Párpado inferior - Parto inmaduro
-- Periodo de incubación - Presión
-inspiratoria - Presión intracraneana.
-PIC: Petición interconsulta - Presión
+PI: Párpado inferior//Parto inmaduro
+- Periodo de incubación//Presión
+inspiratoria//Presión intracraneana.
+PIC: Petición interconsulta//Presión
 intracraneal.
 PICA: Postero inferior cerebellar artery
 (arteria cerebelosa posteroinferior).
@@ -3973,9 +3922,9 @@ Piel-: Prefijo en relación con pelvis
 renal.
 Pielo.: Pielografía.
 PIF: Peak inspiratory flow (Pico de flujo
-inspiratorio) - Prolactin-inhibiting factor
+inspiratorio)//Prolactin-inhibiting factor
 (Factor inhibidor de la prolactina).
-PIN: Penis intraepithelial neoplasia (neoplasia intraepitelial de pene) - Personal
+PIN: Penis intraepithelial neoplasia (neoplasia intraepitelial de pene)//Personal
 identification number (Número de identificación personal).
 PIN III: Neoplasia intraepitelial prostática. Es un Carcinoma in situ de
 próstata.
@@ -3997,9 +3946,9 @@ PNI
 PPH: Procedure for prolapsed hemorrhoids
 (Procedimiento para hemorroides
 prolapsadas).
-PPL: Puñopercusión lumbar - Punción
+PPL: Puñopercusión lumbar//Punción
 pleural.
-ppm: Partes por millón - Pulsaciones
+ppm: Partes por millón//Pulsaciones
 por minuto.
 PPN: Puñopercusión negativa.
 PPP: Pulso pedio palpable (o presente)
@@ -4011,16 +3960,16 @@ PPRB: Puñopercusión renal bilateral.
 PPRD: Puñopercusión renal derecha.
 PPRI: Puñopercusión renal izquierda.
 PPT: Pielostomía percutánea transitoria.
-PPV: Presión de pérdida vesical - Porcentaje de población vacunada - Positive pressure ventilation (Ventilación con
+PPV: Presión de pérdida vesical//Porcentaje de población vacunada//Positive pressure ventilation (Ventilación con
 presión positiva).
 PQ: Parte del trazado del ECG que
-representa la conducción auriculoventricular - Plaquetas - Poliquimioterapia - Poliquistosis.
+representa la conducción auriculoventricular//Plaquetas//Poliquimioterapia//Poliquistosis.
 PQM: Poliquimioterapia.
 PQR: Poliquistosis renal.
 PQRAD: Poliquistosis renal autosómica dominante.
 PQT: Poliquimioterapia.
 PR: Parte del trazado del ECG entre la
-onda P y el inicio del QRS del electrocardiograma y que representa la conducción auriculoventricular - Poliquistosis renal.
+onda P y el inicio del QRS del electrocardiograma y que representa la conducción auriculoventricular//Poliquistosis renal.
 Pr.: Prolactina.
 PRE: Pancreatog rafía retróg rada
 endoscópica.
@@ -4028,9 +3977,9 @@ Pre-: Prefijo que significa antes, antes
 de.
 
 PNI: Presión neumática intermitente.
-PNP: Polineuropatía - Purine nucleotide
+PNP: Polineuropatía//Purine nucleotide
 phosphorilase (Purina-nucleótido fosforilasa).
-PO: Pérdida ósea - Presión osmótica -
+PO: Pérdida ósea//Presión osmótica -
 Postoperatorio.
 PO2: Presión parcial de oxígeno.
 POEMS: Polyneuropathy, organomegaly,
@@ -4049,11 +3998,11 @@ después de.
 POTG: Prueba oral de tolerancia a la
 glucosa.
 Poye-: Prefijo en relación con producción.
-PP: Pie plano - Placenta previa - Polineuropatía progresiva - Proteínas
-plasmáticas - Protoporfirina - Pulso
-palplable - Pulso paradójico - Pulso
-pedio - Punción pleural - Pyrophosphate (Pirofosfato).
-pp: Papilla - Presión positiva.
+PP: Pie plano//Placenta previa//Polineuropatía progresiva//Proteínas
+plasmáticas//Protoporfirina//Pulso
+palplable//Pulso paradójico//Pulso
+pedio//Punción pleural//Pyrophosphate (Pirofosfato).
+pp: Papilla//Presión positiva.
 PPC: Presión de perfusión cerebral.
 PPCA: Presión positiva continua en la
 vía aérea.
@@ -4078,25 +4027,25 @@ Psic-: Prefijo en relación con mente.
 PSOD: Párpado superior de ojo derecho.
 PSOI: Párpado superior de ojo izquierdo.
 PSP: Progenitores de sangre periférica.
-PsPs: Pulsos palpables - Pulsos pedios.
+PsPs: Pulsos palpables//Pulsos pedios.
 PsPsPs: Pulsos pedios palpables.
 PSQ: Psiquiatría (Servicio de).
 PSVD: Presión sistólica ventricular
 derecha.
 PSVI: Presión sistólica ventricular
 izquierda.
-PT: Paratiroides - Periodo de transmisibilidad - Pretérmino - Proteínas
-totales - Protrombina - Púrpura
+PT: Paratiroides//Periodo de transmisibilidad//Pretérmino//Proteínas
+totales//Protrombina//Púrpura
 trombopénica.
 Pt: Símbolo químico del platino.
 PTA: Percutaneous transluminal angioplasty
-(Angioplastia transluminal percutánea) - Plasma thromboplastin antecedent
+(Angioplastia transluminal percutánea)//Plasma thromboplastin antecedent
 (Antecedente tromboplastínico del
 plasma o Factor XI de la coagulación)
 - Púrpura trombocitopénica autoinmune.
 PTC: Percutaneous transhepatic cholangiography (Colangiografía transhepática
-percutánea) - Plasma thromboplastin
-component (Componente tromboplastínico del plasma) - Prótesis total de
+percutánea)//Plasma thromboplastin
+component (Componente tromboplastínico del plasma)//Prótesis total de
 cadera.
 
 Presbi-: Prefijo que significa viejo o
@@ -4104,10 +4053,10 @@ relacionado con la vejez.
 Presentación: En obstetricia, es la parte del feto que se toca con el dedo examinador a través del cuello uterino
 durante el trabajo de parto.
 PRF: Prolactin releasing factor (Factor liberador de prolactina).
-PRL: Plasma rico en leucocitos - Prolactina.
+PRL: Plasma rico en leucocitos//Prolactina.
 PRN: Peso del recién nacido.
-PRO: Procarbacina - Propanolol.
-Pro.: Prolina - Proteína.
+PRO: Procarbacina//Propanolol.
+Pro.: Prolina//Proteína.
 Proacelerina: Factor V de la coagulación.
 PROC: Proteína C.
 ProC: Proteína C.
@@ -4125,8 +4074,8 @@ mismo nombre.
 Protrombina: Factor II de la coagulación.
 PRPP: Phospho-ribosyl-pyrophosphate
 (Fosforribosil pirofosfato).
-PRT: Periodo refractario total - Prótesis de rodilla total.
-PS: Párpado superior - Proteína S.
+PRT: Periodo refractario total//Prótesis de rodilla total.
+PS: Párpado superior//Proteína S.
 PSA: Prostate-specific antigen (Antígeno
 prostático específico).
 PSCU: Progenitores de sangre de cordón umbilical.
@@ -4146,17 +4095,17 @@ del segmento ST del electrocardiograma
 PUVA: Psoralens plus ultraviolet light of the A
 wavelength (Psoralogenos más radiación
 ultravioleta de longitud de onda A).
-PV: Policitemia vera - Postvulvectomía
-- Presión venosa - Punto de vista.
-PVC: Polyvinylchloride (Cloruro de polivinilo) - Presión venosa central.
+PV: Policitemia vera//Postvulvectomía
+- Presión venosa//Punto de vista.
+PVC: Polyvinylchloride (Cloruro de polivinilo)//Presión venosa central.
 PVE: Parto vaginal espontáneo -
 Potenciales visuales evocados.
-PVI: Parto vaginal instrumental - Presión de ventrículo izquierdo.
+PVI: Parto vaginal instrumental//Presión de ventrículo izquierdo.
 PVM: Prolapso de la válvula mitral.
 PVP: Polivinilpirrolidona
 PVR: Proliferación vitreorretiniana o
 Proliferative vitreo retinopathy (Retinopatía vítrea proliferativa).
-PVY: Presión venosa yugular - Pulso
+PVY: Presión venosa yugular//Pulso
 venoso yugular.
 Pw: Presión capilar pulmonar.
 PXF: Pseudoexfoliación.
@@ -4171,22 +4120,22 @@ Pte.: Pendiente.
 PTFE: Politetrafluoroetileno. Es un
 material plástico sintético usado en
 cirugía reparadora.
-PTG: Proteinograma - Prueba de tolerancia a la glucosa.
+PTG: Proteinograma//Prueba de tolerancia a la glucosa.
 PTGO: Prueba de tolerancia a la glucosa oral.
 PTH: Parathyroid hormone (Hormona
 paratiroidea o parathormona).
-PTI: Peso teórico ideal - Prueba de
-tolerancia a la insulina - Púrpura
-trombocitopénica idiopática - Púrpura trombocitopénica inmunológica.
+PTI: Peso teórico ideal//Prueba de
+tolerancia a la insulina//Púrpura
+trombocitopénica idiopática//Púrpura trombocitopénica inmunológica.
 Pto.: Punto.
 PTOG: Prueba de tolerancia oral a la
 glucosa.
-PTR: Prostatectomía radical - Prótesis
+PTR: Prostatectomía radical//Prótesis
 total de rodilla.
-PTS: Pacientes - Pediatric trauma score
+PTS: Pacientes//Pediatric trauma score
 (Puntuación de traumatismo pediátrico.
 Pts: Pacientes.
-PTT: Punción transtraqueal - Púrpura
+PTT: Punción transtraqueal//Púrpura
 trombótica trombocitopénica.
 PU: Puerta de urgencias.
 
@@ -4194,14 +4143,14 @@ PU: Puerta de urgencias.
 
 Q
 QR: Quimiorradioterapia.
-QRS: Quiste renal simple - Parte del
+QRS: Quiste renal simple//Parte del
 trazado del electrocardiograma que
 representa la despolarización ventricular.
 QRT: Quimiorradioterapia.
 Qs: Flujo sistémico.
 QSC: Quiste sacrocoxígeo.
 QT: Distancia entre la onda Q y la T en
-el ECG - Quimioterapia.
+el ECG//Quimioterapia.
 Qt: Gasto cardiaco.
 QTc: Intervalo QT corregido.
 QTL: Intervalo QT largo.
@@ -4213,22 +4162,22 @@ Quin(et)-: Prefijo en relación con movimiento.
 Quir-: Prefijo en relación con mano.
 
 Q: Flujo sanguíneo (volumen/tiempo),
-farmacocinética - Parte inicial del
+farmacocinética//Parte inicial del
 complejo QRS del electrocardiograma
-- Quimioterapia - Quiste.
+- Quimioterapia//Quiste.
 q: Brazo largo del cromosoma.
 QB: Quiste broncógeno.
 QC: Quality control (Control de calidad) -
-Queratoconjuntivitis - Quimioterapia
+Queratoconjuntivitis//Quimioterapia
 complementaria.
 QCA: Quantitative coronary angiography
 (Angiografía coronaria cuantitativa).
 QCO: Quirúrgico.
-QM: Quilomicrones - Quiste meniscal.
+QM: Quilomicrones//Quiste meniscal.
 QMT: Quimioterapia.
 QO2: Aporte de oxígeno a los tejidos.
 QOA: Quiste óseo aneurismático.
-QP: Quimioprofilaxis - Quiste pancreático - Quiste pulmonar.
+QP: Quimioprofilaxis//Quiste pancreático//Quiste pulmonar.
 Qp: Flujo (hemático) pulmonar.
 Qp/Qs: Relación entre el flujo pulmonar y el sistémico.
 
@@ -4245,38 +4194,38 @@ RAST: Radioallergosorbent test (Prueba de
 radioalergosorbencia).
 RBA: Revisión bajo anestesia.
 RBE: Relative biologic effectiveness (Eficacia biológica relativa).
-RC: Remisión completa - Reserva
+RC: Remisión completa//Reserva
 coronaria.
 RC1: Primera remisión completa.
 RC2: Segunda remisión completa.
 RCCL: Radiografía de columna cervical lateral.
 RCD: Radiografía de columna dorsal -
-Reborde costal derecho - Reserva
+Reborde costal derecho//Reserva
 coronaria distólica.
 RCI: Reborde costal izquierdo.
 RCIU: Retraso del crecimiento intrauterino.
 RCL: Radiografía de columna lumbar.
-RCP: Reacción en cadena de la polimerasa - Reflejo cutáneo-plantar -
-Registro de casos psiquiátricos - Responsabilidad civil profesional - Resucitación cardiopulmonar.
+RCP: Reacción en cadena de la polimerasa//Reflejo cutáneo-plantar -
+Registro de casos psiquiátricos//Responsabilidad civil profesional//Resucitación cardiopulmonar.
 
-R: Radioterapia - Remisión - Renal -
-Resistente - Respiración - Riñón -
+R: Radioterapia//Remisión//Renal -
+Resistente//Respiración//Riñón -
 Roentgen, unidad internacional de la
 radiación x o gamma.
 r: Cromosoma en anillo.
-R1: Primer tono cardiaco - Residente
+R1: Primer tono cardiaco//Residente
 de primer año.
-R2: Residente de segundo año - Segundo tono cardiaco.
-R3: Residente de tercer año - Tercer
+R2: Residente de segundo año//Segundo tono cardiaco.
+R3: Residente de tercer año//Tercer
 tono cardiaco.
 R4: Cuarto tono cardiaco.
-RA: Rechazo agudo - Regurgitación
-aórtica - Reproducción asistida.
+RA: Rechazo agudo//Regurgitación
+aórtica//Reproducción asistida.
 Ra: Símbolo químico del radio.
 RAB: Resección anterior baja (de recto).
 RABA: Rotura artificial de la bolsa de
 las aguas.
-RAD: Radiología (Servicio de) - Reacción adversa a los medicamentos.
+RAD: Radiología (Servicio de)//Reacción adversa a los medicamentos.
 Rad-: Prefijo en relación a raíz.
 rad: Radiation absorbed dose (dosis absorbida
 de radiación). Es una unidad de medida
@@ -4288,12 +4237,12 @@ un medicamento.
 91
 
 RCT
-RCT: Race-Coombs test (Prueba de RaceCoombs) - Randomized controlled trials
+RCT: Race-Coombs test (Prueba de RaceCoombs)//Randomized controlled trials
 (Ensayos aleatorizados y controlados).
 RCTG: Registro cardiotocográfico.
 RCTP: Revascularización coronaria
 transluminal percutánea.
-RD: Retinopatía diabética - Riñón
+RD: Retinopatía diabética//Riñón
 derecho.
 RDF: Radiofrecuencia.
 RDNP: Retinopatía diabética no proliferativa.
@@ -4303,12 +4252,12 @@ RDS: Respiratory distress syndrome (Síndrome de distrés respiratorio).
 RDT: Radioterapia.
 RDW: Red cell distribution width (Banda
 de distribución de hematíes).
-RE: Receptor estrogénico - Recomendaciones especiales - Recto externo -
+RE: Receptor estrogénico//Recomendaciones especiales//Recto externo -
 Reflujo esofágico.
 Re: Renina.
 REBA: Rotura espontánea de la bolsa
 de las aguas.
-REC: Recaída - Recidiva.
+REC: Recaída//Recidiva.
 Recidiva: Repetición de una enfermedad poco después de terminada la
 convalecencia. Aparición de un tumor
 en el mismo órgano donde fue extirpado otro de la misma naturaleza.
@@ -4335,7 +4284,7 @@ REH: Rehabilitación (Servicio de).
 REL: Retículo endoplásmico liso.
 REM: Radiaciones electromagnéticas -
 Rapid-eye movement (Movimiento ocular
-rápido) - Rotura espontánea de membranas.
+rápido)//Rotura espontánea de membranas.
 Remisión: Es un término usado en
 oncología para definir una fase en la
 evolución de una neoplasia maligna
@@ -4350,7 +4299,7 @@ Rescate de prótesis: Recambio de
 prótesis.
 RESCUE: Registro sanitario de códigos útiles para emergencias.
 Resec.: Resección.
-Retro.: Retroinserción - Retroposición.
+Retro.: Retroinserción//Retroposición.
 REU: Reumatología (Servicio de).
 REVA: Reparación del (músculo) elevador por vía anterior.
 92
@@ -4365,7 +4314,7 @@ malla.
 RKIP: Proteína del inhibidor de la Raf
 cinasa.
 RLX: Recesivo ligado al cromosoma X.
-RM: Regurgitación mitral. - Resonancia magnética.
+RM: Regurgitación mitral.//Resonancia magnética.
 RMN: Resonancia magnética nuclear.
 RMO: Retirada de material de osteosíntesis.
 RN: Recién nacido. Los RN se clasifican por dos criterios: la edad gestacional al nacer y la adecuación del peso al
@@ -4390,24 +4339,24 @@ PEEG (o PEG): Peso elevado para la
 edad gestacional. Peso por encima del
 percentil 90 para su edad gestacional.
 
-RF: Radiofrecuencia - Recuento (de
+RF: Radiofrecuencia//Recuento (de
 hematíes, leucocitos y plaquetas) y
 fórmula (leucocitaria).
-RFC: Reacción de fijación de complemento - Reserva de flujo coronario.
+RFC: Reacción de fijación de complemento//Reserva de flujo coronario.
 RFLP: Restriction fragment length polymorphism (Polimorfismo en la longitud de
 los fragmentos de restricción o polimorfismo del DNA).
 RG: Recomendaciones generales.
 RGE: Reflujo gastroesofágico.
 RH: Receptores hormonales.
 Rh: Abreviatura del factor Rhesus (antígenos presentes en la membrana de
-los leucocitos) - Símbolo del rodio.
-RHA: Rechazo hiperagudo - Ruidos
+los leucocitos)//Símbolo del rodio.
+RHA: Rechazo hiperagudo//Ruidos
 hidroaéreos.
 RHB: Rehabilitación (Servicio de).
 rHu-EPO: Recombinant human erythropoyetin (Eritropoyetina humana recombinante).
-RI: Radiaciones ionizantes - Recto
-interno - Resistencia a la insulina -
-Respuesta inmune - Riñón izquierdo.
+RI: Radiaciones ionizantes//Recto
+interno//Resistencia a la insulina -
+Respuesta inmune//Riñón izquierdo.
 RIA: Radioimmunoassay (Radioinmunoanálisis).
 Riboflavina: Vitamina B2.
 RIE: Radioinmunoensayo.
@@ -4448,7 +4397,7 @@ RNM: Resonancia nuclear magnética.
 RNMP: Resonancia nuclear magnética
 con fósforo.
 RNP: Recién nacido patológico -
-Recién nacido pretérmino (o prematuro) - Ribonucleoproteína.
+Recién nacido pretérmino (o prematuro)//Ribonucleoproteína.
 RNP APEG: Recién nacido pretérmino con adecuado peso para la edad
 gestacional.
 RNP BPEG: Recién nacido pretérmino con bajo peso para la edad gestacional.
@@ -4506,14 +4455,14 @@ coloca la válvula pulmonar del paciente. En el lugar de la válvula pulmonar
 se coloca una prótesis valvular biológica (homoinjerto).
 ROT: Reflejo osteotendinoso.
 ROV: Reflejo oculovestibular.
-RP: Remisión parcial - Resistencia pulmonar - Retroperitoneal.
+RP: Remisión parcial//Resistencia pulmonar//Retroperitoneal.
 RPA: Reumatismo poliarticular agudo.
 RPAP: Radiografía de pelvis anteroposterior.
 RPB: Rotura prematura de bolsas.
 RPBF: Riesgo de pérdida de bienestar
 fetal. Equivale a sufrimiento fetal.
 RPM: Ruptura prematura de membranas.
-rpm: Respiraciones por minuto - Revoluciones por minuto.
+rpm: Respiraciones por minuto//Revoluciones por minuto.
 RPMP: Ruptura prematura de membranas pretérmino.
 RPPC: Respiración con presión positiva
 continua.
@@ -4525,7 +4474,7 @@ para la sífilis).
 RPTA: Es un trombolítico.
 RQ: Radioquimioterapia.
 RQT: Radioquimioterapia.
-RR: Ruidos respiratorios - RutkowRobbins. Es una hernioplastia con
+RR: Ruidos respiratorios//RutkowRobbins. Es una hernioplastia con
 malla.
 -rrafia: Sufijo que significa sutura.
 -rragia: Sufijo que significa flujo anormal o excesivo.
@@ -4538,17 +4487,17 @@ synovitis with pitting edema (Sinovitis
 simétrica seronegativa remitente con
 edema con fóvea distal).
 RSC: Radiografía simple de cráneo -
-Rectosigmoidoscopia - Recuento sanguíneo total.
+Rectosigmoidoscopia//Recuento sanguíneo total.
 RsCsAs: Ruidos cardiacos arrítmicos.
 RsCsRs: Ruidos cardiacos rítmicos.
 RSN: Ritmo sinusal normal.
-RSV: Respiratory syncytial virus (Virus respiratorio sincitial) - Rous sarcoma virus
+RSV: Respiratory syncytial virus (Virus respiratorio sincitial)//Rous sarcoma virus
 (Virus del sarcoma de Rous).
-RT: Radioterapia - Reabsorción tubular
+RT: Radioterapia//Reabsorción tubular
 - Regurgitación tricuspídea.
 Rt.: Reticulocitos.
 RTA: Reacción transfusional aguda -
-Reflejo del tendón de Aquiles - Rotura del tendón de Aquiles.
+Reflejo del tendón de Aquiles//Rotura del tendón de Aquiles.
 RTAP: Radiografía de tórax anteroposterior.
 RTL: Radiografía de tórax lateral.
 RT-MX: Radioterapia y metotrexato.
@@ -4561,7 +4510,7 @@ RTU: Resección transuretral. Técnica
 quirúrgica de resección de una lesión
 realizada a través de la uretra.
 RTUP: Resección transuretral de próstata.
-RTV: Resección tranvesival - Ritonavir.
+RTV: Resección tranvesival//Ritonavir.
 RUA: Retención urinaria aguda.
 Rutkow-Robbins: Técnica de hernioplastia con malla.
 RV: Residual volume (Volumen residual).
@@ -4570,9 +4519,9 @@ RV: Residual volume (Volumen residual).
 RVA
 RVU: Reflujo vesicoureteral.
 Rx: Radiografía.
-RxT: Radiografía de tórax - Radioterapia.
+RxT: Radiografía de tórax//Radioterapia.
 
-RVA: Radiografía de vegetaciones adenoideas - Recambio valvular aórtico.
+RVA: Radiografía de vegetaciones adenoideas//Recambio valvular aórtico.
 RVAo: Recambio valvular aórtico.
 RVM: Recambio valvular mitral.
 RVO: Reflejo vestíbuloocular.
@@ -4582,7 +4531,7 @@ RVO: Reflejo vestíbuloocular.
 S
 SAHS: Síndrome de apnea e hipopnea
 del sueño.
-SAI: Sine alter indicatio (sin otra medicación) - Sine alter inscriptione (sin otra
+SAI: Sine alter indicatio (sin otra medicación)//Sine alter inscriptione (sin otra
 especificación).
 Salping-: Prefijo que significa trompa
 (de Falopio o de Eustaquio).
@@ -4599,16 +4548,16 @@ SAPU: Servicio de atención al paciente
 y usuario.
 SARM: Staphylococcus aureus resistente a
 meticilina.
-SAS: Servicio Andaluz de Salud - Síndrome de apnea del sueño.
+SAS: Servicio Andaluz de Salud//Síndrome de apnea del sueño.
 SASM: Staphylococcus aureus sensible a
 meticilina.
 Sat.: Saturación.
 SatO2: Saturación de Oxígeno.
 SB: Situación basal.
 
-S: Sacro - Sangre - Semana - Sensible
-- Servicio - Símbolo químico del
-azufre - Síndrome - Sistólico.
+S: Sacro//Sangre//Semana//Sensible
+- Servicio//Símbolo químico del
+azufre//Síndrome//Sistólico.
 s: En el Sistema Internacional de Unidades, símbolo del segundo (unidad
 de tiempo).
 S1, S2, S3, S4 y S5: 1ª, 2ª, 3ª, 4ª y 5ª vértebras sacras.
@@ -4638,16 +4587,16 @@ SCIH: Síndrome del corazón izquierdo
 hipoplásico.
 SCQ: Superficie corporal quemada.
 SCS: Servei Català de la Salut (Servicio
-Catalán de la Salud) - Spinal cord stimulation (Estimulación de la médula espinal).
+Catalán de la Salud)//Spinal cord stimulation (Estimulación de la médula espinal).
 SCU: Sangre de cordón umbilical.
 SCVCS: Síndrome de compresión de la
 vena cava superior.
-SD: Sobredosis - Soplo diastólico.
+SD: Sobredosis//Soplo diastólico.
 Sd.: Síndrome.
 SDD: Síndrome de demencia depresiva.
 SDR: Síndrome de dificultad respiratoria.
 Sdr.: Síndrome.
-SDRA: Síndrome de dificultad respiratoria aguda - Síndrome de dificultad
+SDRA: Síndrome de dificultad respiratoria aguda//Síndrome de dificultad
 respiratoria del adulto.
 SDRI: Síndrome de dificultad respiratoria idiopático.
 Sdto.: Sedimento.
@@ -4667,12 +4616,12 @@ Sept-: Prefijo en relación con infección.
 SERGAS: Servicio Gallego de Salud.
 
 SBF: Situación basal funcional.
-SC: Seno coronario - Sin corrección -
-Síndrome carcinoide - Síndrome de
-Cushing - Subcutáneo - Superficie
+SC: Seno coronario//Sin corrección -
+Síndrome carcinoide//Síndrome de
+Cushing//Subcutáneo//Superficie
 cutánea.
 sc: Subcutáneo.
-SCA: Síndrome cerebral agudo - Síndrome confusional agudo - Síndrome
+SCA: Síndrome cerebral agudo//Síndrome confusional agudo//Síndrome
 coronario agudo.
 SCACEST: Síndrome coronario agudo
 con elevación del ST. Puede corresponder a un IAM no Q o a una angina
@@ -4692,7 +4641,7 @@ Scanner: Explorador (en inglés). Se usa
 como sinónimo de TAC.
 SCBH: Síndrome de Claude-BernardHorner.
 SCC: Short course chemotherapy (ciclo corto de quimioterapia).
-SCID: Síndrome de coagulación intravascular diseminada - Structured Clinical Interview for DSM. (Entrevista clínica estructurada para los trastornos del
+SCID: Síndrome de coagulación intravascular diseminada//Structured Clinical Interview for DSM. (Entrevista clínica estructurada para los trastornos del
 DSM).
 98
 
@@ -4706,13 +4655,13 @@ SEST: Sin elevación del (segmento) ST.
 SEU: Servicio de Urgencias.
 Seudo-: Prefijo en relación con falso.
 SF: Sabin-Feldman, prueba -Síndrome
-de Fanconi - Síndrome febril - Situación funcional - Subfrénico - Suero
-fisiológico - Sufrimiento fetal.
+de Fanconi//Síndrome febril//Situación funcional//Subfrénico//Suero
+fisiológico//Sufrimiento fetal.
 SF6: Exafluoruro de azufre (gas utilizado para reemplazar el humor vítreo y
 mantener la retina).
-SFA: Síndrome febril agudo - Sufrimiento fetal agudo.
-SG: Semana de gestación - Síndrome
-general - Suero glucosado - SwanGanz, catéter.
+SFA: Síndrome febril agudo//Sufrimiento fetal agudo.
+SG: Semana de gestación//Síndrome
+general//Suero glucosado//SwanGanz, catéter.
 SG5%: Suero glucosado al 5%.
 SGA: Streptococcus group A (Estreptococo del grupo A).
 SGaw: Specific airway conductance (Conductancia específica de la vía aérea).
@@ -4729,7 +4678,7 @@ SHBG: Sex-hormone binding globulin
 (Globulina fijadora de las hormonas
 sexuales).
 
-SHI: Síndrome de hipertensión intracraneal - Síndrome hipereosinófilo
+SHI: Síndrome de hipertensión intracraneal//Síndrome hipereosinófilo
 idiopático.
 Shouldice: Técnica de herniorrafia sin
 malla.
@@ -4737,24 +4686,24 @@ SHP: Sin hallazgos patológicos.
 SHR: Síndrome hepatorrenal.
 SHU: Síndrome hemolítico urémico.
 SHVO: Síndrome de hipoventilaciónobesidad.
-SI: Sacroilíaco - Safena interna - Sin
-interés - Sistema Internacional de
+SI: Sacroilíaco//Safena interna//Sin
+interés//Sistema Internacional de
 Unidades.
 Si: Símbolo químico del silicio.
-SIA: Septo interauricular - Síndrome
+SIA: Septo interauricular//Síndrome
 isquémico agudo.
 SIADH: Syndrome of inappropiate antidiuretic hormone (Síndrome de secreción
 inadecuada de hormona antidiurética).
 Sial-: Prefijo en relación con saliva.
 SID: Sacroilíaca derecha.
 SIDA: Sacroilíaca derecha anterior,
-posición fetal - Síndrome de inmunodeficiencia adquirida.
+posición fetal//Síndrome de inmunodeficiencia adquirida.
 SIDP: Sacroilíaca derecha posterior,
 posición fetal.
 SIDT: Sacroilíaca derecha transversa,
 posición fetal.
 SIHAD: Secreción inadecuada de hormona antidiurética, síndrome.
-SII: Sacroilíaca izquierda - Síndrome
+SII: Sacroilíaca izquierda//Síndrome
 del intestino irritable.
 SIIA: Sacroilíaca izquierda anterior,
 posición fetal.
@@ -4769,9 +4718,9 @@ SIL: Squamous intraepithelial lesión
 SIL de alto grado
 SLP: Síndrome linfoproliferativo.
 SLPC: Síndrome linfoproliferativo crónico.
-SM: Serie metastásica - Síndrome de
-Marfan - Siringomielia.
-SMA: Síndrome de malabsorción - Síndrome de meningitis aséptica - Smooth
+SM: Serie metastásica//Síndrome de
+Marfan//Siringomielia.
+SMA: Síndrome de malabsorción//Síndrome de meningitis aséptica//Smooth
 muscle antibody (Anticuerpo anti músculo liso).
 SMAC: Sequential multiple analysis computed (Analizador secuencial múltiple
 computarizado).
@@ -4786,20 +4735,20 @@ SMI: Síndrome de malabsorción intestinal.
 SMP: Síndrome mieloproliferativo.
 SMPC: Síndrome mieloproliferativo
 crónico.
-SMS: Servicio Murciano de Salud - Síndrome de la muerte súbita - Soplo
+SMS: Servicio Murciano de Salud//Síndrome de la muerte súbita//Soplo
 mesosistólico.
 SMSF: Síndrome de la muerte súbita
 frustrada.
 SMSI: Síndrome de la muerte súbita
-inexplicable - Síndrome de muerte
+inexplicable//Síndrome de muerte
 súbita infantil.
 SMSL: Síndrome de la muerte súbita
 del lactante.
 SMT: Somatostatina.
 SMW: Síndrome de Mallory-Weiss.
 SMX: Sulfametoxazol.
-SN: Serología negativa - Síndrome
-nefrótico - Sistema nervioso.
+SN: Serología negativa//Síndrome
+nefrótico//Sistema nervioso.
 Sn: Símbolo químico del estaño.
 
 SIL de alto grado: Es un carcinoma in
@@ -4825,30 +4774,30 @@ Síndrome X: Angina miocárdica con
 arterias coronarias normales.
 SIT: Situs inversus torácico.
 SIV: Septo interventricular.
-SK: Sarcoma de Kaposi - Streptokinase
+SK: Sarcoma de Kaposi//Streptokinase
 (Estreptocinasa).
 SKT: Síndrome de Klippel-Trenaunay.
 SL: Second look (Cirugía de segunda
-observación) - Simpatectomía lumbar - Streptolysin (Estreptolisina) -
+observación)//Simpatectomía lumbar//Streptolysin (Estreptolisina) -
 Sublingual.
 sl: Sublingual.
 SLB: Simpatectomía lumbar bilateral.
 SLD: Simpatectomía lumbar derecha.
 SLE: Systemic lupus erythematosus (Lupus
-eritematoso sistémico) - Supervivencia libre de enfermedad.
+eritematoso sistémico)//Supervivencia libre de enfermedad.
 SLI: Simpatectomía lumbar izquierda.
 SLM: Síndrome del lóbulo medio.
 100
 
 ST
-SPF: Solar protection factor (Factor de protección solar) - Specific pathogen free (Libre
+SPF: Solar protection factor (Factor de protección solar)//Specific pathogen free (Libre
 de agentes patógenos específicos).
 SPIT: Shunt portosistémico intrahepático transyugular.
 SPJ: Síndrome de Peutz-Jeghers.
 SPL: Según pauta de laboratorio.
 SPVM: Síndrome de prolapso de la válvula mitral.
 SQTL: Síndrome del QT largo.
-SR: Sin receta - Síndrome de Reiter.
+SR: Sin receta//Síndrome de Reiter.
 SRA: Sistema renina-angiotensina.
 SRAA: Sistema renina-angiotensinaaldosterona.
 SRAS: Síndrome respiratorio agudo
@@ -4861,8 +4810,8 @@ reacción lenta).
 SRS-A: Slow reacting substance of anaphylaxis (Sustancia de reacción lenta de la
 anafilaxia).
 SRV: Supervivencia.
-SS: Salmonella-Shigella - Seguridad social
-- Shock séptico - Sin soplos - Síndrome de Serazy - Síndrome de Sjögren -
+SS: Salmonella-Shigella//Seguridad social
+- Shock séptico//Sin soplos//Síndrome de Serazy//Síndrome de Sjögren -
 Soplo sistólico.
 SSA: Síndrome subacromial.
 SSADH: Síndrome de secreción inadecuada de hormona antidiurética.
@@ -4870,16 +4819,16 @@ SSF: Suero salino fisiológico.
 SSIADH: Síndrome de secreción inadecuada de hormona antidiurética.
 SST: Síndrome de shock tóxico.
 ST: Sacrotransversa, posición fetal -
-Sangre total - Secreción tubular - Segmento del electrocardiograma entre la
-onda S y la T - Síndrome de Turner.
+Sangre total//Secreción tubular//Segmento del electrocardiograma entre la
+onda S y la T//Síndrome de Turner.
 
-SNA: Síndrome nefrítico agudo - Sistema nervioso autónomo.
+SNA: Síndrome nefrítico agudo//Sistema nervioso autónomo.
 SNC: Sistema nervioso central.
 SNCM: Síndrome nefrótico a cambios
 mínimos.
-SNG: Síndrome del niño golpeado - Sonda nosogástrica - Surco nasogeneano.
+SNG: Síndrome del niño golpeado//Sonda nosogástrica//Surco nasogeneano.
 SNM: Síndrome neuroléptico maligno.
-SNS: Servicio Nacional de Salud - Sistema nervioso simpático.
+SNS: Servicio Nacional de Salud//Sistema nervioso simpático.
 SNOMED: Sistematized nomenclature of
 medicine (Nomenclatura sistematizada
 de medicina). Es una nomenclatura
@@ -4890,16 +4839,16 @@ SNP: Sistema nervioso periférico -
 Sodium nitroprussiade (Nitroprusiato
 sódico).
 SNV: Sistema nervioso vegetativo.
-SO: Salpingooforectomía - Segunda
+SO: Salpingooforectomía//Segunda
 opinión.
 SOG: Sobrecarga oral de glucosa.
-SOH: Sangre oculta en heces - Síndrome de obesidad-hipoventilación.
+SOH: Sangre oculta en heces//Síndrome de obesidad-hipoventilación.
 Somato-: Prefijo que significa relación
 con el cuerpo.
 SOP: Síndrome del ovario poliquístico.
 SOPQ: Síndrome del ovario poliquístico.
-SP: Sacropubiana, posición fetal - Sangre periférica - Sarampión-Parotiditis
-- Serología positiva - Síndrome paraneoplásico.
+SP: Sacropubiana, posición fetal//Sangre periférica//Sarampión-Parotiditis
+- Serología positiva//Síndrome paraneoplásico.
 SPCA: Serum prothrombin conversión accelerator (Acelerador de la conversión de la
 protrombina sérica).
 SPE: Serum protein electrophoresis (Electroforesis de proteínas séricas).
@@ -4911,10 +4860,10 @@ por emisión de fotón simple).
 STC
 SVB: Soporte vital básico.
 SVCS: Síndrome de la vena cava superior.
-SVP: Sinovitis vellosonodular pigmentada - Sistema venoso profundo.
+SVP: Sinovitis vellosonodular pigmentada//Sistema venoso profundo.
 SVS: Servei Valencia de Salut (Servicio
-Valenciano de Salud) - Servicio Vasco
-de Salud - Sistema venoso superficial.
+Valenciano de Salud)//Servicio Vasco
+de Salud//Sistema venoso superficial.
 SVS/O: Servicio Vasco de Salud / Osakidetza.
 SVV: Síndrome vasovagal.
 SWF: Síndrome de Waterhouse-Friderichsen.
@@ -4925,7 +4874,7 @@ SZE: Síndrome de Zollinger-Ellison.
 STC: Síndrome del túnel carpiano.
 STD: Si tiene dolor.
 Stem-cell: Células madre.
-STH: Según técnica habitual - Somatotrophic Hormone (Hormona somatotrofica).
+STH: Según técnica habitual//Somatotrophic Hormone (Hormona somatotrofica).
 Stoppa: Técnica de hernioplastia con
 malla.
 STPD: Standard temperature and pressure,
@@ -4935,7 +4884,7 @@ STV: Silla turca vacía.
 SU: Servicio de urgencias.
 Sup.: Supositorio.
 Susp.: Suspensión.
-SVA: Soporte vital avanzado - Sustitución de la válvula aórtica.
+SVA: Soporte vital avanzado//Sustitución de la válvula aórtica.
 SVAT: Soporte vital avanzado de trauma.
 
 102
@@ -4945,7 +4894,7 @@ TALMO: Trasplante alogénico de
 médula ósea.
 TALSP: Trasplante autólogo de sangre
 periférica.
-TAM: Tasa anual media - Tensión arterial máxima - Tensión arterial media
+TAM: Tasa anual media//Tensión arterial máxima//Tensión arterial media
 - Teofilina anhidra micronizada.
 TAMO: Trasplante autólogo de médula
 ósea
@@ -4963,28 +4912,28 @@ TASPE: Trasplante autólogo (de células progenitoras) de sangre periférica.
 TAT: Thematic Apperception Test (Test de
 apercepción temática).
 Tax-: Prefijo en relación con clasificación.
-TB: Todo bien - Traqueobronquitis -
-Tuberculina - Tuberculosis.
+TB: Todo bien//Traqueobronquitis -
+Tuberculina//Tuberculosis.
 TBC: Tuberculosis.
 Tbc: Tuberculosis.
 
-T: Temperatura - Timo - Torácico o
-dorsal - Tumor.
-t: Tiempo - Translocación.
+T: Temperatura//Timo//Torácico o
+dorsal//Tumor.
+t: Tiempo//Translocación.
 t½: Tiempo de vida media o periodo de
 semivida.
 t: Símbolo de temperatura (Celsius) -
-Símbolo de tiempo - Student´s t test
+Símbolo de tiempo//Student´s t test
 (Prueba t de Student).
 T1, T2, T3, T12: 1ª, 2ª, 3ª, 12ª Vértebras torácicas o dorsales. Es lo mismo que D1, D2, D3, , D12.
 T3: Símbolo de la Triyodotironina. Es
 una hormona tiroidea.
 T4: Símbolo de la Tiroxina. Es la principal hormona segregada por el tiroides
 y estimula el metabolismo celular.
-TA: Temperatura ambiente - Tensión
-arterial - Tratamiento actual - Traumatismo abdominal.
+TA: Temperatura ambiente//Tensión
+arterial//Tratamiento actual//Traumatismo abdominal.
 Tª: Temperatura.
-TAB: Tableta - Tifoidea, paratifoidea A
+TAB: Tableta//Tifoidea, paratifoidea A
 y B, vacuna.
 Tabl.: Tableta.
 TABM: Typhi, paratyphi A y B, melitensis
@@ -5007,8 +4956,8 @@ TBMR: Tuberculosis multirresistente.
 TBP: Tuberculosis pulmonar.
 TBPA: Thyroxine-binding prealbumin (Prealbúmina transportadora de tiroxina).
 TBQ: Tabaquismo.
-TC: Tendón del cuádriceps - Tiempo
-de coagulación - Tomografía computarizada - Trasplante cardiaco -
+TC: Tendón del cuádriceps//Tiempo
+de coagulación//Tomografía computarizada//Trasplante cardiaco -
 Tumor carcinoide.
 Tc: Símbolo químico del tecnecio.
 Tc99: Tecnecio 99. Se usa en medicina
@@ -5033,15 +4982,15 @@ Internet).
 
 TCRF: Termocoagulación por radiofrecuencia.
 TCS: Tejido celular subcutáneo.
-TCT: Telecobaltoterapia - Tirocalcitonina.
-TD: Testículo descendido - Tuberculosis diseminada - Túbulo distal.
+TCT: Telecobaltoterapia//Tirocalcitonina.
+TD: Testículo descendido//Tuberculosis diseminada//Túbulo distal.
 TDA: Trastorno por déficit de atención.
 TDAH: Trastorno por déficit de atención e hiperactividad.
 TDM: Trastorno depresivo mayor.
 TE: Transcavidad de los epiplones -
-Trombocitemia esencial - Trombocitopenia esencial - Tromboembolia -
+Trombocitemia esencial//Trombocitopenia esencial//Tromboembolia -
 Trompa de Eustaquio.
-TEA: Tetraetilamonio - Tromboendarterectomía.
+TEA: Tetraetilamonio//Tromboendarterectomía.
 TEAC: Tromboendarterectomía carotídea.
 TEC: Tratamiento con electrochoque
 (o terapia electroconvulsiva).
@@ -5052,8 +5001,8 @@ misma estructura y análoga función.
 Tele-: Prefijo en relación con fin.
 TEM: Trietilenomelamina.
 TENS: Transcutaneous electronic nerve stimulation (Electroestimulación transcutánea de nervios).
-TEP: Tomografía de emisión de positrones - Total extraperitoneal patch
-(Malla extraperitoneal total) - Tromboembolismo pulmonar.
+TEP: Tomografía de emisión de positrones//Total extraperitoneal patch
+(Malla extraperitoneal total)//Tromboembolismo pulmonar.
 TEPA: Tromboembolismo pulmonar
 agudo.
 TEPT: Trastorno por estrés postraumático.
@@ -5065,7 +5014,7 @@ TIA: Transient ischemic attack (Accidente
 isquémico transitorio).
 Tiamina: Vitamina B1.
 TIFF: Tiffeneau (Índice de).
-TIG: Tetanus immunoglobulin (Inmunoglobulina tetánica) - Transferencia
+TIG: Tetanus immunoglobulin (Inmunoglobulina tetánica)//Transferencia
 intratubárica de gametos.
 TIMI: Thrombolysis in miocardial infarction
 (Estudio de la trombolisis en el infarto de miocardio).
@@ -5077,15 +5026,15 @@ una derivación porto-cava.
 TIS: Tarjeta de identificación sanitaria.
 TIV: Tabique interventricular.
 TIVA: Total intravenous anesthesia (anestesia total intravenosa).
-TL: Testosterona libre - Tricoleucemia.
-TLC: Total lung capacity (capacidad pulmonar total) - Total lung compliance
+TL: Testosterona libre//Tricoleucemia.
+TLC: Total lung capacity (capacidad pulmonar total)//Total lung compliance
 (capacidad de distensión pulmonar
 total).
 TLV: Thr eshold limit values (Valor
 umbral).
-TM: Talasemia mayor - Tasa de mortalidad - Timpanomastoidectomía -
+TM: Talasemia mayor//Tasa de mortalidad//Timpanomastoidectomía -
 Trapeciometacarpiana, articulación -
-Tumor - Tumoración.
+Tumor//Tumoración.
 TMA: Trasplante de membrana amniótica.
 TMC: Trapeciometacarpiana, articulación.
 TMO: Trasplante de médula ósea.
@@ -5098,19 +5047,19 @@ Terap-: Prefijo en relación con tratamiento.
 TES: Técnico de emergencia sanitaria.
 TESA: Testicular sperm aspiration (Aspiración testicular de esperma).
 Test.: Testosterona.
-TF: Tetralogía de Fallot - Tonos fetales.
+TF: Tetralogía de Fallot//Tonos fetales.
 TFC: Tamaño, forma y consistencia.
-TG: Tioguanina - Tiroglobulina - Triglicéridos.
+TG: Tioguanina//Tiroglobulina//Triglicéridos.
 TGA: Trasposición de las grandes arterias.
 TGL: Triglicéridos.
 TGO: Transaminasa glutámico oxalacética.
 TGP: Transaminasa glutámico pirúvica.
 TGV: Thoracic gas volume (Volumen de
-gas torácico) - Trasposición de los
+gas torácico)//Trasposición de los
 grandes vasos.
 TH: T-cell helper (Célula T colaboradora)
-- Técnica habitual - Tiempo de
-hemorragia - Tiroiditis de Hashimoto - Trasplante hepático.
+- Técnica habitual//Tiempo de
+hemorragia//Tiroiditis de Hashimoto//Trasplante hepático.
 Th: Símbolo químico del torio.
 TH1: T-cell helper 1 (Célula T colaboradora 1)
 TH2: T-cell helper 2 (Célula T colaboradora 2)
@@ -5120,7 +5069,7 @@ Thierry (Espátulas de): Espátulas utilizadas para una de las formas de parto
 instrumentalizado.
 THO: Trasplante hepático ortotópico.
 THS: Terapia hormonal sustitutiva.
-TI: Tasa de incidencia - Tórax inestable.
+TI: Tasa de incidencia//Tórax inestable.
 105
 
 TNF
@@ -5141,16 +5090,16 @@ TPS: Taquicardia paroxística supraventricular.
 TPSP: Trasplante de progenitores de
 sangre periférica.
 TPSV: Taquicardia paroxística supraventricular.
-TPT: Tiempo parcial de tromboplastina - Tromboplastina tisular.
+TPT: Tiempo parcial de tromboplastina//Tromboplastina tisular.
 TPTA: Tiempo parcial de tromboplastina activada.
 TQSV: Taquicardia supraventricular.
-TR: Tacto rectal - Tendón rotuliano -
+TR: Tacto rectal//Tendón rotuliano -
 Trasplante renal.
-TRA: Técnicas de reproducción asistida - Temperatura - Traumatología
+TRA: Técnicas de reproducción asistida//Temperatura//Traumatología
 (Servicio de).
 Tra.: Temperatura.
 Trat: Tratamiento.
-Trauma: Traumatismo - Traumatología (se usa para designar al Servicio de
+Trauma: Traumatismo//Traumatología (se usa para designar al Servicio de
 Traumatología).
 Traumatismo: Herida, contusión o
 lesión producida por agentes mecánicos externos.
@@ -5180,22 +5129,22 @@ Top.: Tópica.
 TORCH: Toxoplasmosis, otras infecciones, rubéola, citomegalovirus, herpes (son microorganismos que producen infecciones intrauterinas y pueden ser causa de malformaciones fetales).
 TOS: Thoracic oulet syndrom (Síndrome
 de la salida del tórax). Llamado también Síndrome del desfiladero torácico o del escaleno anterior.
-TP: Tiempo de protrombina - Trasplante pulmonar - Trasplante pancreático - Trombopenia - Tuberculosis
-pulmonar - Túbulo proximal.
-TPA: Tissue plasminogen activator (Activador del plasminógeno tisular) - Tissue
+TP: Tiempo de protrombina//Trasplante pulmonar//Trasplante pancreático//Trombopenia//Tuberculosis
+pulmonar//Túbulo proximal.
+TPA: Tissue plasminogen activator (Activador del plasminógeno tisular)//Tissue
 106
 
 Tumor metastásico
 TSV: Taquicardia supraventricular.
 TSVD: Trabajo sistólico ventricular
-derecho - Tracto de salida del ventrículo derecho.
+derecho//Tracto de salida del ventrículo derecho.
 TSVI: Trabajo sistólico ventricular
-izquierdo - Tracto de salida del ventrículo izquierdo.
+izquierdo//Tracto de salida del ventrículo izquierdo.
 TSVP: Taquicardia supraventricular
 paroxística.
-TT: Tiempo de trombina - Tilt test
-(prueba inclinada) - Tiotepa - Tiroidectomía total - Toxoide tetánico -
-Transtorácico - Tratamiento - Traumatismo torácico.
+TT: Tiempo de trombina//Tilt test
+(prueba inclinada)//Tiotepa//Tiroidectomía total//Toxoide tetánico -
+Transtorácico//Tratamiento//Traumatismo torácico.
 TTG: Test de tolerancia a la glucosa.
 TTO: Tratamiento.
 Tto: Tratamiento.
@@ -5204,7 +5153,7 @@ TTOG: Test de tolerancia oral a la glucosa.
 TTP: Tiempo de tromboplastina parcial.
 TTPA: Tiempo de tromboplastina parcial activado.
 TU: Tacto uterino.
-Tum. Tumor - Tumoración.
+Tum. Tumor//Tumoración.
 Tumor: En general, tumefacción o hinchazón circunscrita. Habitualmente,
 formación de un tejido nuevo y anormal que puede ser benigno o maligno.
 Tumor metastásico: Es una neoplasia
@@ -5239,7 +5188,7 @@ húmero.
 TRS: Tracto respiratorio superior.
 Trto.: Tratamiento.
 TRV: Tabique rectovaginal.
-TS: Taquicardia sinusal - Taquicardia
+TS: Taquicardia sinusal//Taquicardia
 supraventricular.
 TSA: Troncos supraaórticos. Se suele
 usar para referirse a las arterias subclavias, tronco braquiocefálico y carótidas.
@@ -5258,8 +5207,8 @@ TVS: Taquicardia ventricular sostenida
 TVSM: Taquicardia ventricular sostenida monomorfa.
 TVT: Tension-free vaginal tape (Plastia
 vaginal libre de tensión).
-Tx: Tiroidectomía - Tórax - Trasplante
-- Tratamiento - Tromboxano.
+Tx: Tiroidectomía//Tórax//Trasplante
+- Tratamiento//Tromboxano.
 TXA: Tromboxano A.
 TXB: Tromboxano B.
 TxC: Trasplante cardiaco.
@@ -5269,21 +5218,21 @@ TxR: Trasplante renal.
 
 Tumor sólido: Tiene un único y localizado punto de origen que se considera localización primaria. Tiende a
 extenderse a tejidos próximos o a distancia (metástasis) que son localizaciones secundarias.
-TV: Tacto vaginal - Taquicardia ventricular - Trichomonas vaginalis - Triple viral.
+TV: Tacto vaginal//Taquicardia ventricular//Trichomonas vaginalis//Triple viral.
 TVI: Taquicardia ventricular idiopática
 - Trombo en el ventrículo izquierdo.
 TVM: Taquicardia ventricular monomórfica.
 TVMS: Taquicardia ventricular monomórfica sostenida.
 TVNS: Taquicardia ventricular no sostenida.
-TVP: Taquicardia ventricular polimórfica - Toxicómano por vía parenteral
-- Trombosis de la vena porta - Trombosis venosa profunda.
+TVP: Taquicardia ventricular polimórfica//Toxicómano por vía parenteral
+- Trombosis de la vena porta//Trombosis venosa profunda.
 TVPMI: Trombosis venosa profunda
 de miembros inferiores.
 
 108
 
 U
-U: Unidad - Uracilo - Uranio - Urología - Útero.
+U: Unidad//Uracilo//Uranio//Urología//Útero.
 UBA: Unidades básicas de atención.
 UC: Unidad coronaria.
 UCA: Unidad de cirugía ambulatoria.
@@ -5296,7 +5245,7 @@ UCCII: Unión de cuadrantes inferiores
 UCCSS: Unión de cuadrantes superiores (mama).
 UCE: Unidad de corta estancia.
 UCG: Uretrocistografía.
-UCH: Unidad de concentrado de hematíes - Unión catalana de hospitales.
+UCH: Unidad de concentrado de hematíes//Unión catalana de hospitales.
 UCI: Unidad de cuidados intensivos.
 UCIC: Unidad de cuidados intensivos
 coronarios.
@@ -5311,11 +5260,11 @@ UCMA: Unidad de cirugía mayor ambulatoria.
 UCP: Unidad de cuidados paliativos.
 UCSI: Unidad de cirugía sin ingreso.
 
-UD: Unidad de desintoxicación - Úlcera duodenal.
+UD: Unidad de desintoxicación//Úlcera duodenal.
 UDCA: Unidad de Documentación Clínica y Admisión.
 UDE: Unidad de desintoxicación.
 UDH: Unidad domiciliaria de hospitalización.
-UDO: Unidad del dolor - Unidad de
+UDO: Unidad del dolor//Unidad de
 observación.
 UDP: Uridine diphosphate (Uridindifosfato).
 UDPG: Uridine diphosphoglucose (Uridindifosfatoglucosa).
@@ -5345,7 +5294,7 @@ UMer: Unidades Mérieux.
 UMI: Úlcera de miembro inferior -
 Unidad de medicina intensiva.
 UMP: Uridine monophosphate (Uridinmonofosfato).
-UN: Unidad neonatal - United Nations
+UN: Unidad neonatal//United Nations
 (Naciones Unidas).
 UNESCO: United Nations Educational,
 Scientific and Cultural Organization
@@ -5357,13 +5306,13 @@ UNICEF: United Nations Children´s
 Emergency Fund (Fondo Internacional
 de las Naciones Unidas para la ayuda a
 la infancia).
-UO: Unidad de observación - Uropatía
+UO: Unidad de observación//Uropatía
 obstructiva.
 UPA: Unidad ponderada de asistencia.
 UPO: Uropatía obstructiva.
 UPP: Úlcera perforante de presión.
 UPU: Unión pieloureteral.
-UR: Última regla - Uretrografía retrógrada.
+UR: Última regla//Uretrografía retrógrada.
 URG: Urgencias (Servicio de).
 URN: Última regla normal.
 
@@ -5379,7 +5328,7 @@ UTCA: Unidad de trastornos de la conducta alimentaria.
 UTD: Unidad de tratamiento del dolor.
 UTE: Unidad de traslado especializado
 - Unidad territorial de emergencias.
-UTI: Unidad de terapia intensiva - Urinary tract infection (infección del tracto
+UTI: Unidad de terapia intensiva//Urinary tract infection (infección del tracto
 urinario).
 UTP: Uridine triphosphate (Uridintrifosfato).
 UTR: Unidad de extracción y trasplante
@@ -5393,17 +5342,17 @@ UVI: Unidad de vigilancia intensiva.
 110
 
 V
-V: Cinco (número romano) - Vacuna -
-Vacunación - Vena - Visión o agudeza visual - Voltio - Volumen.
+V: Cinco (número romano)//Vacuna -
+Vacunación//Vena//Visión o agudeza visual//Voltio//Volumen.
 v.: Velocidad.
 V1, V2, V3,..., V6 (V1, V2, V3, V6):
 Derivaciones unipolares precordiales
 del electrocardiograma.
-VA: Vaciamiento axilar - Ventilación
-alveolar - Vía aérea - Vitamina A -
-Volumen alveolar - Voluntades anticipadas.
+VA: Vaciamiento axilar//Ventilación
+alveolar//Vía aérea//Vitamina A -
+Volumen alveolar//Voluntades anticipadas.
 VAC: Vincristina, actinomicina D y
-ciclofosfamida, quimioterapia - Vincristina, adriamicina y ciclofosfamida,
+ciclofosfamida, quimioterapia//Vincristina, adriamicina y ciclofosfamida,
 quimioterapia.
 Vaciado: Vaciamiento.
 Vaciamiento: Operación de extracción
@@ -5413,57 +5362,36 @@ ganglionar) de una cavidad.
 VAD: Vincristina, adriamicina y dexametasona, quimioterapia.
 Vag.: Vaginal.
 Valvulopatía degenerativa: Valvulopatía no reumática (estenosis o insuficiencia de las válvulas cardiacas).
-VAo: Válvula aórtica - Valvulopatía
-aórtica.
+VAo: Válvula aórtica//Valvulopatía aórtica.
 VAT: Vacuna antitetánica.
-VATS: Video-assisted thoracic surger y
-(Cirugía torácica asistida por vídeo).
+VATS: Video-assisted thoracic surger y (Cirugía torácica asistida por vídeo).
 VAX: Vaciamiento axilar.
-
-VB: Vena basílica - Vertebrobasilar -
-Vía biliar - Vinblastina y bleomicina,
-quimioterapia.
+VB: Vena basílica//Vertebrobasilar - Vía biliar//Vinblastina y bleomicina, quimioterapia.
 VB12: Vitamina B12 o Cianocobalamina.
 VBL: Vinblastina.
-VBP: Vía biliar principal - Vías biliares
-y pancreáticas.
-VC: Vena cava - Vena cefálica - Vital
-capacity (Capacidad vital) - Volumen
-corriente.
+VBP: Vía biliar principal//Vías biliares y pancreáticas.
+VC: Vena cava//Vena cefálica//Vital capacity (Capacidad vital)//Volumen corriente.
 VCI: Vena cava inferior.
-VCG: Vaciado cervicoganglionar -
-Vectocardiograma.
+VCG: Vaciado cervicoganglionar - Vectocardiograma.
 VCM: Volumen corpuscular medio.
-VCNM: Velocidad de conducción de
-nervios motores - Velocidad de conducción del nervio mediano.
-VCR: Vena central de la retina - Vincristina.
+VCNM: Velocidad de conducción de nervios motores//Velocidad de conducción del nervio mediano.
+VCR: Vena central de la retina//Vincristina.
 VCS: Vena cava superior.
-VD: Ventrículo derecho - Vasodilatación - Vasodilatadores.
-VDD: Marcapasos por sensado ventricular disparado por sensibilización
-auricular e inhibido por sensibilización ventricular. Habitualmente se
-utiliza un solo electrodo.
-VDDS: Ventrículo derecho de doble
-salida.
+VD: Ventrículo derecho//Vasodilatación//Vasodilatadores.
+VDD: Marcapasos por sensado ventricular disparado por sensibilización auricular e inhibido por sensibilización ventricular. Habitualmente se utiliza un solo electrodo.
+VDDS: Ventrículo derecho de doble salida.
 VDF: Volumen diastólico final o telediastólico.
-111
-
-VDRL
-VIH: Virus de la inmunodeficiencia
-humana.
+VIH: Virus de la inmunodeficiencia humana.
 VIN: Vulvar intraephitelial neoplasia (neoplasia intraepitelial vulvar).
-VIN III: Displasia severa de vulva. Es
-un carcinoma in situ.
-VIP: Vasoactive intestinal peptide (Péptido
-intestinal vasoactivo).
--virus: Sufijo usado en virología para la
-jerarquía Género.
+VIN III: Displasia severa de vulva. Es un carcinoma in situ.
+VIP: Vasoactive intestinal peptide (Péptido intestinal vasoactivo).
+-virus: Sufijo usado en virología para la jerarquía Género.
 Vitamina A1: Retinol, axeroftol, biosterol, carotinol, oftalamina.
 Vitamina A2: Dehidrorretinol.
 Vitamina B1: Tiamina, aneurina.
 Vitamina B2: Riboflavina, lactoflavina.
 Vitamina B6: Piridoxina, piridoxal, piridoxol.
-Vitamina B12: Cianocobalamina, factor
-extrínseco antipernicioso.
+Vitamina B12: Cianocobalamina, factor extrínseco antipernicioso.
 Vitamina C: Ácido ascórbico.
 Vitamina D2: Ergocalciferol.
 Vitamina D3: Colecalciferol.
@@ -5478,35 +5406,22 @@ Vitamina Q: Ubiquinona.
 Vitamina T: Carnitina.
 VIV: Vía intravenosa.
 VK: Vitamina K.
-VL: Variable region of the light chain
-(Región variable de las cadenas ligeras
-[de las inmunoglobulinas]).
+VL: Variable region of the light chain(Región variable de las cadenas ligeras[de las inmunoglobulinas]).
 VLDL: Very low density lipoproteins (lipoproteína de muy baja densidad).
-VM: Válvula mitral - Valvulopatía
-mitral - Ventilación máxima - Ventilación mecánica - Volumen minuto.
-
+VM: Válvula mitral//Valvulopatía mitral//Ventilación máxima//Ventilación mecánica//Volumen minuto.
 VDRL: Venereal disease research laboratory
-(Prueba de laboratorio para la investigación de enfermedades venéreas). Es
-una prueba de floculación para el diagnóstico de la sífilis desarrollada por el
-Venereal disease research laboratory en los
-Estados Unidos.
 VE: Vacuoextracción.
 VEB: Virus de Epstein-Barr.
-VEC: Vincristina, epirrubicina y ciclofosfamida, quimioterapia - Volumen
-extracelular.
-VEMS: Volumen espiratorio máximo
-por segundo.
-VEP: Visual evoked potentials (Potenciales
-evocados visuales).
+VEC: Vincristina, epirrubicina y ciclofosfamida, quimioterapia//Volumen extracelular.
+VEMS: Volumen espiratorio máximo por segundo.
+VEP: Visual evoked potentials (Potenciales evocados visuales).
 Versus: Frente a, comparado con.
 Vertex: Vértice, parte más alta del cráneo. Es un tipo de presentación fetal.
-Vesico-: Prefijo que indica relación con
-la vejiga o con una ampolla.
+Vesico-: Prefijo que indica relación con la vejiga o con una ampolla.
 VF: Vaciamiento funcional.
 VFS: Volumen de fin de sístole.
 VFSVI: Volumen de fin de sístole ventricular izquierdo.
-VH: Variable region of the heavy chain
-(Región variable de las cadenas pesadas [de las inmunoglobulinas]).
+VH: Variable region of the heavy chain(Región variable de las cadenas pesadas [de las inmunoglobulinas]).
 VHA: Virus de la hepatitis A.
 VHB: Virus de la hepatitis B.
 VHC: Virus de la hepatitis C.
@@ -5515,360 +5430,99 @@ VHE: Virus de la hepatitis E.
 VHH: Virus del herpes humano.
 VHH-6: Virus herpes humano tipo 6.
 VHS: Virus del herpes simple.
-VHSK: Virus herpes del sarcoma de
-Kaposi.
-VI: Ventrículo izquierdo - Volumen de
-inspiración.
+VHSK: Virus herpes del sarcoma de Kaposi.
+VI: Ventrículo izquierdo//Volumen de inspiración.
 VIC: Válvula ileocecal.
-112
-
-VZV
 VSH: Vena suprahepática.
 VSI: Vena safena interna.
 VSR: Virus sincitial respiratorio.
-VS/VDF: Volumen sistólico/Volumen
-telediastólico (fracción de eyección).
-VT: Válvula tricúspide - Valvulopatía
-tricúspide.
+VS/VDF: Volumen sistólico/Volumen telediastólico (fracción de eyección).
+VT: Válvula tricúspide//Valvulopatía tricúspide.
 VT: Tidal volume (volumen corriente).
 VTC: Videotoracoscopia.
-VTD: Videotoracoscopia diagnóstica -
-Volumen telediastólico.
+VTD: Videotoracoscopia diagnóstica - Volumen telediastólico.
 VTDVI: Volumen telediastólico ventricular izquierdo.
 VTS: Volumen telesistólico.
 VTSVI: Volumen telesistólico ventricular izquierdo.
 VV: Vulva y vagina.
-VVC: Vía venosa central - Vulvovaginitis cíclica.
-VVI: Marcapasos de estimulación ventricular inhibida por sensibilización
-ventricular - Volumen ventricular
-izquierdo.
-VVIR: Marcapasos de estimulación ventricular inhibida por sensibilización
-ventricular con respuesta de la frecuencia.
-VVP: Válvula ventrículoperitoneal - Vía
-venosa periférica.
+VVC: Vía venosa central//Vulvovaginitis cíclica.
+VVI: Marcapasos de estimulación ventricular inhibida por sensibilización ventricular//Volumen ventricular izquierdo.
+VVIR: Marcapasos de estimulación ventricular inhibida por sensibilización ventricular con respuesta de la frecuencia.
+VVP: Válvula ventrículoperitoneal//Vía venosa periférica.
 VVZ: Virus varicela-zoster.
-vWF: Von Willebrand factor (Factor de
-von Willebrand).
+vWF: Von Willebrand factor (Factor de von Willebrand).
 Vx: Vertex (vértice).
 VYE: Vena yugular externa.
 VYI: Vena yugular interna.
 VZ: Varicela-zoster.
-VZV: Varicella-zoster virus (Virus de la
-varicela-zoster).
-
+VZV: Varicella-zoster virus (Virus de la varicela-zoster).
 VM-26: Tenipósido.
-VMA: Vanillylmandelic acid (Ácido vanililmandélico) - Ventilación mecánica
-asistida.
+VMA: Vanillylmandelic acid (Ácido vanililmandélico)//Ventilación mecánica asistida.
 Vmáx: Volumen espiratorio máximo.
-VMC: Ventilación mecánica continua -
-Volumen minuto cardiaco.
+VMC: Ventilación mecánica continua - Volumen minuto cardiaco.
 VMD: Ventilación mecánica domiciliaria.
 VMNI: Ventilación mecánica no invasiva.
 VN: Valor normal.
 VO: Vía oral.
 Vº Bº: Visto bueno.
 VOP: Vacuna oral de la poliomielitis.
-VP: Válvula pulmonar - Valvulopatía
-pulmonar.
+VP: Válvula pulmonar//Valvulopatía pulmonar.
 VP-16: Etopósido.
-VPB: Vértigo paroxístico benigno -
-Vértigo posicional benigno.
+VPB: Vértigo paroxístico benigno - Vértigo posicional benigno.
 VPH: Virus del papiloma humano.
-VPM: Valva posterior mitral - Valvulopatía mitral - Volumen plaquetario
-medio.
+VPM: Valva posterior mitral//Valvulopatía mitral//Volumen plaquetario medio.
 VPP: Vitrectomía Pars Plana.
-VPPB: Vértigo paroxístico posicional
-benigno.
-VR: Vía rectal - Volumen respiratorio -
-Vulvectomía radical.
-VRC: Vaciamiento radical cervical -
-Vaciamiento radical clásico.
+VPPB: Vértigo paroxístico posicional benigno.
+VR: Vía rectal//Volumen respiratorio - Vulvectomía radical.
+VRC: Vaciamiento radical cervical - Vaciamiento radical clásico.
 VRE: Volumen de reserva espiratorio.
 VRS: Virus respiratorio sincitial.
-VS: Velocidad de sedimentación - Vena
-safena - Vena subclavia - Versus -
-Vive sano - Volumen sistólico.
+VS: Velocidad de sedimentación//Vena safena//Vena subclavia//Versus//Vive sano//Volumen sistólico.
 vs: Versus.
 VSE: Vena safena externa.
 VSG: Velocidad de sedimentación globular.
-
-113
-
-W
 WHOQOL: World Health Organization
 Quality of Life (Instrumento de evaluación de calidad de vida de la Organización Mundial de la Salud).
-WISC: Wechsler Intelligence Scale for Children (Test de inteligencia de Wechsler
-para niños).
-WONCA: World Organisation of Family
-Doctors (Organización mundial de
-médicos de familia).
+WISC: Wechsler Intelligence Scale for Children (Test de inteligencia de Wechsler para niños).
+WONCA: World Organisation of Family Doctors (Organización mundial de médicos de familia).
 WP: W plastia.
 WPW: Síndrome de Wolff-ParkinsonWhite.
-
-W: Símbolo químico del wolframio o
-tungsteno.
-WAIS: Wechsler Adult Inteligence Scale
-(Test de inteligencia de Wechsler para
-adultos).
+W: Símbolo químico del wolframio o tungsteno.
+WAIS: Wechsler Adult Inteligence Scale(Test de inteligencia de Wechsler paraadultos).
 Waters: Es una cesárea extraperitoneal.
-WB: Western blot («manchas Western»).
-Es un análisis de inmunotransferencia
-de proteínas virales del HIV.
-Welti-Eudel: Técnica de hernioplastia
-con malla.
+WB: Western blot («manchas Western»). Es un análisis de inmunotransferencia de proteínas virales del HIV.
+Welti-Eudel: Técnica de hernioplastia con malla.
 WHO: World Health Organization (Organización Mundial de la Salud).
-
-115
-
-X
 X: Xantosina.
 x´: Por minuto.
 x min: Por minuto.
 x tno: Por teléfono.
-Xa: Factor X activado, coagulación -
-Quiasma.
+Xa: Factor X activado, coagulación - Quiasma.
 Xe: Símbolo químico del xenón.
-XHUP: Xarxa hospitalaria de utilització
-pública (Red hospitalaria de utilización
-pública, Cataluña).
+XHUP: Xarxa hospitalaria de utilització pública (Red hospitalaria de utilización pública, Cataluña).
 XIIa: Factor XII activado, coagulación.
 XL: X-linqued (ligado al cromosoma X).
-
 X-LR: X-linqued recesive (Carácter recesivo ligado al cromosoma X).
 XMP: Xantosine monophosphate (Xantosinmonofosfato o ácido xantílico)
-XOAN: X-linked ocular albinism Nettleship
-(Albinismo ocular ligado al cromosoma X).
+XOAN: X-linked ocular albinism Nettleship(Albinismo ocular ligado al cromosoma X).
 XP: Xeroderma pigmentoso.
 xq: Porque.
 XR: X-ray (Rayos X).
 XX: Cromosomas femeninos.
 XXX: Síndrome de triple X.
 XY: Cromosomas masculinos.
-
-117
-
-Y
 YID: Yugular interna derecha.
 YII: Yugular interna izquierda.
 YPP: Yeso pelvipédico.
 YTB: Yeso toracobraquial.
-
-Yátrico: Relativo a la medicina o al
-médico.
-Yatrógeno: Producido por el médico o
-los cuidados médicos.
+Yátrico: Relativo a la medicina o al médico.
+Yatrógeno: Producido por el médico o los cuidados médicos.
 YE: Yersinia enterocolítica.
-
-119
-
-Z
 ZAR: Zyoptix Ablation Refinements. Técnica de cirugía refractaria para corregir miopía, hipermetropía y astigmatismo.
 ZDV: Zidovudina.
 ZE: Zollinger-Ellison.
-
 ZIG: Zoster immunoglobulin (Inmunoglobulina contra el herpes zoster).
 ZN: Ziehl-Nielsen, tinción.
 Zn: Símbolo químico del zinc.
 ZP: Z plastia.
-ZTA: Zona de transformación atípica.
-
-121
-
-122
-
-UNIDADES DEFINIDAS A PARTIR DE LAS UNIDADES SISTEMA INTERNACIONAL,
-PERO QUE NO SON MÚLTIPLOS O SUBMÚLTIPLOS DECIMALES
-DE DICHAS UNIDADES
-magnitud
-nombre
-símbolo
-relación
-Ángulo plano
-vuelta
-1 vuelta = 2 rad
-grado
-°
-( /180) rad
-minuto de ángulo
-
-( /10.800) rad
-segundo de ángulo
-
-( /648.000) rad
-Tiempo
-minuto
-min
-60 s
-hora
-h
-3.600 s
-día
-d
-86.400 s
-UNIDADES NO MÉTRICAS DE USO PERMITIDO EN EL SISTEMA
-INTERNACIONAL PERO QUE NO FORMAN PARTE DEL MISMO
-nombre
-símbolo
-equivalencia Sistema Internacional
-litro
-L
-1 L = 1dm3 = 10-3 m3
-tonelada métrica
-t
-1 t = 103 kg = 1Mg
-hectárea
-ha
-1 ha = 1 hm2 = 104 m2
-área
-a
-1 a = 1 dam2 = 102 m2
-milla náutica
-1.852 m
-nudo
-1 milla náutica por hora
-rad
-rad
-1 rad = 1cGy = 10-2 Gy
-curie
-Ci
-1 Ci =3,7 x 1010 Bq
-roentgen
-R
-1 R = 2,58 x 10-4 C/kg
-bar
-bar
-1 bar = 0,1 Mpa = 100 kPa = 1.000 hPa = 105 Pa
-
-1024
-1021
-1018
-1015
-1012
-109
-106
-103
-102
-101
-
-factor
-
-MÚLTIPLOS O SUBMÚLTIPLOS DECIMALES
-prefijo
-símbolo
-factor
-prefijo
-yotta
-Y
-10-1
-deci
-zetta
-Z
-10-2
-centi
-exa
-E
-10-3
-mili
-peta
-P
-10-6
-micro
-tera
-T
-10-9
-nano
-giga
-G
-10-12
-pico
-mega
-M
-10-15
-femto
-kilo
-k
-10-18
-atto
-hecto
-h
-10-21
-zepto
-deca
-da
-10-24
-yocto
-
-símbolo
-d
-c
-m
-µ
-n
-p
-f
-a
-z
-y
-
-Sinonimias
-Litro: Nombre especial que puede darse al decímetro cúbico en tanto en cuanto no exprese resultados de
-medidas de volumen de alta precisión.
-Grados Celsius: Además de la temperatura termodinámica (símbolo T) expresada en kelvin, se utiliza también
-la temperatura Celsius (símbolo t), definida por la ecuación t =T-T0, donde T0=273,15 K por definición.
-Pueden utilizarse para expresar un intervalo de temperatura. Los intervalos entre grados Kelvin y Celsius son
-idénticos, pero mientras el 0 Kelvin es el cero absoluto, 0 grados Celsius es la temperatura de fusión del hielo.
-
-123
-
-Livros Grátis
-( http://www.livrosgratis.com.br )
-Milhares de Livros para Download:
-Baixar livros de Administração
-Baixar livros de Agronomia
-Baixar livros de Arquitetura
-Baixar livros de Artes
-Baixar livros de Astronomia
-Baixar livros de Biologia Geral
-Baixar livros de Ciência da Computação
-Baixar livros de Ciência da Informação
-Baixar livros de Ciência Política
-Baixar livros de Ciências da Saúde
-Baixar livros de Comunicação
-Baixar livros do Conselho Nacional de Educação - CNE
-Baixar livros de Defesa civil
-Baixar livros de Direito
-Baixar livros de Direitos humanos
-Baixar livros de Economia
-Baixar livros de Economia Doméstica
-Baixar livros de Educação
-Baixar livros de Educação - Trânsito
-Baixar livros de Educação Física
-Baixar livros de Engenharia Aeroespacial
-Baixar livros de Farmácia
-Baixar livros de Filosofia
-Baixar livros de Física
-Baixar livros de Geociências
-Baixar livros de Geografia
-Baixar livros de História
-Baixar livros de Línguas
-
-Baixar livros de Literatura
-Baixar livros de Literatura de Cordel
-Baixar livros de Literatura Infantil
-Baixar livros de Matemática
-Baixar livros de Medicina
-Baixar livros de Medicina Veterinária
-Baixar livros de Meio Ambiente
-Baixar livros de Meteorologia
-Baixar Monografias e TCC
-Baixar livros Multidisciplinar
-Baixar livros de Música
-Baixar livros de Psicologia
-Baixar livros de Química
-Baixar livros de Saúde Coletiva
-Baixar livros de Serviço Social
-Baixar livros de Sociologia
-Baixar livros de Teologia
-Baixar livros de Trabalho
-Baixar livros de Turismo
-
+ZTA: Zona de transformación atípica
