@@ -864,7 +864,7 @@ public class DesambiguadorAcronimos {
 	public String toOutputFileSecondTask() {
 		String result = "";
 		try {
-			File file = new File(".\\Herramientas\\Archivos_salida\\Testing_SecondTask_Results_EVALUATION.tsv");
+			File file = new File(".\\Herramientas\\Archivos_salida\\Testing_SecondTask_PRUEBA_Results_EVALUATION.tsv");
 			if (!file.exists()) {
 				result = "#DocumentID\tStartOffset\tEndOffset\tAbbreviation\tDefinition\tDefinition_lemmatized\n";
 			}

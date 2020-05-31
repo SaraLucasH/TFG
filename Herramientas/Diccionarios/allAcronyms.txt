@@ -869,6 +869,7 @@ CyC:cabeza y cuello
 CyO:consciente y orientado
 D:derecho//desayuno//diagnóstico//diálisis//dioptría//diuresis//dosis//vitamina
 D+SHU:síndrome hemolítico-urémico con diarrea
+D/P:dializado/plasma
 D,L-2-HGA:acidemia d,l-2-hidroxiglutárica//acidemia d-2-hidroxiglutárica y acidemia l-2-hidroxiglutárica combinada//aciduria d,l-2-hidroxiglutárica//aciduria d-2-hidroxiglutárica y aciduria l-2-hidroxiglutárica combinada
 D-2-HGA:acidemia d-2-hidroxiglutárica//aciduria d-2-hidroxiglutárica
 D-C-C:desayuno, comida y cena
@@ -920,6 +921,7 @@ DFH:difenilhidantoína
 DFI:anemia megaloblástica hereditaria juvenil por déficit de factor intrínseco//déficit congénito de factor intrínseco//déficit de factor intrínseco//déficit de factor intrínseco gástrico
 DFSP:dermatofibrosarcoma protuberante
 DFT:demencia frontotemporal
+Dt/Do:dializado/concentración
 DFU:densitometría de fotón único
 DG:diabetes gestacional
 DGI:dentinogénesis imperfecta//dentinogénesis imperfecta no sindrómica//dentinogénesis imperfecta sin osteogénesis imperfecta//dgi no sindrómica//dgi sin oi//dientes opalescentes sin osteogénesis imperfecta
@@ -1040,6 +1042,7 @@ Dra:doctora
 Dx:dextrosa//diagnóstico
 DyL:dilatación y legrado
 E:eosinófilo//eritrocito//esófago//especificidad//esterilización//vitamina e//vitamina e
+E.:escherichia
 EA:enfermedad actual//enfermedad de alzheimer//espondilitis anquilosante//estenosis aórtica
 EAA:espectrometría de absorción atómica
 EAB:equilibrio ácido-base
@@ -3970,6 +3973,7 @@ M1:primera marginal
 M2:segunda marginal
 M84:cepa m84
 M?:macrófago
+M.:mycobacterium
 MA:macrófago alveolar//mal de altura//masa atómica//medicina aeronáutica//médico adjunto//médula adrenal//melanoma amelanótico//meningitis aguda//meningitis aséptica//menstruación anovulatoria//microadenoma//microaglutinación//microalbuminuria//microaneurisma//mielofibrosis aguda//miocarditis aguda//mixoma auricular//monoartritis//mucosa alveolar
 MAA:macroaggregated albumin //macroagregados de albúmina//mal de altura agudo//meningitis aséptica aguda
 MAAPA:monitorización ambulatoria automática de la presión arterial
@@ -5116,6 +5120,7 @@ Op:operación//operada//operado
 OyG:obstetricia y ginecología
 OyT:ortopedia y traumatología
 P:cisplatino//onda del electrocardiograma de la despolarización de la aurícula//percentil//post//prevalencia//proteína//pulso//fósforo
+P.:proteus
 P+A:percusión y auscultación//piel y anexos
 P+R:pulso y respiración
 P+V:piloroplastia y vagotomía
@@ -6260,6 +6265,7 @@ T3:triyodotironina
 T4:tiroxina
 CBMF-HGO:cirugía bucal y maxilofacial del hospital general del oeste doctor josé gregorio hernández
 angio-RMN:angioresonancia magnetica
+tA:tensión arterial
 TA:temperatura ambiente//tensión arterial//tratamiento actual//traumatismo abdominal
 TAB:tableta//tifoidea, paratifoidea a y b, vacuna
 TABM:typhi, paratyphi a y b, melitensis

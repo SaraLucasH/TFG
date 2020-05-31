@@ -34,7 +34,7 @@ public class Analizador {
 			try {
 				File file = new File(argv[i]);
 				String[] archivo=argv[i].split("/");
-				String id=archivo[archivo.length-1].split(".")[0];
+				String id=archivo[archivo.length-1].split("\\.")[0];
 				Reader br = new InputStreamReader(new FileInputStream(file), charset);
 				BufferedReader buffer = new BufferedReader(br);
 				lexico = new AnalizadorLexico(br);				

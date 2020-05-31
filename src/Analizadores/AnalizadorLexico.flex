@@ -52,6 +52,8 @@ Frase=([0-9]+[\u0025]?|
 	)*
 
 Acronimo= {Mayuscula}{2,7}|
+			"VN"|
+			[m]({Minuscula}|{Minuscula}{3})|
 			[[A-Z]--[I]]|
 			[A-Z]+[a-z]{1} |
 			[a-z]"\." |
@@ -59,25 +61,29 @@ Acronimo= {Mayuscula}{2,7}|
 			{Mayuscula}{1,2}" "[0-9]|
 			{Mayuscula}{Minuscula}|
 			{Mayuscula}?{Minuscula}[\u002D]("I")+|
-			({Mayuscula}[\u002E]{Mayuscula}[\u002E])+|
+			{Mayuscula}[\u002E]({Mayuscula}[\u002E])*|
 			{Minuscula}[\u002E]({Minuscula}[\u002E])*|
 			[[[A-Z]||[\u00D1\u00C1\u00C9\u00CD\u00D3\u00DA]]--[UL]][\u002F][[[A-Z]||[\u00D1\u00C1\u00C9\u00CD\u00D3\u00DA]]--[L]]|
+			[D]{Minuscula}[\u002F][D]{Minuscula}|
 			([\u00c2\u00b5]|[\u00b5\u03BC\u0540]){Mayuscula}+|
 			([\u00c2\u00b5]|[\u00b5\u03BC\u0540]){Minuscula}+({Mayuscula}+)?|
 			{Mayuscula}{Minuscula}{Mayuscula}|			
 			{Minuscula}{Minuscula}+(" ")?{Mayuscula}((" ")?{Minuscula}+)?|
 			{Mayuscula}{Minuscula}([0-9]+{Minuscula}|[0-9]+|[\u002E])? |
+			{Minuscula}{Mayuscula}{Minuscula}|
 			{Minuscula}{1,4}({Mayuscula}|{Mayuscula}{1,3}[0-9]|[0-9])?|
 			{Mayuscula}{Minuscula}+[\u002D]([0-9]+[\u002D]|{Mayuscula})?{Minuscula}+|
-			{Mayuscula}{1,4}[\u002D]({Mayuscula}{1,4}[0-9]+|{Mayuscula}{1,4}|[0-9]+|{Minuscula}+)|
+			{Mayuscula}{1,4}[\u002D]({Mayuscula}{1,4}[0-9]+|{Mayuscula}{1,2}|{Mayuscula}{4}|[0-9]+|{Minuscula}+)|
 			{Mayuscula}{1,2}[0-9]+((([\u002E]|" ")[0-9]+)|{Mayuscula}{1,3})?|
+			{Mayuscula}{3}[0-9]|
+			{Mayuscula}{Minuscula}{1,2}{Mayuscula}{3}|
 			(([a-z]|[A-Z])"\."){1,5} |
 			[0-9][\u002D][A-Z]{2,4} 
 					 
 %state estado1,estado2,estado3,estado4
 
 
-%%	
+%%
 	<YYINITIAL> [\u03b1] {//Alpha
 		offset=offset+yytext().length();}
 	<YYINITIAL> [\u00B1] {//mas menos
@@ -148,7 +154,7 @@ Acronimo= {Mayuscula}{2,7}|
 				offset=offset+yytext().length();}
 	<YYINITIAL> [\u002B] {//Sumatorio	
 				offset=offset+yytext().length();}
-	<YYINITIAL> {Frase}({FinFrase}|" "|[\u002f]) {posibleLF=yytext();				
+	<YYINITIAL> {Frase}({FinFrase}|" ") {posibleLF=yytext();				
 				offset=offset+posibleLF.length();
 				yybegin(estado1);				
 				return new Symbol(sym.frase,posibleLF);}
