@@ -1,4 +1,4 @@
-﻿A:abdomen//aborto//aguas//analítica//anestesia//anexo//antecedentes//años//aurícula
+﻿A:abdomen//aborto//aguas//analítica//anestesia//anexo//antecedentes//años//aurícula//adenine
 A-S:adams-stokes
 A-V:auriculoventricular
 A00:marcapasos con estimulación auricular asincrónica
@@ -196,7 +196,7 @@ AMP:adenosine monophosphate//monofosfato de adenosina//ampicilina//amperio
 AMPc:adenosine monophosphate cyclic//monofosfato de adenosina cíclico//ampicilina
 AMQ:antecedentes medicoquirúrgicos
 AMS:arteria mesentérica superior//atrofia multisistémica
-ANA:antinuclear antibody//anticuerpo antinuclear
+ANA:antinuclear antibody
 ANAE:alphanaphthyl acid esterase//alfanaftilacetato esterasa
 ANAs:anticuerpos antinucleares
 ANCA:antineutrophil cytoplasmic antibodies//anticuerpos citoplasmáticos antineutrófilos
@@ -304,6 +304,7 @@ ATPH:autotrasplante de progenitores hematopoyéticos
 ATPS:ambient temperature, pressure, saturated with vapor
 ATPase:adenosine triphosphatase//adenosin trifosfatasa
 ATR:acidosis tubular renal
+ATR-AD:acidosis tubular renal distal autosómico dominante
 ATRA:all-transretinoic acid//ácido transretinoico
 ATS:arteria temporal superficial//ayudante técnico sanitario//síndrome de tortuosidad arterial
 ATT:adenoma tiroideo tóxico
@@ -369,7 +370,7 @@ B7:vitamina b7//biotina
 B8:vitamina b8//fosfato de adenosina
 BA:bacilo acidorresistente//bario
 BAAF:biopsia por aspiración con aguja fina
-BAAR:bacilo ácido alcoholrresistente//bacilo ácido alcohol resistente//bacilo ácido-alcohol resistente
+BAAR:bacilo ácido-alcohol resistente
 BAF:biopsia con aguja fina
 BAFME:epilepsia mioclónica benigna familiar del adulto
 BAG:buen aspecto general//biopsia con aguja gruesa//buen estado general
@@ -851,7 +852,7 @@ Ca:calcio//contenido en sangre arterial
 Ca++:calcio iónico
 CaCU:cáncer de cervix uterino
 CaEp:carcinoma epidermoide
-Cl:símbolo químico del cloro
+Cl:chlorine
 ClNa:cloruro de sodio
 Co:cobalamina//cobalto
 CoA:coartación de aorta//coenzima a
@@ -874,6 +875,7 @@ D,L-2-HGA:acidemia d,l-2-hidroxiglutárica//acidemia d-2-hidroxiglutárica y aci
 D-2-HGA:acidemia d-2-hidroxiglutárica//aciduria d-2-hidroxiglutárica
 D-C-C:desayuno, comida y cena
 D-HUS:síndrome hemolítico urémico sin diarrea
+DQ2:dq antigen
 D2:ergocalciferol, vitamina
 D3:colecalciferol, vitamina
 DA:dermatitis atópica//descendente anterior//doble anexectomía//ductus arterioso
@@ -1160,6 +1162,7 @@ EOG:electroculograma//electroftalmograma
 EOP:enema opaco//enfermedad ovárica poliquística
 EOPPC:carcinoma primario peritoneal extraovárico
 EOTD:distonía generalizada precoz de inicio en las extremidades
+EORTC:european organization for research and treatment of cancer
 EP:embolia pulmonar//enfermedad profesional//enseñanza primaria//estenosis pulmonar
 EPA:edema pulmonar agudo//enfermedad poliquística del adulto
 EPCO:enfermedad pulmonar crónica obstructiva
@@ -1215,6 +1218,7 @@ Eco:ecografía
 Eco S25:ecografía de la semana 25
 Eco TR:ecografía transrrecta
 Eco TT:ecografía transtorácica
+ECO-PAAF:punción-aspiración con aguja fina guiada por ecografía
 Eo:eosinófilo
 EsIs:extremidades inferiores//extremidades izquierdas
 EvW:enfermedad de von willebrand
@@ -1413,7 +1417,7 @@ FETES:federación estatal de técnicos especialistas sanitarios
 FETOR:federación española de técnicos ortopédicos
 FEU:farmacopea europea
 FEV:forced expiratory volume//volumen espiratorio forzado//flujo extravascular
-FEV1:volumen espiratorio máximo en el primer segundo
+FEV1:forced expiratory volume in 1 second
 FEV:volumen espiratorio forzado
 FEVD:fracción de expulsión del ventrículo derecho
 FEVI:fracción de expulsión del ventrículo izquierdo//fracción de eyección del ventrículo izquierdo
@@ -1634,7 +1638,7 @@ FURV:fístula uretrovesical
 FUV:fístula vesicovaginal
 fvv:fístula vesicovaginal
 FV:fibrilación ventricular
-FVC:forced vital capacity//capacidad vital forzada
+FVC:forced vital capacity
 FVCI:filtro en vena cava inferior
 FVE:forced volume expiration//volumen espiratorio máximo
 FVG:farmacovigilancia
@@ -1760,7 +1764,7 @@ GCPAo:globo de contrapulsación aórtica
 GCPIA:globo de contrapulsación intraórtico
 GCPS:síndrome de cefalopolisindactilia de greig
 GCQ:glucoquinasa
-GCS:glasgow coma scale//escala de coma de glasgow//ganglio cervical superior//gastritis crónica superficial//glucocorticosteroide
+GCS:glasgow coma scale//ganglio cervical superior//gastritis crónica superficial//glucocorticosteroide
 GCT:gradiente de concentración transtubular//grasa corporal total
 GCTT:gradiente de concentración transtubular
 GCV:ganciclovir
@@ -1917,7 +1921,7 @@ GOE:mezcla gaseosa de oxígeno y éter
 GOH:gerodermia osteodisplásica hereditaria
 GOS:gen oncosupresor
 GOSHS:síndrome de megacolon de goldberg- shprintzen
-GOT:glutamic oxaloacetic transaminase//transaminasa glutámico oxalacética
+GOT:glutamic oxalic transaminase
 GP:ganglios pélvicos//glicoproteínas//glutatión peroxidasa//gammagrafía pulmonar//gastrina plasmática//globo pálido//glucógeno-fosforilasa//glucosa plasmática//gradiente de presión//grampositivo//gránulo de pigmento//grasa parda//glomerulonefritis proliferativa
 GPA:gestaciones, partos y abortos//granulomatosis con poliangeítis
 GPAA:glaucoma primario de ángulo abierto
@@ -1941,7 +1945,7 @@ GPR:gastrostomía percutánea con control radioscópico; ve
 GPRE:gastritis pos(t)operatoria por reflujo esofágico
 GPS:galope presistólico//gasto público en salud//glomerulonefritis pos(t)estreptocócica//glucoproteína soluble//déficit de gránulos alfa plaquetarios//síndrome de plaquetas grises//sindrome plaquetario gris
 GPSS:gestión y prestación de servicios de salud
-GPT:glutamic pyruvic transaminase//transaminasa glutámico pirúvica//granulocitos periféricos totales//guía de prescripción terapéutica
+GPT:glutamic pyruvic transaminase//granulocitos periféricos totales//guía de prescripción terapéutica
 GPU:grado de posible utilización
 GPVH:gradiente de presión de la vena hepática
 GPX:glutatión-peroxidasa
@@ -2883,7 +2887,7 @@ ICPTB:infecciones complicadas de la piel y tejidos blandos
 ICQ:infarto con onda q//inmunocitoquímica
 ICRC:comité internacional de la cruz roja
 ICRP:comisión internacional de protección radiológica
-ICRU:comisión internacional de unidades de radiación
+ICRU:internacional comision on radiation units
 ICS:institut català de la salut//insuficiencia corticosuprarrenal//institut catala de la salut
 ICSA:insuficiencia corticosuprarrenal aguda
 ICSC:infusión continua subcutánea//insuficiencia corticosuprarrenal crónica
@@ -3065,7 +3069,7 @@ IMAM:miopatía inflamatoria con abundancia de macrófagos
 IMAO:inhibidores de la monoaminoxidasa//inhibidor de la monoamino oxidasa
 IMAO-A:inhibidor de la monoaminooxidasa a
 IMB:indice metabólico basal
-IMC:índice de masa corporal//índice metabólico cerebral//inmunidad mediada por células//inmunocomplejo
+IMC:indice de masa corporal//índice metabólico cerebral//inmunidad mediada por células//inmunocomplejo
 IMCT:inmunidad mediada por células t
 IMD:inhalador con medidor de dosis//inmunomodulación//inmunomodulador//insuficiencia mitral diastólica//intensidad media diaria
 IME:ifosfamida, mitoxantrona y etopósido//indice de mortalidad estándar//inmunomicroscopia electrónica
@@ -3113,7 +3117,7 @@ INNTI:inhibidor no nucleosídico de la transcriptasa inversa
 INNTR:inhibidor no nucleosídico de la transcriptasa reversa
 INO:indice neuroocular//inosina
 INP:indice nutritivo pronóstico
-INR:infección no respiratoria//inter national normalised ratio//cociente internacional normalizado
+INR:infección no respiratoria//international normalised ratio
 INRT:inhibidor nucleosídico de la retrotranscriptasa
 INS:insulina//insulínico
 INSALUD:instituto nacional de la salud
@@ -3362,10 +3366,15 @@ Ifo:ifosfamida
 IfoVP:ifosfamida y etopósido
 Ig:inmunoglobulina
 IgA:inmunoglobulina a
+Ig A:inmunoglobulina a
 IgG:inmunoglobulina g
+Ig G:inmunoglobulina g
 IgE:inmunoglobulina e
+Ig E:inmunoglobulina e
 IgM:inmunoglobulina m
+Ig M:inmunoglobulina m
 IgAR:inmunoglobulina antirrábica
+Ig AR:inmunoglobulina antirrábica
 IgMs:inmunoglobulinas m//inmunoglobulina m secretora
 IgTET:inmunoglobulina antitetánica
 Igs:inmunoglobulinas//inmunoglobulina secretora//inmunoglobulina sérica//inmunoglobulina de superficie
@@ -3454,7 +3463,7 @@ JUCM:journal of urgent care medicine
 JVAD:journal of vascular access devices
 Jdco:juicio diagnóstico
 Jdx:juicio diagnóstico
-K:karnofsky//kelvin//potasio//vitamina k//klebsiella
+K:karnofsky//kelvin//Kalium//vitamina k//klebsiella
 K-T:klippel-trenaunay, síndrome de
 K1:vitamina k1 o fitomenadiona
 K2:vitamina k2 o naftoquinona
@@ -3600,9 +3609,9 @@ LDCPH:linfoma difuso de células pequeñas hendidas
 LDD:límite de detección
 LDDI:linfoma difuso con diferenciación intermedia
 LDE:lupus discoide eritematoso//lupus diseminado eritematoso
-LDH:linfoma difuso histiocítico//lóbulo derecho del hígado//láctico deshidrogenasa//lactato-deshidrogenasa
+LDH:linfoma difuso histiocítico//lóbulo derecho del hígado//lactato-deshidrogenasa
 LDI:linfoma de diferenciación intermedia//lipoproteína de densidad intermedia//lipoproteína de densidad intermedia
-LDL:low-density lipoprotein//lipoproteína de baja densidad
+LDL:low-density lipoprotein
 LDM:leucodistrofia metacromática//linfoma difuso mixto//leucoencefalopatía metacromática
 LDP:linfangiomatosis difusa pulmonar//lipodistrofia parcial//líquido de la diálisis peritoneal
 LDS:locus definidos por serología
@@ -3724,7 +3733,7 @@ LLB:leucemia linfoblástica//linfoma linfoblástico//linfoma de linfocitos b
 LLBD:linfoma linfocítico bien diferenciado
 LLBDD:linfoma linfocítico bien diferenciado difuso
 LLBDN:linfoma linfocítico bien diferenciado nodular
-LLC:leucemia linfoblástica crónica
+LLC:leucemia linfática crÃ³nica
 LLC-B:leucemia linfocítica crónica de células b
 LLCB:leucemia linfocítica crónica de linfocitos b
 LLCI:linfoma linfocítico de células intermedias
@@ -4023,7 +4032,7 @@ MAST:michigan alcoholism screening test//prueba de detección del alcoholismo de
 MAT:marcapasos antitaquicardia//microangiopatía trombótica//taquicardia atrial multifocal
 MATA:monitorización ambulatoria de la tensión arterial
 MAU:médico adjunto de urgencias
-MAV:malformación arteriovenosa
+MAV:malformaciones arteriovenosas
 MAVC:mejor agudeza visual corregida
 MAVD:miocardiopatía arritmógena del ventrículo derecho
 MAVS:máxima apertura de las valvas en la sístole
@@ -4486,7 +4495,7 @@ MetMb:metamioglobina
 Mf:metotrexato con ácido folínico
 MfiC:medicina familiar i comunitària
 MfyC:medicina familiar y comunitaria
-Mg:símbolo químico de magnesio//mioglobina
+Mg:magnesio//mioglobina
 Mgb:mioglobina
 Mhb:metahemoglobina//miohemoglobina
 Mi:mitomicina
@@ -4517,6 +4526,7 @@ Murmullo vesicular:ruido respiratorio normal correspondiente a la ventilación d
 Mx:mamografía//máximo
 MyM:material y métodos
 N:neutrófilo//normal//nutrición//símbolo químico del nitrógeno
+N.:neisseria
 N+F:neutro(cito)penia y fiebre
 N+V:náuseas y vómitos
 N+V+D:náuseas, vómitos y diarrea
@@ -4841,7 +4851,7 @@ NVR:neovascularización retiniana
 NVT:nacido vivo a término
 NY:nasoyeyunal
 NYHA:new york heart association//asociación del corazón de nueva york
-Na:símbolo químico del sodio
+Na:símbolo químico del sodio//natrium
 NaO:sodio en orina
 NaP:sodio plasmático
 NaU:sodio urinario
@@ -5127,6 +5137,7 @@ P+V:piloroplastia y vagotomía
 P/E:peso//estatura
 P/S:acidos grasos polinsaturados - ácidos grasos saturados 
 P>ST(W)<:curva estática de retracción de la pared torácica
+PegINF:pegylated interferon
 PA:pancreatitis aguda//poliartritis//posteroanterior//presión alveolar//presión arterial//pulso arterial//presión parcial alveolar//pseudomona aeruginosa//parkinsoniano agudo//pericarditis aguda//pielonefritis aguda//poliposis adenomatosa
 PAA:punción aspirativa con aguja
 PAAD:punción aspiración con aguja delgada
@@ -5738,6 +5749,7 @@ PTT:punción transtraqueal//púrpura trombótica trombocitopénica//punción tra
 PTTA:punción transtorácica aspirativa//punción transtraqueal aspirativa
 PTV:presión telediastólica ventricular
 PTVD:presión telediastólica ventricular derecha
+PTHi:parathormona intacta
 PTVI:presión telediastólica ventricular izquierda
 PU:puerta de urgencias//poliuriapresión uretral//proctitis ulcerosa//prolapso uterino
 PUAH:hiperplasia suprarrenal unilateral primaria
@@ -5931,7 +5943,7 @@ RIVA:ritmo idioventricular acelerado
 RIVD:relajación isovolumétrica diastólica
 RKIP:proteína del inhibidor de la rafcinasa//proteína del inhibidor de la raf cinasa
 RLX:recesivo ligado al cromosoma x
-RM:regurgitación mitral//resonancia magnética//regurgitación mitral
+RM:regurgitación mitral//resonancia magnética
 RM,SAI:resonancia magnética, sai
 RM,_SAI:resonancia magnética, sai
 RMN:resonancia magnética nuclear
@@ -6009,6 +6021,7 @@ RsCsRs:ruidos cardiacos rítmicos
 Rx:radiografía//rayos x
 RxT:radiografía de tórax//radioterapia
 S:sacro//sangre//semana//sensible//servicio//símbolo químico del azufre//síndrome//sistólico
+S.:staphylococcus
 SA:sinoauricular
 SAAF:síndrome de anticuerpos antifosfolipídicos
 SAAP:síndrome de atrapamiento de la arteria poplítea
@@ -6243,6 +6256,7 @@ SVC:anomalía congénita de la vena cava superior
 SVCR:síndrome de vasoconstricción cerebral reversible
 SVCS:síndrome de la vena cava superior
 SVD:síndrome de la vejiga dolorosa//síndrome doloroso de la vejiga
+SVM:support vector machine
 SVP:sinovitis vellosonodular pigmentada//sistema venoso profundo
 SVS:servei valencia de salut//servicio valenciano de salud//servicio vasco de salud//sistema venoso superficial//servei valencia de salut
 SVS/O:servicio vasco de salud//osakidetza//servicio vasco de salud/osakidetza
@@ -6261,6 +6275,8 @@ Síndr:síndrome
 T:temperatura//timo//torácico//tumor
 T-LGL:leucemia lgl de células t//leucemia linfocítica granular de células t grandes
 T-PLL:leucemia prolinfocítica de células t
+T1:tiempo de relajación  longitudinal
+T2:tiempo de relajación transversal
 T3:triyodotironina
 T4:tiroxina
 CBMF-HGO:cirugía bucal y maxilofacial del hospital general del oeste doctor josé gregorio hernández
@@ -6269,7 +6285,7 @@ tA:tensión arterial
 TA:temperatura ambiente//tensión arterial//tratamiento actual//traumatismo abdominal
 TAB:tableta//tifoidea, paratifoidea a y b, vacuna
 TABM:typhi, paratyphi a y b, melitensis
-TAC:tomografía axial computerizada
+TAC:tomografía axial computarizada
 TAC-SAI:tomografía axial computerizada - sai
 TAC_-_SAI:tomografía axial computerizada - sai
 TAD:tensión arterial diastólica
@@ -7230,6 +7246,7 @@ rx:radiografía//rayos x
 rxt:radiografía de tórax//radioterapia
 sato2:saturación de oxígeno
 sc:subcutáneo
+sc.:subcutáneo
 sem:semana
 sgaw:specific airway conductance 
 sl:sublingual

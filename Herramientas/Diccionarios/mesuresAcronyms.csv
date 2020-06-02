@@ -1,6 +1,6 @@
 ﻿gts;gotas
 gt;gota
-g;gramo;
+g;gramo
 mcg;microgramo
 meq;miliequivalente
 mg;miligramo
@@ -16,7 +16,7 @@ lt;litro
 mm;milímetro
 cm;centímetro
 cms;centímetros
-cc;centrímetro cúbico
+cc;centímetro cúbico
 µg;microgramo
 ug;microgramo
 ng;nanogramo
@@ -34,7 +34,6 @@ mm3;milímetro cúbico
 pg;picogramo
 µL;microlitro
 µl;microlitro
-ul;microlitro
 m2;metro cuadrado
 d;día
 mgr;miligramo
