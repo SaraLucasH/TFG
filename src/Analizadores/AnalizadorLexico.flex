@@ -54,16 +54,17 @@ Frase=([0-9]+[\u0025]?|
 		)
 	)*
 
-Acronimo= {Mayuscula}{2,7}|
-			"VN"|
+Acronimo= {Mayuscula}{2,7}|			
 			[m]({Minuscula}|{Minuscula}{3})|
 			[m]{Minuscula}?{Mayuscula}{Minuscula}|
 			[[A-Z]--[I]]|
 			[A-Z]+[a-z]{1} |
 			[a-z]{1,3}[\u002E] |
+			"anti"([\u002D]({Mayuscula}+({Minuscula}|[0-9])?|{Minuscula}+))?|
 			([\u00c2\u00b5]|[\u00b5\u03BC\u0540])|
-			{Mayuscula}{1,2}" "[0-9]|
-			{Mayuscula}{Minuscula}(" "?([AEGM]|"AR"))?|			
+			{Mayuscula}{1,2}" "?([0-9]+|[0-9]+[\u002D][0-9])|
+			{Minuscula}?({Mayuscula}[0-9])+|
+			[[A-Z]--[EL]][[b-z]--[l]](" "?([AEGM]|"AR"))?|			
 			{Mayuscula}?{Minuscula}[\u002D]("I")+|
 			{Mayuscula}[\u002E]({Mayuscula}[\u002E])+|
 			[[[A-Z]||[\u00D1\u00C1\u00C9\u00CD\u00D3\u00DA]]--[L]][\u002E]|
@@ -76,14 +77,14 @@ Acronimo= {Mayuscula}{2,7}|
 			{Mayuscula}+{Minuscula}|
 			{Minuscula}{Minuscula}{5}{Minuscula}*(" ")?{Mayuscula}((" ")?{Minuscula}+)?|
 			{Mayuscula}{Minuscula}([0-9]+{Minuscula}|[0-9]+|[\u002E])? |
-			{Minuscula}{Mayuscula}{Minuscula}|
+			{Minuscula}{Mayuscula}{Minuscula}+|
 			{Minuscula}{1,4}({Mayuscula}{1,3}|{Mayuscula}{1,3}[0-9]|[0-9])?|
 			{Mayuscula}{Minuscula}+[\u002D]([0-9]+[\u002D]|{Mayuscula})?{Minuscula}+|
-			{Mayuscula}{1,4}[\u002D]({Mayuscula}{1,4}[0-9]+|{Mayuscula}{1,2}|{Mayuscula}{4}|[0-9]+|{Minuscula}+)|
-			{Mayuscula}{4}[\u002D]{Mayuscula}{3}|
+			{Mayuscula}{1,4}[\u002D]({Mayuscula}{1,4}[0-9]+|{Mayuscula}{1,2}|[N]{Mayuscula}{2}|{Mayuscula}{4}|[0-9]+|{Minuscula}+)|
+			{Mayuscula}{4}[\u002D]({Mayuscula}{3}|[0-9][\u002D]{Mayuscula}{Minuscula}{Mayuscula})|
 			{Mayuscula}{3}[\u002D]{Mayuscula}{4}|
-			{Mayuscula}{1,2}[0-9]+((([\u002E]|" ")[0-9]+)|{Mayuscula}{1,3})?|
-			{Mayuscula}{3}[0-9]|
+			{Mayuscula}{1,2}[0-9]+((([\u002E]|" ")[0-9]+)|{Mayuscula}{1,3}|{Minuscula})?|
+			{Mayuscula}{3}[0-9]|			
 			{Mayuscula}{Minuscula}{1,2}{Mayuscula}{3}|
 			[0-9][\u002D][A-Z]{2,4} 
 					 
@@ -169,7 +170,8 @@ Acronimo= {Mayuscula}{2,7}|
 				offset=offset+yytext().length();
 				acronimo= new Acronimo(offset-yytext().length(),offset,yytext());
 				yybegin(estado4);}
-	<YYINITIAL> "¿"|"?" {offset=offset+yytext().length();}
+	<YYINITIAL> "¿"|"?"|[\u00BF] {offset=offset+yytext().length();}
+	
 	<YYINITIAL> [\u002C] {//Coma
 				offset=offset+yytext().length();}
 	<YYINITIAL> [\u002E] {//Punto
@@ -179,6 +181,8 @@ Acronimo= {Mayuscula}{2,7}|
 	<YYINITIAL> " "|[\u0020] {offset=offset+yytext().length();}				
 	<YYINITIAL> [\u002D] {//barra -
 				offset=offset+yytext().length();}
+	<YYINITIAL> [0-9] {offset=offset+yytext().length();}
+	<YYINITIAL> [a-zA-Z] {offset=offset+yytext().length();}
 	<YYINITIAL> {FinFrase} {offset=offset+yytext().length();}
 	<YYINITIAL> [\u0025]  {//porcentaje
 				offset=offset+yytext().length();}
@@ -209,17 +213,17 @@ Acronimo= {Mayuscula}{2,7}|
 			}
 			yybegin(YYINITIAL);}
 
-<estado3> ")"|"]" {offset=offset+yytext().length();
+<estado3> ")"|"]"|" "|{FinFrase} {offset=offset+yytext().length();
 				yybegin(YYINITIAL);		
 				//Cuidado si le paso el objeto en el sintactico lo usa como puntero y solo se guarda la ultima ocurrencia. Por ello new Object
 				return new Symbol(sym.acWithContext,yyline +1, yycolumn +1,new AcWithContext(new Acronimo(acronimo.getStartOffset(),acronimo.getEndOffset(),acronimo.getAcronimo()),posibleLF));
-			}	
-<estado3> [^)] {if(yytext()!=null){
+			}			
+<estado3> [^)\u005D\u0020\u002E\u003B\u002C\u003A\u002D\n] {if(yytext()!=null){
 			yypushback(yytext().length());
 			}
 			yybegin(YYINITIAL);}
 			
-<estado4> ({FinFrase}|" "|[\u002f]|")") {
+<estado4> {FinFrase}|" "|[\u002f]|")" {
 			offset=offset+yytext().length();
 			yybegin(YYINITIAL);
 			return new Symbol(sym.acWithContext,yyline +1, yycolumn +1,new AcWithContext(new Acronimo(acronimo.getStartOffset(),acronimo.getEndOffset(),acronimo.getAcronimo()),posibleLF));}

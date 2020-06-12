@@ -89,6 +89,7 @@ ADEV:adicto a drogas endovenosas
 ADH:antidiuretic hormone//hormona antidiurética
 ADHR:raquitismo hipofosfatémico autosómico dominante
 ADI:asistencia domiciliaria integral
+ADI-R:autism diagnostic interview-revised
 ADIV:adicto a drogas intravenosas
 ADLTE:epilepsia autosómica dominante con afectación auditiva//epilepsia lateral del lóbulo temporal, autosómica dominante//epilepsia parcial con características auditivas
 ADM:adriamicina
@@ -164,6 +165,7 @@ AISA:anemia refractaria con sideroblastos en anillo//anemia sideroblástica idio
 AIT:ataque isquémico transitorio
 AITES:ataques isquémicos transitorios 
 AJ:autorización judicial
+AJCC:american joint committee on cancer
 AK:adenosine kinase 
 AL:ácido linoleico//adriamicina y lomustina//amiloidosis primaria//anestesia local//antecedentes laborales//anticoagulante lúpico//símbolo químico del aluminio
 ALA:aminolevulinic acid//ácido aminolevulínico
@@ -182,6 +184,7 @@ ALSP:leucoencefalopatía autosómica dominante con esferoides neuroaxonales//leu
 ALT:alanina aminotransferasa//tumor lipomatoso atípico
 AM:adriamicina y melfalán o metotrexato o mitomicina c//antecedentes médicos//anticuerpos monoclonales//aplasia medular//aspirado medular//astigmatismo
 AMA:antimitochondrial antibodies//anticuerpos antimitocondriales
+AMA-2:anti-mitochondrial-2 antibody
 AMB:ambulatorio
 AMC:antecedentes médicos conocidos
 AMCHA:amino-methyl-cycloexane 4-carboxilic acid//ácido aminometilcicloexano-4-carboxílico o tranexámico
@@ -189,6 +192,7 @@ AME:atrofia muscular espinal//atrofia muscular espinal proximal
 AMF:adriamicina, metotrexato y ácido folínico//ángulo de máxima flexión
 AMH:antimüllerian hormone//hormona antimülleriana//antidesarrollo del conducto de müller
 AMI:acute myocardial infarction//infarto agudo de miocardio//arteria mamaria interna//arteria mesentérica inferior
+AMIR:anomalía microvascular intrarretiniana
 AML-M5:leucemia mieloblástica aguda tipo 5
 AML-M6:leucemia mieloblástica aguda tipo 6
 AMO:amoxicilina//antecedentes médicos obstétricos//aspirado de médula ósea
@@ -199,7 +203,10 @@ AMS:arteria mesentérica superior//atrofia multisistémica
 ANA:antinuclear antibody
 ANAE:alphanaphthyl acid esterase//alfanaftilacetato esterasa
 ANAs:anticuerpos antinucleares
+C-ANCA:cytoplasmic antineutrophil cytoplasmic antibodies
+P-ANCA:perinuclear antineutrophil cytoplasmic antibodies
 ANCA:antineutrophil cytoplasmic antibodies//anticuerpos citoplasmáticos antineutrófilos
+ANCAs:antineutrophil cytoplasmic antibodies
 ANCL:lipofuscinosis neuronal ceroide del adulto//ncl del adulto
 ANEC:encefalopatía necrotizante aguda aislada//encefalopatía necrotizante aguda de la infancia
 ANG:aspiración nasogástrica//aspirado nasogástrico
@@ -207,6 +214,7 @@ ANKCL:leucemia agresiva de células nk//linfoma agresivo de células nk
 ANL:accidente no laboral
 ANR:anestesia y reanimación 
 ANSOCQ:cuestionario sobre las etapas de cambio en la anorexia nerviosa
+anti:anticuerpo
 AO:albinismo ocular//alimentación oral//ambos ojos//análisis de orina//anovulatorios//anticoagulantes orales//anticonceptivo oral//antidiabéticos orales//aorta//arterioesclerosis obliterante//asociación de osteosíntesis
 AO1:atelosteogénesis tipo 1
 AO2:contenido arterial de oxígeno
@@ -218,6 +226,7 @@ AOS:síndrome aneurisma-osteoartritis
 AOU:área de observación de urgencias
 AOXN:albinismo ocular x tipo nettleship
 AP:adriamicina y cisplatino//anatomía patológica//antecedentes patológicos//antecedentes personales//anteroposterior//arteria pulmonar//asistencia primaria//atresia pulmonar//auscultación pulmonar//auscultación y percusión
+A.P.:anatomía patológica
 AP-DRG:all patient diagnosis related groups
 APA:anatomía patológic
 APACHE:acute phisiology and cronic health evaluation scoring system//sistema de puntuación para la evaluación de la salud con datos fisiológicos agudos y crónicos
@@ -281,7 +290,7 @@ ASCUS:atypical scamous cells of uncertain significance//células escamosas atíp
 ASD:angiografía por sustracción digital
 ASK:antistreptokinase//antiestreptocinasa
 ASL:antiestreptolisina
-ASLO:anticuerpos antiestreptolisina o
+ASLO:antiestreptolisina o
 ASLX:anemia sideroblástica ligada al cromosoma x
 ASMA:anticuerpos antimúsculo liso//anticuerpos anti músculo liso
 ASO:antiestreptolisina o//arterioesclerosis obliterante
@@ -318,6 +327,7 @@ AVBC:adriamicina, vincristina, bleomicina y ccnu
 AVC:accidente vascular cerebral
 AVCA:accidente vascular cerebral agudo
 AVD:actividades de la vida diaria//ápex de ventrículo derecho
+aVF:augmented vector foot
 AVED:ataxia con déficit aislado de vitamina e//ataxia con déficit de vitamina e//déficit aislado de vitamina e//déficit aislado de vitamina e familiar
 AVG:ambulatory visitors groups
 AVM:ácido vanililmandélico//adriamicina, vinblastina y mitomicina//área valvular mitral//adriamicina y vinblastina y mitomicina//ácido vainillilmandélico
@@ -341,6 +351,14 @@ AloTPH:trasplante alogénico de progenitores hematopoyéticos
 Amox:amoxicilina
 Amp:amperio
 AnB:anfotericina b
+anti:anticuerpo
+anti-Tr:reversible neuronal antibody
+anti-Hu:antibodies against hu proteins
+anti-NMDA:anticuerpos antirreceptorde n-metil-d-aspartato
+anti-Yo:antibody type i
+anti-Ri:antineuronal antibody
+anti-CV2:anti cv2 antibody
+anti-pan:cytokeratin antibody
 Anti-HBs:anticuerpo contra el antígeno de superficie del virus de la hepatitis b
 Anti-VHC:anticuerpos contra el virus de la hepatitis c
 Ao:aorta
@@ -386,7 +404,7 @@ BBS:síndrome de bardet-biedl
 BC:broncopatía crónica//bronquitis crónica
 BCA:balón de contrapulsación aórtica//bebé colodión autorresolutivo
 BCD:distrofia corneo-retiniana cristalina de bietti//distrofia cristalina de bietti
-BCG:bacilo de calmette y guérin
+BCG:bacilo de calmette-guerin
 BCGF:b-cells growth factor//factor de crecimiento de células b
 BCIA:balón de contrapulsación intraaórtico
 BCIE:eritrodermia ictiosiforme congénita ampollosa de brock//eritrodermia ictiosiforme congénita bullosa//eritrodermia ictiosiforme congénita bullosa de brock
@@ -504,10 +522,12 @@ C:ácido ascórbico, vitamina//canino//carbono//caloría grande//cirugía//compl
 C-ALCL:linfoma cutáneo primario anaplásico de células grandes
 C-C:cabeza y cuello
 C/T:índice cardiotorácico
-CA:cámara anterior//cáncer//cancer antigen//carcinoma//cetoacidosis//ciclofosfamida y adriamicina//calcio//contenido en sangre arterial
-CA 125:marcador tumoral monoclonal del cáncer de ovario y ciertos linfomas
+CA:cámara anterior//cáncer//carbohydrate antigen//cancer antigen//carcinoma//cetoacidosis//ciclofosfamida y adriamicina//calcio//contenido en sangre arterial
+CA 125:marcador tumoral monoclonal del cáncer de ovario y ciertos linfomas//cancer antigen 125
 CA 15/3:marcador tumoral monoclonal del cáncer de mama
+CA 15-3:cancer antigen 15-3
 CA 19/9:marcador tumoral monoclonal del cáncer de colon, de pulmón, páncreas y mama
+CA19-9:cancer antigen 19-9
 CA 50:marcador tumoral monoclonal del adenocarcinoma colorrectal y páncreas
 CA 54/9:antígeno asociado a tumores de mama y colon
 CA 72/4:marcador tumoral de cáncer de estómago
@@ -564,6 +584,7 @@ CCV:cirugía cardiovascular
 CD:cluster of differentiation//grupos o racimos de diferenciación//coito dirigido//colon descendente//coronaria derecha
 CD4:linfocitos cooperadores inductivos
 CD45:cluster de diferenciación 45
+CD 56:cluster of differentiation 56
 CDA:anemia diseritropoyética congénita
 CDA I:anemia diseritropoyética congénita tipo 1//anemia diseritropoyética congénita tipo i//cda tipo 1//cda tipo i
 CDA II:anemia diseritropoyética congénita tipo 2//anemia diseritropoyética congénita tipo ii//cda tipo ii
@@ -579,6 +600,7 @@ CDG2H:síndrome cdg tipo 2h
 CDG2M:síndrome cdg tipo 2m
 CD117:cúmulo de diferenciación 117
 CD20:cúmulo de diferenciación 20
+CD 20:cúmulo de diferenciación 20
 CD30:cúmulo de diferenciación 30
 CD45:cúmulo de diferenciación 45
 CD34:cúmulo de diferenciación 34
@@ -638,6 +660,7 @@ CHED2:distrofia endotelial hereditaria congénita 2
 CHEDI:ched autosómica dominante//distrofia endotelial hereditaria congénita 1//distrofia endotelial hereditaria congénita autosómica dominante//distrofia endotelial hereditaria congénita i
 CHEDII:ched autosómica recesiva//distrofia endotelial hereditaria congénita 2//distrofia endotelial hereditaria congénita autosómica recesiva//distrofia endotelial hereditaria congénita ii
 CHOP:ciclofosfamida, hidroxidaunomicina, oncovín y prednisona
+R-CHOP:rituximab ciclofosfamida hidroxidaunomicina oncovÃ­n prednisona
 CHP:paniculitis histiocítica citofágica
 CI:capacidad inspiratoria//cardiopatía isquémica//carótida izquierda//claudicación intermitente//coeficiente intelectual//coitus interruptus//colon irritable//consentimiento informado//coronaria izquierda//cuerpo de inclusión//cuidados intensivos//cistitis intersticial
 CIA:comunicación interauricular
@@ -675,6 +698,7 @@ CJD:creutzfeldt-jakob disease//enfermedad de creutzfeldt-jakob
 CJS:creutzfeldt-jakob syndrom//síndrome de creutzfeldt-jakob
 CK:creatin kinase//creatincinasa
 CK 7:citoqueratina 7
+CK7:citoqueratina 7
 CK-MB:creatin kinase mb fraction//creatincinasa fracción mb
 CL:caldwell-luc//cirugía laparoscópica//clearance//aclaramiento//colecistectomía laparoscópica//cuerpo lúteo//cloro
 CLAH:hiperplasia suprarrenal congénita lipoide por deficiencia de star//hiperplasia suprarrenal congénita lipoide por déficit de star
@@ -783,6 +807,7 @@ CPRE:colangiopancreatografía retrógrada endoscópica
 CPRM:colangiopancreatografía por resonancia magnética
 CPRMN:colangiopancreatografía por resonancia magnética nuclear
 CPT:cáncer papilar de tiroides//capacidad pulmonar total//control postransfusional//current procedural terminology//terminología actual sobre procedimientos
+CPT11:camptothecin-11
 CPV:complejos prematuros ventriculares
 CPVT:taquicardia ventricular polimórfica catecolinérgica
 CR:cociente respiratorio//cólico renal//creatinina//símbolo químico del cromo
@@ -795,6 +820,7 @@ CRH:corticotropin-releasing hormona//hormona estimulante de la corticotrofina
 CRI:capacidad de reserva inspiratoria//cólico renal izquierdo
 CRIE:eritrodermia ictiosiforme reticular congénita
 CRM:cirugía de revascularización miocárdica
+CRMP-5-IgG:collapsin response-mediator protein-5-inmunoglobuline g
 CRM sin CEC:cirugía de revascularización miocárdica sin circulación extracorpórea
 CRMCC:microangiopatía cerebrorretiniana con calcificaciones y quistes
 CRMO:osteomelitis multifocal recurrente crónica
@@ -821,6 +847,7 @@ CSID:déficit congénito de sacarasa-isomaltasa
 CSIMD:cuadrante superior interno de mama derecha
 CSIMI:cuadrante superior interno de mama izquierda
 CSM:centro de salud mental
+CSMIJ:centro de salud mental infantojuvenil
 CST:cesárea segmentaria transversa
 CSVT:trombosis de los senos venosos cerebrales
 CT:calcitonina//colesterol total//colon transverso//computed tomography//tomografía computerizada
@@ -865,10 +892,13 @@ CsA:ciclosporina a
 CsIV:cesio intravaginal
 Csc:con su corrección
 Cu:símbolo químico del cobre
+C3:nivel c subnivel 3
+cKit:c-kit receptor tyrosine kinase
 CyA:cultivo y antibiograma//cyclosporine a//ciclosporina a
 CyC:cabeza y cuello
 CyO:consciente y orientado
-D:derecho//desayuno//diagnóstico//diálisis//dioptría//diuresis//dosis//vitamina
+C4d:complemento 4d
+D:derecho//desayuno//diagnóstico//diálisis//dioptría//diuresis//dosis//vitaminaD//spartic acid
 D+SHU:síndrome hemolítico-urémico con diarrea
 D/P:dializado/plasma
 D,L-2-HGA:acidemia d,l-2-hidroxiglutárica//acidemia d-2-hidroxiglutárica y acidemia l-2-hidroxiglutárica combinada//aciduria d,l-2-hidroxiglutárica//aciduria d-2-hidroxiglutárica y aciduria l-2-hidroxiglutárica combinada
@@ -899,6 +929,7 @@ DBT:diabetes//dobutamina
 DC:diagnóstico clínico//diarrea crónica//displasia cervical//donante cadáver
 DCM:deterioro cognitivo mínimo//mastocitosis cutánea difusa//mastocitosis maculopapular cutánea difusa
 DCMD:edema macular quístico autosómico dominante
+DCP:degeneración cerebelosa paraneoplásic
 DCR:dacriocistorrinostomía
 DD:diagnóstico diferencial//displasia de la dentina
 DDAVP:1-desamino-8-d-argininavasopresina//1-desamino-8-d-arginina-vasopresina
@@ -959,12 +990,13 @@ DM tipo 2:diabetes mellitus del adulto, de la madurez, resistente a la cetosis, 
 DM1:diabetes mellitus tipo 1//distrofia miotónica tipo 1
 DM2:diabetes mellitus tipo 2
 DMA:dimetilamina//dimetilarsénico
-DMAE:degeneración macular adecuada a la edad
+DMAE:degeneración macular asociada a la edad
 DMCD:distrofia macular cistoide//edema macular quístico autosómico dominante
 DMD:distrofia muscular de duchenne
 DMG:diabetes mellitus gestacional
 DMID:diabetes mellitus insulinodependiente
 DMNID:diabetes mellitus no insulinodependiente
+DM-NID:diabetes mellitus no insulinodependiente
 DMO:densitometría ósea
 DMOF:distrofia muscular oculofaríngea
 DMP:disfunción del músculo papilar
@@ -1034,6 +1066,7 @@ DVPAT:drenaje venoso pulmonar anómalo total
 DXM:dexametasona
 DYT6:distonía primaria tipo dyt6
 DYT7:distonía focal autosómica dominante, tipo dyt7
+D-ST:descenso del segmento st
 DZ:diazepan
 Dch:derecha//derecho
 Dcha:derecha
@@ -1045,6 +1078,9 @@ Dx:dextrosa//diagnóstico
 DyL:dilatación y legrado
 E:eosinófilo//eritrocito//esófago//especificidad//esterilización//vitamina e//vitamina e
 E.:escherichia
+E1:anti-pan cytokeratin antibody
+E3:anti-pan cytokeratin antibody
+E-ST:elevación del segmento st
 EA:enfermedad actual//enfermedad de alzheimer//espondilitis anquilosante//estenosis aórtica
 EAA:espectrometría de absorción atómica
 EAB:equilibrio ácido-base
@@ -1075,6 +1111,7 @@ ECJ:enfermedad de creutzfeldt-jakob
 ECM:enfermedad con cambios mínimos//esternocleidomastoideo
 ECMO:extracorporeal membrane oxigenatión//oxigenación por membrana extracorpórea
 ECP:embarazo cronológicamente prolongado//enfermedad crónica del pulmón//enfermedad de las cadenas pesadas
+ECR-NMDA:encefalitis contra los receptores n-metil-d-aspartato
 ECT:emission computed tomography//tomografía computerizada de emisión
 ECU:extensor cubital del carpo
 ECV:enfermedad cardiovascular//enfermedad cerebrovascular
@@ -1175,7 +1212,7 @@ EPO:enfermedad poliquística del ovario//enfermedad pulmonar obstructiva//eritro
 EPOC:enfermedad pulmonar obstructiva crónica
 EPP:end-plate potential//potencial de placa motora terminal
 EPQA:enfermedad poliquística del adulto
-EPR:epitelio pigmentario retiniano//esofagitis por reflujo
+EPR:epitelio pigmentario de la retina//esofagitis por reflujo
 EPS:electroforesis de proteínas séricas//electrophysiologic study//estudio electrofisiológico
 EPV:enfermedad de pequeños vasos//estenosis pulmonar valvular
 ER:estudio radiológico
@@ -1580,6 +1617,8 @@ FOB:fiberoptic bronchoscopy
 FOC:fascículo olivococlear o de rasmussen
 FOD:fiebre de origen desconocido//fondo de ojo dilatado
 FOI:fiebre de origen indeterminado//fisura orbitaria inferior
+FOLFOX:ácido folínico fluorouracilo oxaliplatino
+FOLFORI:ácido folínico fluorouracilo irinotecán
 FOM:fallo orgánico multisistémico//fluorouracilo, vincristina y mitomicina
 FOMi:fluorouracilo, vincristina y mitomicina
 FOP:fibrodisplasia osificante progresiva//foramen ovale permeable//fallo ovárico prematuro//fibroma osificante psamomatoide//fractura osteoporótica
@@ -1848,7 +1887,7 @@ GI:gastrointestinal//gran invalidez
 GIFT:gamete intrafallopian transfer//transferencia intratubárica de gametos
 GIN:ginecología
 GIP:gastric inhibitory peptide//péptido inhibidor gástrico
-GIST:tumor estromal gastrointestinal esporádico familiar
+GIST:gastrointestinal stromal tumour
 GITS:gastrointestinal therapeutic system//sistema terapéutico gastrointestinal
 GL:ganglio linfático//grados de libertad
 GLA:gingivolinguoaxial
@@ -1949,6 +1988,7 @@ GPT:glutamic pyruvic transaminase//granulocitos periféricos totales//guía de p
 GPU:grado de posible utilización
 GPVH:gradiente de presión de la vena hepática
 GPX:glutatión-peroxidasa
+GQ-1b:ntiganglioside antibodies 1b
 GR:gammagrafía renal//glóbulos rojos//glutatión reductasa//glóbulo rojo
 GRA:aldosteronismo tratable con glucocorticoides
 GRAM:método de tinción para microorganismos que descubrió el médico danés de igual nombre
@@ -2143,7 +2183,7 @@ HBV:hipertrofia biventricular//virus de la hepatitis b
 HBc:hepatitis b core antigen//antígeno core del virus de la hepatitis b//hemoglobina c
 HBcAg:hepatitis b core antigen//antígeno core del virus de la hepatitis b
 HBeAg:hepatitis b e antigen//antígeno e del virus de la hepatitis b
-HBs:hepatitis b surface//antígeno de superficie de la hepatitis b
+HBs:hepatitis b superficie//hepatitis b surface//antígeno de superficie de la hepatitis b
 HBsAg:hepatitis b surface antigen//antígeno de superficie de la hepatitis b o antígeno australia
 HC:hemodiálisis crónica//hemograma completo//hemorragia cerebral//hepatitis c//hepatopatía crónica//historia clínica//hemangioma cavernoso//hemocromatosis//hemocultivo//hemodiálisis continua//hemoglobina corpuscular//heparinización continua//hepatitis crónica//hepatocelular//hidrato de carbono//hidrocele comunicante//hidrocortisona//hidroxicarbamida//hilios congestivos//hipercolesterolemia//hiperplasia congénita//hipersensibilidad cutánea//hipertensión crónica//hipertiroidismo congénito//hipocampo//hipocondría//hipocondrio//hipotiroidismo congénito//homocistinuria//hormona de crecimiento//hospital de campaña//hospital clínico//hospital comarcal
 HCA:hepatitis c aguda//hepatitis crónica activa//hexacloroacetona//hipertensión clínica aislada//hipoplasia cerebelosa agranular//humo de cigarrillo ambiental
@@ -2484,6 +2524,7 @@ HNO:hasta nueva orden
 HNP:hernia del núcleo pulposo//hospital nacional de parapléjicos
 HNPCC:cáncer colorrectal hereditario no polipósico//cáncer de colon hereditario no polipósico
 L1:primera vértebra lumbar
+L2:segunda vértebra lumbar
 HNPJ:hospital nacional de parapléjicos
 HNPP:microdeleción heterocigota
 HNR:hiperplasia nodular regenerativa
@@ -2647,6 +2688,7 @@ HTLV_-_II:virus de la leucemia humana de células t, tipo 2
 HTLV_-_V:virus linfotrópico de células t humano, tipo v
 HTM:hipertensión maligna//hipertermia maligna
 HTN:hipertensión//hipertensión
+Hto:hematocrito
 HTOR:hipertensión de origen renal
 HTP:hipertensión portal//hipertensión pulmonar//hemaglutinación de treponema pallidum//hemorragia transplacentaria//hidroxitriptófano//hipertensión persistente//hipertensión primaria
 HTP1a:hipertensión pulmonar primaria
@@ -2771,7 +2813,7 @@ HyH:hemoglobina y hematocrito
 HyP:huevos y parásitos
 Hzos:herpes zoster
 Hª:historia
-I:factor i de la coagulación, fibrinógeno//ictericia//ictérico//incisión//incisivo//indicación//ingreso//inhalación//inhibición//inhibidor//inhibido//inicial//inosina//insomnio//inspiración//inspirado//inspiratorio//inteligencia//intensidad//intermitente//intestino//ión//iris//isoleucina//isótopo//nervio olfativo//impresión//índice//infección//insuficiencia//insulina//izquierda//símbolo químico del yodo
+I:factor i de la coagulación, fibrinógeno//isoleucina//ictericia//ictérico//incisión//incisivo//indicación//ingreso//inhalación//inhibición//inhibidor//inhibido//inicial//inosina//insomnio//inspiración//inspirado//inspiratorio//inteligencia//intensidad//intermitente//intestino//ión//iris//isoleucina//isótopo//nervio olfativo//impresión//índice//infección//insuficiencia//insulina//izquierda//símbolo químico del yodo
 I+A:irrigación y aspiración
 I+D:incisión y drenaje//investigación y desarrollo//irrigación y drenaje
 I+D+:investigación, desarrollo e innovación
@@ -3722,6 +3764,7 @@ LIS:localizador de información de salud
 LIT:linfocito infiltrante tumoral
 LIU:legrado intrauterino
 LKM:liver-kidney microsomal
+LKM1:liver-kidney microsomal type 1
 LL:leucemia linfoide//linfoma linfoblástico//linfoma linfocítico//lámina lúcida//lepra lepromatosa//leucemia linfoblástica//leucemia linfocítica//liberación lenta//líquido de lavado//lordosis lumbar
 LLA:leucemia linfoblástica aguda//leucemia linfoblástica aguda
 LLA-B:leucemia linfoblástica aguda de precursores de células b//leucemia linfocítica aguda de precursores de células b//leucemia/linfoma linfoblástico agudo de precursores de células b//leucemia/linfoma linfocítico agudo de precursores de células b
@@ -3930,6 +3973,8 @@ LVX:levofloxacina
 LW:fenotipo nulo landsteiner - wiener
 LX:ligado al cromosoma x
 LZM:linfoma de la zona marginal//lisozima
+L4:cuarta vértebra lumbar
+L5:quinta vértebra lumbar
 La:labial
 LaC:labiocervical
 LaG:labiogingival
@@ -4218,6 +4263,7 @@ MI:mama izquierda//medicina interna//menisco interno//mielofibrosis idiopática/
 MIA:movimientos involuntarios anormales
 MIBI:metoxisobutil isonitrilo
 MIC:microbiología y parasitología//morfología, inmunología y citogenética
+MICS:microincision cataract surgery
 MICE:mercaptoetano-sulfonato-sódico , ifosfamida, carboplatinao y etopósido
 MID:mamaria interna derecha//miembro inferior derecho//mentoilíaca derecha//mesoincisodistal//microinmunodifusión
 MIDA:mentoilíaca derecha anterior
@@ -5084,7 +5130,7 @@ ORM:orosomucoide
 ORN:osteorradionecrosis
 ORTP:ortesis rodilla-talón-pie
 ORVR:oclusión de ramas venosas de la retina
-OS:occipitosacra, posición fetal//ostium secundum//ojo seco//orquidectomía subcapsular//osteomalacia sifilítica//osteosarcoma//osteosclerosis//osteosíntesis//otitis supurativa
+OS:occipitosacra, posición fetal//ostium secundum//ojo seco//orquidectomía subcapsular//osteomalacia sifilítica//osteosarcoma//osteosclerosis//osteosíntesis//otitis supurativa//ojo izquierdo
 OSB:onicomicosis superficial blanca
 OSC:orquidectomía subcapsular
 OSDL:onicomicosis subungueal distal y lateral
@@ -5141,7 +5187,7 @@ PegINF:pegylated interferon
 PA:pancreatitis aguda//poliartritis//posteroanterior//presión alveolar//presión arterial//pulso arterial//presión parcial alveolar//pseudomona aeruginosa//parkinsoniano agudo//pericarditis aguda//pielonefritis aguda//poliposis adenomatosa
 PAA:punción aspirativa con aguja
 PAAD:punción aspiración con aguja delgada
-PAAF:punción aspiracion con aguja fina
+PAAF:punción aspiración con aguja fina
 PAAG:punción aspiración con aguja gruesa
 PAB:pancreatitis aguda biliar//punción aspirativa biópsica
 PABA:para-aminobenzoic acid//ácido para-aminobenzóico
@@ -6020,7 +6066,7 @@ RsCsAs:ruidos cardiacos arrítmicos
 RsCsRs:ruidos cardiacos rítmicos
 Rx:radiografía//rayos x
 RxT:radiografía de tórax//radioterapia
-S:sacro//sangre//semana//sensible//servicio//símbolo químico del azufre//síndrome//sistólico
+S:sacro//sangre//semana//sensible//servicio//símbolo químico del azufre//síndrome//sistólico//soluble
 S.:staphylococcus
 SA:sinoauricular
 SAAF:síndrome de anticuerpos antifosfolipídicos
@@ -6102,7 +6148,7 @@ SESPA:servicio de salud del principado de asturias
 SEST:sin elevación delst
 SEU:servicio de urgencias
 SF:sabin-feldman, prueba//síndrome de fanconi//síndrome febril//situación funcional//subfrénico//suero fisiológico//sufrimiento fetal
-SF6:exafluoruro de azufre 
+SF6:hexafluoruro de azufre 
 SFA:síndrome febril agudo//sufrimiento fetal agudo
 SFF:síndrome femoral-facial//síndrome hipoplasia femoral- facies inusual
 SG:semana de gestación//síndrome general//suero glucosado//swan-ganz, catéter
@@ -6147,6 +6193,7 @@ SJS1:síndrome de schwartz-jampel tipo 1
 SK:sarcoma de kaposi//streptokinase//estreptocinasa
 SKT:síndrome de klippel-trenaunay
 SL:second look//cirugía de segunda observación//simpatectomía lumbar//streptolysin//estreptolisina//sublingual
+SLA:anti-soluble liver antigen
 SLB:simpatectomía lumbar bilateral
 SLD:simpatectomía lumbar derecha
 SLE:systemic lupus erythematosus//lupus eritematoso sistémico//supervivencia libre de enfermedad
@@ -6226,6 +6273,7 @@ SRIS:síndrome de respuesta inflamatoria sistémica
 SRS:slow reacting substance//sustancia de reacción lenta
 SRS-A:slow reacting substance of anaphylaxis//sustancia de reacción lenta de la anafilaxia
 SRS_-_A:sustancia a de reacción lenta de la anafilaxia
+SRP:sÃ­ndrome benigno de la repolarizaciÃ³n precoz
 SRT1:síndrome de rothmund-thomson tipo 1
 SRT2:síndrome de rothmund-thomson tipo 2
 SRV:supervivencia
@@ -6272,13 +6320,16 @@ Si:silicio
 Sn:estaño
 Stem-cell:células madre
 Síndr:síndrome
-T:temperatura//timo//torácico//tumor
+T:temperatura//timo//torácico//tumor//treonina
 T-LGL:leucemia lgl de células t//leucemia linfocítica granular de células t grandes
 T-PLL:leucemia prolinfocítica de células t
-T1:tiempo de relajación  longitudinal
+T1:tiempo de relajación longitudinal
 T2:tiempo de relajación transversal
 T3:triyodotironina
 T4:tiroxina
+T11:undécima vértebra torácica
+T12:duodécima vértebra torácica
+TOM:theory of mind
 CBMF-HGO:cirugía bucal y maxilofacial del hospital general del oeste doctor josé gregorio hernández
 angio-RMN:angioresonancia magnetica
 tA:tensión arterial
@@ -6286,6 +6337,7 @@ TA:temperatura ambiente//tensión arterial//tratamiento actual//traumatismo abdo
 TAB:tableta//tifoidea, paratifoidea a y b, vacuna
 TABM:typhi, paratyphi a y b, melitensis
 TAC:tomografía axial computarizada
+T.A.C:tomografía axial computarizada
 TAC-SAI:tomografía axial computerizada - sai
 TAC_-_SAI:tomografía axial computerizada - sai
 TAD:tensión arterial diastólica
@@ -6392,7 +6444,7 @@ TNE:tumor neuroendocrino
 TNF:tumor necrosis factor//factor de la necrosis tumoral
 TNI:troponina i
 TNK:tenecteplase 
-TNM:international classification for tumors, nodes and metastases//clasificación internacional de tumores, ganglios y metástasis
+TNM:international classification for tumors, nodes and metastases//tamaño ganglio metástasis//clasificación internacional de tumores, ganglios y metástasis
 TNS:transcutaneous nerve stimulation//estimulación nerviosa transcutánea
 TOC:trastorno obsesivocompulsivo
 TOD:tumor de origen desconocido
@@ -6404,7 +6456,7 @@ TOT:traqueteotomia
 TP:tiempo de protrombina//trasplante pulmonar//trasplante pancreático//trombopenia//tuberculosis pulmonar//túbulo proximal
 TPA:tissue plasminogen activator//activador del plasminógeno tisular//tissue popipeptide antigen//antígeno polipéptido tisular
 TPAN:trombocitopenia aloinmunitaria neonatal
-TPH:trasplante de precursores hematopoyéticos//trasplante de progenitores hematopoyéticos
+TPH:trasplante de progenitores hematopoyéticos
 TPHA:treponema pallidum hemagglutination assay//análisis de hemaglutinación de treponema pallidum
 TPI:treponema pallidum immobilization//prueba de inmovilización de treponema pallidum//prueba de nelson
 TPL:toracotomía posterolateral//tronco posterolateral 
@@ -6579,7 +6631,7 @@ UVI:unidad de vigilancia intensiva
 V:vacuna//vacunación//vena//visión o agudeza visual//voltio//volumen
 VA:vaciamiento axilar//ventilación alveolar//vía aérea//vitamina a//volumen alveolar//voluntades anticipadas
 VAA:grupo de virus adenoasociados
-VAC:vincristina, actinomicina d y ciclofosfamida//vincristina, adriamicina y ciclofosfamida
+VAC:vincristina, actinomicina d y ciclofosfamida//vincristina, adriamicina y ciclofosfamida//vacuum assisted closure
 VAD:vincristina, adriamicina y dexametasona
 VAFNO:ventilación de alta frecuencia no oscilatoria
 VAFO:ventilación de alta frecuencia oscilatoria
@@ -6773,6 +6825,13 @@ VYI:vena yugular interna
 VZ:varicela-zoster//varicela zoster
 VZV:varicella-zoster virus//virus de la varicela-zoster
 Vx:vertex//vértice
+V1:rama oftálmica
+V3:tercera derivación precordial
+V2:derivación precordial 2
+V2:derivación precordial 2
+V5:quinta derivación precordial
+V4:cuarta derivación precordial
+V6:sexta derivación precordial
 Vº Bº:visto bueno
 W:wolframio 
 WAIS:wechsler adult inteligence scale//test de inteligencia de wechsler para adultos

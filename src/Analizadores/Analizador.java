@@ -32,6 +32,7 @@ public class Analizador {
 		for (int i = 0; i < argv.length; i++) {
 			AnalizadorLexico lexico = null;
 			try {
+				//System.out.println(argv[i]);
 				File file = new File(argv[i]);
 				String[] archivo=argv[i].split("/");
 				String id=archivo[archivo.length-1].split("\\.")[0];
