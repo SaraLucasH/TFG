@@ -99,8 +99,6 @@ public class DesambiguadorAcronimos {
 	FileWriter fichero = null;
 	PrintWriter pw = null;
 
-	
-
 	public DesambiguadorAcronimos() {
 		this.diccionarioTextoActual = new HashMap<>();
 		this.diccionarioDesambiguacion = new HashMap<>();
