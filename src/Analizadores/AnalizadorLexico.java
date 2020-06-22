@@ -2020,8 +2020,9 @@ public class AnalizadorLexico implements java_cup.runtime.Scanner {
       else {
         switch (zzAction < 0 ? zzAction : ZZ_ACTION[zzAction]) {
           case 1: 
-            { offset=offset+yytext().length();System.err.println("Error lexico: caracter no reconocido <" + yytext() + "> en la linea " + (yyline+1) 
-	+ " y columna " + (yycolumn +1));
+            { offset=offset+yytext().length();
+            /*System.err.println("Error lexico: caracter no reconocido <" + yytext() + "> en la linea " + (yyline+1) 
+	+ " y columna " + (yycolumn +1));*/
             } 
             // fall through
           case 53: break;

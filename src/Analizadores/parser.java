@@ -25,14 +25,14 @@ public class parser extends java_cup.runtime.lr_parser {
 
 //** Default constructor. */
 @Deprecated
-public parser(String nombreFicheroEntrada,WordVectors wvect) {super(); this.nombreFicheroEntrada=nombreFicheroEntrada;this.resultado= new DesambiguadorAcronimos(nombreFicheroEntrada,wvect);}
+public parser(String nombreFicheroEntrada,String rutaSalida,WordVectors wvect) {super(); this.nombreFicheroEntrada=nombreFicheroEntrada;this.resultado= new DesambiguadorAcronimos(nombreFicheroEntrada,rutaSalida,wvect);}
 
 /** Constructor which sets the default scanner. */
 @Deprecated
-public parser(java_cup.runtime.Scanner s,String nombreFicheroEntrada,WordVectors wvect) {super(s);this.nombreFicheroEntrada=nombreFicheroEntrada;this.resultado= new DesambiguadorAcronimos(nombreFicheroEntrada,wvect);}
+public parser(java_cup.runtime.Scanner s,String nombreFicheroEntrada,String rutaSalida,WordVectors wvect) {super(s);this.nombreFicheroEntrada=nombreFicheroEntrada;this.resultado= new DesambiguadorAcronimos(nombreFicheroEntrada,rutaSalida,wvect);}
 
 /** Constructor which sets the default scanner. */
-public parser(java_cup.runtime.Scanner s, java_cup.runtime.SymbolFactory sf,String nombreFicheroEntrada,WordVectors wvect) {super(s,sf);this.nombreFicheroEntrada=nombreFicheroEntrada;this.resultado= new DesambiguadorAcronimos(nombreFicheroEntrada,wvect);}
+public parser(java_cup.runtime.Scanner s, java_cup.runtime.SymbolFactory sf,String nombreFicheroEntrada,String rutaSalida,WordVectors wvect) {super(s,sf);this.nombreFicheroEntrada=nombreFicheroEntrada;this.resultado= new DesambiguadorAcronimos(nombreFicheroEntrada,rutaSalida,wvect);}
 
   /** Production table. */
   protected static final short _production_table[][] = 
@@ -105,6 +105,10 @@ public parser(java_cup.runtime.Scanner s, java_cup.runtime.SymbolFactory sf,Stri
 
 String nombreFicheroEntrada="";
 DesambiguadorAcronimos resultado;
+
+public String getResultado() {
+	return resultado.getResultado();
+}
 
 public void syntax_error (Symbol s){
 	System.err.println("Error de sintaxis (lexema <" + 	s.value.toString() + ">) en la linea " + s.left + " 	y en la columna " + s.right);

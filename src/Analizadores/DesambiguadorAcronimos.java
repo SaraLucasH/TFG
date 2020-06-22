@@ -71,6 +71,9 @@ public class DesambiguadorAcronimos {
 	private HashMap<Acronimo, String> diccionarioDesambiguacion;
 	private HashSet<String> stopWords;
 	private HashSet<String> signosPuntuacion;
+	private String rutaSalida;
+	private String resultado="";
+	
 
 	// Desambiguacion
 	Builder b;
@@ -98,6 +101,10 @@ public class DesambiguadorAcronimos {
 	// Escritura del fichero de resultado
 	FileWriter fichero = null;
 	PrintWriter pw = null;
+	
+	public String getResultado() {
+		return resultado;
+	}
 
 	public DesambiguadorAcronimos() {
 		this.diccionarioTextoActual = new HashMap<>();
@@ -112,7 +119,7 @@ public class DesambiguadorAcronimos {
 		signosPuntuacion = new HashSet<>(Arrays.asList(",", ";", ".", "?", "!", ":"));
 	}
 
-	public DesambiguadorAcronimos(String nombreFicheroEntrada, WordVectors wvect) {
+	public DesambiguadorAcronimos(String nombreFicheroEntrada, String rutaSalida,WordVectors wvect) {
 		this();
 		this.nombreFichero = nombreFicheroEntrada;
 		this.b = WordMovers.Builder();
@@ -120,6 +127,7 @@ public class DesambiguadorAcronimos {
 		this.b.wordVectors = wvect;		
 		b.stopwords(this.stopWords);
 		this.wmd = new WordMovers(b);
+		this.rutaSalida=rutaSalida;
 	}
 
 	public void load() {
@@ -860,29 +868,47 @@ public class DesambiguadorAcronimos {
 	public String toOutputFileSecondTask() {
 		String result = "";
 		try {
-			File file = new File(".\\Herramientas\\Archivos_salida\\Testing_SecondTask_Results_EVALUATION.tsv");
-			if (!file.exists()) {
+			if(!rutaSalida.equals("")) {
+				File file = new File(rutaSalida+"/SalidaDesambiguacion.tsv");
+				//File file = new File(".\\Herramientas\\Archivos_salida\\Testing_SecondTask_PruebaIU_Results_EVALUATION.tsv");
+				if (!file.exists()) {
+					result = "#DocumentID\tStartOffset\tEndOffset\tAbbreviation\tDefinition\tDefinition_lemmatized\n";
+				}
+				Writer out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file, true), "UTF-8"));
+			
+				Iterator<Entry<Acronimo, String>> it = this.diccionarioDesambiguacion.entrySet().iterator();
+				while (it.hasNext()) {
+					Entry<Acronimo, String> e = it.next();
+					if (e.getValue() != null || !e.getValue().isEmpty()) {
+						// File identifier
+						result += nombreFichero + "\t" + e.getKey().getStartOffset() + "\t" + e.getKey().getEndOffset()
+								+ "\t" + e.getKey().getAcronimo() + "\t" + e.getValue() + "\t" + e.getValue();
+	
+						result += "\n";
+					}
+				}
+				out.write(result);
+				out.flush();
+				out.close();
+			}else {
 				result = "#DocumentID\tStartOffset\tEndOffset\tAbbreviation\tDefinition\tDefinition_lemmatized\n";
-			}
-			Writer out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file, true), "UTF-8"));
-
-			Iterator<Entry<Acronimo, String>> it = this.diccionarioDesambiguacion.entrySet().iterator();
-			while (it.hasNext()) {
-				Entry<Acronimo, String> e = it.next();
-				if (e.getValue() != null || !e.getValue().isEmpty()) {
-					// File identifier
-					result += nombreFichero + "\t" + e.getKey().getStartOffset() + "\t" + e.getKey().getEndOffset()
-							+ "\t" + e.getKey().getAcronimo() + "\t" + e.getValue() + "\t" + e.getValue();
-
-					result += "\n";
+				
+				Iterator<Entry<Acronimo, String>> it = this.diccionarioDesambiguacion.entrySet().iterator();
+				while (it.hasNext()) {
+					Entry<Acronimo, String> e = it.next();
+					if (e.getValue() != null || !e.getValue().isEmpty()) {
+						// File identifier
+						result += nombreFichero + "\t" + e.getKey().getStartOffset() + "\t" + e.getKey().getEndOffset()
+								+ "\t" + e.getKey().getAcronimo() + "\t" + e.getValue() + "\t" + e.getValue();
+	
+						result += "\n";
+					}
 				}
 			}
-			out.write(result);
-			out.flush();
-			out.close();
 		} catch (IOException e1) {
 			e1.printStackTrace();
 		}
+		this.resultado=result;
 		return result;
 	}
 }
