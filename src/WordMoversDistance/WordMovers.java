@@ -1,10 +1,5 @@
 package WordMoversDistance;
 
-import org.deeplearning4j.models.embeddings.loader.WordVectorSerializer;
-import org.deeplearning4j.models.embeddings.wordvectors.WordVectors;
-
-import WordMoversDistance.emd.EarthMovers;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -13,11 +8,21 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.io.UnsupportedEncodingException;
-import java.util.*;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.NoSuchElementException;
+import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static org.nd4j.linalg.io.StringUtils.isEmpty;
+import org.deeplearning4j.models.embeddings.loader.WordVectorSerializer;
+import org.deeplearning4j.models.embeddings.wordvectors.WordVectors;
+
+import WordMoversDistance.emd.EarthMovers;
 
 /**
  * Created by Majer on 21.9.2016.
@@ -42,7 +47,7 @@ public class WordMovers {
     
     public double distance(String a, String b) {
         
-        if(isEmpty(a) || isEmpty(b))
+        if(a.isEmpty() || b.isEmpty())
             throw new IllegalArgumentException();
         
         return distance(a.split(" "), b.split(" "));

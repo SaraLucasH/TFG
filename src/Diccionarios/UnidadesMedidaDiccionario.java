@@ -14,7 +14,7 @@ public class UnidadesMedidaDiccionario {
 	String charset="UTF-8";
 	
 	public UnidadesMedidaDiccionario() {
-		this.diccionario= new HashMap<>();
+		this.diccionario= new HashMap<String, HashSet<String>>();
 		this.load();
 	}
 
@@ -34,8 +34,7 @@ public class UnidadesMedidaDiccionario {
 		try {	
 			String linea;
 			//Lectura de fichero unidades de medida
-			fr = new File("./Herramientas/Diccionarios/mesuresAcronyms.csv");
-			reader = new InputStreamReader (new FileInputStream(fr), charset);
+			reader = new InputStreamReader (getClass().getResourceAsStream("/Herramientas/Diccionarios/mesuresAcronyms.csv"), charset);
 			br = new BufferedReader(reader);			
 				
 			while ((linea = br.readLine()) != null){

@@ -22,7 +22,7 @@ public class BARRDiccionario {
 	String charset="UTF8";
 	
 	public BARRDiccionario() {
-		this.diccionario= new HashMap<>();
+		this.diccionario= new HashMap<String, HashSet<String>>();
 		this.loadFromTSV();
 	}
 	
@@ -39,27 +39,22 @@ public class BARRDiccionario {
 		Reader br;
 		BufferedReader buffer=null;
 		try {			
-			file= new File("./Herramientas/Diccionarios/DiccionarioBARR2.tsv");
-			if(!file.exists() || file.length()==0) {
-				//Ya carga el diccionario
-				this.updateTSV();
-			}else {
-				br = new InputStreamReader (new FileInputStream(file), charset);
-				buffer= new BufferedReader(br);
-			
-				String linea;
-				while((linea=buffer.readLine())!=null) {
-					String[]row=linea.split("\t");
-					HashSet<String> value=this.diccionario.get(row[0].toUpperCase());
-					if(value==null) {
-						value = new HashSet<String>();
-						this.diccionario.put(row[0].toUpperCase(), value);
-					}
-					for(int i=1;i<row.length;i++) {
-						value.add(row[i]);
-					}
-				}				
-			}			
+			br = new InputStreamReader (getClass().getResourceAsStream("/Herramientas/Diccionarios/DiccionarioBARR2.tsv"), charset);
+			buffer= new BufferedReader(br);
+		
+			String linea;
+			while((linea=buffer.readLine())!=null) {
+				String[]row=linea.split("\t");
+				HashSet<String> value=this.diccionario.get(row[0].toUpperCase());
+				if(value==null) {
+					value = new HashSet<String>();
+					this.diccionario.put(row[0].toUpperCase(), value);
+				}
+				for(int i=1;i<row.length;i++) {
+					value.add(row[i]);
+				}
+			}				
+					
 		} catch(Exception e) {
 			e.printStackTrace();			
 		}finally {			
@@ -76,7 +71,7 @@ public class BARRDiccionario {
 	private int updateTSV(){
 		String charset = "UTF-8";		
 		try {					
-			File fr = new File(".\\Herramientas\\Archivos salida\\Training_results_EVALUATION.tsv");
+			File fr = new File(getClass().getResource("/Herramientas/Archivos salida/Training_results_EVALUATION.tsv").getPath());
 			Reader br = new InputStreamReader (new FileInputStream(fr), charset);
 			BufferedReader buffer= new BufferedReader(br);
 			
@@ -100,7 +95,7 @@ public class BARRDiccionario {
 				}
 			}
 			
-			fr = new File(".\\Herramientas\\Archivos salida\\Testing_results_EVALUATION.tsv");
+			fr = new File(getClass().getResource("/Herramientas/Archivos salida/Testing_results_EVALUATION.tsv").getPath());
 			br = new InputStreamReader (new FileInputStream(fr), charset);
 			buffer= new BufferedReader(br);
 			
@@ -119,7 +114,7 @@ public class BARRDiccionario {
 				}
 			}
 			
-			fr = new File(".\\Herramientas\\Archivos salida\\Development_results_EVALUATION.tsv");
+			fr = new File(getClass().getResource("/Herramientas/Archivos salida/Development_results_EVALUATION.tsv").getPath());
 			br = new InputStreamReader (new FileInputStream(fr), charset);
 			buffer= new BufferedReader(br);
 			
@@ -138,7 +133,7 @@ public class BARRDiccionario {
 				}
 			}
 			
-			fr = new File(".\\Herramientas\\Archivos salida\\Sample_results_EVALUATION.tsv");
+			fr = new File(getClass().getResource("/Herramientas/Archivos salida/Sample_results_EVALUATION.tsv").getPath());
 			br = new InputStreamReader (new FileInputStream(fr), charset);
 			buffer= new BufferedReader(br);
 			

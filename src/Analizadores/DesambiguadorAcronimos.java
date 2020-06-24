@@ -107,16 +107,16 @@ public class DesambiguadorAcronimos {
 	}
 
 	public DesambiguadorAcronimos() {
-		this.diccionarioTextoActual = new HashMap<>();
-		this.diccionarioDesambiguacion = new HashMap<>();
+		this.diccionarioTextoActual = new HashMap<Acronimo, HashSet<FormaLarga>>();
+		this.diccionarioDesambiguacion = new HashMap<Acronimo, String>();
 		this.diccionarioConsultaSEDOM = new SEDOMDiccionario();
 		this.diccionarioConsultaBARR = new BARRDiccionario();
 		this.diccionarioConsultaUnidadesMedida = new UnidadesMedidaDiccionario();
-		this.almacen = new HashMap<>();
-		this.contexto = new ArrayList<>();
+		this.almacen = new HashMap<Acronimo, HashSet<String>>();
+		this.contexto = new ArrayList<String>();
 		// Palabras de Parada
 		stopWords = this.loadStopWords();		
-		signosPuntuacion = new HashSet<>(Arrays.asList(",", ";", ".", "?", "!", ":"));
+		signosPuntuacion = new HashSet<String>(Arrays.asList(",", ";", ".", "?", "!", ":"));
 	}
 
 	public DesambiguadorAcronimos(String nombreFicheroEntrada, String rutaSalida,WordVectors wvect) {
@@ -185,7 +185,7 @@ public class DesambiguadorAcronimos {
 
 	public void addDuplaDesambiguacion(Acronimo ac, String contextoAc) {
 		if (this.diccionarioDesambiguacion.get(ac) == null) {
-			// 1ºConsulto dicc unidades medida y sedom
+			// 1ï¿½Consulto dicc unidades medida y sedom
 			this.valorUnidadesMedida = this.diccionarioConsultaUnidadesMedida.get(ac.getAcronimo());
 			this.valorSEDOM = this.diccionarioConsultaSEDOM.get(ac.getAcronimo());
 
@@ -360,7 +360,7 @@ public class DesambiguadorAcronimos {
 						}
 					}
 					System.out.println(
-							"SALIDA LF " + lfChecked + " añadido a " + this.diccionarioTextoActual.get(acronimo));
+							"SALIDA LF " + lfChecked + " aï¿½adido a " + this.diccionarioTextoActual.get(acronimo));
 					this.diccionarioTextoActual.get(acronimo).add(f);
 				}
 			}
@@ -444,7 +444,7 @@ public class DesambiguadorAcronimos {
 				siglaActual = acAux.charAt(indiceAc);
 
 				if (siglaActual.equals(s) || siglaActual.equals(e)) {
-					// Busco la aparicion de esa sigla o de e o s. Inglés
+					// Busco la aparicion de esa sigla o de e o s. Inglï¿½s
 					if ((cadenaSinAcentos.indexOf(s) == 0 || cadenaSinAcentos.indexOf(e) == 0)
 							&& i != indexUltimoCheck) {
 						// Empieza por e o s

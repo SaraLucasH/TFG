@@ -25,10 +25,12 @@ import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.io.UnsupportedEncodingException;
+import java.net.URISyntaxException;
 import java.util.Iterator;
 import java.util.regex.Matcher;
 
@@ -54,9 +56,12 @@ public class Analizador extends JFrame {
 	private JButton buscarSalida;
 
 	
-	private static WordVectors loadEmbeddings() {
-		return WordVectorSerializer.loadStaticModel(new File(".\\Herramientas\\Embeddings_2019-01-01\\Embeddings"
-    			+ "\\Embeddings_ES\\Scielo\\50\\W2V_scielo_w10_c5_50_15epoch.txt"));
+	private WordVectors loadEmbeddings() {	
+		try {
+			return WordVectorSerializer.loadStaticModel(getClass().getResourceAsStream("/Herramientas/W2V_scielo_w10_c5_50_15epoch.txt"));
+		} catch (IOException e) {
+			return null;
+		}
 	}
 	
 	/**

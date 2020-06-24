@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileReader;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.HashMap;
@@ -18,7 +19,7 @@ public class SEDOMDiccionario {
 	HashMap<String,HashSet<String>> diccionario;
 	
 	public SEDOMDiccionario() {
-		this.diccionario= new HashMap<>();
+		this.diccionario= new HashMap<String, HashSet<String>>();
 		this.load();
 	}
 	
@@ -26,14 +27,12 @@ public class SEDOMDiccionario {
 	 * Carga el contenido del fichero txt, en caso de estar vacio manda un -1
 	 */
 	private void load() {
-		
-		File fr = null;
 		Reader reader;
 		BufferedReader br = null;
 		
-		try {					
-			fr = new File("./Herramientas/Diccionarios/AllAcronyms.txt");
-			reader = new InputStreamReader (new FileInputStream(fr), charset);
+		try {
+			InputStream in=getClass().getResourceAsStream("/Herramientas/AllAcronyms.txt");
+			reader = new InputStreamReader (getClass().getResourceAsStream("/Herramientas/AllAcronyms.txt"));
 			br = new BufferedReader(reader);			
 			String linea;			
 			while ((linea = br.readLine()) != null){
