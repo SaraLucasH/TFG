@@ -1,5 +1,5 @@
-FROM openjdk:12-alpine
+FROM store/oracle/jdk:11
 
-COPY DADM.jar /DADM.jar
+COPY target/TFG-0.0.1-SNAPSHOT-jar-with-dependencies.jar /dadm.jar
 
-CMD ["java","-jar","/DADM.jar"]
+CMD ["java","-jar","/dadm.jar"]

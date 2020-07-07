@@ -27,12 +27,11 @@ public class SEDOMDiccionario {
 	 * Carga el contenido del fichero txt, en caso de estar vacio manda un -1
 	 */
 	private void load() {
-		Reader reader;
+		InputStreamReader reader;
 		BufferedReader br = null;
 		
 		try {
-			InputStream in=getClass().getResourceAsStream("/Herramientas/AllAcronyms.txt");
-			reader = new InputStreamReader (getClass().getResourceAsStream("/Herramientas/AllAcronyms.txt"));
+			reader = new InputStreamReader (getClass().getResourceAsStream("/Herramientas/Diccionarios/prueba.txt"), charset);
 			br = new BufferedReader(reader);			
 			String linea;			
 			while ((linea = br.readLine()) != null){
