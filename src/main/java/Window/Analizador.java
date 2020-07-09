@@ -50,8 +50,7 @@ public class Analizador extends JFrame {
 	private JTextField rutaSalida;
 	private JComboBox comboSeleccion;
 	private WordVectors wvect;
-	private TextArea textEntrada;
-	private TextArea textSalida;
+	private TextArea textEntrada;	private TextArea textSalida;
 	private JButton buscarEntrada;
 	private JButton buscarSalida;
 
@@ -85,6 +84,7 @@ public class Analizador extends JFrame {
 	 * Create the frame.
 	 */
 	public Analizador() {
+		setResizable(false);
 		this.wvect=loadEmbeddings();
 		setTitle("Desambiguacion de acronimos en el dominio medico");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

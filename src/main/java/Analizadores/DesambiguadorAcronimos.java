@@ -891,19 +891,22 @@ public class DesambiguadorAcronimos {
 				out.flush();
 				out.close();
 			}else {
-				result = "#DocumentID\tStartOffset\tEndOffset\tAbbreviation\tDefinition\tDefinition_lemmatized\n";
-				
+				String cadenaAux="\n";
+				cadenaAux += "StartOffset\tEndOffset\tAbbreviation\tDefinition\n";
+				result="Acronimos identificados:\n";
 				Iterator<Entry<Acronimo, String>> it = this.diccionarioDesambiguacion.entrySet().iterator();
 				while (it.hasNext()) {
 					Entry<Acronimo, String> e = it.next();
 					if (e.getValue() != null || !e.getValue().isEmpty()) {
 						// File identifier
-						result += nombreFichero + "\t" + e.getKey().getStartOffset() + "\t" + e.getKey().getEndOffset()
-								+ "\t" + e.getKey().getAcronimo() + "\t" + e.getValue() + "\t" + e.getValue();
+						result+=e.getKey().getAcronimo()+"\n";
+						cadenaAux +=  e.getKey().getStartOffset() + "\t" + e.getKey().getEndOffset()
+								+ "\t" + e.getKey().getAcronimo() + "\t" + e.getValue();
 	
-						result += "\n";
+						cadenaAux += "\n";
 					}
 				}
+				result+=cadenaAux;
 			}
 		} catch (IOException e1) {
 			e1.printStackTrace();
