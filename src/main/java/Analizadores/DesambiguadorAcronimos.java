@@ -282,19 +282,17 @@ public class DesambiguadorAcronimos {
 	}
 
 	private HashSet<String> loadStopWords() {
-		HashSet<String> list = new HashSet<String>();
-		File file = new File("C:\\Users\\saral\\Documents\\tfg\\Evaluation\\stopwords-es.txt");
+		HashSet<String> list = new HashSet<String>();	
 		String charset = "UTF-8";
 		Reader br;
 		try {
-			br = new InputStreamReader(new FileInputStream(file), charset);
+			br = new InputStreamReader(getClass().getResourceAsStream("/Herramientas/stopwords-es.txt"), charset);
 			BufferedReader buffer = new BufferedReader(br);
 			String linea;
 
 			while ((linea = buffer.readLine()) != null) {
 				list.add(linea);
 			}
-
 			buffer.close();
 			br.close();
 		} catch (UnsupportedEncodingException e) {
