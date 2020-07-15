@@ -6,4 +6,4 @@ bin/*
 *.class
 .metadata/.log
 /bin/
-/target/
+
