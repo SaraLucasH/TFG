@@ -199,7 +199,7 @@ public class Analizador extends JFrame {
 									JOptionPane.showMessageDialog(new JFrame(), exception.getMessage());
 								}
 							}
-							JOptionPane.showMessageDialog(new JFrame(), "Archivo de salida (SalidaDesambiguacion.tsv) generado en "+rutaSalida.getText());
+							JOptionPane.showMessageDialog(new JFrame(), "Archivo/s de salida generado/s en "+rutaSalida.getText());
 						}else {
 							JOptionPane.showMessageDialog(new JFrame(), "Debe introducir un destino valido");
 							

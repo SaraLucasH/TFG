@@ -1,10 +1,3 @@
-//** Default constructor. */
-@Deprecated
-public parser(String nombreFicheroEntrada,WordVectors wvect) {super(); this.nombreFicheroEntrada=nombreFicheroEntrada;this.resultado= new Resultado(nombreFicheroEntrada,wvect);}
-
-/** Constructor which sets the default scanner. */
-@Deprecated
-public parser(java_cup.runtime.Scanner s,String nombreFicheroEntrada,WordVectors wvect) {super(s);this.nombreFicheroEntrada=nombreFicheroEntrada;this.resultado= new Resultado(nombreFicheroEntrada,wvect);}
-
-/** Constructor which sets the default scanner. */
-public parser(java_cup.runtime.Scanner s, java_cup.runtime.SymbolFactory sf,String nombreFicheroEntrada,WordVectors wvect) {super(s,sf);this.nombreFicheroEntrada=nombreFicheroEntrada;this.resultado= new Resultado(nombreFicheroEntrada,wvect);}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d2ee4eb478e200083610ce5471b7451abef7ba521f444ee17fd5c8c42ff2d12c
+size 793

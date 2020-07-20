@@ -6,4 +6,5 @@ bin/*
 *.class
 .metadata/.log
 /bin/
-
+/target/classes/
+/target/maven*/

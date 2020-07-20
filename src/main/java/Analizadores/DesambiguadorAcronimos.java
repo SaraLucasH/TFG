@@ -867,13 +867,13 @@ public class DesambiguadorAcronimos {
 		String result = "";
 		try {
 			if(!rutaSalida.equals("")) {
-				File file = new File(rutaSalida+"/SalidaDesambiguacion.tsv");
+				File file = new File(rutaSalida+"/"+nombreFichero+"_Salida_Desambiguacion.tsv");
 				//File file = new File(".\\Herramientas\\Archivos_salida\\Testing_SecondTask_PruebaIU_Results_EVALUATION.tsv");
 				if (!file.exists()) {
 					result = "#DocumentID\tStartOffset\tEndOffset\tAbbreviation\tDefinition\tDefinition_lemmatized\n";
 				}
-				Writer out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file, true), "UTF-8"));
-			
+				Writer out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file, true), "UTF-8"));				
+				
 				Iterator<Entry<Acronimo, String>> it = this.diccionarioDesambiguacion.entrySet().iterator();
 				while (it.hasNext()) {
 					Entry<Acronimo, String> e = it.next();
