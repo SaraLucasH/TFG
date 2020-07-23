@@ -8,3 +8,4 @@ bin/*
 /bin/
 /target/classes/
 /target/maven*/
+/target/
